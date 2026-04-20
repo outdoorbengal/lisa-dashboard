@@ -1,0 +1,85 @@
+name: sprint-action
+
+# Handles DONE / SKIP / MODIFY button clicks from the dashboard.
+#
+# The dashboard's app.js sends a repository_dispatch event with
+# event_type="sprint-action" and a payload containing:
+#   action:     "done" | "skip" | "modify"
+#   sprint_id:  "002"
+#   reason:     (optional, for skip)
+#   changes:    (optional JSON, for modify)
+#
+# This workflow runs scripts/sprint_action.py, which mutates the YAML
+# source files. The resulting commit triggers build-dashboard.yml, which
+# regenerates data.json and redeploys Pages.
+
+on:
+  repository_dispatch:
+    types: [sprint-action]
+
+permissions:
+  contents: write
+
+jobs:
+  apply-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate payload
+        run: |
+          ACTION='${{ github.event.client_payload.action }}'
+          SPRINT_ID='${{ github.event.client_payload.sprint_id }}'
+          if [ -z "$ACTION" ] || [ -z "$SPRINT_ID" ]; then
+            echo "Missing action or sprint_id in payload"
+            exit 1
+          fi
+          case "$ACTION" in
+            done|skip|modify) ;;
+            *) echo "Unknown action: $ACTION"; exit 1 ;;
+          esac
+
+      - name: Run sprint action
+        run: |
+          ACTION='${{ github.event.client_payload.action }}'
+          SPRINT_ID='${{ github.event.client_payload.sprint_id }}'
+          case "$ACTION" in
+            done)
+              python scripts/sprint_action.py done "$SPRINT_ID"
+              ;;
+            skip)
+              REASON='${{ github.event.client_payload.reason }}'
+              python scripts/sprint_action.py skip "$SPRINT_ID" "$REASON"
+              ;;
+            modify)
+              CHANGES='${{ toJSON(github.event.client_payload.changes) }}'
+              python scripts/sprint_action.py modify "$SPRINT_ID" "$CHANGES"
+              ;;
+          esac
+
+      - name: Commit and push
+        run: |
+          git config user.name  "lisa-dashboard-bot"
+          git config user.email "lisa-dashboard-bot@users.noreply.github.com"
+          git add sprints/queue.yml sprints/active.yml logs/runs.jsonl
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            ACTION='${{ github.event.client_payload.action }}'
+            SPRINT_ID='${{ github.event.client_payload.sprint_id }}'
+            git commit -m "sprint-action: $ACTION #$SPRINT_ID"
+            git push
+          fi

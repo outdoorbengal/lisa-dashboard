@@ -1,0 +1,76 @@
+name: evaluate-experiments
+
+# Checks sprints/active.yml daily for any experiment whose evaluation_date
+# has arrived. If current_reading is populated, archives it with a WINNER /
+# NEUTRAL / LOSER verdict based on the configured thresholds. If no
+# current_reading exists, opens a GitHub Issue tagging the maintainer so
+# Lisa's next scan knows to measure and push a reading.
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # daily at 09:00 UTC (early morning US / mid-day EU)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run evaluator
+        id: eval
+        run: python scripts/evaluate_experiment.py
+        continue-on-error: true
+
+      - name: Commit and push
+        if: steps.eval.outcome == 'success'
+        run: |
+          git config user.name  "lisa-dashboard-bot"
+          git config user.email "lisa-dashboard-bot@users.noreply.github.com"
+          git add sprints/active.yml sprints/archive.yml logs/runs.jsonl
+          if git diff --cached --quiet; then
+            echo "No experiments ready for evaluation today"
+          else
+            git commit -m "eval: archive experiments whose window closed"
+            git push
+          fi
+
+      - name: Open issue if evaluator failed
+        if: steps.eval.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().split('T')[0];
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Experiment evaluation failed — ${today}`,
+              body: [
+                'The `evaluate-experiments` workflow failed today.',
+                'Most common cause: an experiment reached its `evaluation_date`',
+                'but `current_reading.current_value` is still null.',
+                '',
+                'Check the [workflow run](' +
+                  context.serverUrl + '/' + context.repo.owner + '/' +
+                  context.repo.repo + '/actions/runs/' + context.runId +
+                ') and `sprints/active.yml` for experiments with missing readings.',
+              ].join('\n'),
+              labels: ['lisa', 'evaluation', 'needs-attention'],
+            });
