@@ -1,0 +1,107 @@
+{
+  "generated": "2026-04-20",
+  "week_of": "Apr 20 2026",
+  "system": {
+    "status": "Running",
+    "pages_scanned": 15,
+    "pages_total": 283,
+    "sources_connected": 4,
+    "sources_total": 4,
+    "opportunities": 20,
+    "active_tests": 1,
+    "days_complete": 1,
+    "scan_bars": [
+      45,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "scan_day_labels": [
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S",
+      "Su"
+    ],
+    "today_index": 0
+  },
+  "donuts": {
+    "total": {
+      "win": 0,
+      "total": 0
+    },
+    "rnk": {
+      "win": 0,
+      "total": 0
+    },
+    "ctr": {
+      "win": 0,
+      "total": 0
+    },
+    "cr": {
+      "win": 0,
+      "total": 0
+    },
+    "link": {
+      "win": 0,
+      "total": 0
+    }
+  },
+  "experiments": [
+    {
+      "id": "001",
+      "name": "Zeppelin deduplication \u2014 redirect pre-launch to product page",
+      "type": "RNK",
+      "status": "RUNNING",
+      "kpi_label": "Sessions to /products/zeppelin-cat-carrier (28d)",
+      "before_val": 5929.0,
+      "before_pct": 74.0,
+      "after_val": null,
+      "after_pct": null,
+      "target_val": 6462.0,
+      "target_pct": 80.0,
+      "delta": null,
+      "start_date": "Apr 16",
+      "end_date": "May 28",
+      "progress_pct": 5,
+      "note": "2 days in",
+      "week_current": 1,
+      "week_total": 6
+    }
+  ],
+  "sprints": [
+    {
+      "id": "001",
+      "status": "UNACKNOWLEDGED",
+      "days_waiting": 12,
+      "title": "Fix title tag \u2014 cat training guide (1.67M impressions)",
+      "url": "/blogs/clicker-training-cats/cat-training-guide",
+      "impact_label": "CTR \u00b7 1.67M impressions \u00b7 pos 10.2",
+      "current_pct": 5,
+      "current_label": "~0% CTR",
+      "target_pct": 18,
+      "target_label": "0.5%+",
+      "effort_label": "LOW \u2014 title + meta rewrite only",
+      "effort_pct": 6
+    },
+    {
+      "id": "002",
+      "status": "NEXT_UP",
+      "days_waiting": 0,
+      "title": "Fix title tag \u2014 how to discipline a cat (53K impressions)",
+      "url": "/blogs/correcting-cat-behavior/how-to-discipline-a-cat",
+      "impact_label": "CTR \u00b7 53K impressions \u00b7 pos 7.3",
+      "current_pct": 27,
+      "current_label": "2.0% CTR",
+      "target_pct": 30,
+      "target_label": "4.5%+",
+      "effort_label": null,
+      "effort_pct": null
+    }
+  ]
+}
