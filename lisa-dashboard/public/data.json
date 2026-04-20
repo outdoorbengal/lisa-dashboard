@@ -1,0 +1,375 @@
+{
+  "generated": "2026-04-19",
+  "week_of": "Apr 13 2026",
+  "system": {
+    "status": "OK",
+    "pages_scanned": 206,
+    "pages_total": 283,
+    "sources_connected": 4,
+    "sources_total": 4,
+    "opportunities": 12,
+    "active_tests": 1,
+    "days_complete": 7,
+    "scan_bars": [
+      70,
+      78,
+      55,
+      100,
+      70,
+      57,
+      85
+    ]
+  },
+  "donuts": {
+    "total": {
+      "win": 1,
+      "total": 1
+    },
+    "rnk": {
+      "win": 0,
+      "total": 0
+    },
+    "ctr": {
+      "win": 0,
+      "total": 0
+    },
+    "cr": {
+      "win": 1,
+      "total": 1
+    },
+    "link": {
+      "win": 0,
+      "total": 0
+    }
+  },
+  "experiments": [
+    {
+      "id": "001",
+      "name": "Cannibalization fix \u2014 Zeppelin redirect",
+      "type": "RNK",
+      "status": "RUNNING",
+      "kpi_label": "Zeppelin CTR",
+      "before_val": 41.7,
+      "before_pct": 41.7,
+      "after_val": null,
+      "after_pct": null,
+      "target_val": 46.0,
+      "target_pct": 46.0,
+      "delta": null,
+      "start_date": "Apr 14",
+      "end_date": "May 26",
+      "progress_pct": 12,
+      "note": "5 days in",
+      "week_current": 1,
+      "week_total": 6
+    },
+    {
+      "id": "000",
+      "name": "Copy rewrite \u2014 Extra Safe Harness",
+      "type": "CR",
+      "status": "WINNER",
+      "kpi_label": "Add-to-cart rate",
+      "before_val": 1.4,
+      "before_pct": 28.0,
+      "after_val": 2.4,
+      "after_pct": 48.0,
+      "target_val": null,
+      "target_pct": null,
+      "delta": "+71%",
+      "start_date": "Mar 10",
+      "end_date": "Apr 07",
+      "progress_pct": 100,
+      "note": "+$8.2K projected / 90d",
+      "week_current": 4,
+      "week_total": 4
+    }
+  ],
+  "sprints": [
+    {
+      "id": "002",
+      "status": "UNACKNOWLEDGED",
+      "days_waiting": 2,
+      "title": "Add Zeppelin link to cat training guide",
+      "url": "/blogs/clicker-training-cats/cat-training-guide",
+      "sprint_type": "LINK",
+      "impact_label": "Referral sessions to Zeppelin",
+      "current_pct": 5,
+      "current_label": "~0 now",
+      "target_pct": 50.0,
+      "target_label": "+25/wk",
+      "effort_label": "LOW \u2014 1 sentence + link",
+      "effort_pct": 6
+    },
+    {
+      "id": "003",
+      "status": "NEXT_UP",
+      "days_waiting": 0,
+      "title": "Fix title tag \u2014 best cat names article",
+      "url": "/blogs/fun-stuff/best-cat-names",
+      "sprint_type": "CTR",
+      "impact_label": "CTR \u00b7 114K impressions \u00b7 pos 12.6",
+      "current_pct": 5.4,
+      "current_label": "0.27% now",
+      "target_pct": 20.0,
+      "target_label": "1%+",
+      "effort_label": "LOW \u2014 Title tag rewrite",
+      "effort_pct": 6
+    }
+  ],
+  "details": {
+    "queue": [
+      {
+        "id": "002",
+        "created": "2026-04-17",
+        "title": "Add Zeppelin link to cat training guide",
+        "url": "/blogs/clicker-training-cats/cat-training-guide",
+        "sprint_type": "LINK",
+        "kpi": {
+          "metric": "referral_sessions_to_zeppelin",
+          "display_label": "Referral sessions to Zeppelin",
+          "current_value": 0,
+          "current_display": "~0 now",
+          "target_value": 25,
+          "target_display": "+25/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "LOW",
+          "description": "1 sentence + link",
+          "estimated_minutes": 15
+        },
+        "rationale": "Cat training guide currently ranks position 4 for \"clicker training cats\"\nwith ~1.2k monthly impressions. Zero internal links point to the Zeppelin\nproduct page. Adding a contextual link in the \"tools you'll need\" section\nshould drive meaningful referral traffic.\n",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [
+          "https://search.google.com/search-console/..."
+        ]
+      },
+      {
+        "id": "003",
+        "created": "2026-04-19",
+        "title": "Fix title tag \u2014 best cat names article",
+        "url": "/blogs/fun-stuff/best-cat-names",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 114K impressions \u00b7 pos 12.6",
+          "current_value": 0.27,
+          "current_display": "0.27% now",
+          "target_value": 1.0,
+          "target_display": "1%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "LOW",
+          "description": "Title tag rewrite",
+          "estimated_minutes": 10
+        },
+        "rationale": "Article has 114K impressions at average position 12.6 but CTR of 0.27%\nis well below the positional benchmark of ~2%. Current title is\ngeneric. Testing a more specific, benefit-driven title.\n",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 50,
+          "neutral_threshold_pct": 0
+        }
+      }
+    ],
+    "active": [
+      {
+        "id": "001",
+        "name": "Cannibalization fix \u2014 Zeppelin redirect",
+        "sprint_type": "RNK",
+        "status": "RUNNING",
+        "kpi": {
+          "metric": "zeppelin_ctr",
+          "display_label": "Zeppelin CTR",
+          "baseline_value": 41.7,
+          "baseline_display": "41.7%",
+          "target_value": 46.0,
+          "target_display": "46%",
+          "unit": "percent"
+        },
+        "timeline": {
+          "started": "2026-04-14",
+          "evaluation_date": "2026-05-26",
+          "window_days": 42
+        },
+        "url": "/products/zeppelin-harness",
+        "rationale": "Two pages were competing for the same query cluster. Implemented 301\nredirect from the older generic page to the Zeppelin product page.\nExpecting CTR lift as Google consolidates rankings.\n",
+        "evaluation": {
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": null,
+          "current_value": null,
+          "days_elapsed": 5
+        }
+      }
+    ],
+    "archive": [
+      {
+        "id": "000",
+        "name": "Copy rewrite \u2014 Extra Safe Harness",
+        "sprint_type": "CR",
+        "status": "WINNER",
+        "kpi": {
+          "metric": "add_to_cart_rate",
+          "display_label": "Add-to-cart rate",
+          "baseline_value": 1.4,
+          "baseline_display": "1.4%",
+          "final_value": 2.4,
+          "final_display": "2.4%",
+          "delta_pct": 71,
+          "delta_display": "+71%",
+          "unit": "percent"
+        },
+        "timeline": {
+          "started": "2026-03-10",
+          "evaluated": "2026-04-07",
+          "window_days": 28
+        },
+        "url": "/products/extra-safe-harness",
+        "outcome_note": "+$8.2K projected / 90d",
+        "evaluation_details": "Baseline measured over 14 days pre-change. Post-change measured over\n14 days following a 7-day stabilization window. Statistical significance\nconfirmed via 2-proportion z-test (p < 0.05).\n"
+      }
+    ]
+  },
+  "log": [
+    {
+      "ts": "2026-04-19T06:02:14Z",
+      "run_id": "scan-20260419-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 184231,
+      "pages_scanned": 34,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 34 pages. 2 new opportunities added to queue."
+    },
+    {
+      "ts": "2026-04-18T06:01:52Z",
+      "run_id": "scan-20260418-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 171002,
+      "pages_scanned": 23,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 23 pages. 0 new opportunities."
+    },
+    {
+      "ts": "2026-04-17T14:22:01Z",
+      "run_id": "sprint-002-queued",
+      "type": "sprint_queued",
+      "status": "success",
+      "sprint_id": "002",
+      "summary": "Added sprint #002: Add Zeppelin link to cat training guide. Priority: LINK/LOW-effort."
+    },
+    {
+      "ts": "2026-04-17T06:02:03Z",
+      "run_id": "scan-20260417-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 178441,
+      "pages_scanned": 28,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 28 pages. 1 new opportunity added."
+    },
+    {
+      "ts": "2026-04-16T06:01:48Z",
+      "run_id": "scan-20260416-060000",
+      "type": "daily_scan",
+      "status": "warning",
+      "duration_ms": 201004,
+      "pages_scanned": 40,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 40 pages. Ahrefs API rate-limited on 6 pages; will retry tomorrow.",
+      "warnings": [
+        "ahrefs_rate_limit_6_pages"
+      ]
+    },
+    {
+      "ts": "2026-04-15T06:02:11Z",
+      "run_id": "scan-20260415-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 169882,
+      "pages_scanned": 22,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 22 pages. 3 new opportunities added."
+    },
+    {
+      "ts": "2026-04-14T18:33:05Z",
+      "run_id": "sprint-001-started",
+      "type": "sprint_started",
+      "status": "success",
+      "sprint_id": "001",
+      "summary": "Sprint #001 moved from queue to active. Baseline Zeppelin CTR: 41.7%. Evaluation date: 2026-05-26."
+    },
+    {
+      "ts": "2026-04-14T06:01:59Z",
+      "run_id": "scan-20260414-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 175220,
+      "pages_scanned": 31,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 31 pages. Sprint #001 opportunity promoted to queue."
+    },
+    {
+      "ts": "2026-04-13T06:02:07Z",
+      "run_id": "scan-20260413-060000",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 182100,
+      "pages_scanned": 28,
+      "sources": [
+        "gsc",
+        "ga4",
+        "shopify",
+        "ahrefs"
+      ],
+      "summary": "Scanned 28 pages. 0 new opportunities."
+    },
+    {
+      "ts": "2026-04-07T10:15:22Z",
+      "run_id": "sprint-000-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "000",
+      "outcome": "WINNER",
+      "summary": "Sprint #000 evaluated. Add-to-cart rate: 1.4% \u2192 2.4% (+71%). Projected +$8.2K / 90d."
+    }
+  ]
+}
