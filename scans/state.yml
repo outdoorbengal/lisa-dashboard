@@ -1,26 +1,28 @@
-# Weekly scan state — updated by Lisa's daily scan runs.
-# pages_scanned_today is reset by the Sunday rollover workflow.
+# Weekly scan state — updated by lisa_dashboard_sync.py.
 
 current_week:
-  week_of: "2026-04-13"  # Monday of the current week
+  week_of: '2026-04-20'
   pages_total: 283
-  daily_target: 40  # pages_total / 7, rounded
-
-  # Pages scanned per day this week (Mon=0 ... Sun=6)
-  daily_counts: [28, 31, 22, 40, 28, 23, 34]
-
+  daily_target: 40
+  daily_counts:
+  - 221
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   sources:
-    - name: "Google Search Console"
-      connected: true
-      last_pull: "2026-04-19T06:00:00Z"
-    - name: "Google Analytics 4"
-      connected: true
-      last_pull: "2026-04-19T06:00:00Z"
-    - name: "Shopify Admin API"
-      connected: true
-      last_pull: "2026-04-19T06:00:00Z"
-    - name: "Ahrefs API"
-      connected: true
-      last_pull: "2026-04-19T06:00:00Z"
-
-  opportunities_discovered: 12
+  - name: Google Search Console
+    connected: true
+    last_pull: '2026-04-20T13:43:43Z'
+  - name: Google Analytics 4
+    connected: true
+    last_pull: '2026-04-20T13:43:43Z'
+  - name: Shopify Admin API
+    connected: true
+    last_pull: '2026-04-20T13:43:43Z'
+  - name: Ahrefs API
+    connected: true
+    last_pull: '2026-04-19T06:00:00Z'
+  opportunities_discovered: 132
