@@ -1,41 +1,6 @@
 # Sprint queue — auto-managed. See scripts/sprint_action.py
 
 sprints:
-- id: '005'
-  created: '2026-04-20'
-  title: Push to page 1 — extra-safe-cat-harness
-  url: /products/extra-safe-cat-harness
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 7.4
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 4
-    target_display: +3/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1165 impressions
-    but page 2
-
-
-    Evidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%
-
-    Engine priority: 6.0  •  Dashboard impact: 35.92'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0016
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-20T13:44:13.968884+00:00'
-    last_refreshed: '2026-04-20T13:44:17Z'
-    dashboard_impact: 35.92
 - id: '006'
   created: '2026-04-20'
   title: Push to page 1 — portable-litterbox
