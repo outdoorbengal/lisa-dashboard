@@ -1,23 +1,23 @@
 {
   "generated": "2026-04-20",
-  "week_of": "Apr 13 2026",
+  "week_of": "Apr 20 2026",
   "system": {
     "status": "OK",
-    "pages_scanned": 206,
+    "pages_scanned": 442,
     "pages_total": 283,
     "sources_connected": 4,
     "sources_total": 4,
-    "opportunities": 12,
+    "opportunities": 132,
     "active_tests": 1,
-    "days_complete": 7,
+    "days_complete": 1,
     "scan_bars": [
-      70,
-      78,
-      55,
       100,
-      70,
-      57,
-      85
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   "donuts": {
@@ -86,38 +86,4588 @@
   ],
   "sprints": [
     {
-      "id": "002",
+      "id": "004",
       "status": "UNACKNOWLEDGED",
-      "days_waiting": 3,
-      "title": "Add Zeppelin link to cat training guide",
-      "url": "/blogs/clicker-training-cats/cat-training-guide",
-      "sprint_type": "LINK",
-      "impact_label": "Referral sessions to Zeppelin",
-      "current_pct": 5,
-      "current_label": "~0 now",
-      "target_pct": 50.0,
-      "target_label": "+25/wk",
-      "effort_label": "LOW \u2014 1 sentence + link",
-      "effort_pct": 6
+      "days_waiting": 0,
+      "title": "Conversion fix \u2014 zeppelin-cat-carrier",
+      "url": "/products/zeppelin-cat-carrier",
+      "sprint_type": "CR",
+      "impact_label": "Conversion rate \u00b7 4772 sessions",
+      "current_pct": 17.2,
+      "current_label": "0.86% now",
+      "target_pct": 27.2,
+      "target_label": "1.36%",
+      "effort_label": "HIGH \u2014 Full rewrite / restructure",
+      "effort_pct": 18
     },
     {
-      "id": "003",
+      "id": "005",
       "status": "NEXT_UP",
-      "days_waiting": 1,
-      "title": "Fix title tag \u2014 best cat names article",
-      "url": "/blogs/fun-stuff/best-cat-names",
-      "sprint_type": "CTR",
-      "impact_label": "CTR \u00b7 114K impressions \u00b7 pos 12.6",
-      "current_pct": 5.4,
-      "current_label": "0.27% now",
-      "target_pct": 20.0,
-      "target_label": "1%+",
-      "effort_label": "LOW \u2014 Title tag rewrite",
-      "effort_pct": 6
+      "days_waiting": 0,
+      "title": "Push to page 1 \u2014 extra-safe-cat-harness",
+      "url": "/products/extra-safe-cat-harness",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 7.4",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 4.0,
+      "target_label": "+3/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12
     }
   ],
   "details": {
     "queue": [
+      {
+        "id": "004",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 zeppelin-cat-carrier",
+        "url": "/products/zeppelin-cat-carrier",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 4772 sessions",
+          "current_value": 0.86,
+          "current_display": "0.86% now",
+          "target_value": 1.36,
+          "target_display": "1.36%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "4772 organic sessions but only 0.86% conversion \u2014 revenue leak\n\nEvidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220\nEngine priority: 5.5  \u2022  Dashboard impact: 39.43",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0446",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976665+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 39.43
+        }
+      },
+      {
+        "id": "005",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 extra-safe-cat-harness",
+        "url": "/products/extra-safe-cat-harness",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.4",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 4,
+          "target_display": "+3/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 7.4 for 'best cat harness escape proof' \u2014 1165 impressions but page 2\n\nEvidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%\nEngine priority: 6.0  \u2022  Dashboard impact: 35.92",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0016",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968884+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 35.92
+        }
+      },
+      {
+        "id": "006",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 portable-litterbox",
+        "url": "/products/portable-litterbox",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 3,
+          "target_display": "+2/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 13.3 for 'travel litter box' \u2014 853 impressions but page 2\n\nEvidence: pos=13.3 | impressions=853 | clicks=13 | CTR=1.5%\nEngine priority: 6.0  \u2022  Dashboard impact: 34.35",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0046",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969181+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 34.35
+        }
+      },
+      {
+        "id": "007",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 keeper-airtag-holder-for-cat-collar",
+        "url": "/products/keeper-airtag-holder-for-cat-collar",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+2/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 11.3 for 'airtag cat collar' \u2014 699 impressions but page 2\n\nEvidence: pos=11.3 | impressions=699 | clicks=1 | CTR=0.1%\nEngine priority: 6.0  \u2022  Dashboard impact: 33.35",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0389",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.973214+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 33.35
+        }
+      },
+      {
+        "id": "008",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-training-guide",
+        "url": "/blogs/clicker-training-cats/cat-training-guide",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.9",
+          "current_value": 1090,
+          "current_display": "~1090/wk now",
+          "target_value": 5452,
+          "target_display": "+4361/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 2.8% benchmark \u2014 39345 clicks/period uncaptured\n\nEvidence: impressions=1417559 | CTR=0.0% | expected=2.8% | pos=9.9\nEngine priority: 5.33  \u2022  Dashboard impact: 32.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0407",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975540+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 32.79
+        }
+      },
+      {
+        "id": "009",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 catgility-cat-agility-course",
+        "url": "/products/catgility-cat-agility-course",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 6.1 for 'cat agility course' \u2014 342 impressions but page 2\n\nEvidence: pos=6.1 | impressions=342 | clicks=12 | CTR=3.5%\nEngine priority: 6.0  \u2022  Dashboard impact: 29.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0049",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969208+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 29.79
+        }
+      },
+      {
+        "id": "010",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
+        "url": "/products/zeppelin-cat-carrier",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 6.2 for 'zeppelin cat' \u2014 227 impressions but page 2\n\nEvidence: pos=6.2 | impressions=227 | clicks=2 | CTR=0.9%\nEngine priority: 6.0  \u2022  Dashboard impact: 27.78",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0289",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971647+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 27.78
+        }
+      },
+      {
+        "id": "011",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 clicker-training-starter-kit",
+        "url": "/products/clicker-training-starter-kit",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.3 for 'cat clicker training kit' \u2014 214 impressions but page 2\n\nEvidence: pos=10.3 | impressions=214 | clicks=1 | CTR=0.5%\nEngine priority: 6.0  \u2022  Dashboard impact: 27.5",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0385",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.973148+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 27.5
+        }
+      },
+      {
+        "id": "012",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 clicker-training-starter-kit",
+        "url": "/products/clicker-training-starter-kit",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 222 sessions",
+          "current_value": 0.45,
+          "current_display": "0.45% now",
+          "target_value": 0.95,
+          "target_display": "0.95%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "222 organic sessions but only 0.45% conversion \u2014 revenue leak\n\nEvidence: sessions=222 | CR=0.45% | ATC=7.2% | AOV=$30\nEngine priority: 5.5  \u2022  Dashboard impact: 26.85",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0452",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976740+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 26.85
+        }
+      },
+      {
+        "id": "013",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 breakaway-cat-collar",
+        "url": "/products/breakaway-cat-collar",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.0",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.0 for 'outdoor cat collar' \u2014 186 impressions but page 2\n\nEvidence: pos=9.0 | impressions=186 | clicks=3 | CTR=1.6%\nEngine priority: 6.0  \u2022  Dashboard impact: 26.82",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0211",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970832+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 26.82
+        }
+      },
+      {
+        "id": "014",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 5.2",
+          "current_value": 15,
+          "current_display": "~15/wk now",
+          "target_value": 75,
+          "target_display": "+60/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 5.2 for 'how to teach a cat tricks' \u2014 19664 impressions but page 2\n\nEvidence: pos=5.2 | impressions=19664 | clicks=29 | CTR=0.1%\nEngine priority: 4.8  \u2022  Dashboard impact: 26.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0011",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968825+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 26.79
+        }
+      },
+      {
+        "id": "015",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 rope-leash",
+        "url": "/products/rope-leash",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.3 for 'long leash for cats' \u2014 165 impressions but page 2\n\nEvidence: pos=10.3 | impressions=165 | clicks=1 | CTR=0.6%\nEngine priority: 6.0  \u2022  Dashboard impact: 26.24",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0393",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.973258+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 26.24
+        }
+      },
+      {
+        "id": "016",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-gear",
+        "url": "/collections/adventure-cat-gear",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.7",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 5,
+          "target_display": "+4/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 8.7 for 'adventure cat harness' \u2014 1423 impressions but page 2\n\nEvidence: pos=8.7 | impressions=1423 | clicks=3 | CTR=0.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 25.6",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0210",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970816+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 25.6
+        }
+      },
+      {
+        "id": "017",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 1454 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "1454 organic sessions but 61% bounce rate \u2014 users not finding what they need\n\nEvidence: sessions=1454 | bounce=61% | CR=0.00%\nEngine priority: 5.4  \u2022  Dashboard impact: 25.56",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0447",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976678+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 25.56
+        }
+      },
+      {
+        "id": "018",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 (not set)",
+        "url": "(not set)",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 1406 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "1406 organic sessions but 97% bounce rate \u2014 users not finding what they need\n\nEvidence: sessions=1406 | bounce=97% | CR=0.00%\nEngine priority: 5.4  \u2022  Dashboard impact: 25.46",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0448",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976687+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 25.46
+        }
+      },
+      {
+        "id": "019",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-to-discipline-a-cat",
+        "url": "/blogs/correcting-cat-behavior/how-to-discipline-a-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.7",
+          "current_value": 28,
+          "current_display": "~28/wk now",
+          "target_value": 141,
+          "target_display": "+113/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 1.9% vs 4.5% benchmark \u2014 946 clicks/period uncaptured\n\nEvidence: impressions=36919 | CTR=1.9% | expected=4.5% | pos=6.7\nEngine priority: 5.33  \u2022  Dashboard impact: 24.34",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0401",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975367+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 24.34
+        }
+      },
+      {
+        "id": "020",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 biggest-and-smallest-cat-breeds",
+        "url": "/blogs/cat-breeds/biggest-and-smallest-cat-breeds",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.7",
+          "current_value": 21,
+          "current_display": "~21/wk now",
+          "target_value": 109,
+          "target_display": "+87/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.2% vs 2.8% benchmark \u2014 734 clicks/period uncaptured\n\nEvidence: impressions=28533 | CTR=0.2% | expected=2.8% | pos=9.7\nEngine priority: 5.33  \u2022  Dashboard impact: 23.75",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0411",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975611+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.75
+        }
+      },
+      {
+        "id": "021",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 insta-360",
+        "url": "/blogs/product-reviews/insta-360",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.7",
+          "current_value": 21,
+          "current_display": "~21/wk now",
+          "target_value": 107,
+          "target_display": "+86/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 1.1% vs 3.3% benchmark \u2014 603 clicks/period uncaptured\n\nEvidence: impressions=27986 | CTR=1.1% | expected=3.3% | pos=8.7\nEngine priority: 5.33  \u2022  Dashboard impact: 23.7",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0403",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975425+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.7
+        }
+      },
+      {
+        "id": "022",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 best-cat-harnesses-for-walking",
+        "url": "/blogs/adventure-cat-training/best-cat-harnesses-for-walking",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 30.2",
+          "current_value": 20,
+          "current_display": "~20/wk now",
+          "target_value": 104,
+          "target_display": "+83/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.2% vs 0.5% benchmark \u2014 80 clicks/period uncaptured\n\nEvidence: impressions=27215 | CTR=0.2% | expected=0.5% | pos=30.2\nEngine priority: 5.33  \u2022  Dashboard impact: 23.64",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0416",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975804+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.64
+        }
+      },
+      {
+        "id": "023",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 gaining-your-scared-or-distant-cat-s-trust",
+        "url": "/blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.4",
+          "current_value": 19,
+          "current_display": "~19/wk now",
+          "target_value": 99,
+          "target_display": "+79/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 1.9% vs 4.5% benchmark \u2014 680 clicks/period uncaptured\n\nEvidence: impressions=25811 | CTR=1.9% | expected=4.5% | pos=7.4\nEngine priority: 5.33  \u2022  Dashboard impact: 23.52",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0404",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975478+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.52
+        }
+      },
+      {
+        "id": "024",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 cat-training-guide",
+        "url": "/blogs/clicker-training-cats/cat-training-guide",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 717 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "717 organic sessions but 57% bounce rate \u2014 users not finding what they need\n\nEvidence: sessions=717 | bounce=57% | CR=0.00%\nEngine priority: 5.4  \u2022  Dashboard impact: 23.41",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0450",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976712+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.41
+        }
+      },
+      {
+        "id": "025",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 best-cat-names",
+        "url": "/blogs/fun-stuff/best-cat-names",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 12.2",
+          "current_value": 17,
+          "current_display": "~17/wk now",
+          "target_value": 87,
+          "target_display": "+69/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.5% vs 1.0% benchmark \u2014 110 clicks/period uncaptured\n\nEvidence: impressions=22710 | CTR=0.5% | expected=1.0% | pos=12.2\nEngine priority: 5.33  \u2022  Dashboard impact: 23.22",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0413",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975651+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.22
+        }
+      },
+      {
+        "id": "026",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 most-aesthetic-cat-trees",
+        "url": "/blogs/enriching-indoors/most-aesthetic-cat-trees",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.8",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 19,
+          "target_display": "+15/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 8.8 for 'aesthetic cat tree' \u2014 5055 impressions but page 2\n\nEvidence: pos=8.8 | impressions=5055 | clicks=113 | CTR=2.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 23.12",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0002",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968713+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.12
+        }
+      },
+      {
+        "id": "027",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 carriers",
+        "url": "/collections/carriers",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 4.0",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 8,
+          "target_display": "+6/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 3.1% vs 8.0% benchmark \u2014 106 clicks/period uncaptured\n\nEvidence: impressions=2152 | CTR=3.1% | expected=8.0% | pos=4.0\nEngine priority: 5.33  \u2022  Dashboard impact: 23.11",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0406",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975505+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 23.11
+        }
+      },
+      {
+        "id": "028",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 travel-with-a-cat",
+        "url": "/blogs/adventure-cat-training/travel-with-a-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.5",
+          "current_value": 13,
+          "current_display": "~13/wk now",
+          "target_value": 67,
+          "target_display": "+53/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.0% vs 3.8% benchmark \u2014 310 clicks/period uncaptured\n\nEvidence: impressions=17522 | CTR=2.0% | expected=3.8% | pos=8.5\nEngine priority: 5.33  \u2022  Dashboard impact: 22.62",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0402",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975396+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 22.62
+        }
+      },
+      {
+        "id": "029",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing",
+        "url": "/blogs/cat-advice/lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.8",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 15,
+          "target_display": "+12/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.8 for 'chances of finding lost cat after 24 hours' \u2014 4010 impressions but page 2\n\nEvidence: pos=9.8 | impressions=4010 | clicks=38 | CTR=0.9%\nEngine priority: 4.8  \u2022  Dashboard impact: 22.49",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0007",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968775+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 22.49
+        }
+      },
+      {
+        "id": "030",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 kitten-collars",
+        "url": "/blogs/adventure-cat-training/kitten-collars",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.5",
+          "current_value": 12,
+          "current_display": "~12/wk now",
+          "target_value": 61,
+          "target_display": "+49/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.5% vs 1.0% benchmark \u2014 75 clicks/period uncaptured\n\nEvidence: impressions=16034 | CTR=0.5% | expected=1.0% | pos=11.5\nEngine priority: 5.33  \u2022  Dashboard impact: 22.41",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0409",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975580+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 22.41
+        }
+      },
+      {
+        "id": "031",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 best-cat-harness",
+        "url": "/blogs/adventure-cat-training/best-cat-harness",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 40.4",
+          "current_value": 10,
+          "current_display": "~10/wk now",
+          "target_value": 53,
+          "target_display": "+42/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 68 clicks/period uncaptured\n\nEvidence: impressions=13893 | CTR=0.0% | expected=0.5% | pos=40.4\nEngine priority: 5.33  \u2022  Dashboard impact: 22.08",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0433",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976254+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 22.08
+        }
+      },
+      {
+        "id": "032",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 most-aesthetic-cat-trees",
+        "url": "/blogs/enriching-indoors/most-aesthetic-cat-trees",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 1009 sessions",
+          "current_value": 0.1,
+          "current_display": "0.10% now",
+          "target_value": 0.6,
+          "target_display": "0.60%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "1009 organic sessions but only 0.10% conversion \u2014 revenue leak\n\nEvidence: sessions=1009 | CR=0.10% | ATC=0.6% | AOV=$129\nEngine priority: 5.5  \u2022  Dashboard impact: 22.03",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0449",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976703+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 22.03
+        }
+      },
+      {
+        "id": "033",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 the-perfect-travel-litterbox",
+        "url": "/blogs/adventure-cat-training/the-perfect-travel-litterbox",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.3",
+          "current_value": 9,
+          "current_display": "~9/wk now",
+          "target_value": 48,
+          "target_display": "+38/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.7% vs 2.8% benchmark \u2014 262 clicks/period uncaptured\n\nEvidence: impressions=12666 | CTR=0.7% | expected=2.8% | pos=10.3\nEngine priority: 5.33  \u2022  Dashboard impact: 21.87",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0415",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975690+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 21.87
+        }
+      },
+      {
+        "id": "034",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 bengal-cat-101",
+        "url": "/blogs/bengal-cats/bengal-cat-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.0",
+          "current_value": 9,
+          "current_display": "~9/wk now",
+          "target_value": 47,
+          "target_display": "+37/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.2% vs 1.0% benchmark \u2014 96 clicks/period uncaptured\n\nEvidence: impressions=12234 | CTR=0.2% | expected=1.0% | pos=13.0\nEngine priority: 5.33  \u2022  Dashboard impact: 21.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0422",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975972+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 21.79
+        }
+      },
+      {
+        "id": "035",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 cat-worms-explained",
+        "url": "/blogs/cat-health/cat-worms-explained",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "1248 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=1248 | product_links=0 | blog_type=Cat Health\nEngine priority: 6.0  \u2022  Dashboard impact: 21.45",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0454",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976862+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 21.45
+        }
+      },
+      {
+        "id": "036",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 best-escape-proof-harness",
+        "url": "/blogs/adventure-cat-training/best-escape-proof-harness",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 50.9",
+          "current_value": 7,
+          "current_display": "~7/wk now",
+          "target_value": 35,
+          "target_display": "+28/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 45 clicks/period uncaptured\n\nEvidence: impressions=9155 | CTR=0.0% | expected=0.5% | pos=50.9\nEngine priority: 5.33  \u2022  Dashboard impact: 21.12",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0445",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976644+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 21.12
+        }
+      },
+      {
+        "id": "037",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 gaining-your-scared-or-distant-cat-s-trust",
+        "url": "/blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "1026 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=1026 | product_links=0 | blog_type=Understanding Cat Behavior\nEngine priority: 6.0  \u2022  Dashboard impact: 20.94",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0453",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976817+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 20.94
+        }
+      },
+      {
+        "id": "038",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-training-beginners",
+        "url": "/products/adventure-cat-training-beginners",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.8% vs 3.3% benchmark \u2014 9 clicks/period uncaptured\n\nEvidence: impressions=388 | CTR=0.8% | expected=3.3% | pos=9.1\nEngine priority: 5.33  \u2022  Dashboard impact: 20.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0425",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976021+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 20.79
+        }
+      },
+      {
+        "id": "039",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 savannah-vs-bengal-cat",
+        "url": "/blogs/cat-breeds/savannah-vs-bengal-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.0",
+          "current_value": 5,
+          "current_display": "~5/wk now",
+          "target_value": 28,
+          "target_display": "+23/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.4% vs 4.5% benchmark \u2014 160 clicks/period uncaptured\n\nEvidence: impressions=7533 | CTR=2.4% | expected=4.5% | pos=7.0\nEngine priority: 5.33  \u2022  Dashboard impact: 20.67",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0408",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975562+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 20.67
+        }
+      },
+      {
+        "id": "040",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 all",
+        "url": "/collections/all",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.5",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 6.5 for 'zeppelin cat carrier' \u2014 343 impressions but page 2\n\nEvidence: pos=6.5 | impressions=343 | clicks=26 | CTR=7.6%\nEngine priority: 4.8  \u2022  Dashboard impact: 20.67",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0013",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968851+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 20.67
+        }
+      },
+      {
+        "id": "041",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 stop-begging",
+        "url": "/blogs/correcting-cat-behavior/stop-begging",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.8",
+          "current_value": 4,
+          "current_display": "~4/wk now",
+          "target_value": 24,
+          "target_display": "+19/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.9% vs 3.8% benchmark \u2014 184 clicks/period uncaptured\n\nEvidence: impressions=6318 | CTR=0.9% | expected=3.8% | pos=7.8\nEngine priority: 5.33  \u2022  Dashboard impact: 20.26",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0414",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975672+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 20.26
+        }
+      },
+      {
+        "id": "042",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 travel-with-a-cat",
+        "url": "/blogs/adventure-cat-training/travel-with-a-cat",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 477 sessions",
+          "current_value": 0.21,
+          "current_display": "0.21% now",
+          "target_value": 0.71,
+          "target_display": "0.71%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "477 organic sessions but only 0.21% conversion \u2014 revenue leak\n\nEvidence: sessions=477 | CR=0.21% | ATC=2.1% | AOV=$40\nEngine priority: 5.5  \u2022  Dashboard impact: 19.98",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0451",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976726+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.98
+        }
+      },
+      {
+        "id": "043",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
+        "url": "/blogs/correcting-cat-behavior/teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.2",
+          "current_value": 4,
+          "current_display": "~4/wk now",
+          "target_value": 21,
+          "target_display": "+16/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.5% vs 5.3% benchmark \u2014 153 clicks/period uncaptured\n\nEvidence: impressions=5491 | CTR=2.5% | expected=5.3% | pos=6.2\nEngine priority: 5.33  \u2022  Dashboard impact: 19.94",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0419",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975923+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.94
+        }
+      },
+      {
+        "id": "044",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cats-can-eat-these-foods",
+        "url": "/blogs/cat-health/cats-can-eat-these-foods",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.6",
+          "current_value": 4,
+          "current_display": "~4/wk now",
+          "target_value": 20,
+          "target_display": "+16/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.1% vs 1.0% benchmark \u2014 50 clicks/period uncaptured\n\nEvidence: impressions=5374 | CTR=0.1% | expected=1.0% | pos=11.6\nEngine priority: 5.33  \u2022  Dashboard impact: 19.89",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0428",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976074+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.89
+        }
+      },
+      {
+        "id": "045",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 train-a-cat-to-not-bite",
+        "url": "/blogs/correcting-cat-behavior/train-a-cat-to-not-bite",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.4",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 18,
+          "target_display": "+14/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.8% vs 2.8% benchmark \u2014 94 clicks/period uncaptured\n\nEvidence: impressions=4798 | CTR=0.8% | expected=2.8% | pos=10.4\nEngine priority: 5.33  \u2022  Dashboard impact: 19.62",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0420",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975937+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.62
+        }
+      },
+      {
+        "id": "046",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 using-airtag-on-cats",
+        "url": "/blogs/cat-advice/using-airtag-on-cats",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.2",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 17,
+          "target_display": "+14/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.8% vs 3.3% benchmark \u2014 117 clicks/period uncaptured\n\nEvidence: impressions=4611 | CTR=0.8% | expected=3.3% | pos=9.2\nEngine priority: 5.33  \u2022  Dashboard impact: 19.53",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0424",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976002+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.53
+        }
+      },
+      {
+        "id": "047",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 best-cat-backpack",
+        "url": "/blogs/adventure-cat-training/best-cat-backpack",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 21.6",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 15,
+          "target_display": "+12/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.3% vs 0.5% benchmark \u2014 8 clicks/period uncaptured\n\nEvidence: impressions=4075 | CTR=0.3% | expected=0.5% | pos=21.6\nEngine priority: 5.33  \u2022  Dashboard impact: 19.25",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0418",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975892+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.25
+        }
+      },
+      {
+        "id": "048",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 breakaway-collars",
+        "url": "/blogs/adventure-cat-training/breakaway-collars",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.2",
+          "current_value": 3,
+          "current_display": "~3/wk now",
+          "target_value": 15,
+          "target_display": "+12/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.1% vs 1.0% benchmark \u2014 37 clicks/period uncaptured\n\nEvidence: impressions=4052 | CTR=0.1% | expected=1.0% | pos=13.2\nEngine priority: 5.33  \u2022  Dashboard impact: 19.23",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0434",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976318+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 19.23
+        }
+      },
+      {
+        "id": "049",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 what-to-do-if-my-cat-wont-let-me-sleep",
+        "url": "/blogs/correcting-cat-behavior/what-to-do-if-my-cat-wont-let-me-sleep",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "482 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=482 | product_links=0 | blog_type=Correcting Cat Behavior\nEngine priority: 6.0  \u2022  Dashboard impact: 18.98",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0455",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976874+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.98
+        }
+      },
+      {
+        "id": "050",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 35057 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 35057 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=35057 | current_title='What Tricks Can a Cat Learn (12 Cat Tricks + How t'\nEngine priority: 4.17  \u2022  Dashboard impact: 18.95",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0468",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977029+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.95
+        }
+      },
+      {
+        "id": "051",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 the-historic-reason-people-hate-cats",
+        "url": "/blogs/cat-advice/the-historic-reason-people-hate-cats",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.9",
+          "current_value": 2,
+          "current_display": "~2/wk now",
+          "target_value": 12,
+          "target_display": "+9/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.8% vs 2.8% benchmark \u2014 65 clicks/period uncaptured\n\nEvidence: impressions=3195 | CTR=0.8% | expected=2.8% | pos=9.9\nEngine priority: 5.33  \u2022  Dashboard impact: 18.69",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0417",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975827+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.69
+        }
+      },
+      {
+        "id": "052",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 female-cat-101",
+        "url": "/blogs/cat-advice/female-cat-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.3",
+          "current_value": 2,
+          "current_display": "~2/wk now",
+          "target_value": 11,
+          "target_display": "+9/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.6% vs 3.8% benchmark \u2014 97 clicks/period uncaptured\n\nEvidence: impressions=3069 | CTR=0.6% | expected=3.8% | pos=8.3\nEngine priority: 5.33  \u2022  Dashboard impact: 18.59",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0426",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976041+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.59
+        }
+      },
+      {
+        "id": "053",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 savannah-vs-bengal-cat",
+        "url": "/blogs/cat-breeds/savannah-vs-bengal-cat",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "391 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=391 | product_links=0 | blog_type=Cat Breeds\nEngine priority: 6.0  \u2022  Dashboard impact: 18.44",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0459",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976927+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.44
+        }
+      },
+      {
+        "id": "054",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 catification-the-art-of-co-living-with-cats",
+        "url": "/blogs/enriching-indoors/catification-the-art-of-co-living-with-cats",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.5",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 3,
+          "target_display": "+2/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.5 for 'catification' \u2014 854 impressions but page 2\n\nEvidence: pos=9.5 | impressions=854 | clicks=4 | CTR=0.5%\nEngine priority: 4.8  \u2022  Dashboard impact: 18.32",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0155",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970267+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.32
+        }
+      },
+      {
+        "id": "055",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-to-pick-your-breeder",
+        "url": "/blogs/cat-breeds/how-to-pick-your-breeder",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 14.9",
+          "current_value": 2,
+          "current_display": "~2/wk now",
+          "target_value": 10,
+          "target_display": "+8/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.1% vs 1.0% benchmark \u2014 23 clicks/period uncaptured\n\nEvidence: impressions=2630 | CTR=0.1% | expected=1.0% | pos=14.9\nEngine priority: 5.33  \u2022  Dashboard impact: 18.24",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0437",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976365+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.24
+        }
+      },
+      {
+        "id": "056",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
+        "url": "/blogs/product-reviews/zeppelin-cat-carrier",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.4",
+          "current_value": 2,
+          "current_display": "~2/wk now",
+          "target_value": 10,
+          "target_display": "+8/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 1.7% vs 4.5% benchmark \u2014 72 clicks/period uncaptured\n\nEvidence: impressions=2603 | CTR=1.7% | expected=4.5% | pos=7.4\nEngine priority: 5.33  \u2022  Dashboard impact: 18.21",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0412",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975627+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.21
+        }
+      },
+      {
+        "id": "057",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 about-us",
+        "url": "/pages/about-us",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.1",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 9,
+          "target_display": "+7/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.5% vs 5.3% benchmark \u2014 71 clicks/period uncaptured\n\nEvidence: impressions=2552 | CTR=2.5% | expected=5.3% | pos=6.1\nEngine priority: 5.33  \u2022  Dashboard impact: 18.17",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0405",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975493+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 18.17
+        }
+      },
+      {
+        "id": "058",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 tactical-cat-harness",
+        "url": "/blogs/adventure-cat-training/tactical-cat-harness",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.2",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 8,
+          "target_display": "+6/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 1.9% vs 3.3% benchmark \u2014 30 clicks/period uncaptured\n\nEvidence: impressions=2257 | CTR=1.9% | expected=3.3% | pos=9.2\nEngine priority: 5.33  \u2022  Dashboard impact: 17.88",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0410",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975595+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.88
+        }
+      },
+      {
+        "id": "059",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 collections",
+        "url": "/collections",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.9",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 8,
+          "target_display": "+6/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.4% vs 1.0% benchmark \u2014 12 clicks/period uncaptured\n\nEvidence: impressions=2190 | CTR=0.4% | expected=1.0% | pos=10.9\nEngine priority: 5.33  \u2022  Dashboard impact: 17.82",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0421",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975951+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.82
+        }
+      },
+      {
+        "id": "060",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 top-cat-breeds",
+        "url": "/blogs/cat-breeds/top-cat-breeds",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.5",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 7,
+          "target_display": "+6/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.8% vs 3.8% benchmark \u2014 60 clicks/period uncaptured\n\nEvidence: impressions=2025 | CTR=0.8% | expected=3.8% | pos=8.5\nEngine priority: 5.33  \u2022  Dashboard impact: 17.63",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0427",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976060+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.63
+        }
+      },
+      {
+        "id": "061",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 female-cat-101",
+        "url": "/blogs/cat-advice/female-cat-101",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "262 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=262 | product_links=0 | blog_type=Cat Advice\nEngine priority: 6.0  \u2022  Dashboard impact: 17.41",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0456",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976893+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.41
+        }
+      },
+      {
+        "id": "062",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-to-teach-a-cat-to-sit-and-stay",
+        "url": "/blogs/clicker-training-cats/how-to-teach-a-cat-to-sit-and-stay",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.8",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 8.8 for 'how to teach a cat to sit' \u2014 583 impressions but page 2\n\nEvidence: pos=8.8 | impressions=583 | clicks=2 | CTR=0.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 17.3",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0249",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971227+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.3
+        }
+      },
+      {
+        "id": "063",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 feeding-cats",
+        "url": "/blogs/cat-health/feeding-cats",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 17.7",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 17.7 for 'best time to feed cats' \u2014 581 impressions but page 2\n\nEvidence: pos=17.7 | impressions=581 | clicks=1 | CTR=0.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 17.29",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0337",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.972404+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.29
+        }
+      },
+      {
+        "id": "064",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 how-to-tell-kittens-gender",
+        "url": "/blogs/cat-advice/how-to-tell-kittens-gender",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "250 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=250 | product_links=0 | blog_type=Cat Advice\nEngine priority: 6.0  \u2022  Dashboard impact: 17.28",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0457",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976902+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.28
+        }
+      },
+      {
+        "id": "065",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-birthday-party",
+        "url": "/blogs/fun-stuff/cat-birthday-party",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 12.8",
+          "current_value": 1,
+          "current_display": "~1/wk now",
+          "target_value": 6,
+          "target_display": "+5/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.4% vs 1.0% benchmark \u2014 10 clicks/period uncaptured\n\nEvidence: impressions=1667 | CTR=0.4% | expected=1.0% | pos=12.8\nEngine priority: 5.33  \u2022  Dashboard impact: 17.19",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0439",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976403+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.19
+        }
+      },
+      {
+        "id": "066",
+        "created": "2026-04-20",
+        "title": "Conversion fix \u2014 rehome-a-cat",
+        "url": "/blogs/cat-advice/rehome-a-cat",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 0 sessions",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.5,
+          "target_display": "0.50%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "224 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted\n\nEvidence: sessions=224 | product_links=0 | blog_type=Cat Advice\nEngine priority: 6.0  \u2022  Dashboard impact: 17.0",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0458",
+          "opportunity_type": "CONVERSION_OPTIMIZATION",
+          "detected_at": "2026-04-20T13:44:13.976912+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 17.0
+        }
+      },
+      {
+        "id": "067",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 what-to-do-if-my-cat-wont-let-me-sleep",
+        "url": "/blogs/correcting-cat-behavior/what-to-do-if-my-cat-wont-let-me-sleep",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 5.5",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 5.5 for 'cat wont let me sleep' \u2014 489 impressions but page 2\n\nEvidence: pos=5.5 | impressions=489 | clicks=17 | CTR=3.5%\nEngine priority: 4.8  \u2022  Dashboard impact: 16.84",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0032",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969050+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.84
+        }
+      },
+      {
+        "id": "068",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 savannah-cat-101",
+        "url": "/blogs/cat-breeds/savannah-cat-101",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 10475 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 10475 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=10475 | current_title='Savannah Cat 101 - Personality, Traits, Price & Si'\nEngine priority: 4.17  \u2022  Dashboard impact: 16.77",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0484",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977182+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.77
+        }
+      },
+      {
+        "id": "069",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 107-ideas-to-try-with-your-cat",
+        "url": "/blogs/enriching-indoors/107-ideas-to-try-with-your-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.4",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.4 for 'things to do with your cat' \u2014 459 impressions but page 2\n\nEvidence: pos=10.4 | impressions=459 | clicks=3 | CTR=0.7%\nEngine priority: 4.8  \u2022  Dashboard impact: 16.67",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0200",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970707+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.67
+        }
+      },
+      {
+        "id": "070",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 best-escape-proof-harness",
+        "url": "/blogs/adventure-cat-training/best-escape-proof-harness",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 9155 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 9155 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=9155 | current_title='How to Find the Best Escape Proof Cat Harness'\nEngine priority: 4.17  \u2022  Dashboard impact: 16.52",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0466",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977004+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.52
+        }
+      },
+      {
+        "id": "071",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 put-a-harness-on-a-cat",
+        "url": "/blogs/adventure-cat-training/put-a-harness-on-a-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.4",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.4 for 'how to put a cat harness on' \u2014 430 impressions but page 2\n\nEvidence: pos=9.4 | impressions=430 | clicks=2 | CTR=0.5%\nEngine priority: 4.8  \u2022  Dashboard impact: 16.5",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0223",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970960+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.5
+        }
+      },
+      {
+        "id": "072",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 can-a-cat-be-trained-to-come-when-called",
+        "url": "/blogs/clicker-training-cats/can-a-cat-be-trained-to-come-when-called",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 12.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 4,
+          "target_display": "+3/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.3% vs 1.0% benchmark \u2014 8 clicks/period uncaptured\n\nEvidence: impressions=1176 | CTR=0.3% | expected=1.0% | pos=12.2\nEngine priority: 5.33  \u2022  Dashboard impact: 16.38",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0438",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976385+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.38
+        }
+      },
+      {
+        "id": "073",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-training",
+        "url": "/blogs/adventure-cat-training/adventure-cat-training",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.0",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 4,
+          "target_display": "+3/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.1% vs 1.0% benchmark \u2014 10 clicks/period uncaptured\n\nEvidence: impressions=1166 | CTR=0.1% | expected=1.0% | pos=11.0\nEngine priority: 5.33  \u2022  Dashboard impact: 16.37",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0431",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976158+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.37
+        }
+      },
+      {
+        "id": "074",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 savannah-vs-bengal-cat",
+        "url": "/blogs/cat-breeds/savannah-vs-bengal-cat",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 7533 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 7533 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=7533 | current_title='Savannah Cat vs. Bengal Cat - Exotic Breeds Side b'\nEngine priority: 4.17  \u2022  Dashboard impact: 16.17",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0487",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977208+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 16.17
+        }
+      },
+      {
+        "id": "075",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 stop-begging",
+        "url": "/blogs/correcting-cat-behavior/stop-begging",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 6318 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 6318 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=6318 | current_title='Stop Your Cat from Begging for Food (Vet Recommend'\nEngine priority: 4.17  \u2022  Dashboard impact: 15.85",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0478",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977121+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.85
+        }
+      },
+      {
+        "id": "076",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-training-guide",
+        "url": "/blogs/adventure-cat-training/adventure-cat-training-guide",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.8",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 3,
+          "target_display": "+2/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.1% vs 1.0% benchmark \u2014 7 clicks/period uncaptured\n\nEvidence: impressions=895 | CTR=0.1% | expected=1.0% | pos=13.8\nEngine priority: 5.33  \u2022  Dashboard impact: 15.76",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0432",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976191+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.76
+        }
+      },
+      {
+        "id": "077",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 should-you-walk-your-cat-on-a-leash",
+        "url": "/blogs/adventure-cat-training/should-you-walk-your-cat-on-a-leash",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 18.8",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 18.8 for 'how to train a cat to walk on a leash' \u2014 306 impressions but page 2\n\nEvidence: pos=18.8 | impressions=306 | clicks=1 | CTR=0.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.6",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0305",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971842+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.6
+        }
+      },
+      {
+        "id": "078",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
+        "url": "/blogs/correcting-cat-behavior/teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 5491 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 5491 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=5491 | current_title='Teaching NO to Your Cat to Stopping Unwanted Behav'\nEngine priority: 4.17  \u2022  Dashboard impact: 15.6",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0476",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977105+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.6
+        }
+      },
+      {
+        "id": "079",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 cats-can-eat-these-foods",
+        "url": "/blogs/cat-health/cats-can-eat-these-foods",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 5374 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 5374 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=5374 | current_title='Foods Your Cat CAN and CAN'T Eat - Don't Get it Wr'\nEngine priority: 4.17  \u2022  Dashboard impact: 15.56",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0475",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977089+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.56
+        }
+      },
+      {
+        "id": "080",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-agility",
+        "url": "/blogs/clicker-training-cats/cat-agility",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.8",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.8 for 'cat agility' \u2014 288 impressions but page 2\n\nEvidence: pos=9.8 | impressions=288 | clicks=1 | CTR=0.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.44",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0340",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.972434+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.44
+        }
+      },
+      {
+        "id": "081",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
+        "url": "/blogs/enriching-indoors/leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.5",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 7.5 for 'can cats be left alone overnight' \u2014 281 impressions but page 2\n\nEvidence: pos=7.5 | impressions=281 | clicks=2 | CTR=0.7%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.37",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0269",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971423+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.37
+        }
+      },
+      {
+        "id": "082",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 is-walking-a-cat-on-a-leash-a-good-idea",
+        "url": "/blogs/adventure-cat-training/is-walking-a-cat-on-a-leash-a-good-idea",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.6",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 7.6 for 'can i take my indoor cat outside on a leash' \u2014 263 impressions but page 2\n\nEvidence: pos=7.6 | impressions=263 | clicks=2 | CTR=0.8%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.2",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0217",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970908+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.2
+        }
+      },
+      {
+        "id": "083",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-grass",
+        "url": "/blogs/cat-health/cat-grass",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 15.4",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 15.4 for 'is cat grass good for cats' \u2014 249 impressions but page 2\n\nEvidence: pos=15.4 | impressions=249 | clicks=2 | CTR=0.8%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.06",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0241",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971147+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.06
+        }
+      },
+      {
+        "id": "084",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 20-beginner-tips",
+        "url": "/blogs/adventure-cat-training/20-beginner-tips",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 18.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 18.2 for 'cat harness training' \u2014 247 impressions but page 2\n\nEvidence: pos=18.2 | impressions=247 | clicks=1 | CTR=0.4%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.04",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0290",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971662+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.04
+        }
+      },
+      {
+        "id": "085",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 rehome-a-cat",
+        "url": "/blogs/cat-advice/rehome-a-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.9",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 7.9 for 'when to rehome a cat' \u2014 246 impressions but page 2\n\nEvidence: pos=7.9 | impressions=246 | clicks=8 | CTR=3.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.03",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0080",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969501+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.03
+        }
+      },
+      {
+        "id": "086",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 teach-your-cat-to-use-the-new-cat-tree",
+        "url": "/blogs/cat-advice/teach-your-cat-to-use-the-new-cat-tree",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.4",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 8.4 for 'how to get cat to use cat tree' \u2014 246 impressions but page 2\n\nEvidence: pos=8.4 | impressions=246 | clicks=5 | CTR=2.0%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.03",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0123",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969930+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 15.03
+        }
+      },
+      {
+        "id": "087",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 portable-litterboxes",
+        "url": "/blogs/adventure-cat-training/portable-litterboxes",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.1 for 'foldable litter box' \u2014 240 impressions but page 2\n\nEvidence: pos=10.1 | impressions=240 | clicks=2 | CTR=0.8%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.96",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0221",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970944+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.96
+        }
+      },
+      {
+        "id": "088",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 10-mistakes-people-make-when-walking-a-cat-on-a-leash",
+        "url": "/blogs/adventure-cat-training/10-mistakes-people-make-when-walking-a-cat-on-a-leash",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 35.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 3 clicks/period uncaptured\n\nEvidence: impressions=618 | CTR=0.0% | expected=0.5% | pos=35.3\nEngine priority: 5.33  \u2022  Dashboard impact: 14.91",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0442",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976579+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.91
+        }
+      },
+      {
+        "id": "089",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cats-can-talk",
+        "url": "/blogs/talking-buttons-for-cats/cats-can-talk",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.1 for 'cat language words' \u2014 229 impressions but page 2\n\nEvidence: pos=10.1 | impressions=229 | clicks=1 | CTR=0.4%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.84",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0376",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.973010+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.84
+        }
+      },
+      {
+        "id": "090",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-i-trained-my-bengal-cat",
+        "url": "/blogs/bengal-cats/how-i-trained-my-bengal-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 6.1 for 'how to train a bengal cat' \u2014 225 impressions but page 2\n\nEvidence: pos=6.1 | impressions=225 | clicks=6 | CTR=2.7%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.8",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0108",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969779+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.8
+        }
+      },
+      {
+        "id": "091",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 siberian-cat-101",
+        "url": "/blogs/cat-breeds/siberian-cat-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 19.0",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 19.0 for 'siberian cat personality' \u2014 220 impressions but page 2\n\nEvidence: pos=19.0 | impressions=220 | clicks=1 | CTR=0.5%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.74",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0335",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.972376+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.74
+        }
+      },
+      {
+        "id": "092",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 male-cats-101",
+        "url": "/blogs/cat-advice/male-cats-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 5.6",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 5.6 for 'male cat personality' \u2014 214 impressions but page 2\n\nEvidence: pos=5.6 | impressions=214 | clicks=4 | CTR=1.9%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.67",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0144",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970145+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.67
+        }
+      },
+      {
+        "id": "093",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 20-beginner-tips",
+        "url": "/blogs/adventure-cat-training/20-beginner-tips",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 3245 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 3245 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=3245 | current_title='20 Cat Harness Training Tips NOBODY Tells You (but'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.65",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0465",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976997+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.65
+        }
+      },
+      {
+        "id": "094",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 benefits-of-cat-harnesses",
+        "url": "/blogs/adventure-cat-training/benefits-of-cat-harnesses",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 37.3",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured\n\nEvidence: impressions=547 | CTR=0.0% | expected=0.5% | pos=37.3\nEngine priority: 5.33  \u2022  Dashboard impact: 14.64",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0444",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976610+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.64
+        }
+      },
+      {
+        "id": "095",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 savannah-cat-101",
+        "url": "/blogs/cat-breeds/savannah-cat-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.0",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 6.0 for 'savannah cat traits' \u2014 209 impressions but page 2\n\nEvidence: pos=6.0 | impressions=209 | clicks=7 | CTR=3.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.6",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0098",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969668+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.6
+        }
+      },
+      {
+        "id": "096",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 female-cat-101",
+        "url": "/blogs/cat-advice/female-cat-101",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 3069 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 3069 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=3069 | current_title='Female Cat 101 | Behavior, Personality & Traits of'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.55",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0481",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977155+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.55
+        }
+      },
+      {
+        "id": "097",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-breed-directory",
+        "url": "/pages/cat-breed-directory",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 10.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 10.2 for 'cat breed identifier chart' \u2014 202 impressions but page 2\n\nEvidence: pos=10.2 | impressions=202 | clicks=2 | CTR=1.0%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.52",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0286",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971600+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.52
+        }
+      },
+      {
+        "id": "098",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 homepage",
+        "url": "",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.5",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 7.5 for 'zeppelin cat carrier' \u2014 188 impressions but page 2\n\nEvidence: pos=7.5 | impressions=188 | clicks=19 | CTR=10.1%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.33",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0020",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.968932+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.33
+        }
+      },
+      {
+        "id": "099",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 zeppelin-cat-carrier",
+        "url": "/blogs/product-reviews/zeppelin-cat-carrier",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 2603 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 2603 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=2603 | current_title='Zeppelin Cat Carrier Review - Deep Dive'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.25",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0479",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977136+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.25
+        }
+      },
+      {
+        "id": "100",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-to-tell-kittens-gender",
+        "url": "/blogs/cat-advice/how-to-tell-kittens-gender",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.7",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 11.7 for 'how to tell a female cat from a male cat' \u2014 175 impressions but page 2\n\nEvidence: pos=11.7 | impressions=175 | clicks=1 | CTR=0.6%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.15",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0320",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.972037+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.15
+        }
+      },
+      {
+        "id": "101",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-training",
+        "url": "/blogs/adventure-cat-training",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 17.9",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 1.0% benchmark \u2014 4 clicks/period uncaptured\n\nEvidence: impressions=434 | CTR=0.0% | expected=1.0% | pos=17.9\nEngine priority: 5.33  \u2022  Dashboard impact: 14.11",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0441",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976535+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.11
+        }
+      },
+      {
+        "id": "102",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 bengal-cat-tips",
+        "url": "/blogs/bengal-cats/bengal-cat-tips",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 8.9",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 8.9 for 'why are bengal cats so vocal' \u2014 172 impressions but page 2\n\nEvidence: pos=8.9 | impressions=172 | clicks=3 | CTR=1.7%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.1",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0173",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.970440+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.1
+        }
+      },
+      {
+        "id": "103",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 bright-vs-neutral-collars-for-cats",
+        "url": "/blogs/cat-advice/bright-vs-neutral-collars-for-cats",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 6.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.8% vs 5.3% benchmark \u2014 10 clicks/period uncaptured\n\nEvidence: impressions=429 | CTR=2.8% | expected=5.3% | pos=6.1\nEngine priority: 5.33  \u2022  Dashboard impact: 14.08",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0423",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.975989+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 14.08
+        }
+      },
+      {
+        "id": "104",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 lindsey-aries-camping-tips",
+        "url": "/blogs/adventure-cat-training/lindsey-aries-camping-tips",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.6",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.2% vs 1.0% benchmark \u2014 3 clicks/period uncaptured\n\nEvidence: impressions=412 | CTR=0.2% | expected=1.0% | pos=13.6\nEngine priority: 5.33  \u2022  Dashboard impact: 13.99",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0435",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976336+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.99
+        }
+      },
+      {
+        "id": "105",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 adventure-cat-gear-essentials-to-walk-a-cat-on-a-leash",
+        "url": "/blogs/adventure-cat-training/adventure-cat-gear-essentials-to-walk-a-cat-on-a-leash",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 27.0",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured\n\nEvidence: impressions=407 | CTR=0.0% | expected=0.5% | pos=27.0\nEngine priority: 5.33  \u2022  Dashboard impact: 13.97",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0443",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976591+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.97
+        }
+      },
+      {
+        "id": "106",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 persian-cat-101",
+        "url": "/blogs/cat-breeds/persian-cat-101",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.7",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 11.7 for 'persian cat history' \u2014 162 impressions but page 2\n\nEvidence: pos=11.7 | impressions=162 | clicks=1 | CTR=0.6%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.95",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0330",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.972320+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.95
+        }
+      },
+      {
+        "id": "107",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 how-to-stop-your-cat-from-munching-on-your-plants",
+        "url": "/blogs/correcting-cat-behavior/how-to-stop-your-cat-from-munching-on-your-plants",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 12.6",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 12.6 for 'how to stop cat from eating plants' \u2014 160 impressions but page 2\n\nEvidence: pos=12.6 | impressions=160 | clicks=2 | CTR=1.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.92",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0257",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971316+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.92
+        }
+      },
+      {
+        "id": "108",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 help-your-cat-enjoy-car-rides",
+        "url": "/blogs/adventure-cat-training/help-your-cat-enjoy-car-rides",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 13.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 13.1 for 'kitty car rides' \u2014 158 impressions but page 2\n\nEvidence: pos=13.1 | impressions=158 | clicks=1 | CTR=0.6%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.89",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0291",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971697+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.89
+        }
+      },
+      {
+        "id": "109",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 kitten-harness",
+        "url": "/blogs/adventure-cat-training/kitten-harness",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 9.6",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 9.6 for 'best kitten harness' \u2014 156 impressions but page 2\n\nEvidence: pos=9.6 | impressions=156 | clicks=7 | CTR=4.5%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.85",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0090",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.969595+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.85
+        }
+      },
+      {
+        "id": "110",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 cat-training-books",
+        "url": "/blogs/clicker-training-cats/cat-training-books",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 12.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 0,
+          "target_display": "+0/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Ranking pos 12.2 for 'cat training books' \u2014 156 impressions but page 2\n\nEvidence: pos=12.2 | impressions=156 | clicks=2 | CTR=1.3%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.85",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0243",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.971166+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.85
+        }
+      },
+      {
+        "id": "111",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 put-a-harness-on-a-cat",
+        "url": "/blogs/adventure-cat-training/put-a-harness-on-a-cat",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 2042 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 2042 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=2042 | current_title='How to Put a Harness on a Cat - Easy Way to Put On'\nEngine priority: 4.17  \u2022  Dashboard impact: 13.81",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0463",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976978+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.81
+        }
+      },
+      {
+        "id": "112",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 making-cat-videos-that-go-viral-step-by-step",
+        "url": "/blogs/fun-stuff/making-cat-videos-that-go-viral-step-by-step",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.2",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 2.1% vs 4.5% benchmark \u2014 8 clicks/period uncaptured\n\nEvidence: impressions=376 | CTR=2.1% | expected=4.5% | pos=7.2\nEngine priority: 5.33  \u2022  Dashboard impact: 13.79",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0429",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976097+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.79
+        }
+      },
+      {
+        "id": "113",
+        "created": "2026-04-20",
+        "title": "Push to page 1 \u2014 female-cat-vs-male-cat",
+        "url": "/blogs/cat-advice/female-cat-vs-male-cat",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 19.1",
+          "current_value": 0,
+          "current_display": "~0/wk now",
+          "target_value": 1,
+          "target_display": "+1/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "CTR 0.6% vs 1.0% benchmark \u2014 1 clicks/period uncaptured\n\nEvidence: impressions=341 | CTR=0.6% | expected=1.0% | pos=19.1\nEngine priority: 5.33  \u2022  Dashboard impact: 13.57",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0436",
+          "opportunity_type": "TRAFFIC_GROWTH",
+          "detected_at": "2026-04-20T13:44:13.976352+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.57
+        }
+      },
+      {
+        "id": "114",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 my-cat-doesnt-like-treats-train-a-cat-thats-not-food-motivated",
+        "url": "/blogs/clicker-training-cats/my-cat-doesnt-like-treats-train-a-cat-thats-not-food-motivated",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 1332 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 1332 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=1332 | current_title='My Cat Doesn't Like Treats - Train a Cat That's NO'\nEngine priority: 4.17  \u2022  Dashboard impact: 13.04",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0469",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977037+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 13.04
+        }
+      },
+      {
+        "id": "115",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
+        "url": "/blogs/enriching-indoors/leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 1238 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 1238 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=1238 | current_title='Leaving Your Cat Alone - A Complete Guide to Preve'\nEngine priority: 4.17  \u2022  Dashboard impact: 12.91",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0474",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977080+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 12.91
+        }
+      },
+      {
+        "id": "116",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 adventure-cat-training-guide",
+        "url": "/blogs/adventure-cat-training/adventure-cat-training-guide",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 895 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 895 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=895 | current_title='What is an Adventure Cat | Cat Training Guide'\nEngine priority: 4.17  \u2022  Dashboard impact: 12.33",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0462",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976967+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 12.33
+        }
+      },
+      {
+        "id": "117",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 shoulder-cat",
+        "url": "/blogs/clicker-training-cats/shoulder-cat",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 771 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 771 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=771 | current_title='Turn Your Cat into a Shoulder Cat - Jump on Should'\nEngine priority: 4.17  \u2022  Dashboard impact: 12.06",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0471",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977057+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 12.06
+        }
+      },
+      {
+        "id": "118",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 how-i-trained-my-bengal-cat",
+        "url": "/blogs/bengal-cats/how-i-trained-my-bengal-cat",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 580 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 580 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=580 | current_title='How I Trained my Bengal Cat: Mia's Epic First 5 Ye'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.55",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0480",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977144+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.55
+        }
+      },
+      {
+        "id": "119",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 cat-agility",
+        "url": "/blogs/clicker-training-cats/cat-agility",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 566 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 566 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=566 | current_title='Train Your Cat for Agility: A Step-by-Step Guide'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.51",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0472",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977064+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.51
+        }
+      },
+      {
+        "id": "120",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 benefits-of-cat-harnesses",
+        "url": "/blogs/adventure-cat-training/benefits-of-cat-harnesses",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 547 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 547 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=547 | current_title='Benefits of Using a Cat Harness - Enjoying the Gre'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.45",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0464",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976988+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.45
+        }
+      },
+      {
+        "id": "121",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 should-you-walk-your-cat-on-a-leash",
+        "url": "/blogs/adventure-cat-training/should-you-walk-your-cat-on-a-leash",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 540 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 540 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=540 | current_title='Ultimate Method To Teach Your Cat to Walk on a Lea'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.43",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0460",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976946+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.43
+        }
+      },
+      {
+        "id": "122",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 how-to-stop-your-cat-from-munching-on-your-plants",
+        "url": "/blogs/correcting-cat-behavior/how-to-stop-your-cat-from-munching-on-your-plants",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 479 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 479 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=479 | current_title='How to STOP Your Cat from Eating Your Plants (Prov'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.21",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0477",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977112+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.21
+        }
+      },
+      {
+        "id": "123",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 bright-vs-neutral-collars-for-cats",
+        "url": "/blogs/cat-advice/bright-vs-neutral-collars-for-cats",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 429 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 429 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=429 | current_title='How to Choose the Best Collar Color for Your Cat'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.02",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0483",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977175+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 11.02
+        }
+      },
+      {
+        "id": "124",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 making-cat-videos-that-go-viral-step-by-step",
+        "url": "/blogs/fun-stuff/making-cat-videos-that-go-viral-step-by-step",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 376 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 376 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=376 | current_title='Making Cat Videos that Go Viral (Step-by-Step)'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.79",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0489",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977226+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 10.79
+        }
+      },
+      {
+        "id": "125",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 cat-training-books",
+        "url": "/blogs/clicker-training-cats/cat-training-books",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 313 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 313 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=313 | current_title='Don\u00b4t Read Anything Else - 10 Must-Read Cat Traini'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.46",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0470",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977049+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 10.46
+        }
+      },
+      {
+        "id": "126",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 teach-your-cat-to-use-the-new-cat-tree",
+        "url": "/blogs/cat-advice/teach-your-cat-to-use-the-new-cat-tree",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 296 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 296 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=296 | current_title='Teach Your Cat to Use the New Cat Tree'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.37",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0482",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977167+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 10.37
+        }
+      },
+      {
+        "id": "127",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 sphynx-cat-101",
+        "url": "/blogs/cat-breeds/sphynx-cat-101",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 294 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 294 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=294 | current_title='Sphynx Cat 101 - History, Personality and Traits'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.35",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0486",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977200+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 10.35
+        }
+      },
+      {
+        "id": "128",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 siberian-cat-101",
+        "url": "/blogs/cat-breeds/siberian-cat-101",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 261 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 261 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=261 | current_title='Siberian Cat 101 - History, Personality and Traits'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.15",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0488",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977217+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 10.15
+        }
+      },
+      {
+        "id": "129",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 persian-cat-101",
+        "url": "/blogs/cat-breeds/persian-cat-101",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 220 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 220 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=220 | current_title='Persian Cat 101 - History, Personality and Traits'\nEngine priority: 4.17  \u2022  Dashboard impact: 9.85",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0485",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977191+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 9.85
+        }
+      },
+      {
+        "id": "130",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 help-your-cat-enjoy-car-rides",
+        "url": "/blogs/adventure-cat-training/help-your-cat-enjoy-car-rides",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 158 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 158 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=158 | current_title='Help Your Cat Enjoy Car Rides - Tips to Train Cats'\nEngine priority: 4.17  \u2022  Dashboard impact: 9.28",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0461",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.976958+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 9.28
+        }
+      },
+      {
+        "id": "131",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 cat-does-not-listen",
+        "url": "/blogs/clicker-training-cats/cat-does-not-listen",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 150 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 150 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=150 | current_title='Reasons Why Your Cat Does Not Listen to You'\nEngine priority: 4.17  \u2022  Dashboard impact: 9.19",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0473",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977070+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 9.19
+        }
+      },
+      {
+        "id": "132",
+        "created": "2026-04-20",
+        "title": "Fix title tag \u2014 cat-body-language",
+        "url": "/blogs/understanding-cat-behavior/cat-body-language",
+        "sprint_type": "CTR",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 128 impressions \u00b7 pos ?",
+          "current_value": 0.0,
+          "current_display": "0.00% now",
+          "target_value": 0.0,
+          "target_display": "0.0%+",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "HIGH",
+          "description": "Full rewrite / restructure",
+          "estimated_minutes": 120
+        },
+        "rationale": "Missing custom SEO title \u2014 128 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=128 | current_title='Cat Body Language Explained - 18 Things Your Cat i'\nEngine priority: 4.17  \u2022  Dashboard impact: 8.92",
+        "evaluation": {
+          "window_days": 21,
+          "success_threshold_pct": 30,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0467",
+          "opportunity_type": "SEARCH_VISIBILITY",
+          "detected_at": "2026-04-20T13:44:13.977021+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 8.92
+        }
+      },
+      {
+        "id": "133",
+        "created": "2026-04-20",
+        "title": "Consolidate cannibalized pages \u2014 cluster",
+        "url": "/",
+        "sprint_type": "RNK",
+        "kpi": {
+          "metric": "consolidated_page_clicks",
+          "display_label": "Clicks on consolidated page \u00b7 12302 total impressions",
+          "current_value": 0,
+          "current_display": "split across pages",
+          "target_value": 28,
+          "target_display": "+28/wk",
+          "unit": "sessions/week"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "rationale": "Keyword cannibalization: 'outdoor bengal' split across 18 pages \u2014 consolidate\n\nEvidence: pages=18 | total_impressions=12302\nEngine priority: 3.0  \u2022  Dashboard impact: 3.9",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0490",
+          "opportunity_type": "SERP_DISCOVERY",
+          "detected_at": "2026-04-20T13:44:13.979357+00:00",
+          "last_refreshed": "2026-04-20T13:44:17Z",
+          "dashboard_impact": 3.9
+        }
+      },
       {
         "id": "002",
         "created": "2026-04-17",
@@ -146,7 +4696,10 @@
         },
         "evidence_urls": [
           "https://search.google.com/search-console/..."
-        ]
+        ],
+        "_source": {
+          "stale_since": "2026-04-20T13:43:43Z"
+        }
       },
       {
         "id": "003",
@@ -173,6 +4726,9 @@
           "window_days": 28,
           "success_threshold_pct": 50,
           "neutral_threshold_pct": 0
+        },
+        "_source": {
+          "stale_since": "2026-04-20T13:43:43Z"
         }
       }
     ],
@@ -203,9 +4759,10 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": null,
+          "last_measured": "2026-04-20T13:44:17Z",
           "current_value": null,
-          "days_elapsed": 5
+          "days_elapsed": 6,
+          "note": "metric 'zeppelin_ctr' not auto-measurable; Lisa must fill manually"
         }
       }
     ],
@@ -238,6 +4795,34 @@
     ]
   },
   "log": [
+    {
+      "run_id": "scan-20260420-134406",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 11103,
+      "pages_scanned": 221,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 221 pages. 0 new opportunities, 130 reranked. 1 active experiments re-measured.",
+      "ts": "2026-04-20T13:44:17Z"
+    },
+    {
+      "run_id": "scan-20260420-134330",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 13636,
+      "pages_scanned": 221,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 221 pages. 130 new opportunities, 0 reranked. 1 active experiments re-measured.",
+      "ts": "2026-04-20T13:43:43Z"
+    },
     {
       "ts": "2026-04-19T06:02:14Z",
       "run_id": "scan-20260419-060000",
