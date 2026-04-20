@@ -8,7 +8,7 @@
     "sources_connected": 4,
     "sources_total": 4,
     "opportunities": 132,
-    "active_tests": 1,
+    "active_tests": 2,
     "days_complete": 1,
     "scan_bars": [
       100,
@@ -64,6 +64,26 @@
       "week_total": 6
     },
     {
+      "id": "004",
+      "name": "Conversion fix \u2014 zeppelin-cat-carrier",
+      "type": "CR",
+      "status": "RUNNING",
+      "kpi_label": "Conversion rate \u00b7 4772 sessions",
+      "before_val": 0.86,
+      "before_pct": 17.2,
+      "after_val": null,
+      "after_pct": null,
+      "target_val": 1.36,
+      "target_pct": 27.2,
+      "delta": null,
+      "start_date": "Apr 20",
+      "end_date": "May 18",
+      "progress_pct": 0,
+      "note": "0 days in",
+      "week_current": 1,
+      "week_total": 4
+    },
+    {
       "id": "000",
       "name": "Copy rewrite \u2014 Extra Safe Harness",
       "type": "CR",
@@ -86,23 +106,8 @@
   ],
   "sprints": [
     {
-      "id": "004",
-      "status": "UNACKNOWLEDGED",
-      "days_waiting": 0,
-      "title": "Conversion fix \u2014 zeppelin-cat-carrier",
-      "url": "/products/zeppelin-cat-carrier",
-      "sprint_type": "CR",
-      "impact_label": "Conversion rate \u00b7 4772 sessions",
-      "current_pct": 17.2,
-      "current_label": "0.86% now",
-      "target_pct": 27.2,
-      "target_label": "1.36%",
-      "effort_label": "HIGH \u2014 Full rewrite / restructure",
-      "effort_pct": 18
-    },
-    {
       "id": "005",
-      "status": "NEXT_UP",
+      "status": "UNACKNOWLEDGED",
       "days_waiting": 0,
       "title": "Push to page 1 \u2014 extra-safe-cat-harness",
       "url": "/products/extra-safe-cat-harness",
@@ -114,45 +119,25 @@
       "target_label": "+3/wk",
       "effort_label": "MEDIUM \u2014 Copy + internal links",
       "effort_pct": 12
+    },
+    {
+      "id": "006",
+      "status": "NEXT_UP",
+      "days_waiting": 0,
+      "title": "Push to page 1 \u2014 portable-litterbox",
+      "url": "/products/portable-litterbox",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 13.3",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 3.0,
+      "target_label": "+2/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12
     }
   ],
   "details": {
     "queue": [
-      {
-        "id": "004",
-        "created": "2026-04-20",
-        "title": "Conversion fix \u2014 zeppelin-cat-carrier",
-        "url": "/products/zeppelin-cat-carrier",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "conversion_rate",
-          "display_label": "Conversion rate \u00b7 4772 sessions",
-          "current_value": 0.86,
-          "current_display": "0.86% now",
-          "target_value": 1.36,
-          "target_display": "1.36%",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "4772 organic sessions but only 0.86% conversion \u2014 revenue leak\n\nEvidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220\nEngine priority: 5.5  \u2022  Dashboard impact: 39.43",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0446",
-          "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-20T13:44:13.976665+00:00",
-          "last_refreshed": "2026-04-20T13:44:17Z",
-          "dashboard_impact": 39.43
-        }
-      },
       {
         "id": "005",
         "created": "2026-04-20",
@@ -4764,6 +4749,37 @@
           "days_elapsed": 6,
           "note": "metric 'zeppelin_ctr' not auto-measurable; Lisa must fill manually"
         }
+      },
+      {
+        "id": "004",
+        "name": "Conversion fix \u2014 zeppelin-cat-carrier",
+        "sprint_type": "CR",
+        "status": "RUNNING",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 4772 sessions",
+          "baseline_value": 0.86,
+          "baseline_display": "0.86% now",
+          "target_value": 1.36,
+          "target_display": "1.36%",
+          "unit": "percent"
+        },
+        "timeline": {
+          "started": "2026-04-20",
+          "evaluation_date": "2026-05-18",
+          "window_days": 28
+        },
+        "url": "/products/zeppelin-cat-carrier",
+        "rationale": "4772 organic sessions but only 0.86% conversion \u2014 revenue leak\n\nEvidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220\nEngine priority: 5.5  \u2022  Dashboard impact: 39.43",
+        "evaluation": {
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": null,
+          "current_value": null,
+          "days_elapsed": 0
+        }
       }
     ],
     "archive": [
@@ -4795,6 +4811,14 @@
     ]
   },
   "log": [
+    {
+      "run_id": "sprint-004-started",
+      "type": "sprint_started",
+      "status": "success",
+      "sprint_id": "004",
+      "summary": "Sprint #004 moved from queue to active. Baseline Conversion rate \u00b7 4772 sessions: 0.86% now. Evaluation date: 2026-05-18.",
+      "ts": "2026-04-20T14:18:20Z"
+    },
     {
       "run_id": "scan-20260420-134406",
       "type": "daily_scan",
