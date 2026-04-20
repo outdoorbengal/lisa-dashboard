@@ -1,5 +1,4 @@
-# Active experiments — current_reading updated by lisa_dashboard_sync.py.
-# State transitions managed by sprint_action.py and evaluate_experiment.py.
+# Active experiments — auto-managed. See scripts/sprint_action.py
 
 experiments:
 - id: '001'
@@ -34,3 +33,33 @@ experiments:
     current_value: null
     days_elapsed: 6
     note: metric 'zeppelin_ctr' not auto-measurable; Lisa must fill manually
+- id: '004'
+  name: Conversion fix — zeppelin-cat-carrier
+  sprint_type: CR
+  status: RUNNING
+  kpi:
+    metric: conversion_rate
+    display_label: Conversion rate · 4772 sessions
+    baseline_value: 0.86
+    baseline_display: 0.86% now
+    target_value: 1.36
+    target_display: 1.36%
+    unit: percent
+  timeline:
+    started: '2026-04-20'
+    evaluation_date: '2026-05-18'
+    window_days: 28
+  url: /products/zeppelin-cat-carrier
+  rationale: '4772 organic sessions but only 0.86% conversion — revenue leak
+
+
+    Evidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220
+
+    Engine priority: 5.5  •  Dashboard impact: 39.43'
+  evaluation:
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: null
+    current_value: null
+    days_elapsed: 0
