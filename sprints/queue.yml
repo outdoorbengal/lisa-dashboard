@@ -1,4 +1,6 @@
-# Sprint queue — auto-managed. See scripts/sprint_action.py
+# Sprint queue — managed by lisa_dashboard_sync.py.
+# Ordered by dashboard_impact (highest first).
+# First item = UNACKNOWLEDGED on the dashboard.
 
 sprints:
 - id: '006'
@@ -18,8 +20,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.4 for ''travel litter box'' — 865 impressions but page
-    2
+  rationale: 'Ranking pos 13.4 for ''travel litter box'' — 865 impressions but page 2
 
 
     Evidence: pos=13.4 | impressions=865 | clicks=13 | CTR=1.5%
@@ -33,8 +34,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0046
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315575+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043684+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 34.42
 - id: 008
   created: '2026-04-20'
@@ -67,8 +68,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0407
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322024+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050090+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 32.77
 - id: 009
   created: '2026-04-20'
@@ -87,8 +88,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.1 for ''cat agility course'' — 344 impressions but page
-    2
+  rationale: 'Ranking pos 6.1 for ''cat agility course'' — 344 impressions but page 2
 
 
     Evidence: pos=6.1 | impressions=344 | clicks=12 | CTR=3.5%
@@ -102,8 +102,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0050
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315613+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043720+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 29.82
 - id: '010'
   created: '2026-04-20'
@@ -157,8 +157,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat clicker training kit'' — 213 impressions
-    but page 2
+  rationale: 'Ranking pos 10.2 for ''cat clicker training kit'' — 213 impressions but page 2
 
 
     Evidence: pos=10.2 | impressions=213 | clicks=1 | CTR=0.5%
@@ -172,8 +171,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0384
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.319552+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.047576+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 27.48
 - id: '012'
   created: '2026-04-20'
@@ -206,8 +205,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0453
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323257+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051298+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 26.94
 - id: '013'
   created: '2026-04-20'
@@ -226,8 +225,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.2 for ''outdoor cat collar'' — 185 impressions but page
-    2
+  rationale: 'Ranking pos 9.2 for ''outdoor cat collar'' — 185 impressions but page 2
 
 
     Evidence: pos=9.2 | impressions=185 | clicks=3 | CTR=1.6%
@@ -241,8 +239,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0210
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317248+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045343+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 26.79
 - id: '014'
   created: '2026-04-20'
@@ -261,8 +259,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.2 for ''how to teach a cat tricks'' — 19650 impressions
-    but page 2
+  rationale: 'Ranking pos 5.2 for ''how to teach a cat tricks'' — 19650 impressions but page 2
 
 
     Evidence: pos=5.2 | impressions=19650 | clicks=29 | CTR=0.1%
@@ -276,8 +273,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0012
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315237+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043360+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 26.79
 - id: '015'
   created: '2026-04-20'
@@ -296,8 +293,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''long leash for cats'' — 167 impressions but page
-    2
+  rationale: 'Ranking pos 10.2 for ''long leash for cats'' — 167 impressions but page 2
 
 
     Evidence: pos=10.2 | impressions=167 | clicks=1 | CTR=0.6%
@@ -311,8 +307,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0393
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.319676+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.047695+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 26.3
 - id: '016'
   created: '2026-04-20'
@@ -331,8 +327,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.7 for ''adventure cat harness'' — 1411 impressions but
-    page 2
+  rationale: 'Ranking pos 8.7 for ''adventure cat harness'' — 1411 impressions but page 2
 
 
     Evidence: pos=8.7 | impressions=1411 | clicks=3 | CTR=0.2%
@@ -346,8 +341,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0209
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317234+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045328+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 25.57
 - id: '017'
   created: '2026-04-20'
@@ -366,8 +361,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1451 organic sessions but 61% bounce rate — users not finding what they
-    need
+  rationale: '1451 organic sessions but 61% bounce rate — users not finding what they need
 
 
     Evidence: sessions=1451 | bounce=61% | CR=0.00%
@@ -381,8 +375,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0448
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323199+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051239+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 25.55
 - id: 018
   created: '2026-04-20'
@@ -401,8 +395,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1408 organic sessions but 97% bounce rate — users not finding what they
-    need
+  rationale: '1408 organic sessions but 97% bounce rate — users not finding what they need
 
 
     Evidence: sessions=1408 | bounce=97% | CR=0.00%
@@ -416,8 +409,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0449
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323210+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051250+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 25.46
 - id: 019
   created: '2026-04-20'
@@ -450,8 +443,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0401
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321850+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.049907+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 24.33
 - id: '020'
   created: '2026-04-20'
@@ -484,8 +477,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0410
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322083+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050153+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.72
 - id: '021'
   created: '2026-04-20'
@@ -518,8 +511,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0403
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321910+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.049970+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.7
 - id: '022'
   created: '2026-04-20'
@@ -552,8 +545,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0416
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322301+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050364+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.64
 - id: '023'
   created: '2026-04-20'
@@ -586,8 +579,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0404
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321962+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050016+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.51
 - id: '024'
   created: '2026-04-20'
@@ -606,8 +599,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '725 organic sessions but 57% bounce rate — users not finding what they
-    need
+  rationale: '725 organic sessions but 57% bounce rate — users not finding what they need
 
 
     Evidence: sessions=725 | bounce=57% | CR=0.00%
@@ -621,8 +613,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0451
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323233+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051273+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.44
 - id: '025'
   created: '2026-04-20'
@@ -655,8 +647,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0413
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322136+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050205+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.3
 - id: '027'
   created: '2026-04-20'
@@ -689,8 +681,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0406
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321991+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050054+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.18
 - id: '026'
   created: '2026-04-20'
@@ -709,8 +701,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.7 for ''aesthetic cat tree'' — 5070 impressions but page
-    2
+  rationale: 'Ranking pos 8.7 for ''aesthetic cat tree'' — 5070 impressions but page 2
 
 
     Evidence: pos=8.7 | impressions=5070 | clicks=113 | CTR=2.2%
@@ -724,8 +715,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0002
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315120+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043248+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 23.12
 - id: 028
   created: '2026-04-20'
@@ -758,8 +749,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0402
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321881+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.049936+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 22.63
 - id: 029
   created: '2026-04-20'
@@ -778,8 +769,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.7 for ''chances of finding lost cat after 24 hours'' —
-    4031 impressions but page 2
+  rationale: 'Ranking pos 9.7 for ''chances of finding lost cat after 24 hours'' — 4031 impressions but
+    page 2
 
 
     Evidence: pos=9.7 | impressions=4031 | clicks=38 | CTR=0.9%
@@ -793,8 +784,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0007
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315182+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043308+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 22.5
 - id: '030'
   created: '2026-04-20'
@@ -827,8 +818,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0408
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322045+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050109+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 22.43
 - id: '031'
   created: '2026-04-20'
@@ -861,8 +852,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0433
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322722+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050785+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 22.08
 - id: '032'
   created: '2026-04-20'
@@ -895,8 +886,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0450
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323223+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051263+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 22.06
 - id: '033'
   created: '2026-04-20'
@@ -929,8 +920,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0414
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322166+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050230+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 21.88
 - id: '034'
   created: '2026-04-20'
@@ -963,8 +954,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0423
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322477+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050546+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 21.79
 - id: '035'
   created: '2026-04-20'
@@ -983,8 +974,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1241 organic sessions with ZERO internal product links — conversion
-    opportunity wasted
+  rationale: '1241 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=1241 | product_links=0 | blog_type=Cat Health
@@ -998,8 +988,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0455
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323374+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051418+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 21.43
 - id: '036'
   created: '2026-04-20'
@@ -1032,8 +1022,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0446
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323169+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051205+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 21.11
 - id: '037'
   created: '2026-04-20'
@@ -1052,8 +1042,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1027 organic sessions with ZERO internal product links — conversion
-    opportunity wasted
+  rationale: '1027 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=1027 | product_links=0 | blog_type=Understanding Cat Behavior
@@ -1067,8 +1056,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0454
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323336+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051381+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 20.94
 - id: 038
   created: '2026-04-20'
@@ -1101,8 +1090,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0426
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322529+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050593+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 20.76
 - id: '040'
   created: '2026-04-20'
@@ -1121,8 +1110,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.5 for ''zeppelin cat carrier'' — 344 impressions but page
-    2
+  rationale: 'Ranking pos 6.5 for ''zeppelin cat carrier'' — 344 impressions but page 2
 
 
     Evidence: pos=6.5 | impressions=344 | clicks=26 | CTR=7.6%
@@ -1136,8 +1124,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0013
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315249+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043372+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 20.68
 - id: 039
   created: '2026-04-20'
@@ -1170,8 +1158,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0409
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322063+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050132+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 20.66
 - id: '041'
   created: '2026-04-20'
@@ -1204,8 +1192,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0415
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322185+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050250+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 20.26
 - id: '042'
   created: '2026-04-20'
@@ -1238,8 +1226,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0452
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323244+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051286+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.97
 - id: '043'
   created: '2026-04-20'
@@ -1272,8 +1260,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0420
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322432+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050498+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.93
 - id: '044'
   created: '2026-04-20'
@@ -1306,8 +1294,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0429
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322582+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050640+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.89
 - id: '045'
   created: '2026-04-20'
@@ -1340,8 +1328,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0421
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322446+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050513+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.64
 - id: '046'
   created: '2026-04-20'
@@ -1374,8 +1362,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0425
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322507+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050575+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.5
 - id: '047'
   created: '2026-04-20'
@@ -1408,8 +1396,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0419
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322403+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050471+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.23
 - id: 048
   created: '2026-04-20'
@@ -1442,8 +1430,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0434
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322786+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050850+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.23
 - id: 049
   created: '2026-04-20'
@@ -1462,8 +1450,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '490 organic sessions with ZERO internal product links — conversion opportunity
-    wasted
+  rationale: '490 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=490 | product_links=0 | blog_type=Correcting Cat Behavior
@@ -1477,8 +1464,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0456
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323386+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051435+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 19.02
 - id: '050'
   created: '2026-04-20'
@@ -1500,8 +1487,8 @@ sprints:
   rationale: 'Missing custom SEO title — 35013 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=35013 | current_title=''What Tricks
-    Can a Cat Learn (12 Cat Tricks + How t''
+    Evidence: seo_title=NOT_SET | impressions=35013 | current_title=''What Tricks Can a Cat Learn (12
+    Cat Tricks + How t''
 
     Engine priority: 4.17  •  Dashboard impact: 18.95'
   evaluation:
@@ -1512,8 +1499,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0469
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323531+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051585+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.95
 - id: '057'
   created: '2026-04-20'
@@ -1546,8 +1533,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0405
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.321977+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050031+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.89
 - id: '051'
   created: '2026-04-20'
@@ -1580,8 +1567,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0418
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322337+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050400+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.68
 - id: 085
   created: '2026-04-20'
@@ -1614,8 +1601,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0417
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322324+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050387+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.66
 - id: '052'
   created: '2026-04-20'
@@ -1648,8 +1635,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0427
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322551+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050614+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.59
 - id: '053'
   created: '2026-04-20'
@@ -1668,8 +1655,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '385 organic sessions with ZERO internal product links — conversion opportunity
-    wasted
+  rationale: '385 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=385 | product_links=0 | blog_type=Cat Breeds
@@ -1683,8 +1669,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0460
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323437+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051491+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.4
 - id: '054'
   created: '2026-04-20'
@@ -1717,8 +1703,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0155
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316684+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044780+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.32
 - id: '056'
   created: '2026-04-20'
@@ -1751,8 +1737,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0412
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322112+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050180+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.24
 - id: '055'
   created: '2026-04-20'
@@ -1785,8 +1771,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0437
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322832+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050895+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.24
 - id: 059
   created: '2026-04-20'
@@ -1819,8 +1805,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0422
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322461+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050530+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 18.04
 - id: 058
   created: '2026-04-20'
@@ -1853,8 +1839,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0411
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322098+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050166+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.9
 - id: '061'
   created: '2026-04-20'
@@ -1873,8 +1859,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '260 organic sessions with ZERO internal product links — conversion opportunity
-    wasted
+  rationale: '260 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=260 | product_links=0 | blog_type=Cat Advice
@@ -1888,8 +1873,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0457
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323404+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051456+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.39
 - id: '060'
   created: '2026-04-20'
@@ -1922,8 +1907,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0428
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322565+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050627+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.34
 - id: '064'
   created: '2026-04-20'
@@ -1942,8 +1927,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '252 organic sessions with ZERO internal product links — conversion opportunity
-    wasted
+  rationale: '252 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=252 | product_links=0 | blog_type=Cat Advice
@@ -1957,8 +1941,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0458
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323413+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051468+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.31
 - id: '062'
   created: '2026-04-20'
@@ -1977,8 +1961,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.8 for ''how to teach a cat to sit'' — 577 impressions
-    but page 2
+  rationale: 'Ranking pos 8.8 for ''how to teach a cat to sit'' — 577 impressions but page 2
 
 
     Evidence: pos=8.8 | impressions=577 | clicks=2 | CTR=0.3%
@@ -1992,8 +1975,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0246
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317636+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045700+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.28
 - id: '063'
   created: '2026-04-20'
@@ -2012,8 +1995,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 17.7 for ''best time to feed cats'' — 575 impressions but
-    page 2
+  rationale: 'Ranking pos 17.7 for ''best time to feed cats'' — 575 impressions but page 2
 
 
     Evidence: pos=17.7 | impressions=575 | clicks=1 | CTR=0.2%
@@ -2027,8 +2009,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0332
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318749+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046808+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.27
 - id: '065'
   created: '2026-04-20'
@@ -2061,8 +2043,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0439
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322875+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050935+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 17.18
 - id: '066'
   created: '2026-04-20'
@@ -2081,8 +2063,7 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '220 organic sessions with ZERO internal product links — conversion opportunity
-    wasted
+  rationale: '220 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
     Evidence: sessions=220 | product_links=0 | blog_type=Cat Advice
@@ -2096,8 +2077,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0459
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-04-21T16:00:07.323420+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051475+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.96
 - id: '067'
   created: '2026-04-20'
@@ -2116,8 +2097,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.5 for ''cat wont let me sleep'' — 493 impressions but
-    page 2
+  rationale: 'Ranking pos 5.5 for ''cat wont let me sleep'' — 493 impressions but page 2
 
 
     Evidence: pos=5.5 | impressions=493 | clicks=17 | CTR=3.4%
@@ -2131,8 +2111,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0030
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315425+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043536+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.86
 - id: 068
   created: '2026-04-20'
@@ -2154,8 +2134,8 @@ sprints:
   rationale: 'Missing custom SEO title — 10426 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=10426 | current_title=''Savannah Cat
-    101 - Personality, Traits, Price & Si''
+    Evidence: seo_title=NOT_SET | impressions=10426 | current_title=''Savannah Cat 101 - Personality,
+    Traits, Price & Si''
 
     Engine priority: 4.17  •  Dashboard impact: 16.76'
   evaluation:
@@ -2166,8 +2146,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0485
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323679+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051732+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.76
 - id: 069
   created: '2026-04-20'
@@ -2186,8 +2166,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 456 impressions
-    but page 2
+  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 456 impressions but page 2
 
 
     Evidence: pos=10.5 | impressions=456 | clicks=3 | CTR=0.7%
@@ -2201,8 +2180,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0199
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317114+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045212+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.65
 - id: '071'
   created: '2026-04-20'
@@ -2221,8 +2200,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.4 for ''how to put a cat harness on'' — 436 impressions
-    but page 2
+  rationale: 'Ranking pos 9.4 for ''how to put a cat harness on'' — 436 impressions but page 2
 
 
     Evidence: pos=9.4 | impressions=436 | clicks=2 | CTR=0.5%
@@ -2236,8 +2214,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0220
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317362+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045450+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.53
 - id: '070'
   created: '2026-04-20'
@@ -2259,8 +2237,8 @@ sprints:
   rationale: 'Missing custom SEO title — 9120 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=9120 | current_title=''How to Find the
-    Best Escape Proof Cat Harness''
+    Evidence: seo_title=NOT_SET | impressions=9120 | current_title=''How to Find the Best Escape Proof
+    Cat Harness''
 
     Engine priority: 4.17  •  Dashboard impact: 16.52'
   evaluation:
@@ -2271,8 +2249,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0467
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323510+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051563+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.52
 - id: '072'
   created: '2026-04-20'
@@ -2305,8 +2283,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0438
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322854+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050916+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.41
 - id: '073'
   created: '2026-04-20'
@@ -2339,8 +2317,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0444
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323111+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051154+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.39
 - id: '074'
   created: '2026-04-20'
@@ -2362,8 +2340,8 @@ sprints:
   rationale: 'Missing custom SEO title — 7518 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=7518 | current_title=''Savannah Cat
-    vs. Bengal Cat - Exotic Breeds Side b''
+    Evidence: seo_title=NOT_SET | impressions=7518 | current_title=''Savannah Cat vs. Bengal Cat - Exotic
+    Breeds Side b''
 
     Engine priority: 4.17  •  Dashboard impact: 16.17'
   evaluation:
@@ -2374,8 +2352,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0488
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323700+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051757+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 16.17
 - id: '075'
   created: '2026-04-20'
@@ -2397,8 +2375,8 @@ sprints:
   rationale: 'Missing custom SEO title — 6320 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=6320 | current_title=''Stop Your Cat
-    from Begging for Food (Vet Recommend''
+    Evidence: seo_title=NOT_SET | impressions=6320 | current_title=''Stop Your Cat from Begging for Food
+    (Vet Recommend''
 
     Engine priority: 4.17  •  Dashboard impact: 15.85'
   evaluation:
@@ -2409,8 +2387,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0479
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323626+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051672+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.85
 - id: '076'
   created: '2026-04-20'
@@ -2443,8 +2421,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0432
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322655+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050719+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.71
 - id: '077'
   created: '2026-04-20'
@@ -2463,8 +2441,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 18.9 for ''how to train a cat to walk on a leash'' — 305
-    impressions but page 2
+  rationale: 'Ranking pos 18.9 for ''how to train a cat to walk on a leash'' — 305 impressions but page
+    2
 
 
     Evidence: pos=18.9 | impressions=305 | clicks=1 | CTR=0.3%
@@ -2478,8 +2456,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0300
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318251+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046282+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.59
 - id: 078
   created: '2026-04-20'
@@ -2501,8 +2479,8 @@ sprints:
   rationale: 'Missing custom SEO title — 5476 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=5476 | current_title=''Teaching NO to
-    Your Cat to Stopping Unwanted Behav''
+    Evidence: seo_title=NOT_SET | impressions=5476 | current_title=''Teaching NO to Your Cat to Stopping
+    Unwanted Behav''
 
     Engine priority: 4.17  •  Dashboard impact: 15.59'
   evaluation:
@@ -2513,8 +2491,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0477
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323603+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051656+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.59
 - id: 079
   created: '2026-04-20'
@@ -2536,8 +2514,8 @@ sprints:
   rationale: 'Missing custom SEO title — 5384 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=5384 | current_title=''Foods Your Cat
-    CAN and CAN''T Eat - Don''t Get it Wr''
+    Evidence: seo_title=NOT_SET | impressions=5384 | current_title=''Foods Your Cat CAN and CAN''T Eat
+    - Don''t Get it Wr''
 
     Engine priority: 4.17  •  Dashboard impact: 15.56'
   evaluation:
@@ -2548,8 +2526,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0476
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323588+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051641+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.56
 - id: 080
   created: '2026-04-20'
@@ -2582,8 +2560,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0335
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318782+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046838+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.4
 - id: 081
   created: '2026-04-20'
@@ -2602,8 +2580,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.5 for ''can cats be left alone overnight'' — 281 impressions
-    but page 2
+  rationale: 'Ranking pos 7.5 for ''can cats be left alone overnight'' — 281 impressions but page 2
 
 
     Evidence: pos=7.5 | impressions=281 | clicks=2 | CTR=0.7%
@@ -2617,8 +2594,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0264
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317832+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045872+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.37
 - id: '134'
   created: '2026-04-21'
@@ -2637,8 +2614,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.2 for ''is it cruel to take a cat on a plane'' — 273
-    impressions but page 2
+  rationale: 'Ranking pos 12.2 for ''is it cruel to take a cat on a plane'' — 273 impressions but page
+    2
 
 
     Evidence: pos=12.2 | impressions=273 | clicks=1 | CTR=0.4%
@@ -2652,7 +2629,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0288
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318125+00:00'
+    detected_at: '2026-04-21T16:17:41.046161+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.3
 - id: 082
   created: '2026-04-20'
@@ -2671,8 +2649,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.6 for ''can i take my indoor cat outside on a leash''
-    — 265 impressions but page 2
+  rationale: 'Ranking pos 7.6 for ''can i take my indoor cat outside on a leash'' — 265 impressions but
+    page 2
 
 
     Evidence: pos=7.6 | impressions=265 | clicks=2 | CTR=0.8%
@@ -2686,8 +2664,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0215
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317317+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045401+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.22
 - id: 083
   created: '2026-04-20'
@@ -2706,8 +2684,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 15.4 for ''is cat grass good for cats'' — 251 impressions
-    but page 2
+  rationale: 'Ranking pos 15.4 for ''is cat grass good for cats'' — 251 impressions but page 2
 
 
     Evidence: pos=15.4 | impressions=251 | clicks=2 | CTR=0.8%
@@ -2721,8 +2698,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0239
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317559+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045638+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.08
 - id: 086
   created: '2026-04-20'
@@ -2741,8 +2718,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.4 for ''how to get cat to use cat tree'' — 248 impressions
-    but page 2
+  rationale: 'Ranking pos 8.4 for ''how to get cat to use cat tree'' — 248 impressions but page 2
 
 
     Evidence: pos=8.4 | impressions=248 | clicks=5 | CTR=2.0%
@@ -2756,8 +2732,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0125
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316363+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044471+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 15.05
 - id: 087
   created: '2026-04-20'
@@ -2776,8 +2752,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.1 for ''foldable litter box'' — 241 impressions but page
-    2
+  rationale: 'Ranking pos 10.1 for ''foldable litter box'' — 241 impressions but page 2
 
 
     Evidence: pos=10.1 | impressions=241 | clicks=2 | CTR=0.8%
@@ -2791,8 +2766,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0219
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317353+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045442+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.97
 - id: 084
   created: '2026-04-20'
@@ -2811,8 +2786,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 17.9 for ''cat harness training'' — 240 impressions but
-    page 2
+  rationale: 'Ranking pos 17.9 for ''cat harness training'' — 240 impressions but page 2
 
 
     Evidence: pos=17.9 | impressions=240 | clicks=1 | CTR=0.4%
@@ -2826,8 +2800,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0286
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318079+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046114+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.96
 - id: 088
   created: '2026-04-20'
@@ -2860,8 +2834,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0442
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323059+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051105+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.85
 - id: 090
   created: '2026-04-20'
@@ -2880,8 +2854,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.1 for ''how to train a bengal cat'' — 223 impressions
-    but page 2
+  rationale: 'Ranking pos 6.1 for ''how to train a bengal cat'' — 223 impressions but page 2
 
 
     Evidence: pos=6.1 | impressions=223 | clicks=6 | CTR=2.7%
@@ -2895,8 +2868,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0105
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316173+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044264+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.77
 - id: 089
   created: '2026-04-20'
@@ -2915,8 +2888,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat language words'' — 223 impressions but page
-    2
+  rationale: 'Ranking pos 10.2 for ''cat language words'' — 223 impressions but page 2
 
 
     Evidence: pos=10.2 | impressions=223 | clicks=1 | CTR=0.4%
@@ -2930,8 +2902,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0373
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.319394+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.047419+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.77
 - id: 091
   created: '2026-04-20'
@@ -2950,8 +2922,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 18.7 for ''siberian cat personality'' — 221 impressions
-    but page 2
+  rationale: 'Ranking pos 18.7 for ''siberian cat personality'' — 221 impressions but page 2
 
 
     Evidence: pos=18.7 | impressions=221 | clicks=1 | CTR=0.5%
@@ -2965,8 +2936,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0330
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318720+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046776+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.75
 - id: 092
   created: '2026-04-20'
@@ -2985,8 +2956,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.5 for ''male cat personality'' — 216 impressions but page
-    2
+  rationale: 'Ranking pos 5.5 for ''male cat personality'' — 216 impressions but page 2
 
 
     Evidence: pos=5.5 | impressions=216 | clicks=4 | CTR=1.9%
@@ -3000,8 +2970,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0144
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316572+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044672+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.69
 - id: 094
   created: '2026-04-20'
@@ -3034,8 +3004,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0445
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323132+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051171+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.63
 - id: 093
   created: '2026-04-20'
@@ -3057,8 +3027,8 @@ sprints:
   rationale: 'Missing custom SEO title — 3219 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=3219 | current_title=''20 Cat Harness
-    Training Tips NOBODY Tells You (but''
+    Evidence: seo_title=NOT_SET | impressions=3219 | current_title=''20 Cat Harness Training Tips NOBODY
+    Tells You (but''
 
     Engine priority: 4.17  •  Dashboard impact: 14.63'
   evaluation:
@@ -3069,8 +3039,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0466
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323503+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051556+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.63
 - id: 095
   created: '2026-04-20'
@@ -3089,8 +3059,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.0 for ''savannah cat traits'' — 209 impressions but page
-    2
+  rationale: 'Ranking pos 6.0 for ''savannah cat traits'' — 209 impressions but page 2
 
 
     Evidence: pos=6.0 | impressions=209 | clicks=7 | CTR=3.3%
@@ -3104,8 +3073,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0096
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316067+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044171+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.6
 - id: 096
   created: '2026-04-20'
@@ -3127,8 +3096,8 @@ sprints:
   rationale: 'Missing custom SEO title — 3059 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=3059 | current_title=''Female Cat 101
-    | Behavior, Personality & Traits of''
+    Evidence: seo_title=NOT_SET | impressions=3059 | current_title=''Female Cat 101 | Behavior, Personality
+    & Traits of''
 
     Engine priority: 4.17  •  Dashboard impact: 14.54'
   evaluation:
@@ -3139,8 +3108,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0482
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323653+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051700+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.54
 - id: 097
   created: '2026-04-20'
@@ -3159,8 +3128,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat breed identifier chart'' — 200 impressions
-    but page 2
+  rationale: 'Ranking pos 10.2 for ''cat breed identifier chart'' — 200 impressions but page 2
 
 
     Evidence: pos=10.2 | impressions=200 | clicks=2 | CTR=1.0%
@@ -3174,8 +3142,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0282
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318015+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046054+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.49
 - id: 098
   created: '2026-04-20'
@@ -3194,8 +3162,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.5 for ''zeppelin cat carrier'' — 188 impressions but page
-    2
+  rationale: 'Ranking pos 7.5 for ''zeppelin cat carrier'' — 188 impressions but page 2
 
 
     Evidence: pos=7.5 | impressions=188 | clicks=19 | CTR=10.1%
@@ -3209,8 +3176,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0021
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315345+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.043460+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.33
 - id: 099
   created: '2026-04-20'
@@ -3232,8 +3199,8 @@ sprints:
   rationale: 'Missing custom SEO title — 2636 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=2636 | current_title=''Zeppelin Cat
-    Carrier Review - Deep Dive''
+    Evidence: seo_title=NOT_SET | impressions=2636 | current_title=''Zeppelin Cat Carrier Review - Deep
+    Dive''
 
     Engine priority: 4.17  •  Dashboard impact: 14.27'
   evaluation:
@@ -3244,8 +3211,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0480
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323634+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051680+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.27
 - id: '101'
   created: '2026-04-20'
@@ -3278,8 +3245,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0441
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323016+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051064+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.1
 - id: '102'
   created: '2026-04-20'
@@ -3298,8 +3265,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.9 for ''why are bengal cats so vocal'' — 172 impressions
-    but page 2
+  rationale: 'Ranking pos 8.9 for ''why are bengal cats so vocal'' — 172 impressions but page 2
 
 
     Evidence: pos=8.9 | impressions=172 | clicks=3 | CTR=1.7%
@@ -3313,8 +3279,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0172
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.316847+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044944+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.1
 - id: '103'
   created: '2026-04-20'
@@ -3347,8 +3313,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0424
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322491+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050561+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.07
 - id: '100'
   created: '2026-04-20'
@@ -3367,8 +3333,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.0 for ''how to tell a female cat from a male cat'' —
-    168 impressions but page 2
+  rationale: 'Ranking pos 12.0 for ''how to tell a female cat from a male cat'' — 168 impressions but
+    page 2
 
 
     Evidence: pos=12.0 | impressions=168 | clicks=1 | CTR=0.6%
@@ -3382,8 +3348,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0315
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318433+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046448+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 14.04
 - id: '105'
   created: '2026-04-20'
@@ -3416,8 +3382,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0443
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.323073+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051116+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.99
 - id: '104'
   created: '2026-04-20'
@@ -3450,8 +3416,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0435
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322803+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050866+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.98
 - id: '106'
   created: '2026-04-20'
@@ -3470,8 +3436,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 11.7 for ''persian cat history'' — 164 impressions but page
-    2
+  rationale: 'Ranking pos 11.7 for ''persian cat history'' — 164 impressions but page 2
 
 
     Evidence: pos=11.7 | impressions=164 | clicks=1 | CTR=0.6%
@@ -3485,8 +3450,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0325
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318574+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046579+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.98
 - id: '109'
   created: '2026-04-20'
@@ -3505,8 +3470,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.6 for ''best kitten harness'' — 159 impressions but page
-    2
+  rationale: 'Ranking pos 9.6 for ''best kitten harness'' — 159 impressions but page 2
 
 
     Evidence: pos=9.6 | impressions=159 | clicks=7 | CTR=4.4%
@@ -3520,8 +3484,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0088
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.315994+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.044107+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.9
 - id: '107'
   created: '2026-04-20'
@@ -3540,8 +3504,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.6 for ''how to stop cat from eating plants'' — 158 impressions
-    but page 2
+  rationale: 'Ranking pos 12.6 for ''how to stop cat from eating plants'' — 158 impressions but page 2
 
 
     Evidence: pos=12.6 | impressions=158 | clicks=2 | CTR=1.3%
@@ -3555,8 +3518,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0254
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317727+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045777+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.89
 - id: '108'
   created: '2026-04-20'
@@ -3575,8 +3538,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.1 for ''kitty car rides'' — 158 impressions but page
-    2
+  rationale: 'Ranking pos 13.1 for ''kitty car rides'' — 158 impressions but page 2
 
 
     Evidence: pos=13.1 | impressions=158 | clicks=1 | CTR=0.6%
@@ -3590,8 +3552,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0287
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.318112+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.046147+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.89
 - id: '110'
   created: '2026-04-20'
@@ -3610,8 +3572,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.2 for ''cat training books'' — 157 impressions but page
-    2
+  rationale: 'Ranking pos 12.2 for ''cat training books'' — 157 impressions but page 2
 
 
     Evidence: pos=12.2 | impressions=157 | clicks=2 | CTR=1.3%
@@ -3625,8 +3586,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0241
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.317581+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.045655+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.87
 - id: '111'
   created: '2026-04-20'
@@ -3648,8 +3609,8 @@ sprints:
   rationale: 'Missing custom SEO title — 2044 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=2044 | current_title=''How to Put a
-    Harness on a Cat - Easy Way to Put On''
+    Evidence: seo_title=NOT_SET | impressions=2044 | current_title=''How to Put a Harness on a Cat - Easy
+    Way to Put On''
 
     Engine priority: 4.17  •  Dashboard impact: 13.81'
   evaluation:
@@ -3660,8 +3621,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0464
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323485+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051538+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.81
 - id: '112'
   created: '2026-04-20'
@@ -3694,8 +3655,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0430
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322599+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050656+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.74
 - id: '113'
   created: '2026-04-20'
@@ -3728,8 +3689,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0436
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.322818+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.050881+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.53
 - id: '114'
   created: '2026-04-20'
@@ -3751,8 +3712,8 @@ sprints:
   rationale: 'Missing custom SEO title — 1316 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1316 | current_title=''My Cat Doesn''t
-    Like Treats - Train a Cat That''s NO''
+    Evidence: seo_title=NOT_SET | impressions=1316 | current_title=''My Cat Doesn''t Like Treats - Train
+    a Cat That''s NO''
 
     Engine priority: 4.17  •  Dashboard impact: 13.02'
   evaluation:
@@ -3763,8 +3724,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0470
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323539+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051594+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 13.02
 - id: '115'
   created: '2026-04-20'
@@ -3786,8 +3747,8 @@ sprints:
   rationale: 'Missing custom SEO title — 1248 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1248 | current_title=''Leaving Your
-    Cat Alone - A Complete Guide to Preve''
+    Evidence: seo_title=NOT_SET | impressions=1248 | current_title=''Leaving Your Cat Alone - A Complete
+    Guide to Preve''
 
     Engine priority: 4.17  •  Dashboard impact: 12.93'
   evaluation:
@@ -3798,8 +3759,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0475
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323578+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051632+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 12.93
 - id: '116'
   created: '2026-04-20'
@@ -3821,8 +3782,8 @@ sprints:
   rationale: 'Missing custom SEO title — 876 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=876 | current_title=''What is an Adventure
-    Cat | Cat Training Guide''
+    Evidence: seo_title=NOT_SET | impressions=876 | current_title=''What is an Adventure Cat | Cat Training
+    Guide''
 
     Engine priority: 4.17  •  Dashboard impact: 12.29'
   evaluation:
@@ -3833,8 +3794,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0463
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323475+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051530+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 12.29
 - id: '117'
   created: '2026-04-20'
@@ -3856,8 +3817,8 @@ sprints:
   rationale: 'Missing custom SEO title — 772 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=772 | current_title=''Turn Your Cat
-    into a Shoulder Cat - Jump on Should''
+    Evidence: seo_title=NOT_SET | impressions=772 | current_title=''Turn Your Cat into a Shoulder Cat
+    - Jump on Should''
 
     Engine priority: 4.17  •  Dashboard impact: 12.06'
   evaluation:
@@ -3868,8 +3829,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0472
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323554+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051610+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 12.06
 - id: '118'
   created: '2026-04-20'
@@ -3891,8 +3852,8 @@ sprints:
   rationale: 'Missing custom SEO title — 571 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=571 | current_title=''How I Trained
-    my Bengal Cat: Mia''s Epic First 5 Ye''
+    Evidence: seo_title=NOT_SET | impressions=571 | current_title=''How I Trained my Bengal Cat: Mia''s
+    Epic First 5 Ye''
 
     Engine priority: 4.17  •  Dashboard impact: 11.53'
   evaluation:
@@ -3903,8 +3864,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0481
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323643+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051691+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.53
 - id: '119'
   created: '2026-04-20'
@@ -3926,8 +3887,8 @@ sprints:
   rationale: 'Missing custom SEO title — 554 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=554 | current_title=''Train Your Cat
-    for Agility: A Step-by-Step Guide''
+    Evidence: seo_title=NOT_SET | impressions=554 | current_title=''Train Your Cat for Agility: A Step-by-Step
+    Guide''
 
     Engine priority: 4.17  •  Dashboard impact: 11.47'
   evaluation:
@@ -3938,8 +3899,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0473
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323560+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051617+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.47
 - id: '120'
   created: '2026-04-20'
@@ -3961,8 +3922,8 @@ sprints:
   rationale: 'Missing custom SEO title — 545 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=545 | current_title=''Benefits of Using
-    a Cat Harness - Enjoying the Gre''
+    Evidence: seo_title=NOT_SET | impressions=545 | current_title=''Benefits of Using a Cat Harness -
+    Enjoying the Gre''
 
     Engine priority: 4.17  •  Dashboard impact: 11.44'
   evaluation:
@@ -3973,8 +3934,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0465
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323494+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051548+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.44
 - id: '121'
   created: '2026-04-20'
@@ -3996,8 +3957,8 @@ sprints:
   rationale: 'Missing custom SEO title — 538 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=538 | current_title=''Ultimate Method
-    To Teach Your Cat to Walk on a Lea''
+    Evidence: seo_title=NOT_SET | impressions=538 | current_title=''Ultimate Method To Teach Your Cat
+    to Walk on a Lea''
 
     Engine priority: 4.17  •  Dashboard impact: 11.42'
   evaluation:
@@ -4008,8 +3969,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0461
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323458+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051511+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.42
 - id: '122'
   created: '2026-04-20'
@@ -4031,8 +3992,8 @@ sprints:
   rationale: 'Missing custom SEO title — 478 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=478 | current_title=''How to STOP Your
-    Cat from Eating Your Plants (Prov''
+    Evidence: seo_title=NOT_SET | impressions=478 | current_title=''How to STOP Your Cat from Eating Your
+    Plants (Prov''
 
     Engine priority: 4.17  •  Dashboard impact: 11.21'
   evaluation:
@@ -4043,8 +4004,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0478
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323611+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051663+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.21
 - id: '123'
   created: '2026-04-20'
@@ -4066,8 +4027,8 @@ sprints:
   rationale: 'Missing custom SEO title — 426 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=426 | current_title=''How to Choose
-    the Best Collar Color for Your Cat''
+    Evidence: seo_title=NOT_SET | impressions=426 | current_title=''How to Choose the Best Collar Color
+    for Your Cat''
 
     Engine priority: 4.17  •  Dashboard impact: 11.01'
   evaluation:
@@ -4078,8 +4039,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0484
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323670+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051723+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 11.01
 - id: '124'
   created: '2026-04-20'
@@ -4101,8 +4062,7 @@ sprints:
   rationale: 'Missing custom SEO title — 368 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=368 | current_title=''Making Cat Videos
-    that Go Viral (Step-by-Step)''
+    Evidence: seo_title=NOT_SET | impressions=368 | current_title=''Making Cat Videos that Go Viral (Step-by-Step)''
 
     Engine priority: 4.17  •  Dashboard impact: 10.75'
   evaluation:
@@ -4113,8 +4073,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0490
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323718+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051773+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 10.75
 - id: '125'
   created: '2026-04-20'
@@ -4136,8 +4096,8 @@ sprints:
   rationale: 'Missing custom SEO title — 314 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=314 | current_title=''Don´t Read Anything
-    Else - 10 Must-Read Cat Traini''
+    Evidence: seo_title=NOT_SET | impressions=314 | current_title=''Don´t Read Anything Else - 10 Must-Read
+    Cat Traini''
 
     Engine priority: 4.17  •  Dashboard impact: 10.47'
   evaluation:
@@ -4148,8 +4108,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0471
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323547+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051603+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 10.47
 - id: '126'
   created: '2026-04-20'
@@ -4171,8 +4131,8 @@ sprints:
   rationale: 'Missing custom SEO title — 298 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=298 | current_title=''Teach Your Cat
-    to Use the New Cat Tree''
+    Evidence: seo_title=NOT_SET | impressions=298 | current_title=''Teach Your Cat to Use the New Cat
+    Tree''
 
     Engine priority: 4.17  •  Dashboard impact: 10.38'
   evaluation:
@@ -4183,8 +4143,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0483
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323662+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051710+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 10.38
 - id: '127'
   created: '2026-04-20'
@@ -4206,8 +4166,8 @@ sprints:
   rationale: 'Missing custom SEO title — 293 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=293 | current_title=''Sphynx Cat 101
-    - History, Personality and Traits''
+    Evidence: seo_title=NOT_SET | impressions=293 | current_title=''Sphynx Cat 101 - History, Personality
+    and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 10.35'
   evaluation:
@@ -4218,8 +4178,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0487
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323694+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051750+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 10.35
 - id: '128'
   created: '2026-04-20'
@@ -4241,8 +4201,8 @@ sprints:
   rationale: 'Missing custom SEO title — 261 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=261 | current_title=''Siberian Cat 101
-    - History, Personality and Traits''
+    Evidence: seo_title=NOT_SET | impressions=261 | current_title=''Siberian Cat 101 - History, Personality
+    and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 10.15'
   evaluation:
@@ -4253,8 +4213,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0489
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323710+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051765+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 10.15
 - id: '129'
   created: '2026-04-20'
@@ -4276,8 +4236,8 @@ sprints:
   rationale: 'Missing custom SEO title — 222 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=222 | current_title=''Persian Cat 101
-    - History, Personality and Traits''
+    Evidence: seo_title=NOT_SET | impressions=222 | current_title=''Persian Cat 101 - History, Personality
+    and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 9.86'
   evaluation:
@@ -4288,8 +4248,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0486
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323687+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051740+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 9.86
 - id: '130'
   created: '2026-04-20'
@@ -4311,8 +4271,8 @@ sprints:
   rationale: 'Missing custom SEO title — 158 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=158 | current_title=''Help Your Cat
-    Enjoy Car Rides - Tips to Train Cats''
+    Evidence: seo_title=NOT_SET | impressions=158 | current_title=''Help Your Cat Enjoy Car Rides - Tips
+    to Train Cats''
 
     Engine priority: 4.17  •  Dashboard impact: 9.28'
   evaluation:
@@ -4323,8 +4283,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0462
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323466+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051519+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 9.28
 - id: '131'
   created: '2026-04-20'
@@ -4346,8 +4306,8 @@ sprints:
   rationale: 'Missing custom SEO title — 150 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=150 | current_title=''Reasons Why Your
-    Cat Does Not Listen to You''
+    Evidence: seo_title=NOT_SET | impressions=150 | current_title=''Reasons Why Your Cat Does Not Listen
+    to You''
 
     Engine priority: 4.17  •  Dashboard impact: 9.19'
   evaluation:
@@ -4358,8 +4318,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0474
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323567+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051623+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 9.19
 - id: '132'
   created: '2026-04-20'
@@ -4381,8 +4341,8 @@ sprints:
   rationale: 'Missing custom SEO title — 129 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=129 | current_title=''Cat Body Language
-    Explained - 18 Things Your Cat i''
+    Evidence: seo_title=NOT_SET | impressions=129 | current_title=''Cat Body Language Explained - 18 Things
+    Your Cat i''
 
     Engine priority: 4.17  •  Dashboard impact: 8.94'
   evaluation:
@@ -4393,8 +4353,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0468
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-21T16:00:07.323519+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.051574+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 8.94
 - id: '133'
   created: '2026-04-20'
@@ -4413,8 +4373,7 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Keyword cannibalization: ''outdoor bengal'' split across 18 pages —
-    consolidate
+  rationale: 'Keyword cannibalization: ''outdoor bengal'' split across 18 pages — consolidate
 
 
     Evidence: pages=18 | total_impressions=12457
@@ -4428,8 +4387,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0491
     opportunity_type: SERP_DISCOVERY
-    detected_at: '2026-04-21T16:00:07.325922+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
+    detected_at: '2026-04-21T16:17:41.053873+00:00'
+    last_refreshed: '2026-04-21T16:17:44Z'
     dashboard_impact: 3.9
 - id: '002'
   created: '2026-04-17'
@@ -4448,8 +4407,7 @@ sprints:
     level: LOW
     description: 1 sentence + link
     estimated_minutes: 15
-  rationale: 'Cat training guide currently ranks position 4 for "clicker training
-    cats"
+  rationale: 'Cat training guide currently ranks position 4 for "clicker training cats"
 
     with ~1.2k monthly impressions. Zero internal links point to the Zeppelin
 

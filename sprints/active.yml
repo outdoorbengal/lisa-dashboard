@@ -1,4 +1,5 @@
-# Active experiments — auto-managed. See scripts/sprint_action.py
+# Active experiments — current_reading updated by lisa_dashboard_sync.py.
+# State transitions managed by sprint_action.py and evaluate_experiment.py.
 
 experiments:
 - id: '001'
@@ -29,7 +30,7 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:00:11Z'
+    last_measured: '2026-04-21T16:17:44Z'
     current_value: 17.21
     days_elapsed: 7
     note: 132 clicks / 767 impressions
@@ -60,7 +61,7 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:00:11Z'
+    last_measured: '2026-04-21T16:17:44Z'
     current_value: 0.63
     days_elapsed: 1
     note: 319 sessions this window
@@ -81,8 +82,7 @@ experiments:
     evaluation_date: '2026-06-01'
     window_days: 42
   url: /products/extra-safe-cat-harness
-  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1165 impressions
-    but page 2
+  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1165 impressions but page 2
 
 
     Evidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%
@@ -92,7 +92,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:00:11Z'
+    last_measured: '2026-04-21T16:17:44Z'
     current_value: 1813.0
     days_elapsed: 1
     note: 259 clicks over 1d
@@ -113,8 +113,7 @@ experiments:
     evaluation_date: '2026-06-02'
     window_days: 42
   url: /products/keeper-airtag-holder-for-cat-collar
-  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page
-    2
+  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page 2
 
 
     Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
@@ -124,6 +123,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: null
-    current_value: null
+    last_measured: '2026-04-21T16:17:44Z'
+    current_value: 0.0
     days_elapsed: 0
+    note: 0 clicks over 1d
