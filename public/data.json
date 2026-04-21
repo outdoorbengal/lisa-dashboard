@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-20",
+  "generated": "2026-04-21",
   "week_of": "Apr 20 2026",
   "system": {
     "status": "OK",
@@ -8,7 +8,7 @@
     "sources_connected": 4,
     "sources_total": 4,
     "opportunities": 132,
-    "active_tests": 2,
+    "active_tests": 3,
     "days_complete": 1,
     "scan_bars": [
       100,
@@ -58,9 +58,9 @@
       "delta": null,
       "start_date": "Apr 14",
       "end_date": "May 26",
-      "progress_pct": 14,
-      "note": "6 days in",
-      "week_current": 1,
+      "progress_pct": 17,
+      "note": "7 days in",
+      "week_current": 2,
       "week_total": 6
     },
     {
@@ -78,10 +78,30 @@
       "delta": null,
       "start_date": "Apr 20",
       "end_date": "May 18",
-      "progress_pct": 0,
-      "note": "0 days in",
+      "progress_pct": 4,
+      "note": "1 days in",
       "week_current": 1,
       "week_total": 4
+    },
+    {
+      "id": "005",
+      "name": "Push to page 1 \u2014 extra-safe-cat-harness",
+      "type": "RNK",
+      "status": "RUNNING",
+      "kpi_label": "Weekly clicks \u00b7 pos 7.4",
+      "before_val": 0,
+      "before_pct": 0.0,
+      "after_val": null,
+      "after_pct": null,
+      "target_val": 4,
+      "target_pct": 4.0,
+      "delta": null,
+      "start_date": "Apr 20",
+      "end_date": "Jun 01",
+      "progress_pct": 2,
+      "note": "1 days in",
+      "week_current": 1,
+      "week_total": 6
     },
     {
       "id": "000",
@@ -106,24 +126,9 @@
   ],
   "sprints": [
     {
-      "id": "005",
-      "status": "UNACKNOWLEDGED",
-      "days_waiting": 0,
-      "title": "Push to page 1 \u2014 extra-safe-cat-harness",
-      "url": "/products/extra-safe-cat-harness",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 7.4",
-      "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 4.0,
-      "target_label": "+3/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12
-    },
-    {
       "id": "006",
-      "status": "NEXT_UP",
-      "days_waiting": 0,
+      "status": "UNACKNOWLEDGED",
+      "days_waiting": 1,
       "title": "Push to page 1 \u2014 portable-litterbox",
       "url": "/products/portable-litterbox",
       "sprint_type": "RNK",
@@ -134,45 +139,25 @@
       "target_label": "+2/wk",
       "effort_label": "MEDIUM \u2014 Copy + internal links",
       "effort_pct": 12
+    },
+    {
+      "id": "007",
+      "status": "NEXT_UP",
+      "days_waiting": 1,
+      "title": "Push to page 1 \u2014 keeper-airtag-holder-for-cat-collar",
+      "url": "/products/keeper-airtag-holder-for-cat-collar",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 11.3",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 2.0,
+      "target_label": "+2/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12
     }
   ],
   "details": {
     "queue": [
-      {
-        "id": "005",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 extra-safe-cat-harness",
-        "url": "/products/extra-safe-cat-harness",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 7.4",
-          "current_value": 0,
-          "current_display": "~0/wk now",
-          "target_value": 4,
-          "target_display": "+3/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Ranking pos 7.4 for 'best cat harness escape proof' \u2014 1165 impressions but page 2\n\nEvidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%\nEngine priority: 6.0  \u2022  Dashboard impact: 35.92",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0016",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-20T13:44:13.968884+00:00",
-          "last_refreshed": "2026-04-20T13:44:17Z",
-          "dashboard_impact": 35.92
-        }
-      },
       {
         "id": "006",
         "created": "2026-04-20",
@@ -4780,6 +4765,37 @@
           "current_value": null,
           "days_elapsed": 0
         }
+      },
+      {
+        "id": "005",
+        "name": "Push to page 1 \u2014 extra-safe-cat-harness",
+        "sprint_type": "RNK",
+        "status": "RUNNING",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.4",
+          "baseline_value": 0,
+          "baseline_display": "~0/wk now",
+          "target_value": 4,
+          "target_display": "+3/wk",
+          "unit": "sessions/week"
+        },
+        "timeline": {
+          "started": "2026-04-20",
+          "evaluation_date": "2026-06-01",
+          "window_days": 42
+        },
+        "url": "/products/extra-safe-cat-harness",
+        "rationale": "Ranking pos 7.4 for 'best cat harness escape proof' \u2014 1165 impressions but page 2\n\nEvidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%\nEngine priority: 6.0  \u2022  Dashboard impact: 35.92",
+        "evaluation": {
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": null,
+          "current_value": null,
+          "days_elapsed": 0
+        }
       }
     ],
     "archive": [
@@ -4811,6 +4827,14 @@
     ]
   },
   "log": [
+    {
+      "run_id": "sprint-005-started",
+      "type": "sprint_started",
+      "status": "success",
+      "sprint_id": "005",
+      "summary": "Sprint #005 moved from queue to active. Baseline Weekly clicks \u00b7 pos 7.4: ~0/wk now. Evaluation date: 2026-06-01.",
+      "ts": "2026-04-20T18:27:41Z"
+    },
     {
       "run_id": "sprint-004-started",
       "type": "sprint_started",
