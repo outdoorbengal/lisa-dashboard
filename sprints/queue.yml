@@ -1,6 +1,4 @@
-# Sprint queue — managed by lisa_dashboard_sync.py.
-# Ordered by dashboard_impact (highest first).
-# First item = UNACKNOWLEDGED on the dashboard.
+# Sprint queue — auto-managed. See scripts/sprint_action.py
 
 sprints:
 - id: '006'
@@ -20,7 +18,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.4 for ''travel litter box'' — 865 impressions but page 2
+  rationale: 'Ranking pos 13.4 for ''travel litter box'' — 865 impressions but page
+    2
 
 
     Evidence: pos=13.4 | impressions=865 | clicks=13 | CTR=1.5%
@@ -37,40 +36,6 @@ sprints:
     detected_at: '2026-04-21T16:00:07.315575+00:00'
     last_refreshed: '2026-04-21T16:00:11Z'
     dashboard_impact: 34.42
-- id: '007'
-  created: '2026-04-20'
-  title: Push to page 1 — keeper-airtag-holder-for-cat-collar
-  url: /products/keeper-airtag-holder-for-cat-collar
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 11.2
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 2
-    target_display: +2/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page 2
-
-
-    Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
-
-    Engine priority: 6.0  •  Dashboard impact: 33.55'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0389
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-04-21T16:00:07.319631+00:00'
-    last_refreshed: '2026-04-21T16:00:11Z'
-    dashboard_impact: 33.55
 - id: 008
   created: '2026-04-20'
   title: Push to page 1 — cat-training-guide
@@ -122,7 +87,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.1 for ''cat agility course'' — 344 impressions but page 2
+  rationale: 'Ranking pos 6.1 for ''cat agility course'' — 344 impressions but page
+    2
 
 
     Evidence: pos=6.1 | impressions=344 | clicks=12 | CTR=3.5%
@@ -191,7 +157,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat clicker training kit'' — 213 impressions but page 2
+  rationale: 'Ranking pos 10.2 for ''cat clicker training kit'' — 213 impressions
+    but page 2
 
 
     Evidence: pos=10.2 | impressions=213 | clicks=1 | CTR=0.5%
@@ -259,7 +226,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.2 for ''outdoor cat collar'' — 185 impressions but page 2
+  rationale: 'Ranking pos 9.2 for ''outdoor cat collar'' — 185 impressions but page
+    2
 
 
     Evidence: pos=9.2 | impressions=185 | clicks=3 | CTR=1.6%
@@ -293,7 +261,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.2 for ''how to teach a cat tricks'' — 19650 impressions but page 2
+  rationale: 'Ranking pos 5.2 for ''how to teach a cat tricks'' — 19650 impressions
+    but page 2
 
 
     Evidence: pos=5.2 | impressions=19650 | clicks=29 | CTR=0.1%
@@ -327,7 +296,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''long leash for cats'' — 167 impressions but page 2
+  rationale: 'Ranking pos 10.2 for ''long leash for cats'' — 167 impressions but page
+    2
 
 
     Evidence: pos=10.2 | impressions=167 | clicks=1 | CTR=0.6%
@@ -361,7 +331,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.7 for ''adventure cat harness'' — 1411 impressions but page 2
+  rationale: 'Ranking pos 8.7 for ''adventure cat harness'' — 1411 impressions but
+    page 2
 
 
     Evidence: pos=8.7 | impressions=1411 | clicks=3 | CTR=0.2%
@@ -395,7 +366,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1451 organic sessions but 61% bounce rate — users not finding what they need
+  rationale: '1451 organic sessions but 61% bounce rate — users not finding what they
+    need
 
 
     Evidence: sessions=1451 | bounce=61% | CR=0.00%
@@ -429,7 +401,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1408 organic sessions but 97% bounce rate — users not finding what they need
+  rationale: '1408 organic sessions but 97% bounce rate — users not finding what they
+    need
 
 
     Evidence: sessions=1408 | bounce=97% | CR=0.00%
@@ -633,7 +606,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '725 organic sessions but 57% bounce rate — users not finding what they need
+  rationale: '725 organic sessions but 57% bounce rate — users not finding what they
+    need
 
 
     Evidence: sessions=725 | bounce=57% | CR=0.00%
@@ -735,7 +709,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.7 for ''aesthetic cat tree'' — 5070 impressions but page 2
+  rationale: 'Ranking pos 8.7 for ''aesthetic cat tree'' — 5070 impressions but page
+    2
 
 
     Evidence: pos=8.7 | impressions=5070 | clicks=113 | CTR=2.2%
@@ -803,8 +778,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.7 for ''chances of finding lost cat after 24 hours'' — 4031 impressions but
-    page 2
+  rationale: 'Ranking pos 9.7 for ''chances of finding lost cat after 24 hours'' —
+    4031 impressions but page 2
 
 
     Evidence: pos=9.7 | impressions=4031 | clicks=38 | CTR=0.9%
@@ -1008,7 +983,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1241 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '1241 organic sessions with ZERO internal product links — conversion
+    opportunity wasted
 
 
     Evidence: sessions=1241 | product_links=0 | blog_type=Cat Health
@@ -1076,7 +1052,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1027 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '1027 organic sessions with ZERO internal product links — conversion
+    opportunity wasted
 
 
     Evidence: sessions=1027 | product_links=0 | blog_type=Understanding Cat Behavior
@@ -1144,7 +1121,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.5 for ''zeppelin cat carrier'' — 344 impressions but page 2
+  rationale: 'Ranking pos 6.5 for ''zeppelin cat carrier'' — 344 impressions but page
+    2
 
 
     Evidence: pos=6.5 | impressions=344 | clicks=26 | CTR=7.6%
@@ -1484,7 +1462,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '490 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '490 organic sessions with ZERO internal product links — conversion opportunity
+    wasted
 
 
     Evidence: sessions=490 | product_links=0 | blog_type=Correcting Cat Behavior
@@ -1521,8 +1500,8 @@ sprints:
   rationale: 'Missing custom SEO title — 35013 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=35013 | current_title=''What Tricks Can a Cat Learn (12
-    Cat Tricks + How t''
+    Evidence: seo_title=NOT_SET | impressions=35013 | current_title=''What Tricks
+    Can a Cat Learn (12 Cat Tricks + How t''
 
     Engine priority: 4.17  •  Dashboard impact: 18.95'
   evaluation:
@@ -1689,7 +1668,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '385 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '385 organic sessions with ZERO internal product links — conversion opportunity
+    wasted
 
 
     Evidence: sessions=385 | product_links=0 | blog_type=Cat Breeds
@@ -1893,7 +1873,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '260 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '260 organic sessions with ZERO internal product links — conversion opportunity
+    wasted
 
 
     Evidence: sessions=260 | product_links=0 | blog_type=Cat Advice
@@ -1961,7 +1942,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '252 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '252 organic sessions with ZERO internal product links — conversion opportunity
+    wasted
 
 
     Evidence: sessions=252 | product_links=0 | blog_type=Cat Advice
@@ -1995,7 +1977,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.8 for ''how to teach a cat to sit'' — 577 impressions but page 2
+  rationale: 'Ranking pos 8.8 for ''how to teach a cat to sit'' — 577 impressions
+    but page 2
 
 
     Evidence: pos=8.8 | impressions=577 | clicks=2 | CTR=0.3%
@@ -2029,7 +2012,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 17.7 for ''best time to feed cats'' — 575 impressions but page 2
+  rationale: 'Ranking pos 17.7 for ''best time to feed cats'' — 575 impressions but
+    page 2
 
 
     Evidence: pos=17.7 | impressions=575 | clicks=1 | CTR=0.2%
@@ -2097,7 +2081,8 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '220 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '220 organic sessions with ZERO internal product links — conversion opportunity
+    wasted
 
 
     Evidence: sessions=220 | product_links=0 | blog_type=Cat Advice
@@ -2131,7 +2116,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.5 for ''cat wont let me sleep'' — 493 impressions but page 2
+  rationale: 'Ranking pos 5.5 for ''cat wont let me sleep'' — 493 impressions but
+    page 2
 
 
     Evidence: pos=5.5 | impressions=493 | clicks=17 | CTR=3.4%
@@ -2168,8 +2154,8 @@ sprints:
   rationale: 'Missing custom SEO title — 10426 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=10426 | current_title=''Savannah Cat 101 - Personality,
-    Traits, Price & Si''
+    Evidence: seo_title=NOT_SET | impressions=10426 | current_title=''Savannah Cat
+    101 - Personality, Traits, Price & Si''
 
     Engine priority: 4.17  •  Dashboard impact: 16.76'
   evaluation:
@@ -2200,7 +2186,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 456 impressions but page 2
+  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 456 impressions
+    but page 2
 
 
     Evidence: pos=10.5 | impressions=456 | clicks=3 | CTR=0.7%
@@ -2234,7 +2221,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.4 for ''how to put a cat harness on'' — 436 impressions but page 2
+  rationale: 'Ranking pos 9.4 for ''how to put a cat harness on'' — 436 impressions
+    but page 2
 
 
     Evidence: pos=9.4 | impressions=436 | clicks=2 | CTR=0.5%
@@ -2271,8 +2259,8 @@ sprints:
   rationale: 'Missing custom SEO title — 9120 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=9120 | current_title=''How to Find the Best Escape Proof
-    Cat Harness''
+    Evidence: seo_title=NOT_SET | impressions=9120 | current_title=''How to Find the
+    Best Escape Proof Cat Harness''
 
     Engine priority: 4.17  •  Dashboard impact: 16.52'
   evaluation:
@@ -2374,8 +2362,8 @@ sprints:
   rationale: 'Missing custom SEO title — 7518 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=7518 | current_title=''Savannah Cat vs. Bengal Cat - Exotic
-    Breeds Side b''
+    Evidence: seo_title=NOT_SET | impressions=7518 | current_title=''Savannah Cat
+    vs. Bengal Cat - Exotic Breeds Side b''
 
     Engine priority: 4.17  •  Dashboard impact: 16.17'
   evaluation:
@@ -2409,8 +2397,8 @@ sprints:
   rationale: 'Missing custom SEO title — 6320 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=6320 | current_title=''Stop Your Cat from Begging for Food
-    (Vet Recommend''
+    Evidence: seo_title=NOT_SET | impressions=6320 | current_title=''Stop Your Cat
+    from Begging for Food (Vet Recommend''
 
     Engine priority: 4.17  •  Dashboard impact: 15.85'
   evaluation:
@@ -2475,8 +2463,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 18.9 for ''how to train a cat to walk on a leash'' — 305 impressions but page
-    2
+  rationale: 'Ranking pos 18.9 for ''how to train a cat to walk on a leash'' — 305
+    impressions but page 2
 
 
     Evidence: pos=18.9 | impressions=305 | clicks=1 | CTR=0.3%
@@ -2513,8 +2501,8 @@ sprints:
   rationale: 'Missing custom SEO title — 5476 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=5476 | current_title=''Teaching NO to Your Cat to Stopping
-    Unwanted Behav''
+    Evidence: seo_title=NOT_SET | impressions=5476 | current_title=''Teaching NO to
+    Your Cat to Stopping Unwanted Behav''
 
     Engine priority: 4.17  •  Dashboard impact: 15.59'
   evaluation:
@@ -2548,8 +2536,8 @@ sprints:
   rationale: 'Missing custom SEO title — 5384 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=5384 | current_title=''Foods Your Cat CAN and CAN''T Eat
-    - Don''t Get it Wr''
+    Evidence: seo_title=NOT_SET | impressions=5384 | current_title=''Foods Your Cat
+    CAN and CAN''T Eat - Don''t Get it Wr''
 
     Engine priority: 4.17  •  Dashboard impact: 15.56'
   evaluation:
@@ -2614,7 +2602,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.5 for ''can cats be left alone overnight'' — 281 impressions but page 2
+  rationale: 'Ranking pos 7.5 for ''can cats be left alone overnight'' — 281 impressions
+    but page 2
 
 
     Evidence: pos=7.5 | impressions=281 | clicks=2 | CTR=0.7%
@@ -2648,8 +2637,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.2 for ''is it cruel to take a cat on a plane'' — 273 impressions but page
-    2
+  rationale: 'Ranking pos 12.2 for ''is it cruel to take a cat on a plane'' — 273
+    impressions but page 2
 
 
     Evidence: pos=12.2 | impressions=273 | clicks=1 | CTR=0.4%
@@ -2682,8 +2671,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.6 for ''can i take my indoor cat outside on a leash'' — 265 impressions but
-    page 2
+  rationale: 'Ranking pos 7.6 for ''can i take my indoor cat outside on a leash''
+    — 265 impressions but page 2
 
 
     Evidence: pos=7.6 | impressions=265 | clicks=2 | CTR=0.8%
@@ -2717,7 +2706,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 15.4 for ''is cat grass good for cats'' — 251 impressions but page 2
+  rationale: 'Ranking pos 15.4 for ''is cat grass good for cats'' — 251 impressions
+    but page 2
 
 
     Evidence: pos=15.4 | impressions=251 | clicks=2 | CTR=0.8%
@@ -2751,7 +2741,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.4 for ''how to get cat to use cat tree'' — 248 impressions but page 2
+  rationale: 'Ranking pos 8.4 for ''how to get cat to use cat tree'' — 248 impressions
+    but page 2
 
 
     Evidence: pos=8.4 | impressions=248 | clicks=5 | CTR=2.0%
@@ -2785,7 +2776,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.1 for ''foldable litter box'' — 241 impressions but page 2
+  rationale: 'Ranking pos 10.1 for ''foldable litter box'' — 241 impressions but page
+    2
 
 
     Evidence: pos=10.1 | impressions=241 | clicks=2 | CTR=0.8%
@@ -2819,7 +2811,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 17.9 for ''cat harness training'' — 240 impressions but page 2
+  rationale: 'Ranking pos 17.9 for ''cat harness training'' — 240 impressions but
+    page 2
 
 
     Evidence: pos=17.9 | impressions=240 | clicks=1 | CTR=0.4%
@@ -2887,7 +2880,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.1 for ''how to train a bengal cat'' — 223 impressions but page 2
+  rationale: 'Ranking pos 6.1 for ''how to train a bengal cat'' — 223 impressions
+    but page 2
 
 
     Evidence: pos=6.1 | impressions=223 | clicks=6 | CTR=2.7%
@@ -2921,7 +2915,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat language words'' — 223 impressions but page 2
+  rationale: 'Ranking pos 10.2 for ''cat language words'' — 223 impressions but page
+    2
 
 
     Evidence: pos=10.2 | impressions=223 | clicks=1 | CTR=0.4%
@@ -2955,7 +2950,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 18.7 for ''siberian cat personality'' — 221 impressions but page 2
+  rationale: 'Ranking pos 18.7 for ''siberian cat personality'' — 221 impressions
+    but page 2
 
 
     Evidence: pos=18.7 | impressions=221 | clicks=1 | CTR=0.5%
@@ -2989,7 +2985,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.5 for ''male cat personality'' — 216 impressions but page 2
+  rationale: 'Ranking pos 5.5 for ''male cat personality'' — 216 impressions but page
+    2
 
 
     Evidence: pos=5.5 | impressions=216 | clicks=4 | CTR=1.9%
@@ -3060,8 +3057,8 @@ sprints:
   rationale: 'Missing custom SEO title — 3219 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=3219 | current_title=''20 Cat Harness Training Tips NOBODY
-    Tells You (but''
+    Evidence: seo_title=NOT_SET | impressions=3219 | current_title=''20 Cat Harness
+    Training Tips NOBODY Tells You (but''
 
     Engine priority: 4.17  •  Dashboard impact: 14.63'
   evaluation:
@@ -3092,7 +3089,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.0 for ''savannah cat traits'' — 209 impressions but page 2
+  rationale: 'Ranking pos 6.0 for ''savannah cat traits'' — 209 impressions but page
+    2
 
 
     Evidence: pos=6.0 | impressions=209 | clicks=7 | CTR=3.3%
@@ -3129,8 +3127,8 @@ sprints:
   rationale: 'Missing custom SEO title — 3059 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=3059 | current_title=''Female Cat 101 | Behavior, Personality
-    & Traits of''
+    Evidence: seo_title=NOT_SET | impressions=3059 | current_title=''Female Cat 101
+    | Behavior, Personality & Traits of''
 
     Engine priority: 4.17  •  Dashboard impact: 14.54'
   evaluation:
@@ -3161,7 +3159,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.2 for ''cat breed identifier chart'' — 200 impressions but page 2
+  rationale: 'Ranking pos 10.2 for ''cat breed identifier chart'' — 200 impressions
+    but page 2
 
 
     Evidence: pos=10.2 | impressions=200 | clicks=2 | CTR=1.0%
@@ -3195,7 +3194,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.5 for ''zeppelin cat carrier'' — 188 impressions but page 2
+  rationale: 'Ranking pos 7.5 for ''zeppelin cat carrier'' — 188 impressions but page
+    2
 
 
     Evidence: pos=7.5 | impressions=188 | clicks=19 | CTR=10.1%
@@ -3232,8 +3232,8 @@ sprints:
   rationale: 'Missing custom SEO title — 2636 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=2636 | current_title=''Zeppelin Cat Carrier Review - Deep
-    Dive''
+    Evidence: seo_title=NOT_SET | impressions=2636 | current_title=''Zeppelin Cat
+    Carrier Review - Deep Dive''
 
     Engine priority: 4.17  •  Dashboard impact: 14.27'
   evaluation:
@@ -3298,7 +3298,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.9 for ''why are bengal cats so vocal'' — 172 impressions but page 2
+  rationale: 'Ranking pos 8.9 for ''why are bengal cats so vocal'' — 172 impressions
+    but page 2
 
 
     Evidence: pos=8.9 | impressions=172 | clicks=3 | CTR=1.7%
@@ -3366,8 +3367,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.0 for ''how to tell a female cat from a male cat'' — 168 impressions but
-    page 2
+  rationale: 'Ranking pos 12.0 for ''how to tell a female cat from a male cat'' —
+    168 impressions but page 2
 
 
     Evidence: pos=12.0 | impressions=168 | clicks=1 | CTR=0.6%
@@ -3469,7 +3470,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 11.7 for ''persian cat history'' — 164 impressions but page 2
+  rationale: 'Ranking pos 11.7 for ''persian cat history'' — 164 impressions but page
+    2
 
 
     Evidence: pos=11.7 | impressions=164 | clicks=1 | CTR=0.6%
@@ -3503,7 +3505,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.6 for ''best kitten harness'' — 159 impressions but page 2
+  rationale: 'Ranking pos 9.6 for ''best kitten harness'' — 159 impressions but page
+    2
 
 
     Evidence: pos=9.6 | impressions=159 | clicks=7 | CTR=4.4%
@@ -3537,7 +3540,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.6 for ''how to stop cat from eating plants'' — 158 impressions but page 2
+  rationale: 'Ranking pos 12.6 for ''how to stop cat from eating plants'' — 158 impressions
+    but page 2
 
 
     Evidence: pos=12.6 | impressions=158 | clicks=2 | CTR=1.3%
@@ -3571,7 +3575,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.1 for ''kitty car rides'' — 158 impressions but page 2
+  rationale: 'Ranking pos 13.1 for ''kitty car rides'' — 158 impressions but page
+    2
 
 
     Evidence: pos=13.1 | impressions=158 | clicks=1 | CTR=0.6%
@@ -3605,7 +3610,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 12.2 for ''cat training books'' — 157 impressions but page 2
+  rationale: 'Ranking pos 12.2 for ''cat training books'' — 157 impressions but page
+    2
 
 
     Evidence: pos=12.2 | impressions=157 | clicks=2 | CTR=1.3%
@@ -3642,8 +3648,8 @@ sprints:
   rationale: 'Missing custom SEO title — 2044 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=2044 | current_title=''How to Put a Harness on a Cat - Easy
-    Way to Put On''
+    Evidence: seo_title=NOT_SET | impressions=2044 | current_title=''How to Put a
+    Harness on a Cat - Easy Way to Put On''
 
     Engine priority: 4.17  •  Dashboard impact: 13.81'
   evaluation:
@@ -3745,8 +3751,8 @@ sprints:
   rationale: 'Missing custom SEO title — 1316 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1316 | current_title=''My Cat Doesn''t Like Treats - Train
-    a Cat That''s NO''
+    Evidence: seo_title=NOT_SET | impressions=1316 | current_title=''My Cat Doesn''t
+    Like Treats - Train a Cat That''s NO''
 
     Engine priority: 4.17  •  Dashboard impact: 13.02'
   evaluation:
@@ -3780,8 +3786,8 @@ sprints:
   rationale: 'Missing custom SEO title — 1248 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1248 | current_title=''Leaving Your Cat Alone - A Complete
-    Guide to Preve''
+    Evidence: seo_title=NOT_SET | impressions=1248 | current_title=''Leaving Your
+    Cat Alone - A Complete Guide to Preve''
 
     Engine priority: 4.17  •  Dashboard impact: 12.93'
   evaluation:
@@ -3815,8 +3821,8 @@ sprints:
   rationale: 'Missing custom SEO title — 876 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=876 | current_title=''What is an Adventure Cat | Cat Training
-    Guide''
+    Evidence: seo_title=NOT_SET | impressions=876 | current_title=''What is an Adventure
+    Cat | Cat Training Guide''
 
     Engine priority: 4.17  •  Dashboard impact: 12.29'
   evaluation:
@@ -3850,8 +3856,8 @@ sprints:
   rationale: 'Missing custom SEO title — 772 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=772 | current_title=''Turn Your Cat into a Shoulder Cat
-    - Jump on Should''
+    Evidence: seo_title=NOT_SET | impressions=772 | current_title=''Turn Your Cat
+    into a Shoulder Cat - Jump on Should''
 
     Engine priority: 4.17  •  Dashboard impact: 12.06'
   evaluation:
@@ -3885,8 +3891,8 @@ sprints:
   rationale: 'Missing custom SEO title — 571 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=571 | current_title=''How I Trained my Bengal Cat: Mia''s
-    Epic First 5 Ye''
+    Evidence: seo_title=NOT_SET | impressions=571 | current_title=''How I Trained
+    my Bengal Cat: Mia''s Epic First 5 Ye''
 
     Engine priority: 4.17  •  Dashboard impact: 11.53'
   evaluation:
@@ -3920,8 +3926,8 @@ sprints:
   rationale: 'Missing custom SEO title — 554 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=554 | current_title=''Train Your Cat for Agility: A Step-by-Step
-    Guide''
+    Evidence: seo_title=NOT_SET | impressions=554 | current_title=''Train Your Cat
+    for Agility: A Step-by-Step Guide''
 
     Engine priority: 4.17  •  Dashboard impact: 11.47'
   evaluation:
@@ -3955,8 +3961,8 @@ sprints:
   rationale: 'Missing custom SEO title — 545 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=545 | current_title=''Benefits of Using a Cat Harness -
-    Enjoying the Gre''
+    Evidence: seo_title=NOT_SET | impressions=545 | current_title=''Benefits of Using
+    a Cat Harness - Enjoying the Gre''
 
     Engine priority: 4.17  •  Dashboard impact: 11.44'
   evaluation:
@@ -3990,8 +3996,8 @@ sprints:
   rationale: 'Missing custom SEO title — 538 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=538 | current_title=''Ultimate Method To Teach Your Cat
-    to Walk on a Lea''
+    Evidence: seo_title=NOT_SET | impressions=538 | current_title=''Ultimate Method
+    To Teach Your Cat to Walk on a Lea''
 
     Engine priority: 4.17  •  Dashboard impact: 11.42'
   evaluation:
@@ -4025,8 +4031,8 @@ sprints:
   rationale: 'Missing custom SEO title — 478 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=478 | current_title=''How to STOP Your Cat from Eating Your
-    Plants (Prov''
+    Evidence: seo_title=NOT_SET | impressions=478 | current_title=''How to STOP Your
+    Cat from Eating Your Plants (Prov''
 
     Engine priority: 4.17  •  Dashboard impact: 11.21'
   evaluation:
@@ -4060,8 +4066,8 @@ sprints:
   rationale: 'Missing custom SEO title — 426 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=426 | current_title=''How to Choose the Best Collar Color
-    for Your Cat''
+    Evidence: seo_title=NOT_SET | impressions=426 | current_title=''How to Choose
+    the Best Collar Color for Your Cat''
 
     Engine priority: 4.17  •  Dashboard impact: 11.01'
   evaluation:
@@ -4095,7 +4101,8 @@ sprints:
   rationale: 'Missing custom SEO title — 368 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=368 | current_title=''Making Cat Videos that Go Viral (Step-by-Step)''
+    Evidence: seo_title=NOT_SET | impressions=368 | current_title=''Making Cat Videos
+    that Go Viral (Step-by-Step)''
 
     Engine priority: 4.17  •  Dashboard impact: 10.75'
   evaluation:
@@ -4129,8 +4136,8 @@ sprints:
   rationale: 'Missing custom SEO title — 314 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=314 | current_title=''Don´t Read Anything Else - 10 Must-Read
-    Cat Traini''
+    Evidence: seo_title=NOT_SET | impressions=314 | current_title=''Don´t Read Anything
+    Else - 10 Must-Read Cat Traini''
 
     Engine priority: 4.17  •  Dashboard impact: 10.47'
   evaluation:
@@ -4164,8 +4171,8 @@ sprints:
   rationale: 'Missing custom SEO title — 298 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=298 | current_title=''Teach Your Cat to Use the New Cat
-    Tree''
+    Evidence: seo_title=NOT_SET | impressions=298 | current_title=''Teach Your Cat
+    to Use the New Cat Tree''
 
     Engine priority: 4.17  •  Dashboard impact: 10.38'
   evaluation:
@@ -4199,8 +4206,8 @@ sprints:
   rationale: 'Missing custom SEO title — 293 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=293 | current_title=''Sphynx Cat 101 - History, Personality
-    and Traits''
+    Evidence: seo_title=NOT_SET | impressions=293 | current_title=''Sphynx Cat 101
+    - History, Personality and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 10.35'
   evaluation:
@@ -4234,8 +4241,8 @@ sprints:
   rationale: 'Missing custom SEO title — 261 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=261 | current_title=''Siberian Cat 101 - History, Personality
-    and Traits''
+    Evidence: seo_title=NOT_SET | impressions=261 | current_title=''Siberian Cat 101
+    - History, Personality and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 10.15'
   evaluation:
@@ -4269,8 +4276,8 @@ sprints:
   rationale: 'Missing custom SEO title — 222 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=222 | current_title=''Persian Cat 101 - History, Personality
-    and Traits''
+    Evidence: seo_title=NOT_SET | impressions=222 | current_title=''Persian Cat 101
+    - History, Personality and Traits''
 
     Engine priority: 4.17  •  Dashboard impact: 9.86'
   evaluation:
@@ -4304,8 +4311,8 @@ sprints:
   rationale: 'Missing custom SEO title — 158 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=158 | current_title=''Help Your Cat Enjoy Car Rides - Tips
-    to Train Cats''
+    Evidence: seo_title=NOT_SET | impressions=158 | current_title=''Help Your Cat
+    Enjoy Car Rides - Tips to Train Cats''
 
     Engine priority: 4.17  •  Dashboard impact: 9.28'
   evaluation:
@@ -4339,8 +4346,8 @@ sprints:
   rationale: 'Missing custom SEO title — 150 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=150 | current_title=''Reasons Why Your Cat Does Not Listen
-    to You''
+    Evidence: seo_title=NOT_SET | impressions=150 | current_title=''Reasons Why Your
+    Cat Does Not Listen to You''
 
     Engine priority: 4.17  •  Dashboard impact: 9.19'
   evaluation:
@@ -4374,8 +4381,8 @@ sprints:
   rationale: 'Missing custom SEO title — 129 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=129 | current_title=''Cat Body Language Explained - 18 Things
-    Your Cat i''
+    Evidence: seo_title=NOT_SET | impressions=129 | current_title=''Cat Body Language
+    Explained - 18 Things Your Cat i''
 
     Engine priority: 4.17  •  Dashboard impact: 8.94'
   evaluation:
@@ -4406,7 +4413,8 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Keyword cannibalization: ''outdoor bengal'' split across 18 pages — consolidate
+  rationale: 'Keyword cannibalization: ''outdoor bengal'' split across 18 pages —
+    consolidate
 
 
     Evidence: pages=18 | total_impressions=12457
@@ -4440,7 +4448,8 @@ sprints:
     level: LOW
     description: 1 sentence + link
     estimated_minutes: 15
-  rationale: 'Cat training guide currently ranks position 4 for "clicker training cats"
+  rationale: 'Cat training guide currently ranks position 4 for "clicker training
+    cats"
 
     with ~1.2k monthly impressions. Zero internal links point to the Zeppelin
 
