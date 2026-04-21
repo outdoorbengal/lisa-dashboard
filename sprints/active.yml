@@ -66,28 +66,31 @@ experiments:
     days_elapsed: 1
     note: 319 sessions this window
 - id: '005'
-  name: Push to page 1 — extra-safe-cat-harness
-  sprint_type: RNK
+  name: Meta description rewrite — extra-safe-cat-harness
+  sprint_type: CTR
   status: RUNNING
   kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 7.4
-    baseline_value: 0
-    baseline_display: ~0/wk now
-    target_value: 4
-    target_display: +3/wk
-    unit: sessions/week
+    metric: ctr
+    display_label: CTR · 79K impressions · pos 12.9
+    baseline_value: 2.26
+    baseline_display: 2.26% (last 30 days)
+    target_value: 2.8
+    target_display: 2.8%
+    unit: percent
   timeline:
-    started: '2026-04-20'
-    evaluation_date: '2026-06-01'
-    window_days: 42
+    started: '2026-04-21'
+    evaluation_date: '2026-05-21'
+    window_days: 30
   url: /products/extra-safe-cat-harness
-  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1165 impressions but page 2
+  rationale: 'Updated meta description on 2026-04-21. Baseline: 2.26% CTR on 79,317
 
+    impressions over the prior 30 days (1,790 clicks, pos 12.9).
 
-    Evidence: pos=7.4 | impressions=1165 | clicks=23 | CTR=2.0%
+    Evaluating CTR change over next 30 days vs prior 30 days.
 
-    Engine priority: 6.0  •  Dashboard impact: 35.92'
+    Target: 2.8% (+24% lift).
+
+    '
   evaluation:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
