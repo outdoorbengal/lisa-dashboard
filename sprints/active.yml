@@ -30,10 +30,10 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:17:44Z'
-    current_value: 17.21
-    days_elapsed: 7
-    note: 132 clicks / 767 impressions
+    last_measured: '2026-04-22T10:00:13Z'
+    current_value: 16.86
+    days_elapsed: 8
+    note: 159 clicks / 943 impressions
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
   sprint_type: CR
@@ -61,10 +61,10 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:17:44Z'
-    current_value: 0.63
-    days_elapsed: 1
-    note: 319 sessions this window
+    last_measured: '2026-04-22T10:00:13Z'
+    current_value: 0.56
+    days_elapsed: 2
+    note: 358 sessions this window
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
   sprint_type: CTR
@@ -95,10 +95,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:17:44Z'
-    current_value: 1813.0
+    last_measured: '2026-04-22T10:00:13Z'
+    current_value: 5.83
     days_elapsed: 1
-    note: 259 clicks over 1d
+    note: 310 clicks / 5320 impressions
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
   sprint_type: RNK
@@ -126,11 +126,11 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-21T16:17:44Z'
+    last_measured: '2026-04-22T10:00:13Z'
     current_value: 0.0
-    days_elapsed: 0
+    days_elapsed: 1
     note: 0 clicks over 1d
-- id: '008'
+- id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
   status: RUNNING
@@ -158,7 +158,7 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T04:08:00Z'
-    current_value: null
+    last_measured: '2026-04-22T10:00:13Z'
+    current_value: 253
     days_elapsed: 0
-    note: experiment started today — first reading tomorrow
+    note: 253 impressions | 7 clicks | 2.77% CTR
