@@ -106,16 +106,16 @@ function render(d) {
     const deltaHtml = exp.delta ? `<div class="delta-tag ${dCls(exp.delta)}">${exp.delta}</div>` : run ? `<div class="delta-tag d-f">TBD</div>` : "";
     return `<div class="exp-row" data-exp-id="${escapeHtml(exp.id)}">
       <div class="exp-date-blk"><div class="exp-date-mon">${sd.mon}</div><div class="exp-date-num">${sd.day}</div></div>
-      <div>
+      <div class="exp-body">
         <div class="exp-name">${escapeHtml(exp.name)}</div>
-        <div class="exp-url">${escapeHtml(exp.kpi_label)}${run ? " · baseline week" : ""}</div>
+        <div class="exp-kpi-line">${escapeHtml(exp.kpi_label)}</div>
         <div class="ba-row-wrap">
           <div class="ba-row"><div class="ba-tag">Before</div><div class="ba-track"><div class="ba-fill f-before" style="width:${exp.before_pct}%"></div></div><div class="ba-val">${fmtVal(exp.before_val, exp.before_display, exp.unit)}</div></div>
           ${afterRow}
         </div>
         <div class="tl-wrap">
           <div class="tl-track"><div class="tl-fill ${tlCls(exp.status)}" style="width:${exp.progress_pct}%"></div></div>
-          <div class="tl-lbls"><span>${exp.start_date}</span><span style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--muted)"};font-weight:500">${escapeHtml(exp.note || "")}</span><span>${exp.end_date}</span></div>
+          <div class="tl-lbls"><span>${exp.start_date}</span><span style="color:${exp.status==="WINNER"?"var(--teal)":"var(--muted)"};font-weight:500">${escapeHtml(exp.note||"")}</span><span>${exp.end_date}</span></div>
         </div>
       </div>
       <div class="exp-right"><span class="e-badge ${bCls(exp.status)}">${bLbl(exp)}</span>${deltaHtml}</div>
@@ -126,30 +126,27 @@ function render(d) {
   const winRate = pct(d.donuts.total.win, d.donuts.total.total);
   const pendingCount = (d.sprints || []).filter((s) => s.status === "UNACKNOWLEDGED").length;
 
-  const sprints = (d.sprints || []).map((sp) => {
-    const next = sp.status === "NEXT_UP";
-    const eff = sp.effort_label ? `<div class="s-effort-wrap"><div class="s-effort-fill" style="width:${sp.effort_pct}%"></div><div class="s-effort-lbl">${escapeHtml(sp.effort_label)}</div></div>` : "";
-    return `<div class="sprint-row">
+  const sprints = (d.sprints || []).slice(0, 10).map((sp) => {
+    const unack = sp.status === "UNACKNOWLEDGED";
+    const next  = sp.status === "NEXT_UP";
+    const effortCls = { LOW:"effort-low", MEDIUM:"effort-medium", HIGH:"effort-high" }[sp.effort_level] || "effort-medium";
+    const badge = unack
+      ? `<span class="s-unack">${sp.days_waiting}d waiting</span>`
+      : next
+        ? `<span class="s-next">NEXT UP</span>`
+        : `<span class="s-queued">#${sp.queue_position || ""}</span>`;
+    return `<div class="sprint-row" data-sprint-id="${escapeHtml(sp.id)}">
       <div class="sprint-date-blk"><div class="sprint-num-lbl">Sprint</div><div class="sprint-num-big">#${escapeHtml(sp.id)}</div></div>
-      <div>
-        <div class="sprint-header-clickable" data-sprint-id="${escapeHtml(sp.id)}">
-          <div class="sprint-title">${escapeHtml(sp.title)}</div>
-          <div class="sprint-url">${escapeHtml(sp.url)}</div>
-          <div class="s-impact-lbl">${escapeHtml(sp.impact_label)}</div>
-          <div class="s-bar-wrap">
-            <div class="s-bar-current" style="width:${sp.current_pct}%"></div>
-            <div class="s-bar-val-l">${escapeHtml(sp.current_label)}</div>
-            ${sp.target_pct ? `<div class="s-bar-target" style="width:${sp.target_pct}%"><span class="s-bar-val-r">${escapeHtml(sp.target_label)}</span></div>` : ""}
-          </div>
-          ${eff}
+      <div class="sprint-body">
+        <div class="sprint-title">${escapeHtml(sp.title)}</div>
+        <div class="sprint-url">${escapeHtml(sp.url)}</div>
+        <div class="sprint-meta">
+          <span class="sprint-kpi-pill">${escapeHtml(sp.impact_label || sp.sprint_type || "")}</span>
+          ${sp.effort_level ? `<span class="sprint-effort-pill ${effortCls}">${escapeHtml(sp.effort_level)}</span>` : ""}
+          ${sp.effort_minutes ? `<span class="sprint-kpi-pill">~${sp.effort_minutes}min</span>` : ""}
         </div>
-        ${!next ? `<div class="reply-btns">
-          <button class="rbtn r-done" data-action="done" data-sprint-id="${escapeHtml(sp.id)}">DONE</button>
-          <button class="rbtn r-skip" data-action="skip" data-sprint-id="${escapeHtml(sp.id)}">SKIP</button>
-          <button class="rbtn r-mod" data-sprint-id="${escapeHtml(sp.id)}">REVIEW</button>
-        </div>` : ""}
       </div>
-      <div class="sprint-right">${next ? '<span class="s-next">NEXT UP</span>' : `<span class="s-unack">${sp.days_waiting}d waiting</span>`}</div>
+      <div class="sprint-right">${badge}</div>
     </div>`;
   }).join("") || '<div class="empty">No pending sprints</div>';
 
@@ -203,10 +200,10 @@ function render(d) {
 
       <div class="section"><div class="card">
         <div class="card-header">
-          <div class="card-header-left"><div class="sec-icon" style="background:var(--orange-lt)">⚡</div><div><div class="card-title">Sprints</div><div class="card-sub">Click header to review · then DONE / SKIP / REVIEW</div></div></div>
+          <div class="card-header-left"><div class="sec-icon" style="background:var(--orange-lt)">⚡</div><div><div class="card-title">Sprints</div><div class="card-sub">Click any sprint for full brief &amp; instructions</div></div></div>
           ${pendingCount > 0 ? `<div class="card-badge" style="background:var(--orange-lt);color:var(--orange);border:1px solid #fca5a5">${pendingCount} unacknowledged</div>` : ""}
         </div>
-        ${sprints}
+        <div class="sprint-list">${sprints}</div>
       </div></div>
 
       <footer>
@@ -237,14 +234,9 @@ function wireEvents() {
   // Log viewer
   document.getElementById("log-btn")?.addEventListener("click", openLogModal);
 
-  // Sprint detail (click on sprint header)
-  document.querySelectorAll("[data-sprint-id]").forEach((el) => {
-    if (el.classList.contains("sprint-header-clickable") || el.classList.contains("r-mod")) {
-      el.addEventListener("click", (e) => {
-        if (e.currentTarget.dataset.action) return;
-        openSprintDetail(e.currentTarget.dataset.sprintId);
-      });
-    }
+  // Sprint detail — whole row clickable
+  document.querySelectorAll(".sprint-row[data-sprint-id]").forEach((el) => {
+    el.addEventListener("click", () => openSprintDetail(el.dataset.sprintId));
   });
 
   // Experiment detail
@@ -276,57 +268,92 @@ function findExperimentInDetails(id) {
   return (details.active || []).find((e) => e.id === id) || (details.archive || []).find((e) => e.id === id);
 }
 
+function buildBriefSteps(sprint) {
+  const type = sprint.sprint_type || "RNK";
+  const url = sprint.url || "";
+  const effort = sprint.effort || {};
+  const kpi = sprint.kpi || {};
+  let steps = [];
+  if (type === "RNK" || type === "CTR") {
+    steps = [
+      { n:1, text:`Go to <strong>Shopify &rarr; Online Store</strong> and open the page at <code>${url}</code>` },
+      { n:2, text:`Click <strong>Edit SEO</strong> at the bottom of the page editor.` },
+      { n:3, text:`<strong>Page title (max 60 chars):</strong> Lead with the primary keyword, add a specific benefit. Do not use the URL slug. Sound human.` },
+      { n:4, text:`<strong>Meta description (max 155 chars):</strong> Expand on the title with a clear benefit. Include the primary keyword. End with an implicit CTA.` },
+      { n:5, text:`Save. Go to <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> &rarr; URL Inspection &rarr; <strong>Request Indexing</strong> to speed up re-crawl.` },
+      { n:6, text:`Reply <strong>DONE - #${sprint.id}</strong> in the dashboard when complete.` },
+    ];
+  } else if (type === "CR") {
+    steps = [
+      { n:1, text:`Open <code>https://www.outdoorbengal.com${url}</code> as a first-time visitor on mobile.` },
+      { n:2, text:`In Shopify, rewrite the description: match search intent, address the #1 customer objection, make the value proposition clear in the first 2 sentences.` },
+      { n:3, text:`Confirm the <strong>Add to Cart</strong> button is visible without scrolling on mobile.` },
+      { n:4, text:`Save. Preview on mobile. Reply <strong>DONE - #${sprint.id}</strong> when done.` },
+    ];
+  } else if (type === "LINK") {
+    steps = [
+      { n:1, text:`Open the source post in Shopify editor: <code>${url}</code>` },
+      { n:2, text:`Find where the target product is mentioned or relevant and add a hyperlink to the product page.` },
+      { n:3, text:`Use descriptive anchor text (e.g. <em>"escape-proof cat harness"</em>, not <em>"click here"</em>).` },
+      { n:4, text:`Save. Reply <strong>DONE - #${sprint.id}</strong> when complete.` },
+    ];
+  } else {
+    steps = [
+      { n:1, text:`Review the rationale and make the described change on <code>https://www.outdoorbengal.com${url}</code>` },
+      { n:2, text:`Save. Reply <strong>DONE - #${sprint.id}</strong> when complete.` },
+    ];
+  }
+  return steps.map(s => `<div class="detail-brief-step"><div class="detail-brief-num">${s.n}</div><div class="detail-brief-text">${s.text}</div></div>`).join("");
+}
+
 function openSprintDetail(id) {
   const sprint = findSprintInDetails(id);
   if (!sprint) return;
-
   const kpi = sprint.kpi || {};
   const effort = sprint.effort || {};
   const evaluation = sprint.evaluation || {};
-
+  const typeLabel = { RNK:"Ranking", CTR:"CTR", CR:"Conversion", LINK:"Internal Link" }[sprint.sprint_type] || sprint.sprint_type;
   document.getElementById("modal-body").innerHTML = `
     <div class="detail-pad">
-      <span class="detail-type-badge">${escapeHtml(sprint.sprint_type)} · SPRINT #${escapeHtml(sprint.id)}</span>
+      <span class="detail-type-badge">${escapeHtml(typeLabel)} &middot; SPRINT #${escapeHtml(sprint.id)}</span>
       <div class="detail-title">${escapeHtml(sprint.title)}</div>
-      <div class="detail-url">${escapeHtml(sprint.url || "")}</div>
+      <div class="detail-url"><a href="https://www.outdoorbengal.com${escapeHtml(sprint.url||"")}" target="_blank" style="color:var(--muted2);font-size:12px;">${escapeHtml(sprint.url||"")}</a></div>
 
       <div class="detail-section">
-        <div class="detail-section-title">KPI we're optimizing</div>
-        <div style="font-size:13px;margin-bottom:10px;">${escapeHtml(kpi.display_label || "")}</div>
+        <div class="detail-section-title">Why this sprint</div>
+        <div class="detail-rationale">${escapeHtml(sprint.rationale||"No rationale provided.")}</div>
+      </div>
+
+      <div class="detail-section">
+        <div class="detail-section-title">KPI &amp; target</div>
         <div class="detail-kpi">
-          <div class="detail-kpi-item"><div class="k">Current</div><div class="v">${escapeHtml(kpi.current_display || kpi.current_value || "—")}</div></div>
-          <div class="detail-kpi-item"><div class="k">Target</div><div class="v" style="color:var(--teal)">${escapeHtml(kpi.target_display || kpi.target_value || "—")}</div></div>
+          <div class="detail-kpi-item"><div class="k">Current</div><div class="v">${escapeHtml(kpi.current_display||String(kpi.current_value??"—"))}</div></div>
+          <div class="detail-kpi-item"><div class="k">Target</div><div class="v" style="color:var(--teal)">${escapeHtml(kpi.target_display||String(kpi.target_value??"—"))}</div></div>
         </div>
       </div>
 
-      <div class="detail-section">
-        <div class="detail-section-title">Rationale</div>
-        <div class="detail-rationale">${escapeHtml(sprint.rationale || "No rationale provided.")}</div>
+      <div class="detail-brief">
+        <div class="detail-brief-title">Execution brief — for Bart or VA</div>
+        ${buildBriefSteps(sprint)}
       </div>
 
       <div class="detail-section">
-        <div class="detail-section-title">Effort & timing</div>
-        <div class="detail-effort-row"><span class="lbl">Effort level</span><span class="val">${escapeHtml(effort.level || "—")}</span></div>
-        <div class="detail-effort-row"><span class="lbl">Description</span><span class="val">${escapeHtml(effort.description || "—")}</span></div>
-        <div class="detail-effort-row"><span class="lbl">Estimated time</span><span class="val">${effort.estimated_minutes || "?"} min</span></div>
-        <div class="detail-effort-row"><span class="lbl">Evaluation window</span><span class="val">${evaluation.window_days || "?"} days after DONE</span></div>
-        <div class="detail-effort-row"><span class="lbl">Success threshold</span><span class="val">+${evaluation.success_threshold_pct || 10}% over baseline</span></div>
+        <div class="detail-section-title">Effort &amp; tracking</div>
+        <div class="detail-effort-row"><span class="lbl">Effort</span><span class="val">${escapeHtml(effort.level||"—")} &mdash; ${escapeHtml(effort.description||"—")}</span></div>
+        <div class="detail-effort-row"><span class="lbl">Estimated time</span><span class="val">${effort.estimated_minutes||"?"} min</span></div>
+        <div class="detail-effort-row"><span class="lbl">Tracks for</span><span class="val">${evaluation.window_days||"?"} days after DONE</span></div>
+        <div class="detail-effort-row"><span class="lbl">Success threshold</span><span class="val">+${evaluation.success_threshold_pct||10}% over baseline</span></div>
       </div>
 
       <div class="detail-actions">
-        <button class="rbtn r-done" data-modal-action="done" data-sprint-id="${escapeHtml(sprint.id)}">✓ DONE — Start tracking</button>
+        <button class="rbtn r-done" data-modal-action="done" data-sprint-id="${escapeHtml(sprint.id)}">&#10003; DONE &mdash; Start experiment</button>
         <button class="rbtn r-skip" data-modal-action="skip" data-sprint-id="${escapeHtml(sprint.id)}">SKIP</button>
       </div>
     </div>
   `;
-
   document.querySelectorAll("[data-modal-action]").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      closeModal();
-      handleAction(btn.dataset.modalAction, btn.dataset.sprintId);
-    });
+    btn.addEventListener("click", () => { closeModal(); handleAction(btn.dataset.modalAction, btn.dataset.sprintId); });
   });
-
   openModal();
 }
 

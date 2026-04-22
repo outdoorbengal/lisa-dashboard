@@ -212,7 +212,7 @@ def build_sprint_rows(queue: dict) -> list[dict]:
     sprints = queue.get("sprints", [])
     rows: list[dict] = []
 
-    for idx, sp in enumerate(sprints[:2]):
+    for idx, sp in enumerate(sprints[:10]):
         kpi = sp.get("kpi", {})
         effort = sp.get("effort", {})
         st = sp.get("sprint_type", "RNK")
@@ -224,7 +224,6 @@ def build_sprint_rows(queue: dict) -> list[dict]:
 
         rows.append({
             "id": sp["id"],
-            "status": "UNACKNOWLEDGED" if idx == 0 else "NEXT_UP",
             "days_waiting": days_waiting,
             "title": sp["title"],
             "url": sp.get("url", ""),
@@ -236,6 +235,10 @@ def build_sprint_rows(queue: dict) -> list[dict]:
             "target_label": kpi.get("target_display", ""),
             "effort_label": f"{effort.get('level', '')} — {effort.get('description', '')}" if effort else None,
             "effort_pct": {"LOW": 6, "MEDIUM": 12, "HIGH": 18}.get(effort.get("level", "LOW"), 10),
+            "effort_level": effort.get("level", ""),
+            "effort_minutes": effort.get("estimated_minutes"),
+            "queue_position": idx + 1,
+            "status": "UNACKNOWLEDGED" if idx == 0 else ("NEXT_UP" if idx == 1 else "QUEUED"),
         })
 
     return rows
