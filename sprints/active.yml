@@ -130,3 +130,35 @@ experiments:
     current_value: 0.0
     days_elapsed: 0
     note: 0 clicks over 1d
+- id: '008'
+  name: Collection page improvement — adventure-cat-gear
+  sprint_type: RNK
+  status: RUNNING
+  kpi:
+    metric: impressions_total
+    display_label: Impressions · /collections/adventure-cat-gear
+    baseline_value: 3577
+    baseline_display: 3,577 impressions (last 30 days)
+    target_value: 4500
+    target_display: 4,500 impressions
+    unit: count
+  timeline:
+    started: '2026-04-22'
+    evaluation_date: '2026-05-22'
+    window_days: 30
+  url: /collections/adventure-cat-gear
+  rationale: 'Collection page improved on 2026-04-22. Baseline: 3,577 impressions
+
+    and 41 clicks (1.15% CTR, pos 9.6) over the prior 30 days (Mar 23 – Apr 21).
+
+    Tracking impressions growth over the next 30 days vs the prior 30 days.
+
+    '
+  evaluation:
+    success_threshold_pct: 10
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-04-22T04:08:00Z'
+    current_value: null
+    days_elapsed: 0
+    note: experiment started today — first reading tomorrow

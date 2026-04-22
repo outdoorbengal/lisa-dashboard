@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-21",
+  "generated": "2026-04-22",
   "week_of": "Apr 20 2026",
   "system": {
     "status": "OK",
@@ -8,7 +8,7 @@
     "sources_connected": 4,
     "sources_total": 4,
     "opportunities": 130,
-    "active_tests": 4,
+    "active_tests": 5,
     "days_complete": 2,
     "scan_bars": [
       100,
@@ -58,8 +58,8 @@
       "delta": null,
       "start_date": "Apr 14",
       "end_date": "May 26",
-      "progress_pct": 17,
-      "note": "7 days in",
+      "progress_pct": 19,
+      "note": "8 days in",
       "week_current": 2,
       "week_total": 6
     },
@@ -78,8 +78,8 @@
       "delta": null,
       "start_date": "Apr 20",
       "end_date": "May 18",
-      "progress_pct": 4,
-      "note": "1 days in",
+      "progress_pct": 7,
+      "note": "2 days in",
       "week_current": 1,
       "week_total": 4
     },
@@ -98,8 +98,8 @@
       "delta": null,
       "start_date": "Apr 21",
       "end_date": "May 21",
-      "progress_pct": 0,
-      "note": "0 days in",
+      "progress_pct": 3,
+      "note": "1 days in",
       "week_current": 1,
       "week_total": 4
     },
@@ -118,29 +118,29 @@
       "delta": null,
       "start_date": "Apr 21",
       "end_date": "Jun 02",
-      "progress_pct": 0,
-      "note": "0 days in",
+      "progress_pct": 2,
+      "note": "1 days in",
       "week_current": 1,
       "week_total": 6
     },
     {
-      "id": "000",
-      "name": "Copy rewrite \u2014 Extra Safe Harness",
-      "type": "CR",
-      "status": "WINNER",
-      "kpi_label": "Add-to-cart rate",
-      "before_val": 1.4,
-      "before_pct": 28.0,
-      "after_val": 2.4,
-      "after_pct": 48.0,
-      "target_val": null,
-      "target_pct": null,
-      "delta": "+71%",
-      "start_date": "Mar 10",
-      "end_date": "Apr 07",
-      "progress_pct": 100,
-      "note": "+$8.2K projected / 90d",
-      "week_current": 4,
+      "id": "008",
+      "name": "Collection page improvement \u2014 adventure-cat-gear",
+      "type": "RNK",
+      "status": "RUNNING",
+      "kpi_label": "Impressions \u00b7 /collections/adventure-cat-gear",
+      "before_val": 3577,
+      "before_pct": 100.0,
+      "after_val": null,
+      "after_pct": null,
+      "target_val": 4500,
+      "target_pct": 100.0,
+      "delta": null,
+      "start_date": "Apr 22",
+      "end_date": "May 22",
+      "progress_pct": 0,
+      "note": "0 days in",
+      "week_current": 1,
       "week_total": 4
     }
   ],
@@ -148,7 +148,7 @@
     {
       "id": "006",
       "status": "UNACKNOWLEDGED",
-      "days_waiting": 1,
+      "days_waiting": 2,
       "title": "Push to page 1 \u2014 portable-litterbox",
       "url": "/products/portable-litterbox",
       "sprint_type": "RNK",
@@ -163,7 +163,7 @@
     {
       "id": "008",
       "status": "NEXT_UP",
-      "days_waiting": 1,
+      "days_waiting": 2,
       "title": "Push to page 1 \u2014 cat-training-guide",
       "url": "/blogs/clicker-training-cats/cat-training-guide",
       "sprint_type": "RNK",
@@ -4850,6 +4850,38 @@
           "current_value": 0.0,
           "days_elapsed": 0,
           "note": "0 clicks over 1d"
+        }
+      },
+      {
+        "id": "008",
+        "name": "Collection page improvement \u2014 adventure-cat-gear",
+        "sprint_type": "RNK",
+        "status": "RUNNING",
+        "kpi": {
+          "metric": "impressions_total",
+          "display_label": "Impressions \u00b7 /collections/adventure-cat-gear",
+          "baseline_value": 3577,
+          "baseline_display": "3,577 impressions (last 30 days)",
+          "target_value": 4500,
+          "target_display": "4,500 impressions",
+          "unit": "count"
+        },
+        "timeline": {
+          "started": "2026-04-22",
+          "evaluation_date": "2026-05-22",
+          "window_days": 30
+        },
+        "url": "/collections/adventure-cat-gear",
+        "rationale": "Collection page improved on 2026-04-22. Baseline: 3,577 impressions\nand 41 clicks (1.15% CTR, pos 9.6) over the prior 30 days (Mar 23 \u2013 Apr 21).\nTracking impressions growth over the next 30 days vs the prior 30 days.\n",
+        "evaluation": {
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-04-22T04:08:00Z",
+          "current_value": null,
+          "days_elapsed": 0,
+          "note": "experiment started today \u2014 first reading tomorrow"
         }
       }
     ],
