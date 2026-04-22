@@ -1,5 +1,4 @@
-# Active experiments — current_reading updated by lisa_dashboard_sync.py.
-# State transitions managed by sprint_action.py and evaluate_experiment.py.
+# Active experiments — auto-managed. See scripts/sprint_action.py
 
 experiments:
 - id: '001'
@@ -116,7 +115,8 @@ experiments:
     evaluation_date: '2026-06-02'
     window_days: 42
   url: /products/keeper-airtag-holder-for-cat-collar
-  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page 2
+  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page
+    2
 
 
     Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
@@ -162,3 +162,34 @@ experiments:
     current_value: 253
     days_elapsed: 0
     note: 253 impressions | 7 clicks | 2.77% CTR
+- id: '135'
+  name: Push to page 1 — extra-safe-cat-harness
+  sprint_type: RNK
+  status: RUNNING
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 7.4
+    baseline_value: 0
+    baseline_display: ~0/wk now
+    target_value: 4
+    target_display: +3/wk
+    unit: sessions/week
+  timeline:
+    started: '2026-04-22'
+    evaluation_date: '2026-06-03'
+    window_days: 42
+  url: /products/extra-safe-cat-harness
+  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions
+    but page 2
+
+
+    Evidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%
+
+    Engine priority: 6.0  •  Dashboard impact: 36.01'
+  evaluation:
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: null
+    current_value: null
+    days_elapsed: 0
