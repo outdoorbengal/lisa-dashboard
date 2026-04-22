@@ -14,6 +14,12 @@ function donutDash(p, r) {
 }
 
 function bCls(s) { return { RUNNING: "b-run", WINNER: "b-win", NEUTRAL: "b-neu", LOSER: "b-los" }[s] || "b-neu"; }
+
+function fmtVal(val, display, unit) {
+  if (display) return display;
+  if (val == null) return "—";
+  return unit === "count" ? val.toLocaleString() : val + "%";
+}
 function bLbl(e) { return e.status === "RUNNING" ? `WK ${e.week_current || "?"} / ${e.week_total || "?"}` : e.status; }
 function tlCls(s) { return { RUNNING: "f-run", WINNER: "f-done-w", LOSER: "f-done-l" }[s] || "f-done-n"; }
 function fCls(s) { return { WINNER: "f-win", LOSER: "f-los" }[s] || "f-neu"; }
@@ -95,8 +101,8 @@ function render(d) {
     const run = exp.status === "RUNNING", ha = exp.after_val != null;
     const sd = parseMonDD(exp.start_date);
     const afterRow = run
-      ? `<div class="ba-row"><div class="ba-tag">Target</div><div class="ba-track"><div class="ba-fill f-target" style="width:${exp.target_pct || 0}%"></div></div><div class="ba-val">${exp.target_val != null ? exp.target_val + "%" : "—"}</div></div>`
-      : `<div class="ba-row"><div class="ba-tag" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">After</div><div class="ba-track"><div class="ba-fill ${fCls(exp.status)}" style="width:${exp.after_pct || 0}%"></div></div><div class="ba-val" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">${ha ? exp.after_val + "%" : "—"}</div></div>`;
+      ? `<div class="ba-row"><div class="ba-tag">Target</div><div class="ba-track"><div class="ba-fill f-target" style="width:${exp.target_pct || 0}%"></div></div><div class="ba-val">${fmtVal(exp.target_val, exp.target_display, exp.unit)}</div></div>`
+      : `<div class="ba-row"><div class="ba-tag" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">After</div><div class="ba-track"><div class="ba-fill ${fCls(exp.status)}" style="width:${exp.after_pct || 0}%"></div></div><div class="ba-val" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">${ha ? fmtVal(exp.after_val, exp.after_display, exp.unit) : "—"}</div></div>`;
     const deltaHtml = exp.delta ? `<div class="delta-tag ${dCls(exp.delta)}">${exp.delta}</div>` : run ? `<div class="delta-tag d-f">TBD</div>` : "";
     return `<div class="exp-row" data-exp-id="${escapeHtml(exp.id)}">
       <div class="exp-date-blk"><div class="exp-date-mon">${sd.mon}</div><div class="exp-date-num">${sd.day}</div></div>
@@ -104,7 +110,7 @@ function render(d) {
         <div class="exp-name">${escapeHtml(exp.name)}</div>
         <div class="exp-url">${escapeHtml(exp.kpi_label)}${run ? " · baseline week" : ""}</div>
         <div class="ba-row-wrap">
-          <div class="ba-row"><div class="ba-tag">Before</div><div class="ba-track"><div class="ba-fill f-before" style="width:${exp.before_pct}%"></div></div><div class="ba-val">${exp.before_val}%</div></div>
+          <div class="ba-row"><div class="ba-tag">Before</div><div class="ba-track"><div class="ba-fill f-before" style="width:${exp.before_pct}%"></div></div><div class="ba-val">${fmtVal(exp.before_val, exp.before_display, exp.unit)}</div></div>
           ${afterRow}
         </div>
         <div class="tl-wrap">

@@ -38,6 +38,7 @@ BAR_SCALE = {
     "CTR": 5.0,     # CTR values are typically 0-5%
     "CR":  5.0,     # conversion rates typically 0-5%
     "LINK": 50.0,   # referral sessions — scale against target
+    "COUNT": None,  # absolute counts — scale against target dynamically
 }
 
 
@@ -48,10 +49,14 @@ def load_yaml(path: Path) -> dict[str, Any]:
         return yaml.safe_load(f) or {}
 
 
-def bar_pct(value: float | None, sprint_type: str, target: float | None = None) -> float | None:
+def bar_pct(value: float | None, sprint_type: str, target: float | None = None, unit: str = "percent") -> float | None:
     """Normalize a raw metric value to a 0-100 bar width."""
     if value is None:
         return None
+    # Absolute count metrics: scale against 125% of target so the bar never overflows
+    if unit == "count" or sprint_type == "COUNT":
+        scale = max(target * 1.25, 10.0) if target else max(value * 1.5, 10.0)
+        return round(min((value / scale) * 100, 100.0), 1)
     if sprint_type == "LINK" and target:
         scale = max(target * 1.25, 10.0)
     else:
@@ -141,18 +146,22 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
         window = tl.get("window_days", 28)
         progress = min(round(days_elapsed / window * 100), 100) if window else 0
 
+        unit = kpi.get("unit", "percent")
         rows.append({
             "id": exp["id"],
             "name": exp["name"],
             "type": st,
             "status": "RUNNING",
+            "unit": unit,
             "kpi_label": kpi.get("display_label", ""),
             "before_val": kpi.get("baseline_value"),
-            "before_pct": bar_pct(kpi.get("baseline_value"), st, kpi.get("target_value")),
+            "before_display": kpi.get("baseline_display"),
+            "before_pct": bar_pct(kpi.get("baseline_value"), st, kpi.get("target_value"), unit),
             "after_val": None,
             "after_pct": None,
             "target_val": kpi.get("target_value"),
-            "target_pct": bar_pct(kpi.get("target_value"), st),
+            "target_display": kpi.get("target_display"),
+            "target_pct": bar_pct(kpi.get("target_value"), st, kpi.get("target_value"), unit),
             "delta": None,
             "start_date": mon_dd(tl["started"]),
             "end_date": mon_dd(tl["evaluation_date"]),
