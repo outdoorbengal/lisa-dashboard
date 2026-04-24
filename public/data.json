@@ -3,7 +3,7 @@
   "week_of": "Apr 20 2026",
   "system": {
     "status": "OK",
-    "pages_scanned": 1322,
+    "pages_scanned": 1541,
     "pages_total": 283,
     "sources_connected": 4,
     "sources_total": 4,
@@ -64,7 +64,7 @@
       "current_display": "16.32%",
       "current_caption": "190 clicks / 1164 impressions",
       "current_note": "190 clicks / 1164 impressions",
-      "current_measured": "2026-04-24T14:17:14Z",
+      "current_measured": "2026-04-24T14:19:39Z",
       "current_pct": 16.3,
       "current_window_days": 10,
       "current_per_day": null,
@@ -103,7 +103,7 @@
       "current_display": "0.49%",
       "current_caption": "406 sessions this window",
       "current_note": "406 sessions this window",
-      "current_measured": "2026-04-24T14:17:14Z",
+      "current_measured": "2026-04-24T14:19:39Z",
       "current_pct": 9.8,
       "current_window_days": 4,
       "current_per_day": null,
@@ -142,7 +142,7 @@
       "current_display": "5.78%",
       "current_caption": "375 clicks / 6488 impressions",
       "current_note": "375 clicks / 6488 impressions",
-      "current_measured": "2026-04-24T14:17:14Z",
+      "current_measured": "2026-04-24T14:19:39Z",
       "current_pct": 100.0,
       "current_window_days": 3,
       "current_per_day": null,
@@ -181,7 +181,7 @@
       "current_display": "2.3",
       "current_caption": "1 clicks over 3d",
       "current_note": "1 clicks over 3d",
-      "current_measured": "2026-04-24T14:17:14Z",
+      "current_measured": "2026-04-24T14:19:39Z",
       "current_pct": 2.3,
       "current_window_days": 3,
       "current_per_day": null,
@@ -220,7 +220,7 @@
       "current_display": "140/day",
       "current_caption": "Impressions per day \u00b7 last 2 days",
       "current_note": "281 impressions | 8 clicks | 2.85% CTR",
-      "current_measured": "2026-04-24T14:17:14Z",
+      "current_measured": "2026-04-24T14:19:39Z",
       "current_pct": 5.0,
       "current_window_days": 2,
       "current_per_day": 140.5,
@@ -305,7 +305,7 @@
         ]
       },
       "revenue_headline": "$158/mo",
-      "has_exec_brief": false
+      "has_exec_brief": true
     },
     {
       "id": "006",
@@ -943,8 +943,8 @@
         "_source": {
           "engine_opportunity_id": "OP0043",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320165+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188209+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 34.47
         },
         "revenue_model": {
@@ -962,30 +962,23 @@
           "confidence": "medium"
         },
         "execution_brief": {
-          "action": "Rewrite product page intro + add 1 contextual internal link from the 'best cat carriers' blog post.",
-          "summary": "Page ranks pos 13 for 'travel litter box'. Two gaps: (1) intro copy buries the 'portable' benefit past the fold, (2) no topical authority signal from related blog content.",
+          "action": "Rewrite SEO title and meta description for /products/portable-litterbox",
+          "summary": "Page at /products/portable-litterbox is ranking but underperforming on CTR. The current title and meta description don't lead with the primary keyword or communicate a clear benefit. A rewrite should lift CTR meaningfully.",
           "steps": [
             {
-              "title": "Rewrite product description \u2014 first 2 paragraphs only",
-              "location": "Shopify \u2192 Products \u2192 portable-litterbox \u2192 Description",
-              "before": "The OutdoorBengal portable litter box is designed for cats on the go. Made from durable materials, it folds for easy transport.",
-              "after": "Made for cats who travel. This collapsible litter box folds flat in 3 seconds, fits under any car seat, and sets up without tools \u2014 so your cat has a clean, familiar spot whether you're at a weekend cabin or across the country.\n\nIncludes a splash-resistant liner and a sealed zippered base that contains odors on long drives. Tested by 400+ customers on road trips, flights, and RV life.",
-              "note": "Keep the rest of the page unchanged. We're testing whether the intro rewrite alone lifts CTR from SERP."
-            },
-            {
-              "title": "Add internal link from related blog post",
-              "location": "Shopify \u2192 Blog posts \u2192 'Best Cat Carriers for Road Trips' \u2192 find the sentence mentioning litter",
-              "before": "You'll also want to bring a travel litter solution \u2014 most cats refuse to hold it for more than 4 hours.",
-              "after": "You'll also want to bring a [portable litter box](/products/portable-litterbox) \u2014 most cats refuse to hold it for more than 4 hours.",
-              "note": "Use the exact anchor text 'portable litter box'. Lowercase, no quotes."
+              "title": "Update SEO title and meta description",
+              "location": "Shopify \u2192 Products \u2192 portable-litterbox \u2192 Edit SEO (bottom of page)",
+              "before": "Title: Go Litter\u2122 - Portable Litterbox & Litter Bag Kit for Travel\nDescription: (meta description not set)",
+              "after": "[Lisa to generate \u2014 run a heavy cycle to populate with AI-written copy]",
+              "note": "Max 60 chars for title, max 155 for description. Lead with primary keyword."
             }
           ],
           "out_of_scope": [
-            "Do not touch the page title or meta description (separate future test).",
-            "Do not add more than one internal link in this sprint.",
-            "Do not modify product images."
+            "Do not change the page body copy in this sprint.",
+            "Do not change product images.",
+            "Reply DONE - #006 in the dashboard when both fields are saved."
           ],
-          "definition_of_done": "Both edits are live on the published site and visible at /products/portable-litterbox and /blogs/clicker-training-cats/best-cat-carriers-road-trips. Reply DONE - #006 in the dashboard."
+          "definition_of_done": "The updated title and description are live at https://www.outdoorbengal.com/products/portable-litterbox and visible in Google Search Console URL Inspection. Reply DONE - #006."
         }
       },
       {
@@ -1018,8 +1011,8 @@
         "_source": {
           "engine_opportunity_id": "OP0405",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326860+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194559+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 32.68
         },
         "revenue_model": {
@@ -1034,6 +1027,25 @@
             "ctr": 0.015
           },
           "confidence": "low"
+        },
+        "execution_brief": {
+          "action": "Rewrite SEO title and meta description for /blogs/clicker-training-cats/cat-training-guide",
+          "summary": "Page at /blogs/clicker-training-cats/cat-training-guide is ranking but underperforming on CTR. The current title and meta description don't lead with the primary keyword or communicate a clear benefit. A rewrite should lift CTR meaningfully.",
+          "steps": [
+            {
+              "title": "Update SEO title and meta description",
+              "location": "Shopify \u2192 Blog posts \u2192 cat-training-guide \u2192 Edit SEO (bottom of page)",
+              "before": "Title: How to Train a Cat \u2014 Complete Clicker Training Guide\nDescription: (meta description not set)",
+              "after": "[Lisa to generate \u2014 run a heavy cycle to populate with AI-written copy]",
+              "note": "Max 60 chars for title, max 155 for description. Lead with primary keyword."
+            }
+          ],
+          "out_of_scope": [
+            "Do not change the page body copy in this sprint.",
+            "Do not change product images.",
+            "Reply DONE - #008 in the dashboard when both fields are saved."
+          ],
+          "definition_of_done": "The updated title and description are live at https://www.outdoorbengal.com/blogs/clicker-training-cats/cat-training-guide and visible in Google Search Console URL Inspection. Reply DONE - #008."
         }
       },
       {
@@ -1066,8 +1078,8 @@
         "_source": {
           "engine_opportunity_id": "OP0050",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320230+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188278+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 29.99
         },
         "revenue_model": {
@@ -1165,8 +1177,8 @@
         "_source": {
           "engine_opportunity_id": "OP0384",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.324516+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.192158+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 27.38
         },
         "revenue_model": {
@@ -1214,8 +1226,8 @@
         "_source": {
           "engine_opportunity_id": "OP0448",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327910+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195719+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 26.92
         },
         "revenue_model": {
@@ -1232,30 +1244,22 @@
           "confidence": "medium"
         },
         "execution_brief": {
-          "action": "Move 'Add to Cart' above the fold on mobile and rewrite the first headline to name the outcome, not the product.",
-          "summary": "Bounce rate on mobile is 68% vs 41% desktop. The buy button only appears after 2 scrolls on mobile, and the headline leads with the product name instead of the outcome.",
+          "action": "Improve conversion copy on /products/clicker-training-starter-kit",
+          "summary": "Product page at /products/clicker-training-starter-kit is receiving organic traffic but converting below category median. The intro copy likely buries the primary benefit. One focused rewrite of the first paragraph plus above-the-fold positioning should move CR.",
           "steps": [
             {
-              "title": "Rewrite the page H1",
-              "location": "Shopify \u2192 Products \u2192 clicker-training-starter-kit \u2192 Title visible on page",
-              "before": "Clicker Training Starter Kit for Cats",
-              "after": "Teach Your Cat 5 Tricks in 2 Weeks \u2014 Complete Clicker Kit",
-              "note": "This is the on-page H1, not the SEO title tag. Leave the SEO title alone."
-            },
-            {
-              "title": "Reorder product page blocks (mobile-first)",
-              "location": "Shopify \u2192 Products \u2192 clicker-training-starter-kit \u2192 Theme customizer",
-              "before": "Gallery \u2192 Title \u2192 Long description \u2192 Variants \u2192 Add to Cart",
-              "after": "Gallery \u2192 Title \u2192 Variants \u2192 Add to Cart \u2192 Long description",
-              "note": "On mobile, Add to Cart must be visible without scrolling once the gallery is closed. Verify on a real phone before marking DONE."
+              "title": "Rewrite first paragraph of product description",
+              "location": "Shopify \u2192 Products \u2192 clicker-training-starter-kit \u2192 Description",
+              "before": "(could not fetch \u2014 check Shopify)",
+              "after": "[Lisa to generate \u2014 run a heavy cycle to populate with AI-written copy]",
+              "note": "Lead with the #1 benefit, not brand name. Make the first sentence scannable."
             }
           ],
           "out_of_scope": [
-            "Do not change pricing, variants, or inventory.",
-            "Do not rewrite the long description \u2014 only the H1 and block order.",
-            "Do not touch the desktop layout (it already works)."
+            "Do not touch the SEO title or meta description (separate test).",
+            "Do not add more than one structural change in this sprint."
           ],
-          "definition_of_done": "Open /products/clicker-training-starter-kit on your phone. The Add to Cart button is visible without scrolling past the variants. The H1 reads 'Teach Your Cat 5 Tricks in 2 Weeks \u2014 Complete Clicker Kit'. Reply DONE - #012."
+          "definition_of_done": "Updated copy is live at https://www.outdoorbengal.com/products/clicker-training-starter-kit. First paragraph leads with the primary benefit. Reply DONE - #012."
         }
       },
       {
@@ -1288,8 +1292,8 @@
         "_source": {
           "engine_opportunity_id": "OP0012",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319859+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.187907+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 26.86
         },
         "revenue_model": {
@@ -1337,8 +1341,8 @@
         "_source": {
           "engine_opportunity_id": "OP0216",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321909+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189858+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 26.85
         },
         "revenue_model": {
@@ -1386,8 +1390,8 @@
         "_source": {
           "engine_opportunity_id": "OP0391",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.324645+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.192293+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 26.44
         },
         "revenue_model": {
@@ -1485,8 +1489,8 @@
         "_source": {
           "engine_opportunity_id": "OP0443",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327862+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195653+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 25.47
         },
         "revenue_model": {
@@ -1534,8 +1538,8 @@
         "_source": {
           "engine_opportunity_id": "OP0444",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327870+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195667+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 25.46
         },
         "revenue_model": {
@@ -1583,8 +1587,8 @@
         "_source": {
           "engine_opportunity_id": "OP0399",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326690+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194390+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 24.32
         },
         "revenue_model": {
@@ -1632,8 +1636,8 @@
         "_source": {
           "engine_opportunity_id": "OP0011",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319845+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.187889+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 24.15
         },
         "revenue_model": {
@@ -1681,8 +1685,8 @@
         "_source": {
           "engine_opportunity_id": "OP0401",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326757+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194446+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.64
         },
         "revenue_model": {
@@ -1730,8 +1734,8 @@
         "_source": {
           "engine_opportunity_id": "OP0412",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327096+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194808+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.62
         },
         "revenue_model": {
@@ -1779,8 +1783,8 @@
         "_source": {
           "engine_opportunity_id": "OP0407",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326901+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194607+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.59
         },
         "revenue_model": {
@@ -1828,8 +1832,8 @@
         "_source": {
           "engine_opportunity_id": "OP0402",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326800+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194493+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.5
         },
         "revenue_model": {
@@ -1877,8 +1881,8 @@
         "_source": {
           "engine_opportunity_id": "OP0446",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327889+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195693+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.47
         },
         "revenue_model": {
@@ -1926,8 +1930,8 @@
         "_source": {
           "engine_opportunity_id": "OP0410",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326953+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194663+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.32
         },
         "revenue_model": {
@@ -1975,8 +1979,8 @@
         "_source": {
           "engine_opportunity_id": "OP0404",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326829+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194523+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.3
         },
         "revenue_model": {
@@ -2024,8 +2028,8 @@
         "_source": {
           "engine_opportunity_id": "OP0002",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319729+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.187775+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 23.16
         },
         "revenue_model": {
@@ -2073,8 +2077,8 @@
         "_source": {
           "engine_opportunity_id": "OP0400",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326725+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194417+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 22.63
         },
         "revenue_model": {
@@ -2122,8 +2126,8 @@
         "_source": {
           "engine_opportunity_id": "OP0006",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319788+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.187834+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 22.56
         },
         "revenue_model": {
@@ -2171,8 +2175,8 @@
         "_source": {
           "engine_opportunity_id": "OP0445",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327880+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195682+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 22.1
         },
         "revenue_model": {
@@ -2220,8 +2224,8 @@
         "_source": {
           "engine_opportunity_id": "OP0429",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327466+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195195+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 22.03
         },
         "revenue_model": {
@@ -2269,8 +2273,8 @@
         "_source": {
           "engine_opportunity_id": "OP0411",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326976+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194685+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 21.85
         },
         "revenue_model": {
@@ -2318,8 +2322,8 @@
         "_source": {
           "engine_opportunity_id": "OP0420",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327246+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194964+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 21.72
         },
         "revenue_model": {
@@ -2367,8 +2371,8 @@
         "_source": {
           "engine_opportunity_id": "OP0450",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328021+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195838+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 21.41
         },
         "revenue_model": {
@@ -2416,8 +2420,8 @@
         "_source": {
           "engine_opportunity_id": "OP0441",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327835+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195622+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 21.08
         },
         "revenue_model": {
@@ -2465,8 +2469,8 @@
         "_source": {
           "engine_opportunity_id": "OP0449",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327982+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195799+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.94
         },
         "revenue_model": {
@@ -2514,8 +2518,8 @@
         "_source": {
           "engine_opportunity_id": "OP0015",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319887+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.187936+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.77
         },
         "revenue_model": {
@@ -2563,8 +2567,8 @@
         "_source": {
           "engine_opportunity_id": "OP0423",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327290+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195008+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.74
         },
         "revenue_model": {
@@ -2612,8 +2616,8 @@
         "_source": {
           "engine_opportunity_id": "OP0406",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326882+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194586+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.65
         },
         "revenue_model": {
@@ -2661,8 +2665,8 @@
         "_source": {
           "engine_opportunity_id": "OP0417",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327189+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194901+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.26
         },
         "revenue_model": {
@@ -2710,8 +2714,8 @@
         "_source": {
           "engine_opportunity_id": "OP0413",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327118+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194830+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.24
         },
         "revenue_model": {
@@ -2759,8 +2763,8 @@
         "_source": {
           "engine_opportunity_id": "OP0447",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.327899+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195704+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 20.03
         },
         "revenue_model": {
@@ -2808,8 +2812,8 @@
         "_source": {
           "engine_opportunity_id": "OP0418",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327217+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194930+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.93
         },
         "revenue_model": {
@@ -2857,8 +2861,8 @@
         "_source": {
           "engine_opportunity_id": "OP0426",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327343+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195066+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.91
         },
         "revenue_model": {
@@ -2906,8 +2910,8 @@
         "_source": {
           "engine_opportunity_id": "OP0416",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327169+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194880+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.68
         },
         "revenue_model": {
@@ -2955,8 +2959,8 @@
         "_source": {
           "engine_opportunity_id": "OP0422",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327273+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194991+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.43
         },
         "revenue_model": {
@@ -3004,8 +3008,8 @@
         "_source": {
           "engine_opportunity_id": "OP0430",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327523+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195263+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.27
         },
         "revenue_model": {
@@ -3053,8 +3057,8 @@
         "_source": {
           "engine_opportunity_id": "OP0451",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328032+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195848+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 19.06
         },
         "revenue_model": {
@@ -3102,8 +3106,8 @@
         "_source": {
           "engine_opportunity_id": "OP0464",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328149+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196006+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.97
         },
         "revenue_model": {
@@ -3120,23 +3124,23 @@
           "confidence": "high"
         },
         "execution_brief": {
-          "action": "Set the SEO title tag on this blog post. One field only.",
-          "summary": "Post gets 35,007 impressions/month but has no custom SEO title \u2014 Google is using the truncated default, killing CTR.",
+          "action": "Rewrite SEO title and meta description for /blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+          "summary": "Page at /blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach is ranking but underperforming on CTR. The current title and meta description don't lead with the primary keyword or communicate a clear benefit. A rewrite should lift CTR meaningfully.",
           "steps": [
             {
-              "title": "Set the SEO title tag",
-              "location": "Shopify \u2192 Blog posts \u2192 'What tricks can a cat learn' \u2192 Edit website SEO \u2192 Page title",
-              "before": "(empty \u2014 Google is pulling the truncated H1)",
-              "after": "12 Cat Tricks You Can Teach This Week (Full List + How-To)",
-              "note": "Exactly 57 characters. Keyword first, specific number, action phrase. Do not add year \u2014 it will go stale."
+              "title": "Update SEO title and meta description",
+              "location": "Shopify \u2192 Blog posts \u2192 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach \u2192 Edit SEO (bottom of page)",
+              "before": "Title: What Tricks Can a Cat Learn (12 Cat Tricks + How to Teach)\nDescription: (meta description not set)",
+              "after": "[Lisa to generate \u2014 run a heavy cycle to populate with AI-written copy]",
+              "note": "Max 60 chars for title, max 155 for description. Lead with primary keyword."
             }
           ],
           "out_of_scope": [
-            "Do not change the meta description (separate future test).",
-            "Do not edit the H1 visible on the page.",
-            "Do not touch the URL slug."
+            "Do not change the page body copy in this sprint.",
+            "Do not change product images.",
+            "Reply DONE - #050 in the dashboard when both fields are saved."
           ],
-          "definition_of_done": "View page source at /blogs/clicker-training-cats/what-tricks-can-a-cat-learn... \u2014 the <title> tag reads '12 Cat Tricks You Can Teach This Week (Full List + How-To)'. Reply DONE - #050."
+          "definition_of_done": "The updated title and description are live at https://www.outdoorbengal.com/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach and visible in Google Search Console URL Inspection. Reply DONE - #050."
         }
       },
       {
@@ -3169,8 +3173,8 @@
         "_source": {
           "engine_opportunity_id": "OP0403",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326816+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194509+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.91
         },
         "revenue_model": {
@@ -3218,8 +3222,8 @@
         "_source": {
           "engine_opportunity_id": "OP0414",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327136+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194847+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.7
         },
         "revenue_model": {
@@ -3267,8 +3271,8 @@
         "_source": {
           "engine_opportunity_id": "OP0415",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327150+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194861+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.63
         },
         "revenue_model": {
@@ -3316,8 +3320,8 @@
         "_source": {
           "engine_opportunity_id": "OP0455",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328074+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195900+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.38
         },
         "revenue_model": {
@@ -3365,8 +3369,8 @@
         "_source": {
           "engine_opportunity_id": "OP0160",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321320+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189291+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.25
         },
         "revenue_model": {
@@ -3414,8 +3418,8 @@
         "_source": {
           "engine_opportunity_id": "OP0409",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326928+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194636+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.22
         },
         "revenue_model": {
@@ -3463,8 +3467,8 @@
         "_source": {
           "engine_opportunity_id": "OP0432",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327563+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195300+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.21
         },
         "revenue_model": {
@@ -3512,8 +3516,8 @@
         "_source": {
           "engine_opportunity_id": "OP0424",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327311+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195031+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.17
         },
         "revenue_model": {
@@ -3561,8 +3565,8 @@
         "_source": {
           "engine_opportunity_id": "OP0419",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327228+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194943+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 18.13
         },
         "revenue_model": {
@@ -3610,8 +3614,8 @@
         "_source": {
           "engine_opportunity_id": "OP0408",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.326915+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194622+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.9
         },
         "revenue_model": {
@@ -3659,8 +3663,8 @@
         "_source": {
           "engine_opportunity_id": "OP0453",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328055+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195876+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.31
         },
         "revenue_model": {
@@ -3708,8 +3712,8 @@
         "_source": {
           "engine_opportunity_id": "OP0452",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328047+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195867+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.3
         },
         "revenue_model": {
@@ -3757,8 +3761,8 @@
         "_source": {
           "engine_opportunity_id": "OP0425",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327330+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195045+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.27
         },
         "revenue_model": {
@@ -3806,8 +3810,8 @@
         "_source": {
           "engine_opportunity_id": "OP0256",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322320+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190223+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.25
         },
         "revenue_model": {
@@ -3855,8 +3859,8 @@
         "_source": {
           "engine_opportunity_id": "OP0335",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.323595+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.191267+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.23
         },
         "revenue_model": {
@@ -3904,8 +3908,8 @@
         "_source": {
           "engine_opportunity_id": "OP0434",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327600+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195343+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 17.16
         },
         "revenue_model": {
@@ -3953,8 +3957,8 @@
         "_source": {
           "engine_opportunity_id": "OP0454",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "detected_at": "2026-04-24T14:17:10.328060+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195885+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.99
         },
         "revenue_model": {
@@ -4002,8 +4006,8 @@
         "_source": {
           "engine_opportunity_id": "OP0031",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320054+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188096+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.87
         },
         "revenue_model": {
@@ -4051,8 +4055,8 @@
         "_source": {
           "engine_opportunity_id": "OP0480",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328273+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196160+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.7
         },
         "revenue_model": {
@@ -4100,8 +4104,8 @@
         "_source": {
           "engine_opportunity_id": "OP0200",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321745+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189692+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.69
         },
         "revenue_model": {
@@ -4149,8 +4153,8 @@
         "_source": {
           "engine_opportunity_id": "OP0229",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322049+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189983+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.63
         },
         "revenue_model": {
@@ -4198,8 +4202,8 @@
         "_source": {
           "engine_opportunity_id": "OP0462",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328134+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195986+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.49
         },
         "revenue_model": {
@@ -4247,8 +4251,8 @@
         "_source": {
           "engine_opportunity_id": "OP0433",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327584+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195323+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.47
         },
         "revenue_model": {
@@ -4296,8 +4300,8 @@
         "_source": {
           "engine_opportunity_id": "OP0439",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327788+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195568+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.43
         },
         "revenue_model": {
@@ -4345,8 +4349,8 @@
         "_source": {
           "engine_opportunity_id": "OP0483",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328291+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196181+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 16.16
         },
         "revenue_model": {
@@ -4394,8 +4398,8 @@
         "_source": {
           "engine_opportunity_id": "OP0474",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328227+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196104+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.84
         },
         "revenue_model": {
@@ -4443,8 +4447,8 @@
         "_source": {
           "engine_opportunity_id": "OP0428",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327404+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195129+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.6
         },
         "revenue_model": {
@@ -4492,8 +4496,8 @@
         "_source": {
           "engine_opportunity_id": "OP0472",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328214+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196088+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.59
         },
         "revenue_model": {
@@ -4541,8 +4545,8 @@
         "_source": {
           "engine_opportunity_id": "OP0471",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328200+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196071+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.58
         },
         "revenue_model": {
@@ -4590,8 +4594,8 @@
         "_source": {
           "engine_opportunity_id": "OP0304",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322948+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190776+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.55
         },
         "revenue_model": {
@@ -4639,8 +4643,8 @@
         "_source": {
           "engine_opportunity_id": "OP0338",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.323633+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.191300+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.3
         },
         "revenue_model": {
@@ -4688,8 +4692,8 @@
         "_source": {
           "engine_opportunity_id": "OP0128",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320992+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188992+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.1
         },
         "revenue_model": {
@@ -4737,8 +4741,8 @@
         "_source": {
           "engine_opportunity_id": "OP0249",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322247+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190158+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 15.0
         },
         "revenue_model": {
@@ -4786,8 +4790,8 @@
         "_source": {
           "engine_opportunity_id": "OP0292",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322761+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190615+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.94
         },
         "revenue_model": {
@@ -4835,8 +4839,8 @@
         "_source": {
           "engine_opportunity_id": "OP0228",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322041+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189975+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.93
         },
         "revenue_model": {
@@ -4884,8 +4888,8 @@
         "_source": {
           "engine_opportunity_id": "OP0333",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.323561+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.191236+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.8
         },
         "revenue_model": {
@@ -4933,8 +4937,8 @@
         "_source": {
           "engine_opportunity_id": "OP0127",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320983+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188983+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.76
         },
         "revenue_model": {
@@ -4982,8 +4986,8 @@
         "_source": {
           "engine_opportunity_id": "OP0096",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320671+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188692+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.67
         },
         "revenue_model": {
@@ -5031,8 +5035,8 @@
         "_source": {
           "engine_opportunity_id": "OP0440",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327805+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195588+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.6
         },
         "revenue_model": {
@@ -5080,8 +5084,8 @@
         "_source": {
           "engine_opportunity_id": "OP0373",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.324327+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.191885+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.6
         },
         "revenue_model": {
@@ -5129,8 +5133,8 @@
         "_source": {
           "engine_opportunity_id": "OP0461",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328128+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195978+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.6
         },
         "revenue_model": {
@@ -5178,8 +5182,8 @@
         "_source": {
           "engine_opportunity_id": "OP0201",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321754+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189699+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.57
         },
         "revenue_model": {
@@ -5227,8 +5231,8 @@
         "_source": {
           "engine_opportunity_id": "OP0437",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327745+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195516+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.54
         },
         "revenue_model": {
@@ -5276,8 +5280,8 @@
         "_source": {
           "engine_opportunity_id": "OP0287",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322681+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190544+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.46
         },
         "revenue_model": {
@@ -5325,8 +5329,8 @@
         "_source": {
           "engine_opportunity_id": "OP0021",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.319950+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188007+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.41
         },
         "revenue_model": {
@@ -5374,8 +5378,8 @@
         "_source": {
           "engine_opportunity_id": "OP0103",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320753+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188766+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.41
         },
         "revenue_model": {
@@ -5423,8 +5427,8 @@
         "_source": {
           "engine_opportunity_id": "OP0475",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328237+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196112+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.25
         },
         "revenue_model": {
@@ -5472,8 +5476,8 @@
         "_source": {
           "engine_opportunity_id": "OP0477",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328252+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196132+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.22
         },
         "revenue_model": {
@@ -5521,8 +5525,8 @@
         "_source": {
           "engine_opportunity_id": "OP0421",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327259+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.194978+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.08
         },
         "revenue_model": {
@@ -5570,8 +5574,8 @@
         "_source": {
           "engine_opportunity_id": "OP0436",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327709+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195470+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.08
         },
         "revenue_model": {
@@ -5619,8 +5623,8 @@
         "_source": {
           "engine_opportunity_id": "OP0175",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321480+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189448+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.07
         },
         "revenue_model": {
@@ -5668,8 +5672,8 @@
         "_source": {
           "engine_opportunity_id": "OP0067",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.320390+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.188429+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 14.03
         },
         "revenue_model": {
@@ -5717,8 +5721,8 @@
         "_source": {
           "engine_opportunity_id": "OP0438",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327756+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195530+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.99
         },
         "revenue_model": {
@@ -5766,8 +5770,8 @@
         "_source": {
           "engine_opportunity_id": "OP0318",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.323316+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190953+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.95
         },
         "revenue_model": {
@@ -5815,8 +5819,8 @@
         "_source": {
           "engine_opportunity_id": "OP0244",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322192+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190111+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.9
         },
         "revenue_model": {
@@ -5864,8 +5868,8 @@
         "_source": {
           "engine_opportunity_id": "OP0293",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322804+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190647+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.89
         },
         "revenue_model": {
@@ -5913,8 +5917,8 @@
         "_source": {
           "engine_opportunity_id": "OP0431",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327539+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195281+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.86
         },
         "revenue_model": {
@@ -5962,8 +5966,8 @@
         "_source": {
           "engine_opportunity_id": "OP0147",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.321187+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.189172+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.8
         },
         "revenue_model": {
@@ -6011,8 +6015,8 @@
         "_source": {
           "engine_opportunity_id": "OP0251",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322269+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190175+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.8
         },
         "revenue_model": {
@@ -6060,8 +6064,8 @@
         "_source": {
           "engine_opportunity_id": "OP0459",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328113+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195960+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.8
         },
         "revenue_model": {
@@ -6159,8 +6163,8 @@
         "_source": {
           "engine_opportunity_id": "OP0294",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.322814+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.190657+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.77
         },
         "revenue_model": {
@@ -6208,8 +6212,8 @@
         "_source": {
           "engine_opportunity_id": "OP0427",
           "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-04-24T14:17:10.327360+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195082+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.68
         },
         "revenue_model": {
@@ -6307,8 +6311,8 @@
         "_source": {
           "engine_opportunity_id": "OP0470",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328192+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196059+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 13.06
         },
         "revenue_model": {
@@ -6356,8 +6360,8 @@
         "_source": {
           "engine_opportunity_id": "OP0465",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328156+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196014+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 12.99
         },
         "revenue_model": {
@@ -6405,8 +6409,8 @@
         "_source": {
           "engine_opportunity_id": "OP0458",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328107+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195947+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 12.21
         },
         "revenue_model": {
@@ -6454,8 +6458,8 @@
         "_source": {
           "engine_opportunity_id": "OP0467",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328174+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196031+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 12.04
         },
         "revenue_model": {
@@ -6503,8 +6507,8 @@
         "_source": {
           "engine_opportunity_id": "OP0468",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328180+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196038+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.6
         },
         "revenue_model": {
@@ -6552,8 +6556,8 @@
         "_source": {
           "engine_opportunity_id": "OP0476",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328243+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196120+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.47
         },
         "revenue_model": {
@@ -6601,8 +6605,8 @@
         "_source": {
           "engine_opportunity_id": "OP0460",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328121+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195970+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.42
         },
         "revenue_model": {
@@ -6650,8 +6654,8 @@
         "_source": {
           "engine_opportunity_id": "OP0456",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328091+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195923+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.35
         },
         "revenue_model": {
@@ -6699,8 +6703,8 @@
         "_source": {
           "engine_opportunity_id": "OP0473",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328220+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196095+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.15
         },
         "revenue_model": {
@@ -6748,8 +6752,8 @@
         "_source": {
           "engine_opportunity_id": "OP0479",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328266+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196152+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 11.01
         },
         "revenue_model": {
@@ -6797,8 +6801,8 @@
         "_source": {
           "engine_opportunity_id": "OP0485",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328307+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196201+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 10.7
         },
         "revenue_model": {
@@ -6846,8 +6850,8 @@
         "_source": {
           "engine_opportunity_id": "OP0466",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328168+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196024+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 10.45
         },
         "revenue_model": {
@@ -6895,8 +6899,8 @@
         "_source": {
           "engine_opportunity_id": "OP0478",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328260+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196144+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 10.39
         },
         "revenue_model": {
@@ -6944,8 +6948,8 @@
         "_source": {
           "engine_opportunity_id": "OP0482",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328286+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196174+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 10.33
         },
         "revenue_model": {
@@ -6993,8 +6997,8 @@
         "_source": {
           "engine_opportunity_id": "OP0484",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328298+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196192+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 10.17
         },
         "revenue_model": {
@@ -7042,8 +7046,8 @@
         "_source": {
           "engine_opportunity_id": "OP0481",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328278+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196167+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 9.81
         },
         "revenue_model": {
@@ -7091,8 +7095,8 @@
         "_source": {
           "engine_opportunity_id": "OP0457",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328098+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195931+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 9.28
         },
         "revenue_model": {
@@ -7140,8 +7144,8 @@
         "_source": {
           "engine_opportunity_id": "OP0463",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328142+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.195998+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 8.95
         },
         "revenue_model": {
@@ -7189,8 +7193,8 @@
         "_source": {
           "engine_opportunity_id": "OP0469",
           "opportunity_type": "SEARCH_VISIBILITY",
-          "detected_at": "2026-04-24T14:17:10.328185+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.196044+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 8.79
         },
         "revenue_model": {
@@ -7238,8 +7242,8 @@
         "_source": {
           "engine_opportunity_id": "OP0486",
           "opportunity_type": "SERP_DISCOVERY",
-          "detected_at": "2026-04-24T14:17:10.330335+00:00",
-          "last_refreshed": "2026-04-24T14:17:14Z",
+          "detected_at": "2026-04-24T14:19:36.198322+00:00",
+          "last_refreshed": "2026-04-24T14:19:39Z",
           "dashboard_impact": 3.9
         },
         "revenue_model": {
@@ -7304,23 +7308,22 @@
           "confidence": "low"
         },
         "execution_brief": {
-          "action": "Add one contextual internal link from the cat training guide to the Zeppelin product page.",
-          "summary": "Training guide ranks pos 4 for 'clicker training cats' with 1.2k monthly impressions. Currently zero internal links to Zeppelin \u2014 adding one contextual link should pass topical relevance.",
+          "action": "Add one internal link from /blogs/clicker-training-cats/cat-training-guide to target product",
+          "summary": "This page has traffic but lacks links to key product pages. Adding one contextual internal link will improve ATC rate and pass link equity.",
           "steps": [
             {
-              "title": "Add the internal link",
-              "location": "Shopify \u2192 Blog posts \u2192 'Cat Training Guide' \u2192 find the 'Tools you'll need' section",
-              "before": "A quality harness is essential for outdoor training sessions \u2014 you want something escape-proof but comfortable enough for long walks.",
-              "after": "A quality harness is essential for outdoor training sessions \u2014 we recommend the [Zeppelin escape-proof cat harness](/products/zeppelin-cat-carrier), designed to be secure on active cats without restricting movement during walks.",
-              "note": "Anchor text: 'Zeppelin escape-proof cat harness'. Place inside the existing 'Tools you'll need' paragraph \u2014 do not add a new section."
+              "title": "Add internal link in body copy",
+              "location": "Shopify \u2192 Blog posts \u2192 cat-training-guide",
+              "before": "Find the paragraph that mentions the target product.",
+              "after": "Wrap the product name with a link to the product page. Use exact-match anchor text.",
+              "note": "One link only. Do not add more than one internal link per sprint."
             }
           ],
           "out_of_scope": [
-            "Do not add more than one link. We're measuring the impact of a single placement.",
-            "Do not modify the Zeppelin product page itself.",
-            "Do not change other parts of the training guide."
+            "Do not edit the SEO title or meta description.",
+            "Do not add more than one internal link."
           ],
-          "definition_of_done": "The link is live at /blogs/clicker-training-cats/cat-training-guide in the 'Tools you'll need' section, pointing to /products/zeppelin-cat-carrier. Reply DONE - #002."
+          "definition_of_done": "Link is live and clickable at https://www.outdoorbengal.com/blogs/clicker-training-cats/cat-training-guide. Reply DONE - #002."
         }
       },
       {
@@ -7395,7 +7398,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 16.32,
           "days_elapsed": 10,
           "note": "190 clicks / 1164 impressions"
@@ -7427,7 +7430,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 0.49,
           "days_elapsed": 4,
           "note": "406 sessions this window"
@@ -7459,7 +7462,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 5.78,
           "days_elapsed": 3,
           "note": "375 clicks / 6488 impressions"
@@ -7491,7 +7494,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 2.3,
           "days_elapsed": 3,
           "note": "1 clicks over 3d"
@@ -7523,7 +7526,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 281,
           "days_elapsed": 2,
           "note": "281 impressions | 8 clicks | 2.85% CTR"
@@ -7555,7 +7558,7 @@
           "neutral_threshold_pct": 0
         },
         "current_reading": {
-          "last_measured": "2026-04-24T14:17:14Z",
+          "last_measured": "2026-04-24T14:19:39Z",
           "current_value": 1312.5,
           "days_elapsed": 2,
           "note": "375 clicks over 2d"
@@ -7591,6 +7594,20 @@
     ]
   },
   "log": [
+    {
+      "run_id": "scan-20260424-141928",
+      "type": "daily_scan",
+      "status": "success",
+      "duration_ms": 11509,
+      "pages_scanned": 219,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 219 pages. 0 new opportunities, 124 reranked. 6 active experiments re-measured.",
+      "ts": "2026-04-24T14:19:39Z"
+    },
     {
       "run_id": "scan-20260424-141701",
       "type": "daily_scan",
