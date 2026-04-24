@@ -20,10 +20,87 @@ function fmtVal(val, display, unit) {
   if (val == null) return "—";
   return unit === "count" ? val.toLocaleString() : val + "%";
 }
-function bLbl(e) { return e.status === "RUNNING" ? `WK ${e.week_current || "?"} / ${e.week_total || "?"}` : e.status; }
+
 function tlCls(s) { return { RUNNING: "f-run", WINNER: "f-done-w", LOSER: "f-done-l" }[s] || "f-done-n"; }
-function fCls(s) { return { WINNER: "f-win", LOSER: "f-los" }[s] || "f-neu"; }
-function dCls(d) { if (!d) return "d-f"; return d.startsWith("+") ? "d-p" : d.startsWith("-") ? "d-n" : "d-f"; }
+function fCls(s)  { return { WINNER: "f-win", LOSER: "f-los" }[s] || "f-neu"; }
+function dCls(d)  { if (!d) return "d-f"; return d.startsWith("+") ? "d-p" : d.startsWith("-") ? "d-n" : "d-f"; }
+
+// ── Date math helpers for the 3-panel layout ─────────────────────────
+// We derive the three period strings client-side so the panels are
+// self-describing. Inputs are already-formatted "Mon DD" strings from
+// build_data.py, plus the raw ISO timeline dates when available through
+// details.active for RUNNING experiments.
+function fmtMonDay(iso) {
+  if (!iso) return "";
+  try {
+    const d = new Date(iso + "T00:00:00Z");
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+  } catch { return ""; }
+}
+function addDaysISO(iso, days) {
+  if (!iso) return "";
+  const d = new Date(iso + "T00:00:00Z");
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+function todayISO() { return new Date().toISOString().slice(0, 10); }
+
+// Build period strings for the 3 panels.
+// Before  = 30 days prior to `started`
+// Target  = started → evaluation_date (planned window)
+// Current = started → today
+function panelDateRanges(exp) {
+  // Look up raw ISO dates from details.active / details.archive (we embedded full objs)
+  const raw = findExperimentRaw(exp.id) || {};
+  const tl = raw.timeline || {};
+  const started = tl.started || "";
+  const evalDate = tl.evaluation_date || tl.evaluated || "";
+
+  const beforeStart = started ? addDaysISO(started, -30) : "";
+  const beforeEnd   = started ? addDaysISO(started, -1)  : "";
+  const beforeStr   = beforeStart
+    ? `${fmtMonDay(beforeStart)} – ${fmtMonDay(beforeEnd)}`
+    : exp.start_date || "";
+
+  const targetStr = evalDate
+    ? `${fmtMonDay(started)} – ${fmtMonDay(evalDate)}`
+    : exp.end_date || "";
+
+  const currentEnd = exp.status === "RUNNING" ? todayISO() : evalDate;
+  const currentStr = started
+    ? `${fmtMonDay(started)} – ${fmtMonDay(currentEnd)}`
+    : "—";
+
+  return { before: beforeStr, target: targetStr, current: currentStr };
+}
+
+function findExperimentRaw(id) {
+  const details = currentData?.details || {};
+  return (details.active || []).find((e) => String(e.id) === String(id))
+      || (details.archive || []).find((e) => String(e.id) === String(id));
+}
+
+// Sprint-type → CSS class token. One of: rnk, ctr, cr, link.
+// Used to color the type pill and the row's left-edge accent.
+function typeAccent(t) {
+  const x = (t || "").toLowerCase();
+  return ["rnk", "ctr", "cr", "link"].includes(x) ? x : "rnk";
+}
+
+// Format a per-day rate for inline text. Integer when ≥10, 1 decimal below.
+function _fmtRate(n) {
+  if (n == null) return "—";
+  const abs = Math.abs(n);
+  return abs >= 10 ? Math.round(n).toLocaleString() : n.toFixed(1);
+}
+
+// Status pill (archived only). RUNNING experiments show no badge —
+// the bottom timeline label already carries elapsed days.
+function buildStatusBadge(exp) {
+  if (exp.status === "RUNNING") return "";
+  const cls = { WINNER: "winner", LOSER: "loser", NEUTRAL: "neutral" }[exp.status] || "neutral";
+  return `<span class="wk-badge ${cls}">${escapeHtml(exp.status)}</span>`;
+}
 
 function parseMonDD(str) {
   if (!str) return { mon: "", day: "" };
@@ -73,70 +150,129 @@ function render(d) {
   }).join("");
   const scanLbls = days.map((l) => `<span>${l}</span>`).join("");
 
-  const dtypes = [
-    { key: "total", label: "Total", f: true },
-    { key: "rnk", label: "RNK" },
-    { key: "ctr", label: "CTR" },
-    { key: "cr", label: "CR" },
-    { key: "link", label: "LINK" },
-  ];
-  const donuts = dtypes.map((dt) => {
-    const dd = d.donuts[dt.key] || { win: 0, total: 0 };
-    const p = pct(dd.win, dd.total), r = 26, dash = donutDash(p, r);
-    const col = p === null ? "var(--muted)" : p >= 50 ? "var(--teal)" : "var(--orange)";
-    return `<div class="dcard${dt.f ? " featured" : ""}">
-      <div class="d-lbl">${dt.label}</div>
-      <svg class="d-svg" viewBox="0 0 72 72">
-        <circle cx="36" cy="36" r="${r}" fill="none" stroke="var(--border)" stroke-width="8"/>
-        ${p !== null && p > 0 ? `<circle cx="36" cy="36" r="${r}" fill="none" stroke="${col}" stroke-width="8" stroke-dasharray="${dash.win}" stroke-dashoffset="${dash.wo}" stroke-linecap="round"/>` : ""}
-        ${p !== null && p < 100 && dd.total > 0 ? `<circle cx="36" cy="36" r="${r}" fill="none" stroke="var(--orange)" stroke-width="8" stroke-dasharray="${dash.lose}" stroke-dashoffset="${dash.lo}" stroke-linecap="round"/>` : ""}
-      </svg>
-      <div class="d-pct" style="color:${col}">${p === null ? "—" : p + "%"}</div>
-      <div class="d-sub">${p === null ? "no data" : "winning"}</div>
-      <div class="d-count">${dd.win} of ${dd.total}</div>
-    </div>`;
-  }).join("");
-
+  // ── Experiment rows ────────────────────────────────────────────────
+  // 3-panel layout: BEFORE / TARGET / CURRENT.
+  // Each panel has label + date-range + big value + supporting note.
+  // Elapsed days live inside the WK badge. No TBD.
   const exps = (d.experiments || []).map((exp) => {
-    const run = exp.status === "RUNNING", ha = exp.after_val != null;
-    const sd = parseMonDD(exp.start_date);
-    const afterRow = run
-      ? `<div class="ba-row"><div class="ba-tag">Target</div><div class="ba-track"><div class="ba-fill f-target" style="width:${exp.target_pct || 0}%"></div></div><div class="ba-val">${fmtVal(exp.target_val, exp.target_display, exp.unit)}</div></div>`
-      : `<div class="ba-row"><div class="ba-tag" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">After</div><div class="ba-track"><div class="ba-fill ${fCls(exp.status)}" style="width:${exp.after_pct || 0}%"></div></div><div class="ba-val" style="color:${exp.status === "WINNER" ? "var(--teal)" : "var(--text2)"}">${ha ? fmtVal(exp.after_val, exp.after_display, exp.unit) : "—"}</div></div>`;
-    const deltaHtml = exp.delta ? `<div class="delta-tag ${dCls(exp.delta)}">${exp.delta}</div>` : run ? `<div class="delta-tag d-f">TBD</div>` : "";
-    return `<div class="exp-row" data-exp-id="${escapeHtml(exp.id)}">
-      <div class="exp-date-blk"><div class="exp-date-mon">${sd.mon}</div><div class="exp-date-num">${sd.day}</div></div>
-      <div class="exp-body">
-        <div class="exp-name">${escapeHtml(exp.name)}</div>
-        <div class="exp-kpi-line">${escapeHtml(exp.kpi_label)}</div>
-        <div class="ba-row-wrap">
-          <div class="ba-row"><div class="ba-tag">Before</div><div class="ba-track"><div class="ba-fill f-before" style="width:${exp.before_pct}%"></div></div><div class="ba-val">${fmtVal(exp.before_val, exp.before_display, exp.unit)}</div></div>
-          ${afterRow}
+    const run = exp.status === "RUNNING";
+
+    // Dates for each panel
+    const dates = panelDateRanges(exp);
+
+    // Values + supporting notes for each panel
+    // Values for each panel — backend now sets these correctly for both
+    // count (per-day rates) and ratio (raw %, etc.) metrics. The frontend
+    // just renders whatever came in.
+    const beforeVal  = exp.before_display  || fmtVal(exp.before_val,  null, exp.unit);
+    const targetVal  = exp.target_display  || fmtVal(exp.target_val,  null, exp.unit);
+    const currentVal = exp.current_display
+      || (exp.current_val != null ? fmtVal(exp.current_val, null, exp.unit) : null)
+      || (exp.after_val   != null ? fmtVal(exp.after_val,   exp.after_display, exp.unit) : null);
+    const hasCurrent = currentVal !== null && currentVal !== "—";
+
+    // Captions live under each value. Backend provides them; we fall back
+    // to sensible defaults for archived experiments that don't yet emit them.
+    const beforeCaption  = exp.before_caption  || "Baseline reading";
+    const targetCaption  = exp.target_caption  || (run ? "Goal for this experiment" : "End-of-window reading");
+    const currentCaption = exp.current_caption || "";
+
+    // Delta: shown once a meaningful reading exists.
+    const delta = exp.delta;
+    const deltaHtml = delta && hasCurrent
+      ? `<div class="delta-tag ${dCls(delta)}">${escapeHtml(delta)}</div>`
+      : "";
+
+    // Status pill (archived only). RUNNING shows no top-right badge —
+    // the bottom timeline label carries elapsed days per the UX spec.
+    const statusBadge = buildStatusBadge(exp);
+
+    // Color class derived from sprint type for the type-tag pill + row accent
+    const typeCls = typeAccent(exp.type);
+
+    const currentMeasured = exp.current_measured
+      ? `Last scan · ${exp.current_measured.slice(0, 10)}`
+      : (run ? "Awaiting first scan" : "");
+
+    // Bottom timeline: center label carries elapsed days for RUNNING,
+    // or the outcome note for archived. Start / End dates bracket it.
+    const timelineCenter = run
+      ? `<span class="tl-elapsed">${exp.days_elapsed || 0}d elapsed</span>`
+      : `<span class="tl-elapsed">${escapeHtml(exp.note || "")}</span>`;
+
+    return `<div class="exp-row row-type-${typeCls}" data-exp-id="${escapeHtml(exp.id)}">
+      <div class="exp-head">
+        <div class="exp-head-left">
+          <div class="exp-type-tag tag-${typeCls}">${escapeHtml(exp.type || "")}${run ? "" : " · " + escapeHtml(exp.status)}</div>
+          <div class="exp-name">${escapeHtml(exp.name)}</div>
+          <div class="exp-kpi-line">${escapeHtml(exp.kpi_label || "")}</div>
         </div>
-        <div class="tl-wrap">
-          <div class="tl-track"><div class="tl-fill ${tlCls(exp.status)}" style="width:${exp.progress_pct}%"></div></div>
-          <div class="tl-lbls"><span>${exp.start_date}</span><span style="color:${exp.status==="WINNER"?"var(--teal)":"var(--muted)"};font-weight:500">${escapeHtml(exp.note||"")}</span><span>${exp.end_date}</span></div>
+        <div class="exp-head-right">
+          ${deltaHtml}
+          ${statusBadge}
         </div>
       </div>
-      <div class="exp-right"><span class="e-badge ${bCls(exp.status)}">${bLbl(exp)}</span>${deltaHtml}</div>
+
+      <div class="exp-panels">
+        <div class="exp-panel panel-before">
+          <div class="panel-head">
+            <div class="panel-label">Before</div>
+            <div class="panel-dates">${escapeHtml(dates.before)}</div>
+          </div>
+          <div class="panel-value muted">${escapeHtml(beforeVal)}</div>
+          <div class="panel-note">${escapeHtml(beforeCaption)}</div>
+        </div>
+
+        <div class="exp-panel panel-target">
+          <div class="panel-head">
+            <div class="panel-label">Target</div>
+            <div class="panel-dates">${escapeHtml(dates.target)}</div>
+          </div>
+          <div class="panel-value accent">${escapeHtml(targetVal)}</div>
+          <div class="panel-note">${escapeHtml(targetCaption)}</div>
+        </div>
+
+        <div class="exp-panel panel-current">
+          <div class="panel-head">
+            <div class="panel-label accent">Current</div>
+            <div class="panel-dates">${escapeHtml(dates.current)}</div>
+          </div>
+          <div class="panel-value ${hasCurrent ? "" : "pending"}">${escapeHtml(hasCurrent ? currentVal : "Awaiting scan")}</div>
+          <div class="panel-note">${escapeHtml(currentCaption || "—")}</div>
+          ${currentMeasured ? `<div class="panel-note-sub">${escapeHtml(currentMeasured)}</div>` : ""}
+        </div>
+      </div>
+
+      <div class="tl-wrap">
+        <div class="tl-track"><div class="tl-fill ${tlCls(exp.status)}" style="width:${exp.progress_pct || 0}%"></div></div>
+        <div class="tl-lbls">
+          <span>${escapeHtml(exp.start_date)}</span>
+          ${timelineCenter}
+          <span>${escapeHtml(exp.end_date)}</span>
+        </div>
+      </div>
     </div>`;
   }).join("") || '<div class="empty">No experiments yet</div>';
 
   const activeCount = (d.experiments || []).filter((e) => e.status === "RUNNING").length;
-  const winRate = pct(d.donuts.total.win, d.donuts.total.total);
   const pendingCount = (d.sprints || []).filter((s) => s.status === "UNACKNOWLEDGED").length;
 
   const sprints = (d.sprints || []).slice(0, 10).map((sp) => {
     const unack = sp.status === "UNACKNOWLEDGED";
     const next  = sp.status === "NEXT_UP";
     const effortCls = { LOW:"effort-low", MEDIUM:"effort-medium", HIGH:"effort-high" }[sp.effort_level] || "effort-medium";
+    const typeCls = typeAccent(sp.sprint_type);
     const badge = unack
       ? `<span class="s-unack">${sp.days_waiting}d waiting</span>`
       : next
         ? `<span class="s-next">NEXT UP</span>`
         : `<span class="s-queued">#${sp.queue_position || ""}</span>`;
-    return `<div class="sprint-row" data-sprint-id="${escapeHtml(sp.id)}">
-      <div class="sprint-date-blk"><div class="sprint-num-lbl">Sprint</div><div class="sprint-num-big">#${escapeHtml(sp.id)}</div></div>
+    return `<div class="sprint-row row-type-${typeCls}" data-sprint-id="${escapeHtml(sp.id)}">
+      <div class="sprint-date-blk">
+        <div class="sprint-num-lbl">Sprint</div>
+        <div class="sprint-num-big">#${escapeHtml(sp.id)}</div>
+        <span class="sprint-type-chip tag-${typeCls}">${escapeHtml(sp.sprint_type || "")}</span>
+      </div>
       <div class="sprint-body">
         <div class="sprint-title">${escapeHtml(sp.title)}</div>
         <div class="sprint-url">${escapeHtml(sp.url)}</div>
@@ -174,34 +310,30 @@ function render(d) {
       </div>
 
       <div class="section"><div class="stat-grid">
-        <div class="stat-card"><div class="stat-icon" style="background:#eff6ff">📄</div><div><div class="stat-val">${sys.pages_scanned}<span> / ${sys.pages_total}</span></div><div class="stat-lbl">Pages Scanned</div><div class="stat-note" style="color:var(--teal)">This week</div></div></div>
-        <div class="stat-card"><div class="stat-icon" style="background:#f0fdf4">🔗</div><div><div class="stat-val">${sys.sources_connected}<span> / ${sys.sources_total}</span></div><div class="stat-lbl">Data Sources</div><div class="stat-note" style="color:var(--green)">All connected</div></div></div>
-        <div class="stat-card"><div class="stat-icon" style="background:#eff6ff">🧪</div><div><div class="stat-val">${activeCount}</div><div class="stat-lbl">Active Tests</div><div class="stat-note" style="color:var(--muted2)">Running now</div></div></div>
-        <div class="stat-card"><div class="stat-icon" style="background:${pendingCount > 0 ? "var(--orange-lt)" : "var(--green-lt)"}">${pendingCount > 0 ? "⚠️" : "✅"}</div><div><div class="stat-val" style="color:${pendingCount > 0 ? "var(--orange)" : "var(--green)"}">${pendingCount}</div><div class="stat-lbl">Pending Sprints</div><div class="stat-note" style="color:${pendingCount > 0 ? "var(--orange)" : "var(--muted2)"}">${pendingCount > 0 ? "Needs response" : "All acknowledged"}</div></div></div>
+        <div class="stat-card"><div><div class="stat-val">${sys.pages_scanned}<span> / ${sys.pages_total}</span></div><div class="stat-lbl">Pages scanned</div><div class="stat-note">This week</div></div></div>
+        <div class="stat-card"><div><div class="stat-val">${sys.sources_connected}<span> / ${sys.sources_total}</span></div><div class="stat-lbl">Data sources</div><div class="stat-note" style="color:var(--pos)">All connected</div></div></div>
+        <div class="stat-card"><div><div class="stat-val">${activeCount}</div><div class="stat-lbl">Active tests</div><div class="stat-note">Running now</div></div></div>
+        <div class="stat-card"><div><div class="stat-val" style="color:${pendingCount > 0 ? "var(--attn)" : "var(--text-2)"}">${pendingCount}</div><div class="stat-lbl">Pending sprints</div><div class="stat-note" style="color:${pendingCount > 0 ? "var(--attn)" : "var(--muted)"}">${pendingCount > 0 ? "Needs response" : "All acknowledged"}</div></div></div>
       </div></div>
 
       <div class="section"><div class="card"><div class="scan-wrap"><div class="scan-inner">
-        <div><div class="scan-lbl-title">Weekly Scan</div><div class="scan-lbl-sub">Pages per day</div></div>
+        <div><div class="scan-lbl-title">Weekly scan</div><div class="scan-lbl-sub">Pages per day</div></div>
         <div class="scan-chart"><div class="scan-bars">${scanBars}</div><div class="sbar-lbls">${scanLbls}</div></div>
         <div class="scan-stat"><div class="scan-big">${sys.days_complete || 0}/7</div><div class="scan-sm">days complete</div></div>
       </div></div></div></div>
 
-      <div class="section"><div class="sec-header"><div class="sec-title-text">Experiment Win Rate</div></div>
-        <div class="donut-grid">${donuts}</div>
-      </div>
-
       <div class="section"><div class="card">
         <div class="card-header">
-          <div class="card-header-left"><div class="sec-icon" style="background:var(--teal-lt)">🧪</div><div><div class="card-title">Experiments</div><div class="card-sub">Click any row for full details</div></div></div>
-          ${winRate !== null ? `<div class="card-badge" style="background:var(--teal-lt);color:var(--teal);border:1px solid var(--teal-md)">${winRate}% win rate</div>` : ""}
+          <div class="card-header-left"><div><div class="card-title">Experiments</div><div class="card-sub">Click any row for full details</div></div></div>
+          <div class="card-badge">${activeCount} running</div>
         </div>
         ${exps}
       </div></div>
 
       <div class="section"><div class="card">
         <div class="card-header">
-          <div class="card-header-left"><div class="sec-icon" style="background:var(--orange-lt)">⚡</div><div><div class="card-title">Sprints</div><div class="card-sub">Click any sprint for full brief &amp; instructions</div></div></div>
-          ${pendingCount > 0 ? `<div class="card-badge" style="background:var(--orange-lt);color:var(--orange);border:1px solid #fca5a5">${pendingCount} unacknowledged</div>` : ""}
+          <div class="card-header-left"><div><div class="card-title">Sprints</div><div class="card-sub">Click any sprint for full brief &amp; instructions</div></div></div>
+          ${pendingCount > 0 ? `<div class="card-badge" style="background:var(--attn-soft);color:var(--attn);border-color:transparent">${pendingCount} unacknowledged</div>` : ""}
         </div>
         <div class="sprint-list">${sprints}</div>
       </div></div>
@@ -265,7 +397,9 @@ function findSprintInDetails(id) {
 
 function findExperimentInDetails(id) {
   const details = currentData?.details || {};
-  return (details.active || []).find((e) => e.id === id) || (details.archive || []).find((e) => e.id === id);
+  const key = String(id);
+  return (details.active || []).find((e) => String(e.id) === key)
+      || (details.archive || []).find((e) => String(e.id) === key);
 }
 
 function buildBriefSteps(sprint) {
@@ -317,7 +451,7 @@ function openSprintDetail(id) {
     <div class="detail-pad">
       <span class="detail-type-badge">${escapeHtml(typeLabel)} &middot; SPRINT #${escapeHtml(sprint.id)}</span>
       <div class="detail-title">${escapeHtml(sprint.title)}</div>
-      <div class="detail-url"><a href="https://www.outdoorbengal.com${escapeHtml(sprint.url||"")}" target="_blank" style="color:var(--muted2);font-size:12px;">${escapeHtml(sprint.url||"")}</a></div>
+      <div class="detail-url"><a href="https://www.outdoorbengal.com${escapeHtml(sprint.url||"")}" target="_blank" style="color:var(--muted);font-size:12px;">${escapeHtml(sprint.url||"")}</a></div>
 
       <div class="detail-section">
         <div class="detail-section-title">Why this sprint</div>
@@ -328,7 +462,7 @@ function openSprintDetail(id) {
         <div class="detail-section-title">KPI &amp; target</div>
         <div class="detail-kpi">
           <div class="detail-kpi-item"><div class="k">Current</div><div class="v">${escapeHtml(kpi.current_display||String(kpi.current_value??"—"))}</div></div>
-          <div class="detail-kpi-item"><div class="k">Target</div><div class="v" style="color:var(--teal)">${escapeHtml(kpi.target_display||String(kpi.target_value??"—"))}</div></div>
+          <div class="detail-kpi-item"><div class="k">Target</div><div class="v" style="color:var(--accent)">${escapeHtml(kpi.target_display||String(kpi.target_value??"—"))}</div></div>
         </div>
       </div>
 
@@ -363,21 +497,82 @@ function openExperimentDetail(id) {
 
   const kpi = exp.kpi || {};
   const tl = exp.timeline || {};
+  const cr = exp.current_reading || {};
+  const unit = kpi.unit || "percent";
+
+  // Also fetch the row-level derived object (has delta, pre-formatted notes)
+  const row = (currentData?.experiments || []).find((r) => String(r.id) === String(id)) || {};
+
+  const beforeStart = tl.started ? addDaysISO(tl.started, -30) : "";
+  const beforeEnd   = tl.started ? addDaysISO(tl.started, -1)  : "";
+  const evalDate    = tl.evaluation_date || tl.evaluated || "";
+  const isRunning   = exp.status === "RUNNING";
+  const currentEnd  = isRunning ? todayISO() : evalDate;
+
+  const currentValRaw = cr.current_value ?? null;
+  const hasCurrent = currentValRaw !== null && currentValRaw !== undefined;
+
+  // Prefer the row-level derived fields (already per-day for count metrics,
+  // with matching captions). Fall back to the raw YAML only if the row row
+  // is missing something.
+  const beforeVal  = row.before_display
+    || kpi.baseline_display
+    || (kpi.baseline_value != null ? String(kpi.baseline_value) : "—");
+  const targetVal = isRunning
+    ? (row.target_display || kpi.target_display || (kpi.target_value != null ? String(kpi.target_value) : "—"))
+    : (kpi.final_display  || (kpi.final_value  != null ? String(kpi.final_value)  : "—"));
+  const currentDisplay = row.current_display
+    || (hasCurrent
+        ? (unit === "count" ? Math.round(currentValRaw).toLocaleString() : currentValRaw + (unit === "percent" ? "%" : ""))
+        : null);
+
+  const beforeCap  = row.before_caption  || "Baseline reading";
+  const targetCap  = row.target_caption  || (isRunning ? "Goal for this experiment" : "End-of-window reading");
+  const currentCap = row.current_caption || "";
+
+  const currentMeasured = cr.last_measured ? cr.last_measured.slice(0, 10) : "";
+
+  const deltaHtml = row.delta && hasCurrent
+    ? `<div class="delta-tag ${dCls(row.delta)}" style="margin-left:8px">${escapeHtml(row.delta)}</div>`
+    : "";
 
   document.getElementById("modal-body").innerHTML = `
     <div class="detail-pad">
-      <span class="detail-type-badge">${escapeHtml(exp.sprint_type)} · EXPERIMENT #${escapeHtml(exp.id)} · ${escapeHtml(exp.status)}</span>
+      <span class="detail-type-badge">${escapeHtml(exp.sprint_type || "")} · EXPERIMENT #${escapeHtml(exp.id)} · ${escapeHtml(exp.status || "")}</span>
       <div class="detail-title">${escapeHtml(exp.name)}</div>
       <div class="detail-url">${escapeHtml(exp.url || "")}</div>
 
       <div class="detail-section">
-        <div class="detail-section-title">KPI</div>
-        <div style="font-size:13px;margin-bottom:10px;">${escapeHtml(kpi.display_label || "")}</div>
-        <div class="detail-kpi">
-          <div class="detail-kpi-item"><div class="k">Baseline</div><div class="v">${escapeHtml(kpi.baseline_display || kpi.baseline_value || "—")}</div></div>
-          <div class="detail-kpi-item"><div class="k">${exp.status === "RUNNING" ? "Target" : "Final"}</div><div class="v" style="color:var(--teal)">${escapeHtml(exp.status === "RUNNING" ? (kpi.target_display || kpi.target_value || "—") : (kpi.final_display || kpi.final_value || "—"))}</div></div>
+        <div class="detail-section-title" style="display:flex;align-items:center;gap:6px">
+          KPI · ${escapeHtml(kpi.display_label || "")} ${deltaHtml}
         </div>
-        ${kpi.delta_display ? `<div style="margin-top:10px;font-size:14px;font-weight:600;color:${kpi.delta_pct >= 0 ? "var(--teal)" : "var(--red)"}">Δ ${escapeHtml(kpi.delta_display)}</div>` : ""}
+        <div class="detail-panels">
+          <div class="exp-panel panel-before">
+            <div class="panel-head">
+              <div class="panel-label">Before</div>
+              <div class="panel-dates">${fmtMonDay(beforeStart)} – ${fmtMonDay(beforeEnd)}</div>
+            </div>
+            <div class="panel-value muted">${escapeHtml(beforeVal)}</div>
+            <div class="panel-note">${escapeHtml(beforeCap)}</div>
+          </div>
+          <div class="exp-panel panel-target">
+            <div class="panel-head">
+              <div class="panel-label">${isRunning ? "Target" : "Final"}</div>
+              <div class="panel-dates">${fmtMonDay(tl.started)} – ${fmtMonDay(evalDate)}</div>
+            </div>
+            <div class="panel-value ${isRunning ? "accent" : ""}">${escapeHtml(targetVal)}</div>
+            <div class="panel-note">${escapeHtml(targetCap)}</div>
+          </div>
+          <div class="exp-panel panel-current">
+            <div class="panel-head">
+              <div class="panel-label accent">Current</div>
+              <div class="panel-dates">${fmtMonDay(tl.started)} – ${fmtMonDay(currentEnd)}</div>
+            </div>
+            <div class="panel-value ${hasCurrent ? "" : "pending"}">${escapeHtml(hasCurrent ? currentDisplay : "Awaiting scan")}</div>
+            <div class="panel-note">${escapeHtml(currentCap || "—")}</div>
+            ${currentMeasured ? `<div class="panel-note-sub">Last scan · ${escapeHtml(currentMeasured)}</div>` : ""}
+          </div>
+        </div>
       </div>
 
       <div class="detail-section">
@@ -388,8 +583,9 @@ function openExperimentDetail(id) {
       <div class="detail-section">
         <div class="detail-section-title">Timeline</div>
         <div class="detail-effort-row"><span class="lbl">Started</span><span class="val">${escapeHtml(tl.started || "—")}</span></div>
-        <div class="detail-effort-row"><span class="lbl">${exp.status === "RUNNING" ? "Evaluates on" : "Evaluated on"}</span><span class="val">${escapeHtml(tl.evaluation_date || tl.evaluated || "—")}</span></div>
+        <div class="detail-effort-row"><span class="lbl">${isRunning ? "Evaluates on" : "Evaluated on"}</span><span class="val">${escapeHtml(evalDate || "—")}</span></div>
         <div class="detail-effort-row"><span class="lbl">Window</span><span class="val">${tl.window_days || "?"} days</span></div>
+        ${isRunning ? `<div class="detail-effort-row"><span class="lbl">Progress</span><span class="val">${row.days_elapsed || 0} / ${tl.window_days || "?"} days</span></div>` : ""}
       </div>
 
       ${exp.outcome_note ? `<div class="detail-section"><div class="detail-section-title">Outcome</div><div class="detail-rationale">${escapeHtml(exp.outcome_note)}</div></div>` : ""}
@@ -543,6 +739,6 @@ async function dispatchAction(action, sprintId, extra = {}) {
     render(data);
   } catch (err) {
     console.error(err);
-    document.getElementById("loading").innerHTML = `<div style="color:var(--red);text-align:center"><div>Failed to load dashboard data</div><div style="font-size:11px;margin-top:8px;color:var(--muted)">${escapeHtml(err.message)}</div></div>`;
+    document.getElementById("loading").innerHTML = `<div style="color:var(--neg);text-align:center"><div>Failed to load dashboard data</div><div style="font-size:11px;margin-top:8px;color:var(--muted)">${escapeHtml(err.message)}</div></div>`;
   }
 })();

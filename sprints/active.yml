@@ -130,7 +130,7 @@ experiments:
     current_value: 0.0
     days_elapsed: 1
     note: 0 clicks over 1d
-- id: 008
+- id: '008'
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
   status: RUNNING
@@ -172,7 +172,7 @@ experiments:
     baseline_value: 0
     baseline_display: ~0/wk now
     target_value: 4
-    target_display: +3/wk
+    target_display: +4/wk
     unit: sessions/week
   timeline:
     started: '2026-04-22'

@@ -72,6 +72,22 @@ def mon_dd(iso_date: str) -> str:
     return datetime.fromisoformat(iso_date).strftime("%b %d")
 
 
+def format_range(start_iso: str | None, end_iso: str | None) -> str:
+    """Format a date range as 'Mar 15 – Apr 14' for panel headers."""
+    if not start_iso or not end_iso:
+        return ""
+    try:
+        s = date.fromisoformat(start_iso)
+        e = date.fromisoformat(end_iso)
+    except (ValueError, TypeError):
+        return ""
+    # Use %-d on POSIX to strip leading zero; fall back to lstrip for Windows.
+    try:
+        return f"{s.strftime('%b %-d')} – {e.strftime('%b %-d')}"
+    except ValueError:
+        return f"{s.strftime('%b %d').lstrip('0')} – {e.strftime('%b %d').lstrip('0')}"
+
+
 def build_system_block(scans: dict, active: dict, queue: dict) -> dict:
     cw = scans.get("current_week", {})
     daily_counts = cw.get("daily_counts", [0] * 7)
@@ -130,6 +146,107 @@ def build_donuts(archive: dict) -> dict:
     }
 
 
+def _fmt_delta(current: float | None, baseline: float | None, unit: str) -> str | None:
+    """Format a delta string — percent change for ratios, absolute for counts."""
+    if current is None or baseline is None:
+        return None
+    if unit == "count":
+        diff = current - baseline
+        sign = "+" if diff >= 0 else ""
+        return f"{sign}{int(round(diff))}"
+    # ratios: relative % change vs baseline (NOT percentage-point)
+    if baseline == 0:
+        if current == 0:
+            return "+0"
+        return "new"
+    rel = (current - baseline) / baseline * 100
+    sign = "+" if rel >= 0 else ""
+    return f"{sign}{round(rel)}%"
+
+
+def _fmt_run_rate_delta(
+    current_total: float | None,
+    current_days: int | None,
+    baseline_total: float | None,
+    baseline_days: int | None,
+) -> tuple[str | None, dict]:
+    """
+    For absolute-count metrics (impressions, clicks, sessions), comparing a
+    completed 30-day baseline window against a partial current window is
+    apples-to-oranges. This compares *per-day run rates* instead and returns
+    the relative change plus a small dict of derived rates for the UI note.
+
+    Returns (delta_str or None, {current_rate, baseline_rate, current_days, baseline_days}).
+    """
+    info = {
+        "current_rate": None,
+        "baseline_rate": None,
+        "current_days": current_days,
+        "baseline_days": baseline_days,
+    }
+    if (
+        current_total is None or baseline_total is None
+        or not current_days or not baseline_days
+        or current_days <= 0 or baseline_days <= 0
+    ):
+        return None, info
+
+    current_rate = current_total / current_days
+    baseline_rate = baseline_total / baseline_days
+    info["current_rate"] = current_rate
+    info["baseline_rate"] = baseline_rate
+
+    if baseline_rate == 0:
+        if current_rate == 0:
+            return "+0%", info
+        return "new", info
+
+    rel = (current_rate - baseline_rate) / baseline_rate * 100
+    sign = "+" if rel >= 0 else ""
+    return f"{sign}{round(rel)}%", info
+
+
+def _fmt_int(n: float) -> str:
+    return f"{int(round(n)):,}" if abs(n) >= 10 else f"{n:.1f}"
+
+
+def _metric_label(kpi: dict) -> str:
+    """Extract a short, human metric label from the KPI block.
+
+    KPI.display_label is typically structured like "Impressions · /path/here"
+    or "Conversion rate · 4772 sessions". Take the text before the first
+    separator. Fall back to a title-cased version of kpi.metric.
+    """
+    dl = (kpi.get("display_label") or "").strip()
+    for sep in ("·", "—", "-", "|"):
+        if sep in dl:
+            head = dl.split(sep, 1)[0].strip()
+            if head:
+                return head
+    if dl:
+        return dl
+    m = (kpi.get("metric") or "").replace("_", " ").strip()
+    return m.title() if m else "Value"
+
+
+def _fmt_window(days: int) -> str:
+    """Render a window length ('1 day', '30 days')."""
+    if not days:
+        return "—"
+    return f"{days} day" if days == 1 else f"{days} days"
+
+
+def _fmt_current_display(value: float | None, unit: str) -> str | None:
+    """Format a raw current_reading value for display."""
+    if value is None:
+        return None
+    if unit == "count":
+        return f"{int(round(value)):,}"
+    # trim trailing zeros, keep up to 2 decimals
+    txt = f"{value:.2f}".rstrip("0").rstrip(".")
+    return txt + ("%" if unit == "percent" else "")
+
+
 def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
     """Merge active (RUNNING) and recent archive (COMPLETED) for dashboard display."""
     rows: list[dict] = []
@@ -140,6 +257,7 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
             continue
         kpi = exp.get("kpi", {})
         tl = exp.get("timeline", {})
+        cr = exp.get("current_reading") or {}
         st = exp.get("sprint_type", "RNK")
 
         days_elapsed = days_since(tl["started"]) if tl.get("started") else 0
@@ -147,6 +265,77 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
         progress = min(round(days_elapsed / window * 100), 100) if window else 0
 
         unit = kpi.get("unit", "percent")
+
+        # Current reading written by lisa_dashboard_sync.py into
+        # sprints/active.yml[].current_reading. May be null if never measured
+        # or if the first scan hasn't run yet.
+        current_val = cr.get("current_value")
+        current_note = cr.get("note") or ""
+        current_measured = cr.get("last_measured")
+
+        # ── Window sizes ─────────────────────────────────────────────
+        baseline_window_days = kpi.get("baseline_window_days") or 30
+        target_window_days = window or 30          # eval window
+        current_window_days = max(days_elapsed, 1)  # guard div/0
+
+        # ── Delta calculation ────────────────────────────────────────
+        # For absolute-count metrics the baseline is typically a full 30-day
+        # window and the current reading is a partial window (N days
+        # elapsed). Comparing raw totals is meaningless — a 30-day total
+        # always dwarfs a 1-day partial. Compare per-day run-rates instead.
+        #
+        # For ratio metrics (%, sessions/week, CTR, CR), totals normalize
+        # naturally — use the simple relative delta.
+        rate_info: dict = {}
+        if unit == "count":
+            _, rate_info = _fmt_run_rate_delta(
+                current_val, current_window_days,
+                kpi.get("baseline_value"), baseline_window_days,
+            )
+            # Recompute a rate-basis delta from per-day rates so the delta
+            # reflects exactly what's displayed on the panels.
+            b_rate = rate_info.get("baseline_rate")
+            c_rate = rate_info.get("current_rate")
+            if b_rate is not None and c_rate is not None and b_rate > 0:
+                rel = (c_rate - b_rate) / b_rate * 100
+                delta_str = f"{'+' if rel >= 0 else ''}{round(rel)}%"
+            elif b_rate == 0 and c_rate and c_rate > 0:
+                delta_str = "new"
+            else:
+                delta_str = None
+        else:
+            delta_str = _fmt_delta(current_val, kpi.get("baseline_value"), unit)
+
+        # ── Display fields ───────────────────────────────────────────
+        # For count metrics: express everything as per-day rates so the
+        # three panels are directly comparable. The raw totals move out of
+        # the value box into the caption underneath.
+        # For ratio metrics: leave display as the YAML-authored strings
+        # since they're already normalized.
+        if unit == "count":
+            metric_label = _metric_label(kpi)  # e.g. "Impressions"
+            unit_word = metric_label.lower().rstrip("s") + "s per day"  # "impressions per day"
+
+            b_rate = rate_info.get("baseline_rate")
+            c_rate = rate_info.get("current_rate")
+            target_rate = (kpi.get("target_value") / target_window_days) \
+                if (kpi.get("target_value") is not None and target_window_days) else None
+
+            before_display = f"{_fmt_int(b_rate)}/day" if b_rate is not None else "—"
+            current_display = f"{_fmt_int(c_rate)}/day" if c_rate is not None else None
+            target_display = f"{_fmt_int(target_rate)}/day" if target_rate is not None else (kpi.get("target_display") or "—")
+
+            before_caption  = f"{unit_word.capitalize()} · last {_fmt_window(baseline_window_days)}"
+            target_caption  = f"{unit_word.capitalize()} · goal over {_fmt_window(target_window_days)}"
+            current_caption = f"{unit_word.capitalize()} · last {_fmt_window(current_window_days)}"
+        else:
+            before_display  = kpi.get("baseline_display") or (_fmt_current_display(kpi.get("baseline_value"), unit) or "—")
+            target_display  = kpi.get("target_display")   or (_fmt_current_display(kpi.get("target_value"), unit) or "—")
+            current_display = _fmt_current_display(current_val, unit)
+            before_caption  = "Baseline reading"
+            target_caption  = "Goal for this experiment"
+            current_caption = current_note or ""
+
         rows.append({
             "id": exp["id"],
             "name": exp["name"],
@@ -154,21 +343,49 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
             "status": "RUNNING",
             "unit": unit,
             "kpi_label": kpi.get("display_label", ""),
+
+            # Before
             "before_val": kpi.get("baseline_value"),
-            "before_display": kpi.get("baseline_display"),
+            "before_display": before_display,
+            "before_caption": before_caption,
             "before_pct": bar_pct(kpi.get("baseline_value"), st, kpi.get("target_value"), unit),
-            "after_val": None,
-            "after_pct": None,
+            "before_window_days": baseline_window_days,
+
+            # Target
             "target_val": kpi.get("target_value"),
-            "target_display": kpi.get("target_display"),
+            "target_display": target_display,
+            "target_caption": target_caption,
             "target_pct": bar_pct(kpi.get("target_value"), st, kpi.get("target_value"), unit),
-            "delta": None,
+            "target_window_days": target_window_days,
+
+            # Current (primary fields)
+            "current_val": current_val,
+            "current_display": current_display,
+            "current_caption": current_caption,
+            "current_note": current_note,
+            "current_measured": current_measured,
+            "current_pct": bar_pct(current_val, st, kpi.get("target_value"), unit),
+            "current_window_days": current_window_days,
+
+            # Run-rate comparison fields for count metrics (null for ratios).
+            # Kept for consumers that want the raw numbers.
+            "current_per_day": rate_info.get("current_rate"),
+            "baseline_per_day": rate_info.get("baseline_rate"),
+
+            # Legacy aliases — kept so consumers that still read after_* don't break
+            "after_val": current_val,
+            "after_display": current_display,
+            "after_pct": bar_pct(current_val, st, kpi.get("target_value"), unit),
+
+            "delta": delta_str,
+            "delta_basis": "run_rate" if unit == "count" else "relative",
             "start_date": mon_dd(tl["started"]),
             "end_date": mon_dd(tl["evaluation_date"]),
             "progress_pct": progress,
+            "days_elapsed": days_elapsed,
             "note": f"{days_elapsed} days in",
-            "week_current": min(days_elapsed // 7 + 1, window // 7),
-            "week_total": window // 7,
+            "week_current": min(days_elapsed // 7 + 1, window // 7) if window else 1,
+            "week_total": window // 7 if window else 1,
         })
 
     # Most recent 2 archived experiments
@@ -182,23 +399,48 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
         kpi = exp.get("kpi", {})
         tl = exp.get("timeline", {})
         st = exp.get("sprint_type", "RNK")
+        unit = kpi.get("unit", "percent")
+
+        # For archived: Current panel carries the final reading, Target panel
+        # carries the original target so the row stays comparable to RUNNING.
+        final_val = kpi.get("final_value")
+        final_disp = kpi.get("final_display") or _fmt_current_display(final_val, unit)
 
         rows.append({
             "id": exp["id"],
             "name": exp["name"],
             "type": st,
             "status": exp.get("status", "NEUTRAL"),
+            "unit": unit,
             "kpi_label": kpi.get("display_label", ""),
+
+            # Before
             "before_val": kpi.get("baseline_value"),
-            "before_pct": bar_pct(kpi.get("baseline_value"), st),
-            "after_val": kpi.get("final_value"),
-            "after_pct": bar_pct(kpi.get("final_value"), st),
-            "target_val": None,
-            "target_pct": None,
+            "before_display": kpi.get("baseline_display"),
+            "before_pct": bar_pct(kpi.get("baseline_value"), st, kpi.get("target_value"), unit),
+
+            # Target (what we aimed for — preserved for comparison)
+            "target_val": kpi.get("target_value"),
+            "target_display": kpi.get("target_display"),
+            "target_pct": bar_pct(kpi.get("target_value"), st, kpi.get("target_value"), unit),
+
+            # Current panel = the final reading on archived experiments
+            "current_val": final_val,
+            "current_display": final_disp,
+            "current_note": exp.get("outcome_note", ""),
+            "current_measured": tl.get("evaluated"),
+            "current_pct": bar_pct(final_val, st, kpi.get("target_value"), unit),
+
+            # Aliased for consumers that still use after_*
+            "after_val": final_val,
+            "after_display": final_disp,
+            "after_pct": bar_pct(final_val, st, kpi.get("target_value"), unit),
+
             "delta": kpi.get("delta_display"),
             "start_date": mon_dd(tl["started"]),
             "end_date": mon_dd(tl["evaluated"]),
             "progress_pct": 100,
+            "days_elapsed": tl.get("window_days", 28),
             "note": exp.get("outcome_note", ""),
             "week_current": tl.get("window_days", 28) // 7,
             "week_total": tl.get("window_days", 28) // 7,
