@@ -267,6 +267,23 @@ function render(d) {
       : next
         ? `<span class="s-next">NEXT UP</span>`
         : `<span class="s-queued">#${sp.queue_position || ""}</span>`;
+
+    // Revenue headline — primary visual priority per the UX spec.
+    // Sprints without a revenue model still render but show a muted
+    // "—" placeholder; they've been sorted below modeled sprints already.
+    const rev = sp.revenue || {};
+    const hasRev = rev.available;
+    const revCls = hasRev
+      ? (rev.monthly_lift_usd_adjusted >= 100 ? "rev-big" : rev.monthly_lift_usd_adjusted >= 20 ? "rev-mid" : "rev-small")
+      : "rev-none";
+    const confCls = hasRev ? `conf-${rev.confidence}` : "";
+    const revHeadline = hasRev
+      ? `<div class="sprint-revenue">
+           <div class="rev-amount ${revCls}">${escapeHtml(sp.revenue_headline)}</div>
+           <div class="rev-sub"><span class="conf-dot ${confCls}"></span>${escapeHtml(rev.confidence)} confidence · ${rev.haircut_pct}%</div>
+         </div>`
+      : `<div class="sprint-revenue rev-missing"><div class="rev-amount rev-none">—</div><div class="rev-sub">no model</div></div>`;
+
     return `<div class="sprint-row row-type-${typeCls}" data-sprint-id="${escapeHtml(sp.id)}">
       <div class="sprint-date-blk">
         <div class="sprint-num-lbl">Sprint</div>
@@ -282,6 +299,7 @@ function render(d) {
           ${sp.effort_minutes ? `<span class="sprint-kpi-pill">~${sp.effort_minutes}min</span>` : ""}
         </div>
       </div>
+      ${revHeadline}
       <div class="sprint-right">${badge}</div>
     </div>`;
   }).join("") || '<div class="empty">No pending sprints</div>';
@@ -443,33 +461,39 @@ function buildBriefSteps(sprint) {
 function openSprintDetail(id) {
   const sprint = findSprintInDetails(id);
   if (!sprint) return;
+
+  // Resolve the row-level derived data (has revenue breakdown, headline, etc.)
+  const row = (currentData?.sprints || []).find((r) => String(r.id) === String(id)) || {};
+
   const kpi = sprint.kpi || {};
   const effort = sprint.effort || {};
   const evaluation = sprint.evaluation || {};
   const typeLabel = { RNK:"Ranking", CTR:"CTR", CR:"Conversion", LINK:"Internal Link" }[sprint.sprint_type] || sprint.sprint_type;
+
+  const rev = row.revenue || {};
+  const hasRev = rev.available;
+  const revSection = hasRev ? buildRevenueSection(rev, row.revenue_headline) : buildNoRevenueSection();
+
+  const brief = sprint.execution_brief || {};
+  const hasBrief = !!(brief.action || brief.summary || (brief.steps || []).length);
+  const briefSection = hasBrief
+    ? buildExecutionBrief(brief, sprint.id)
+    : buildBriefPlaceholder(sprint);
+
   document.getElementById("modal-body").innerHTML = `
     <div class="detail-pad">
       <span class="detail-type-badge">${escapeHtml(typeLabel)} &middot; SPRINT #${escapeHtml(sprint.id)}</span>
       <div class="detail-title">${escapeHtml(sprint.title)}</div>
-      <div class="detail-url"><a href="https://www.outdoorbengal.com${escapeHtml(sprint.url||"")}" target="_blank" style="color:var(--muted);font-size:12px;">${escapeHtml(sprint.url||"")}</a></div>
+      <div class="detail-url"><a href="https://www.outdoorbengal.com${escapeHtml(sprint.url||"")}" target="_blank">${escapeHtml(sprint.url||"")}</a></div>
+
+      ${revSection}
 
       <div class="detail-section">
         <div class="detail-section-title">Why this sprint</div>
         <div class="detail-rationale">${escapeHtml(sprint.rationale||"No rationale provided.")}</div>
       </div>
 
-      <div class="detail-section">
-        <div class="detail-section-title">KPI &amp; target</div>
-        <div class="detail-kpi">
-          <div class="detail-kpi-item"><div class="k">Current</div><div class="v">${escapeHtml(kpi.current_display||String(kpi.current_value??"—"))}</div></div>
-          <div class="detail-kpi-item"><div class="k">Target</div><div class="v" style="color:var(--accent)">${escapeHtml(kpi.target_display||String(kpi.target_value??"—"))}</div></div>
-        </div>
-      </div>
-
-      <div class="detail-brief">
-        <div class="detail-brief-title">Execution brief — for Bart or VA</div>
-        ${buildBriefSteps(sprint)}
-      </div>
+      ${briefSection}
 
       <div class="detail-section">
         <div class="detail-section-title">Effort &amp; tracking</div>
@@ -489,6 +513,134 @@ function openSprintDetail(id) {
     btn.addEventListener("click", () => { closeModal(); handleAction(btn.dataset.modalAction, btn.dataset.sprintId); });
   });
   openModal();
+}
+
+// ── Revenue section ──────────────────────────────────────────────────
+// Primary visual priority: the adjusted monthly lift. The math table is
+// present but sized down and muted so it doesn't compete.
+function buildRevenueSection(rev, headline) {
+  const sizeCls = rev.monthly_lift_usd_adjusted >= 100 ? "rev-big"
+                : rev.monthly_lift_usd_adjusted >= 20  ? "rev-mid"
+                : "rev-small";
+  const confLabel = { low: "low confidence", medium: "medium confidence", high: "high confidence" }[rev.confidence] || "";
+
+  // Math breakdown rows — only show lines that actually change to reduce noise.
+  const rows = (rev.breakdown || []).filter((r) => r.changed);
+  // Always show at least one row even if nothing marked "changed" — keeps the
+  // math visible for edge cases.
+  const rowsToShow = rows.length ? rows : (rev.breakdown || []).slice(0, 1);
+
+  const mathRows = rowsToShow.map((r) => `
+    <tr class="math-row ${r.changed ? "changed" : ""}">
+      <td class="math-lbl">${escapeHtml(r.label)}</td>
+      <td class="math-before">${escapeHtml(r.before)}</td>
+      <td class="math-arrow">→</td>
+      <td class="math-after">${escapeHtml(r.after)}</td>
+      <td class="math-delta ${r.delta_pct.startsWith("+") ? "pos" : r.delta_pct.startsWith("-") ? "neg" : ""}">${escapeHtml(r.delta_pct)}</td>
+    </tr>`).join("");
+
+  return `
+    <div class="detail-section rev-section">
+      <div class="rev-headline-row">
+        <div>
+          <div class="rev-label">Expected revenue lift</div>
+          <div class="rev-amount-big ${sizeCls}">${escapeHtml(headline || "")}</div>
+          <div class="rev-sub-detail">
+            <span class="conf-dot conf-${rev.confidence}"></span>
+            ${escapeHtml(confLabel)} · showing ${rev.haircut_pct}% of raw estimate
+          </div>
+        </div>
+      </div>
+      <details class="rev-math">
+        <summary>Show the math</summary>
+        <div class="rev-math-body">
+          <div class="rev-math-baseline">
+            Current monthly revenue on this page: <strong>$${Number(rev.monthly_current_usd).toLocaleString(undefined, {maximumFractionDigits: 0})}</strong>
+            (projected after change: $${Number(rev.monthly_projected_usd).toLocaleString(undefined, {maximumFractionDigits: 0})}, raw lift $${Number(rev.monthly_lift_usd).toLocaleString(undefined, {maximumFractionDigits: 0})})
+          </div>
+          <table class="rev-math-table">
+            <thead>
+              <tr><th>Metric</th><th>Current</th><th></th><th>Projected</th><th>Δ</th></tr>
+            </thead>
+            <tbody>${mathRows}</tbody>
+          </table>
+          <div class="rev-math-note">Other signals held constant. Lift shown above is the haircut-adjusted figure.</div>
+        </div>
+      </details>
+    </div>`;
+}
+
+function buildNoRevenueSection() {
+  return `
+    <div class="detail-section rev-section rev-missing-section">
+      <div class="rev-label">Expected revenue lift</div>
+      <div class="rev-amount-big rev-none">—</div>
+      <div class="rev-sub-detail">No revenue model yet · agent will add one on next cycle</div>
+    </div>`;
+}
+
+// ── Execution brief ──────────────────────────────────────────────────
+// When the agent has written a detailed brief (top 5 sprints), render it
+// with before/after code blocks and explicit out-of-scope guardrails.
+// Otherwise fall back to a single-line prompt telling the operator to
+// execute the rationale on the page.
+function buildExecutionBrief(brief, sprintId) {
+  const steps = (brief.steps || []).map((s, idx) => {
+    const hasBefore = s.before !== undefined && s.before !== null && s.before !== "";
+    const hasAfter  = s.after !== undefined && s.after !== null && s.after !== "";
+    const ba = hasBefore || hasAfter
+      ? `<div class="brief-ba">
+           ${hasBefore ? `<div class="brief-ba-col"><div class="brief-ba-lbl">BEFORE</div><div class="brief-ba-val before">${escapeHtml(s.before)}</div></div>` : ""}
+           ${hasAfter  ? `<div class="brief-ba-col"><div class="brief-ba-lbl">AFTER</div><div class="brief-ba-val after">${escapeHtml(s.after)}</div></div>` : ""}
+         </div>`
+      : "";
+    return `
+      <div class="brief-step">
+        <div class="brief-step-num">${idx + 1}</div>
+        <div class="brief-step-body">
+          <div class="brief-step-title">${escapeHtml(s.title || "Step " + (idx + 1))}</div>
+          ${s.location ? `<div class="brief-step-location">${escapeHtml(s.location)}</div>` : ""}
+          ${ba}
+          ${s.note ? `<div class="brief-step-note">${escapeHtml(s.note)}</div>` : ""}
+        </div>
+      </div>`;
+  }).join("");
+
+  const outOfScope = (brief.out_of_scope || []).length
+    ? `<div class="brief-guardrails">
+         <div class="brief-guardrails-title">Out of scope for this sprint</div>
+         <ul>${brief.out_of_scope.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>
+       </div>`
+    : "";
+
+  const dod = brief.definition_of_done
+    ? `<div class="brief-dod">
+         <div class="brief-dod-lbl">Definition of done</div>
+         <div class="brief-dod-text">${escapeHtml(brief.definition_of_done)}</div>
+       </div>`
+    : "";
+
+  return `
+    <div class="detail-brief-v2">
+      <div class="detail-brief-title">Execution brief</div>
+      ${brief.action ? `<div class="brief-action">${escapeHtml(brief.action)}</div>` : ""}
+      ${brief.summary ? `<div class="brief-summary">${escapeHtml(brief.summary)}</div>` : ""}
+      <div class="brief-steps">${steps}</div>
+      ${outOfScope}
+      ${dod}
+    </div>`;
+}
+
+function buildBriefPlaceholder(sprint) {
+  return `
+    <div class="detail-brief-v2 brief-placeholder">
+      <div class="detail-brief-title">Execution brief</div>
+      <div class="brief-placeholder-msg">
+        Detailed brief not generated for this sprint (briefs are prepared for the top 5 by expected revenue).
+        Execute the change described in "Why this sprint" above, then reply
+        <strong>DONE - #${escapeHtml(sprint.id)}</strong>.
+      </div>
+    </div>`;
 }
 
 function openExperimentDetail(id) {

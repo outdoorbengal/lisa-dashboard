@@ -241,24 +241,6 @@
   ],
   "sprints": [
     {
-      "id": "006",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 portable-litterbox",
-      "url": "/products/portable-litterbox",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 13.4",
-      "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 3.0,
-      "target_label": "+2/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 1,
-      "status": "UNACKNOWLEDGED"
-    },
-    {
       "id": "008",
       "days_waiting": 4,
       "title": "Push to page 1 \u2014 cat-training-guide",
@@ -273,62 +255,191 @@
       "effort_pct": 18,
       "effort_level": "HIGH",
       "effort_minutes": 120,
+      "queue_position": 1,
+      "status": "UNACKNOWLEDGED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 3.5,
+        "monthly_projected_usd": 529.53,
+        "monthly_lift_usd": 526.03,
+        "monthly_lift_usd_adjusted": 157.81,
+        "annual_lift_usd_adjusted": 1893.71,
+        "confidence": "low",
+        "haircut_pct": 30,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "464,496",
+            "after": "464,496",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "0.01%",
+            "after": "1.50%",
+            "delta_pct": "+14900%",
+            "changed": true
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "46",
+            "after": "6,967",
+            "delta_pct": "+15047%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "0.20%",
+            "after": "0.20%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$38",
+            "after": "$38",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$158/mo",
+      "has_exec_brief": false
+    },
+    {
+      "id": "006",
+      "days_waiting": 4,
+      "title": "Push to page 1 \u2014 portable-litterbox",
+      "url": "/products/portable-litterbox",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 13.4",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 3.0,
+      "target_label": "+2/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 45,
       "queue_position": 2,
-      "status": "NEXT_UP"
+      "status": "NEXT_UP",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 12.48,
+        "monthly_projected_usd": 149.47,
+        "monthly_lift_usd": 136.99,
+        "monthly_lift_usd_adjusted": 82.2,
+        "annual_lift_usd_adjusted": 986.34,
+        "confidence": "medium",
+        "haircut_pct": 60,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "865",
+            "after": "2,595",
+            "delta_pct": "+200%",
+            "changed": true
+          },
+          {
+            "label": "CTR",
+            "before": "1.50%",
+            "after": "6.00%",
+            "delta_pct": "+300%",
+            "changed": true
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "13",
+            "after": "156",
+            "delta_pct": "+1098%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "2.00%",
+            "after": "2.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$48",
+            "after": "$48",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$82/mo",
+      "has_exec_brief": true
     },
     {
-      "id": "009",
+      "id": "050",
       "days_waiting": 4,
-      "title": "Push to page 1 \u2014 catgility-cat-agility-course",
-      "url": "/products/catgility-cat-agility-course",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 6.1",
+      "title": "Fix title tag \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+      "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
+      "sprint_type": "CTR",
+      "impact_label": "CTR \u00b7 35007 impressions \u00b7 pos ?",
       "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 1.0,
-      "target_label": "+1/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "current_label": "0.00% now",
+      "target_pct": 0.0,
+      "target_label": "0.0%+",
+      "effort_label": "HIGH \u2014 Full rewrite / restructure",
+      "effort_pct": 18,
+      "effort_level": "HIGH",
+      "effort_minutes": 120,
       "queue_position": 3,
-      "status": "QUEUED"
-    },
-    {
-      "id": "010",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
-      "url": "/products/zeppelin-cat-carrier",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 6.2",
-      "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 0.0,
-      "target_label": "+0/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 4,
-      "status": "QUEUED"
-    },
-    {
-      "id": "011",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 clicker-training-starter-kit",
-      "url": "/products/clicker-training-starter-kit",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 10.2",
-      "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 0.0,
-      "target_label": "+0/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 5,
-      "status": "QUEUED"
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 52.92,
+        "monthly_projected_usd": 132.33,
+        "monthly_lift_usd": 79.41,
+        "monthly_lift_usd_adjusted": 79.41,
+        "annual_lift_usd_adjusted": 952.88,
+        "confidence": "high",
+        "haircut_pct": 100,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "35,007",
+            "after": "35,007",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "1.20%",
+            "after": "3.00%",
+            "delta_pct": "+150%",
+            "changed": true
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "420",
+            "after": "1,050",
+            "delta_pct": "+150%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "0.30%",
+            "after": "0.30%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$42",
+            "after": "$42",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$79/mo",
+      "has_exec_brief": true
     },
     {
       "id": "012",
@@ -345,8 +456,248 @@
       "effort_pct": 18,
       "effort_level": "HIGH",
       "effort_minutes": 120,
+      "queue_position": 4,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 64.17,
+        "monthly_projected_usd": 99.99,
+        "monthly_lift_usd": 35.82,
+        "monthly_lift_usd_adjusted": 21.49,
+        "annual_lift_usd_adjusted": 257.93,
+        "confidence": "medium",
+        "haircut_pct": 60,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "2,400",
+            "after": "2,400",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "4.80%",
+            "after": "4.80%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "115",
+            "after": "115",
+            "delta_pct": "+0%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "0.90%",
+            "after": "1.40%",
+            "delta_pct": "+56%",
+            "changed": true
+          },
+          {
+            "label": "AOV",
+            "before": "$62",
+            "after": "$62",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$21/mo",
+      "has_exec_brief": true
+    },
+    {
+      "id": "002",
+      "days_waiting": 7,
+      "title": "Add Zeppelin link to cat training guide",
+      "url": "/blogs/clicker-training-cats/cat-training-guide",
+      "sprint_type": "LINK",
+      "impact_label": "Referral sessions to Zeppelin",
+      "current_pct": 5,
+      "current_label": "~0 now",
+      "target_pct": 50.0,
+      "target_label": "+25/wk",
+      "effort_label": "LOW \u2014 1 sentence + link",
+      "effort_pct": 6,
+      "effort_level": "LOW",
+      "effort_minutes": 15,
+      "queue_position": 5,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 80.1,
+        "monthly_projected_usd": 106.12,
+        "monthly_lift_usd": 26.02,
+        "monthly_lift_usd_adjusted": 7.8,
+        "annual_lift_usd_adjusted": 93.66,
+        "confidence": "low",
+        "haircut_pct": 30,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "1,200",
+            "after": "1,380",
+            "delta_pct": "+15%",
+            "changed": true
+          },
+          {
+            "label": "CTR",
+            "before": "4.20%",
+            "after": "4.80%",
+            "delta_pct": "+14%",
+            "changed": true
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "50",
+            "after": "66",
+            "delta_pct": "+32%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "1.80%",
+            "after": "1.80%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$89",
+            "after": "$89",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$8/mo",
+      "has_exec_brief": true
+    },
+    {
+      "id": "003",
+      "days_waiting": 5,
+      "title": "Fix title tag \u2014 best cat names article",
+      "url": "/blogs/fun-stuff/best-cat-names",
+      "sprint_type": "CTR",
+      "impact_label": "CTR \u00b7 114K impressions \u00b7 pos 12.6",
+      "current_pct": 5.4,
+      "current_label": "0.27% now",
+      "target_pct": 20.0,
+      "target_label": "1%+",
+      "effort_label": "LOW \u2014 Title tag rewrite",
+      "effort_pct": 6,
+      "effort_level": "LOW",
+      "effort_minutes": 10,
       "queue_position": 6,
-      "status": "QUEUED"
+      "status": "QUEUED",
+      "revenue": {
+        "available": false,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": null,
+        "haircut_pct": null,
+        "breakdown": []
+      },
+      "revenue_headline": null,
+      "has_exec_brief": false
+    },
+    {
+      "id": "009",
+      "days_waiting": 4,
+      "title": "Push to page 1 \u2014 catgility-cat-agility-course",
+      "url": "/products/catgility-cat-agility-course",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 6.1",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 1.0,
+      "target_label": "+1/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 45,
+      "queue_position": 7,
+      "status": "QUEUED",
+      "revenue": {
+        "available": false,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": null,
+        "haircut_pct": null,
+        "breakdown": []
+      },
+      "revenue_headline": null,
+      "has_exec_brief": false
+    },
+    {
+      "id": "010",
+      "days_waiting": 4,
+      "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
+      "url": "/products/zeppelin-cat-carrier",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 6.2",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 0.0,
+      "target_label": "+0/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 45,
+      "queue_position": 8,
+      "status": "QUEUED",
+      "revenue": {
+        "available": false,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": null,
+        "haircut_pct": null,
+        "breakdown": []
+      },
+      "revenue_headline": null,
+      "has_exec_brief": false
+    },
+    {
+      "id": "011",
+      "days_waiting": 4,
+      "title": "Push to page 1 \u2014 clicker-training-starter-kit",
+      "url": "/products/clicker-training-starter-kit",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 10.2",
+      "current_pct": 5,
+      "current_label": "~0/wk now",
+      "target_pct": 0.0,
+      "target_label": "+0/wk",
+      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 45,
+      "queue_position": 9,
+      "status": "QUEUED",
+      "revenue": {
+        "available": false,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": null,
+        "haircut_pct": null,
+        "breakdown": []
+      },
+      "revenue_headline": null,
+      "has_exec_brief": false
     },
     {
       "id": "013",
@@ -363,62 +714,21 @@
       "effort_pct": 12,
       "effort_level": "MEDIUM",
       "effort_minutes": 45,
-      "queue_position": 7,
-      "status": "QUEUED"
-    },
-    {
-      "id": "014",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
-      "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 5.2",
-      "current_pct": 15.0,
-      "current_label": "~15/wk now",
-      "target_pct": 75.0,
-      "target_label": "+60/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 8,
-      "status": "QUEUED"
-    },
-    {
-      "id": "015",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 rope-leash",
-      "url": "/products/rope-leash",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 10.2",
-      "current_pct": 5,
-      "current_label": "~0/wk now",
-      "target_pct": 0.0,
-      "target_label": "+0/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 9,
-      "status": "QUEUED"
-    },
-    {
-      "id": "016",
-      "days_waiting": 4,
-      "title": "Push to page 1 \u2014 adventure-cat-gear",
-      "url": "/collections/adventure-cat-gear",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 8.7",
-      "current_pct": 1.0,
-      "current_label": "~1/wk now",
-      "target_pct": 5.0,
-      "target_label": "+4/wk",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
       "queue_position": 10,
-      "status": "QUEUED"
+      "status": "QUEUED",
+      "revenue": {
+        "available": false,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": null,
+        "haircut_pct": null,
+        "breakdown": []
+      },
+      "revenue_headline": null,
+      "has_exec_brief": false
     }
   ],
   "details": {
@@ -456,6 +766,46 @@
           "detected_at": "2026-04-22T10:00:09.967172+00:00",
           "last_refreshed": "2026-04-22T10:00:13Z",
           "dashboard_impact": 34.42
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 865,
+            "ctr": 0.015,
+            "sessions_30d": 13,
+            "conversion_rate": 0.02,
+            "aov": 48.0
+          },
+          "projected": {
+            "impressions_multiplier": 3.0,
+            "ctr": 0.06
+          },
+          "confidence": "medium"
+        },
+        "execution_brief": {
+          "action": "Rewrite product page intro + add 1 contextual internal link from the 'best cat carriers' blog post.",
+          "summary": "Page ranks pos 13 for 'travel litter box'. Two gaps: (1) intro copy buries the 'portable' benefit past the fold, (2) no topical authority signal from related blog content.",
+          "steps": [
+            {
+              "title": "Rewrite product description \u2014 first 2 paragraphs only",
+              "location": "Shopify \u2192 Products \u2192 portable-litterbox \u2192 Description",
+              "before": "The OutdoorBengal portable litter box is designed for cats on the go. Made from durable materials, it folds for easy transport.",
+              "after": "Made for cats who travel. This collapsible litter box folds flat in 3 seconds, fits under any car seat, and sets up without tools \u2014 so your cat has a clean, familiar spot whether you're at a weekend cabin or across the country.\n\nIncludes a splash-resistant liner and a sealed zippered base that contains odors on long drives. Tested by 400+ customers on road trips, flights, and RV life.",
+              "note": "Keep the rest of the page unchanged. We're testing whether the intro rewrite alone lifts CTR from SERP."
+            },
+            {
+              "title": "Add internal link from related blog post",
+              "location": "Shopify \u2192 Blog posts \u2192 'Best Cat Carriers for Road Trips' \u2192 find the sentence mentioning litter",
+              "before": "You'll also want to bring a travel litter solution \u2014 most cats refuse to hold it for more than 4 hours.",
+              "after": "You'll also want to bring a [portable litter box](/products/portable-litterbox) \u2014 most cats refuse to hold it for more than 4 hours.",
+              "note": "Use the exact anchor text 'portable litter box'. Lowercase, no quotes."
+            }
+          ],
+          "out_of_scope": [
+            "Do not touch the page title or meta description (separate future test).",
+            "Do not add more than one internal link in this sprint.",
+            "Do not modify product images."
+          ],
+          "definition_of_done": "Both edits are live on the published site and visible at /products/portable-litterbox and /blogs/clicker-training-cats/best-cat-carriers-road-trips. Reply DONE - #006 in the dashboard."
         }
       },
       {
@@ -491,6 +841,19 @@
           "detected_at": "2026-04-22T10:00:09.973560+00:00",
           "last_refreshed": "2026-04-22T10:00:13Z",
           "dashboard_impact": 32.75
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 464496,
+            "ctr": 0.0001,
+            "sessions_30d": 46,
+            "conversion_rate": 0.002,
+            "aov": 38.0
+          },
+          "projected": {
+            "ctr": 0.015
+          },
+          "confidence": "low"
         }
       },
       {
@@ -632,6 +995,45 @@
           "detected_at": "2026-04-22T10:00:09.974648+00:00",
           "last_refreshed": "2026-04-22T10:00:13Z",
           "dashboard_impact": 26.87
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 2400,
+            "ctr": 0.048,
+            "sessions_30d": 115,
+            "conversion_rate": 0.009,
+            "aov": 62.0
+          },
+          "projected": {
+            "conversion_rate": 0.014
+          },
+          "confidence": "medium"
+        },
+        "execution_brief": {
+          "action": "Move 'Add to Cart' above the fold on mobile and rewrite the first headline to name the outcome, not the product.",
+          "summary": "Bounce rate on mobile is 68% vs 41% desktop. The buy button only appears after 2 scrolls on mobile, and the headline leads with the product name instead of the outcome.",
+          "steps": [
+            {
+              "title": "Rewrite the page H1",
+              "location": "Shopify \u2192 Products \u2192 clicker-training-starter-kit \u2192 Title visible on page",
+              "before": "Clicker Training Starter Kit for Cats",
+              "after": "Teach Your Cat 5 Tricks in 2 Weeks \u2014 Complete Clicker Kit",
+              "note": "This is the on-page H1, not the SEO title tag. Leave the SEO title alone."
+            },
+            {
+              "title": "Reorder product page blocks (mobile-first)",
+              "location": "Shopify \u2192 Products \u2192 clicker-training-starter-kit \u2192 Theme customizer",
+              "before": "Gallery \u2192 Title \u2192 Long description \u2192 Variants \u2192 Add to Cart",
+              "after": "Gallery \u2192 Title \u2192 Variants \u2192 Add to Cart \u2192 Long description",
+              "note": "On mobile, Add to Cart must be visible without scrolling once the gallery is closed. Verify on a real phone before marking DONE."
+            }
+          ],
+          "out_of_scope": [
+            "Do not change pricing, variants, or inventory.",
+            "Do not rewrite the long description \u2014 only the H1 and block order.",
+            "Do not touch the desktop layout (it already works)."
+          ],
+          "definition_of_done": "Open /products/clicker-training-starter-kit on your phone. The Add to Cart button is visible without scrolling past the variants. The H1 reads 'Teach Your Cat 5 Tricks in 2 Weeks \u2014 Complete Clicker Kit'. Reply DONE - #012."
         }
       },
       {
@@ -1998,6 +2400,38 @@
           "detected_at": "2026-04-22T10:00:09.974963+00:00",
           "last_refreshed": "2026-04-22T10:00:13Z",
           "dashboard_impact": 18.95
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 35007,
+            "ctr": 0.012,
+            "sessions_30d": 420,
+            "conversion_rate": 0.003,
+            "aov": 42.0
+          },
+          "projected": {
+            "ctr": 0.03
+          },
+          "confidence": "high"
+        },
+        "execution_brief": {
+          "action": "Set the SEO title tag on this blog post. One field only.",
+          "summary": "Post gets 35,007 impressions/month but has no custom SEO title \u2014 Google is using the truncated default, killing CTR.",
+          "steps": [
+            {
+              "title": "Set the SEO title tag",
+              "location": "Shopify \u2192 Blog posts \u2192 'What tricks can a cat learn' \u2192 Edit website SEO \u2192 Page title",
+              "before": "(empty \u2014 Google is pulling the truncated H1)",
+              "after": "12 Cat Tricks You Can Teach This Week (Full List + How-To)",
+              "note": "Exactly 57 characters. Keyword first, specific number, action phrase. Do not add year \u2014 it will go stale."
+            }
+          ],
+          "out_of_scope": [
+            "Do not change the meta description (separate future test).",
+            "Do not edit the H1 visible on the page.",
+            "Do not touch the URL slug."
+          ],
+          "definition_of_done": "View page source at /blogs/clicker-training-cats/what-tricks-can-a-cat-learn... \u2014 the <title> tag reads '12 Cat Tricks You Can Teach This Week (Full List + How-To)'. Reply DONE - #050."
         }
       },
       {
@@ -4937,6 +5371,39 @@
         ],
         "_source": {
           "stale_since": "2026-04-20T13:43:43Z"
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 1200,
+            "ctr": 0.042,
+            "sessions_30d": 50,
+            "conversion_rate": 0.018,
+            "aov": 89.0
+          },
+          "projected": {
+            "impressions_multiplier": 1.15,
+            "ctr": 0.048
+          },
+          "confidence": "low"
+        },
+        "execution_brief": {
+          "action": "Add one contextual internal link from the cat training guide to the Zeppelin product page.",
+          "summary": "Training guide ranks pos 4 for 'clicker training cats' with 1.2k monthly impressions. Currently zero internal links to Zeppelin \u2014 adding one contextual link should pass topical relevance.",
+          "steps": [
+            {
+              "title": "Add the internal link",
+              "location": "Shopify \u2192 Blog posts \u2192 'Cat Training Guide' \u2192 find the 'Tools you'll need' section",
+              "before": "A quality harness is essential for outdoor training sessions \u2014 you want something escape-proof but comfortable enough for long walks.",
+              "after": "A quality harness is essential for outdoor training sessions \u2014 we recommend the [Zeppelin escape-proof cat harness](/products/zeppelin-cat-carrier), designed to be secure on active cats without restricting movement during walks.",
+              "note": "Anchor text: 'Zeppelin escape-proof cat harness'. Place inside the existing 'Tools you'll need' paragraph \u2014 do not add a new section."
+            }
+          ],
+          "out_of_scope": [
+            "Do not add more than one link. We're measuring the impact of a single placement.",
+            "Do not modify the Zeppelin product page itself.",
+            "Do not change other parts of the training guide."
+          ],
+          "definition_of_done": "The link is live at /blogs/clicker-training-cats/cat-training-guide in the 'Tools you'll need' section, pointing to /products/zeppelin-cat-carrier. Reply DONE - #002."
         }
       },
       {

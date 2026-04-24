@@ -236,6 +236,138 @@ def _fmt_window(days: int) -> str:
     return f"{days} day" if days == 1 else f"{days} days"
 
 
+# ── Revenue model ────────────────────────────────────────────────────────────
+# Hybrid model: the agent writes actual page metrics and its projections
+# (CTR, CR, AOV, traffic multiplier) into queue.yml. The dashboard does
+# the math here so the numbers stay auditable end-to-end.
+#
+# Expected shape in queue.yml[].revenue_model:
+#   current:
+#     impressions_30d: int
+#     ctr: float (0..1)              # clickthrough rate as decimal
+#     sessions_30d: int              # usually impressions*ctr, kept explicit
+#                                    # so it can reflect observed GA4 organic
+#     conversion_rate: float (0..1)
+#     aov: float                     # average order value in USD
+#   projected:                       # include ONLY fields that change
+#     ctr: float | null
+#     conversion_rate: float | null
+#     aov: float | null
+#     impressions_multiplier: float | null   # 1.0 = no change, 3.0 = triples
+#   confidence: "low" | "medium" | "high"
+#
+# Haircut: we multiply the computed lift by {low:0.3, medium:0.6, high:1.0}
+# so the displayed monthly lift is a conservative, operator-trustworthy
+# number. The engine's optimistic raw number is still available in the JSON
+# if we ever want to show it.
+
+_HAIRCUTS = {"low": 0.30, "medium": 0.60, "high": 1.00}
+
+
+def compute_revenue_model(rm: dict | None) -> dict:
+    """Given a `revenue_model` block from queue.yml, produce a dict of
+    rendered strings + numeric breakdowns for the dashboard.
+
+    Returns a fully-populated dict even when inputs are missing, with
+    `available: False` in that case so the UI can show a muted placeholder
+    instead of a broken card.
+    """
+    empty = {
+        "available": False,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 0.0,
+        "monthly_lift_usd": 0.0,
+        "monthly_lift_usd_adjusted": 0.0,
+        "annual_lift_usd_adjusted": 0.0,
+        "confidence": None,
+        "haircut_pct": None,
+        "breakdown": [],  # ordered list of dicts: {label, before, after, delta_pct}
+    }
+    if not rm or not isinstance(rm, dict):
+        return empty
+
+    cur = rm.get("current") or {}
+    prj = rm.get("projected") or {}
+
+    try:
+        imp   = float(cur.get("impressions_30d") or 0)
+        ctr   = float(cur.get("ctr") or 0)
+        sess  = float(cur.get("sessions_30d") or (imp * ctr))
+        cr    = float(cur.get("conversion_rate") or 0)
+        aov   = float(cur.get("aov") or 0)
+    except (TypeError, ValueError):
+        return empty
+
+    if imp <= 0 or aov <= 0:
+        # No meaningful monetary baseline — can't project a lift.
+        return empty
+
+    # Projected values default to current when the field is absent.
+    imp_mult_p = float(prj.get("impressions_multiplier") or 1.0)
+    ctr_p      = float(prj.get("ctr") if prj.get("ctr") is not None else ctr)
+    cr_p       = float(prj.get("conversion_rate") if prj.get("conversion_rate") is not None else cr)
+    aov_p      = float(prj.get("aov") if prj.get("aov") is not None else aov)
+    imp_p      = imp * imp_mult_p
+    sess_p     = imp_p * ctr_p  # rebuild from the top of the funnel
+
+    # Revenue: the classic ecommerce chain.
+    current_rev   = sess * cr * aov
+    projected_rev = sess_p * cr_p * aov_p
+    raw_lift      = projected_rev - current_rev
+
+    confidence = (rm.get("confidence") or "medium").lower()
+    haircut    = _HAIRCUTS.get(confidence, _HAIRCUTS["medium"])
+    adj_lift   = raw_lift * haircut
+
+    # Per-line breakdown so the UI can show the math (subordinated visually)
+    def _pct(a: float, b: float) -> str:
+        if a == 0:
+            return "+∞" if b > 0 else "0"
+        return f"{'+' if b >= a else ''}{round((b - a) / a * 100)}%"
+
+    def _row(label, before, after, fmt):
+        return {
+            "label": label,
+            "before": fmt(before),
+            "after": fmt(after),
+            "delta_pct": _pct(before, after) if before != after else "",
+            "changed": before != after,
+        }
+
+    breakdown = [
+        _row("Impressions / mo", imp, imp_p, lambda x: f"{int(round(x)):,}"),
+        _row("CTR",              ctr, ctr_p, lambda x: f"{x * 100:.2f}%"),
+        _row("Sessions / mo",    sess, sess_p, lambda x: f"{int(round(x)):,}"),
+        _row("Conversion rate",  cr,  cr_p,  lambda x: f"{x * 100:.2f}%"),
+        _row("AOV",              aov, aov_p, lambda x: f"${x:,.0f}"),
+    ]
+
+    return {
+        "available": True,
+        "monthly_current_usd": round(current_rev, 2),
+        "monthly_projected_usd": round(projected_rev, 2),
+        "monthly_lift_usd": round(raw_lift, 2),
+        "monthly_lift_usd_adjusted": round(adj_lift, 2),
+        "annual_lift_usd_adjusted": round(adj_lift * 12, 2),
+        "confidence": confidence,
+        "haircut_pct": int(haircut * 100),
+        "breakdown": breakdown,
+    }
+
+
+def fmt_usd_short(amount: float) -> str:
+    """Compact USD for headlines: $1,234 · $12.4K · $1.2M."""
+    a = abs(amount)
+    sign = "-" if amount < 0 else ""
+    if a >= 1_000_000:
+        return f"{sign}${a / 1_000_000:.1f}M"
+    if a >= 10_000:
+        return f"{sign}${a / 1_000:.1f}K"
+    if a >= 1_000:
+        return f"{sign}${a:,.0f}"
+    return f"{sign}${a:,.0f}"
+
+
 def _fmt_current_display(value: float | None, unit: str) -> str | None:
     """Format a raw current_reading value for display."""
     if value is None:
@@ -450,8 +582,35 @@ def build_experiment_rows(active: dict, archive: dict) -> list[dict]:
 
 
 def build_sprint_rows(queue: dict) -> list[dict]:
-    """First queued sprint = UNACKNOWLEDGED, second = NEXT_UP."""
-    sprints = queue.get("sprints", [])
+    """Build the dashboard's sprint rows, ranked by adjusted monthly revenue lift.
+
+    Ranking rules:
+      1. Sprints with a usable `revenue_model` first, sorted by
+         `monthly_lift_usd_adjusted` DESC (haircut-applied, so ranking is
+         conservative).
+      2. Sprints without a revenue model (legacy / insufficient data) fall
+         to the bottom in `dashboard_impact` order — they still get a slot
+         but Albert sees the real opportunities first.
+
+    Secondary sort: lower effort wins at ties (LOW > MEDIUM > HIGH).
+    """
+    raw = list(queue.get("sprints", []))
+
+    effort_rank = {"LOW": 0, "MEDIUM": 1, "HIGH": 2}
+
+    def sort_key(sp: dict):
+        model = compute_revenue_model(sp.get("revenue_model"))
+        # Primary: revenue lift (DESC, so negate). Secondary: effort (ASC).
+        primary = -model["monthly_lift_usd_adjusted"] if model["available"] else 0.0
+        secondary = effort_rank.get((sp.get("effort") or {}).get("level", "HIGH"), 2)
+        # Fallback: legacy dashboard_impact score keeps pre-migration order
+        # stable within the "no model" bucket.
+        fallback = -float((sp.get("_source") or {}).get("dashboard_impact") or 0)
+        has_model_flag = 0 if model["available"] else 1
+        return (has_model_flag, primary, secondary, fallback)
+
+    sprints = sorted(raw, key=sort_key)
+
     rows: list[dict] = []
 
     for idx, sp in enumerate(sprints[:10]):
@@ -464,8 +623,13 @@ def build_sprint_rows(queue: dict) -> list[dict]:
 
         days_waiting = days_since(sp["created"]) if sp.get("created") else 0
 
+        rev = compute_revenue_model(sp.get("revenue_model"))
+
+        # Execution brief (agent writes this for top N; missing for the rest).
+        brief = sp.get("execution_brief") or {}
+
         rows.append({
-            "id": sp["id"],
+            "id": str(sp["id"]),  # always a string — tolerant of unquoted YAML ints
             "days_waiting": days_waiting,
             "title": sp["title"],
             "url": sp.get("url", ""),
@@ -481,6 +645,14 @@ def build_sprint_rows(queue: dict) -> list[dict]:
             "effort_minutes": effort.get("estimated_minutes"),
             "queue_position": idx + 1,
             "status": "UNACKNOWLEDGED" if idx == 0 else ("NEXT_UP" if idx == 1 else "QUEUED"),
+
+            # Revenue model (primary ranking signal)
+            "revenue": rev,
+            "revenue_headline": fmt_usd_short(rev["monthly_lift_usd_adjusted"]) + "/mo" if rev["available"] else None,
+
+            # Execution brief presence indicator (the detailed text is in the
+            # embedded `details.queue` blob — the frontend looks it up on click)
+            "has_exec_brief": bool(brief.get("action") or brief.get("summary")),
         })
 
     return rows
