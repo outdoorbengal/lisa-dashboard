@@ -1,4 +1,5 @@
-# Active experiments — auto-managed. See scripts/sprint_action.py
+# Active experiments — current_reading updated by lisa_dashboard_sync.py.
+# State transitions managed by sprint_action.py and evaluate_experiment.py.
 
 experiments:
 - id: '001'
@@ -29,10 +30,10 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T10:00:13Z'
-    current_value: 16.86
-    days_elapsed: 8
-    note: 159 clicks / 943 impressions
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 16.32
+    days_elapsed: 10
+    note: 190 clicks / 1164 impressions
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
   sprint_type: CR
@@ -60,10 +61,10 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T10:00:13Z'
-    current_value: 0.56
-    days_elapsed: 2
-    note: 358 sessions this window
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 0.49
+    days_elapsed: 4
+    note: 406 sessions this window
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
   sprint_type: CTR
@@ -94,10 +95,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T10:00:13Z'
-    current_value: 5.83
-    days_elapsed: 1
-    note: 310 clicks / 5320 impressions
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 5.78
+    days_elapsed: 3
+    note: 375 clicks / 6488 impressions
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
   sprint_type: RNK
@@ -115,8 +116,7 @@ experiments:
     evaluation_date: '2026-06-02'
     window_days: 42
   url: /products/keeper-airtag-holder-for-cat-collar
-  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page
-    2
+  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page 2
 
 
     Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
@@ -126,11 +126,11 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T10:00:13Z'
-    current_value: 0.0
-    days_elapsed: 1
-    note: 0 clicks over 1d
-- id: '008'
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 2.3
+    days_elapsed: 3
+    note: 1 clicks over 3d
+- id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
   status: RUNNING
@@ -158,10 +158,10 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-22T10:00:13Z'
-    current_value: 253
-    days_elapsed: 0
-    note: 253 impressions | 7 clicks | 2.77% CTR
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 281
+    days_elapsed: 2
+    note: 281 impressions | 8 clicks | 2.85% CTR
 - id: '135'
   name: Push to page 1 — extra-safe-cat-harness
   sprint_type: RNK
@@ -179,8 +179,7 @@ experiments:
     evaluation_date: '2026-06-03'
     window_days: 42
   url: /products/extra-safe-cat-harness
-  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions
-    but page 2
+  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions but page 2
 
 
     Evidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%
@@ -190,6 +189,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: null
-    current_value: null
-    days_elapsed: 0
+    last_measured: '2026-04-24T14:17:14Z'
+    current_value: 1312.5
+    days_elapsed: 2
+    note: 375 clicks over 2d
