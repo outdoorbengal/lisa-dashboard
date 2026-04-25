@@ -65,7 +65,9 @@ def bar_pct(value: float | None, sprint_type: str, target: float | None = None, 
 
 
 def days_since(start: str) -> int:
-    return (date.today() - date.fromisoformat(start)).days
+    # Use yesterday as end — never include today's partial data in rate calculations
+    yesterday = date.today() - timedelta(days=1)
+    return max((yesterday - date.fromisoformat(start)).days, 0)
 
 
 def mon_dd(iso_date: str) -> str:
