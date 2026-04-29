@@ -8,7 +8,7 @@
     "sources_connected": 4,
     "sources_total": 4,
     "opportunities": 130,
-    "active_tests": 7,
+    "active_tests": 6,
     "days_complete": 2,
     "scan_bars": [
       100,
@@ -7563,38 +7563,6 @@
           "current_value": 750.2,
           "days_elapsed": 6,
           "note": "643 clicks over 6d"
-        }
-      },
-      {
-        "id": "008",
-        "name": "Push to page 1 \u2014 cat-training-guide",
-        "sprint_type": "RNK",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 9.7",
-          "baseline_value": 960,
-          "baseline_display": "~960/wk now",
-          "target_value": 4800,
-          "target_display": "+3840/wk",
-          "unit": "sessions/week"
-        },
-        "timeline": {
-          "started": "2026-04-27",
-          "evaluation_date": "2026-06-08",
-          "window_days": 42
-        },
-        "url": "/blogs/clicker-training-cats/cat-training-guide",
-        "rationale": "CTR 0.0% vs 2.8% benchmark \u2014 34600 clicks/period uncaptured\n\nEvidence: impressions=1248134 | CTR=0.0% | expected=2.8% | pos=9.7\nEngine priority: 5.33  \u2022  Dashboard impact: 32.49",
-        "evaluation": {
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-04-29T12:48:00Z",
-          "current_value": 378.0,
-          "days_elapsed": 1,
-          "note": "54 clicks over 1d"
         }
       }
     ],
