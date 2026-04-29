@@ -116,7 +116,8 @@ experiments:
     evaluation_date: '2026-06-02'
     window_days: 42
   url: /products/keeper-airtag-holder-for-cat-collar
-  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page 2
+  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page
+    2
 
 
     Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
@@ -179,7 +180,8 @@ experiments:
     evaluation_date: '2026-06-03'
     window_days: 42
   url: /products/extra-safe-cat-harness
-  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions but page 2
+  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions
+    but page 2
 
 
     Evidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%
@@ -193,34 +195,3 @@ experiments:
     current_value: 750.2
     days_elapsed: 6
     note: 643 clicks over 6d
-- id: 008
-  name: Push to page 1 — cat-training-guide
-  sprint_type: RNK
-  status: RUNNING
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.7
-    baseline_value: 960
-    baseline_display: ~960/wk now
-    target_value: 4800
-    target_display: +3840/wk
-    unit: sessions/week
-  timeline:
-    started: '2026-04-27'
-    evaluation_date: '2026-06-08'
-    window_days: 42
-  url: /blogs/clicker-training-cats/cat-training-guide
-  rationale: 'CTR 0.0% vs 2.8% benchmark — 34600 clicks/period uncaptured
-
-
-    Evidence: impressions=1248134 | CTR=0.0% | expected=2.8% | pos=9.7
-
-    Engine priority: 5.33  •  Dashboard impact: 32.49'
-  evaluation:
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  current_reading:
-    last_measured: '2026-04-29T12:48:00Z'
-    current_value: 378.0
-    days_elapsed: 1
-    note: 54 clicks over 1d
