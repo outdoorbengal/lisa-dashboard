@@ -30,9 +30,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
+    last_measured: '2026-05-01T10:00:14Z'
     current_value: 15.81
-    days_elapsed: 15
+    days_elapsed: 16
     note: 302 clicks / 1910 impressions
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
@@ -61,10 +61,10 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
-    current_value: 1.55
-    days_elapsed: 9
-    note: 644 sessions this window
+    last_measured: '2026-05-01T10:00:14Z'
+    current_value: 1.48
+    days_elapsed: 10
+    note: 676 sessions this window
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
   sprint_type: CTR
@@ -95,9 +95,9 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
+    last_measured: '2026-05-01T10:00:14Z'
     current_value: 5.77
-    days_elapsed: 8
+    days_elapsed: 9
     note: 689 clicks / 11944 impressions
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
@@ -126,10 +126,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
-    current_value: 0.9
-    days_elapsed: 8
-    note: 1 clicks over 8d
+    last_measured: '2026-05-01T10:00:14Z'
+    current_value: 0.8
+    days_elapsed: 9
+    note: 1 clicks over 9d
 - id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
@@ -158,9 +158,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
+    last_measured: '2026-05-01T10:00:14Z'
     current_value: 431
-    days_elapsed: 7
+    days_elapsed: 8
     note: 431 impressions | 13 clicks | 3.02% CTR
 - id: '135'
   name: Push to page 1 — extra-safe-cat-harness
@@ -189,7 +189,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-04-30T10:00:16Z'
-    current_value: 689.0
-    days_elapsed: 7
-    note: 689 clicks over 7d
+    last_measured: '2026-05-01T10:00:14Z'
+    current_value: 602.9
+    days_elapsed: 8
+    note: 689 clicks over 8d
