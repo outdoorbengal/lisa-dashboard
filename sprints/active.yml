@@ -30,10 +30,10 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
-    current_value: 14.83
-    days_elapsed: 26
-    note: 463 clicks / 3123 impressions
+    last_measured: '2026-05-12T10:10:12Z'
+    current_value: 14.79
+    days_elapsed: 27
+    note: 486 clicks / 3286 impressions
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
   sprint_type: CR
@@ -61,10 +61,10 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
-    current_value: 1.46
-    days_elapsed: 20
-    note: 1026 sessions this window
+    last_measured: '2026-05-12T10:10:12Z'
+    current_value: 1.42
+    days_elapsed: 21
+    note: 1057 sessions this window
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
   sprint_type: CTR
@@ -95,10 +95,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
-    current_value: 5.27
-    days_elapsed: 19
-    note: 1094 clicks / 20741 impressions
+    last_measured: '2026-05-12T10:10:12Z'
+    current_value: 5.11
+    days_elapsed: 20
+    note: 1140 clicks / 22320 impressions
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
   sprint_type: RNK
@@ -126,10 +126,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
+    last_measured: '2026-05-12T10:10:12Z'
     current_value: 0.4
-    days_elapsed: 19
-    note: 1 clicks over 19d
+    days_elapsed: 20
+    note: 1 clicks over 20d
 - id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
@@ -158,10 +158,10 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
-    current_value: 578
-    days_elapsed: 18
-    note: 578 impressions | 17 clicks | 2.94% CTR
+    last_measured: '2026-05-12T10:10:12Z'
+    current_value: 589
+    days_elapsed: 19
+    note: 589 impressions | 17 clicks | 2.89% CTR
 - id: '135'
   name: Push to page 1 — extra-safe-cat-harness
   sprint_type: RNK
@@ -189,7 +189,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-11T10:10:13Z'
-    current_value: 425.4
-    days_elapsed: 18
-    note: 1094 clicks over 18d
+    last_measured: '2026-05-12T10:10:12Z'
+    current_value: 420.0
+    days_elapsed: 19
+    note: 1140 clicks over 19d
