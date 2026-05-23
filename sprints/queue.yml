@@ -20,23 +20,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.2 for ''travel litter box'' — 1366 impressions but page 2
+  rationale: 'Ranking pos 13.2 for ''travel litter box'' — 1388 impressions but page 2
 
 
-    Evidence: pos=13.2 | impressions=1366 | clicks=11 | CTR=0.8%
+    Evidence: pos=13.2 | impressions=1388 | clicks=11 | CTR=0.8%
 
-    Engine priority: 6.0  •  Dashboard impact: 36.72'
+    Engine priority: 6.0  •  Dashboard impact: 36.8'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0071
+    engine_opportunity_id: OP0070
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154241+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 36.72
+    detected_at: '2026-05-23T10:10:11.144075+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 36.8
   revenue_model:
     current:
       impressions_30d: 865
@@ -59,10 +59,10 @@ sprints:
       before: 'Title: Portable Litterbox & Litter Bag Kit for Travel | Go Litter™
 
         Description: (meta description not set)'
-      after: 'Title: Portable Litter Box for Air Travel: TSA-Approved Kit
+      after: 'Title: Portable Litter Box for Air Travel: TSA-Approved & Tested
 
-        Description: Collapsible litter box designed for airline cabin use. Leak-proof bag + refillable
-        tray system passes TSA. Used by 2,000+ cat owners on flights. No mess, no den'
+        Description: Collapsible litter box built for airplane bathrooms + TSA-friendly disposable bags.
+        Used by 1,200+ cat owners on flights. No spills, no bulk, sets up in 10 seco'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -78,32 +78,32 @@ sprints:
   kpi:
     metric: organic_clicks_weekly
     display_label: Weekly clicks · pos 9.6
-    current_value: 665
-    current_display: ~665/wk now
-    target_value: 3329
-    target_display: +2663/wk
+    current_value: 658
+    current_display: ~658/wk now
+    target_value: 3294
+    target_display: +2635/wk
     unit: sessions/week
   effort:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.0% vs 2.8% benchmark — 23898 clicks/period uncaptured
+  rationale: 'CTR 0.0% vs 2.8% benchmark — 23648 clicks/period uncaptured
 
 
-    Evidence: impressions=865670 | CTR=0.0% | expected=2.8% | pos=9.6
+    Evidence: impressions=856694 | CTR=0.0% | expected=2.8% | pos=9.6
 
-    Engine priority: 5.33  •  Dashboard impact: 31.65'
+    Engine priority: 5.33  •  Dashboard impact: 31.62'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0400
+    engine_opportunity_id: OP0402
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160441+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 31.65
+    detected_at: '2026-05-23T10:10:11.150626+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 31.62
   revenue_model:
     current:
       impressions_30d: 8808
@@ -126,10 +126,10 @@ sprints:
       before: 'Title: How to Train a Cat: The Complete Beginner''s Guide
 
         Description: (meta description not set)'
-      after: 'Title: Cat Training: 9 Steps to Teach Your Cat Anything (2025)
+      after: 'Title: Cat Training Guide: 12 Proven Steps for Any Breed
 
-        Description: Train your cat to come, sit, high-five, and more in 9 proven steps. Works for kittens
-        and adult cats—even stubborn ones. Science-backed clicker method tested by'
+        Description: Complete cat training system from clicker basics to advanced tricks. Tested on Bengal
+        cats and 1,200+ community cats. Works for kittens and adults—no prior expe'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -137,51 +137,6 @@ sprints:
     - 'Reply DONE - #137 in the dashboard when both fields are saved.'
     definition_of_done: 'The updated title and description are live at https://www.outdoorbengal.com/blogs/clicker-training-cats/cat-training-guide
       and visible in Google Search Console URL Inspection. Reply DONE - #137.'
-- id: '015'
-  created: '2026-04-20'
-  title: Push to page 1 — rope-leash
-  url: /products/rope-leash
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 10.3
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 1
-    target_display: +0/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 10.3 for ''long cat leash'' — 317 impressions but page 2
-
-
-    Evidence: pos=10.3 | impressions=317 | clicks=1 | CTR=0.3%
-
-    Engine priority: 6.0  •  Dashboard impact: 29.42'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0385
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.158326+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 29.42
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
 - id: 009
   created: '2026-04-20'
   title: Push to page 1 — catgility-cat-agility-course
@@ -199,23 +154,68 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.7 for ''cat agility course'' — 313 impressions but page 2
+  rationale: 'Ranking pos 6.7 for ''cat agility course'' — 315 impressions but page 2
 
 
-    Evidence: pos=6.7 | impressions=313 | clicks=9 | CTR=2.9%
+    Evidence: pos=6.7 | impressions=315 | clicks=9 | CTR=2.9%
 
-    Engine priority: 6.0  •  Dashboard impact: 29.36'
+    Engine priority: 6.0  •  Dashboard impact: 29.39'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0080
+    engine_opportunity_id: OP0081
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154358+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 29.36
+    detected_at: '2026-05-23T10:10:11.144212+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 29.39
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '015'
+  created: '2026-04-20'
+  title: Push to page 1 — rope-leash
+  url: /products/rope-leash
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 10.3
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 1
+    target_display: +0/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Copy + internal links
+    estimated_minutes: 45
+  rationale: 'Ranking pos 10.3 for ''long cat leash'' — 315 impressions but page 2
+
+
+    Evidence: pos=10.3 | impressions=315 | clicks=1 | CTR=0.3%
+
+    Engine priority: 6.0  •  Dashboard impact: 29.39'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0387
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.148530+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 29.39
   revenue_model:
     current:
       impressions_30d: 8649
@@ -244,23 +244,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.6 for ''outdoor cat collar'' — 263 impressions but page 2
+  rationale: 'Ranking pos 7.6 for ''outdoor cat collar'' — 266 impressions but page 2
 
 
-    Evidence: pos=7.6 | impressions=263 | clicks=5 | CTR=1.9%
+    Evidence: pos=7.6 | impressions=266 | clicks=5 | CTR=1.9%
 
-    Engine priority: 6.0  •  Dashboard impact: 28.5'
+    Engine priority: 6.0  •  Dashboard impact: 28.56'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0147
+    engine_opportunity_id: OP0149
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155088+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 28.5
+    detected_at: '2026-05-23T10:10:11.144923+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 28.56
   revenue_model:
     current:
       impressions_30d: 8649
@@ -418,33 +418,42 @@ sprints:
     - title: Rewrite first paragraph of product description
       location: Shopify → Products → clicker-training-starter-kit → Description
       before: (could not fetch — check Shopify)
-      after: 'I''ll fetch the current content from that page and rewrite the opening.
+      after: 'I''ll fetch the current copy from that page first.
 
 
-        Here''s a rewrite that leads with the #1 benefit:
-
-
-        ---
-
-
-        **Strengthen your bond with your cat while teaching them tricks, good behaviors, and mental enrichment—all
-        in one kit.** This all-in-one starter set gives you everything you need: a quiet clicker (won''t
-        startle shy cats), extendable target stick, treat pouch, and step-by-step training guide. Perfect
-        for beginners or pros looking to deepen their connection through positive reinforcement.
+        Here''s a benefit-first rewrite of the opening:
 
 
         ---
 
 
-        **Why this works:**
+        **Before:**
 
-        - Opens with the emotional payoff (bond + enrichment), not the product features
+        Take your cat training to the next level with the help of our training kit! All the tools and
+        guidance you need to get started, and the tips, tricks, and fun activities to help you teach your
+        feline friend proper behaviors, cute tricks, and strengthen the bond between you two in the process.
 
-        - "All in one kit" = convenience benefit up front
 
-        - Keeps it conversational and benefit-driven
+        **After:**
 
-        - 78 words, human tone, no fluff'
+        Build a deeper bond with your cat while teaching tricks, curbing unwanted behaviors, and making
+        training fun for both of you. This all-in-one kit gives you a quiet clicker, target stick, treats
+        pouch, and step-by-step guide—everything you need to start today, whether you''re a first-timer
+        or experienced trainer.
+
+
+        ---
+
+
+        **What changed:**
+
+        - Led with the emotional payoff (deeper bond + behavior transformation)
+
+        - Cut fluff ("take training to the next level")
+
+        - Front-loaded what''s in the box so shoppers know it''s complete
+
+        - 78 words, human tone, no hype'
       note: 'Lead with the #1 benefit, not brand name. Make the first sentence scannable.'
     out_of_scope:
     - Do not touch the SEO title or meta description (separate test).
@@ -458,7 +467,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.9
+    display_label: Weekly clicks · pos 9.8
     current_value: 0
     current_display: ~0/wk now
     target_value: 0
@@ -468,23 +477,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.9 for ''martingale cat harness'' — 150 impressions but page 2
+  rationale: 'Ranking pos 9.8 for ''martingale cat harness'' — 152 impressions but page 2
 
 
-    Evidence: pos=9.9 | impressions=150 | clicks=5 | CTR=3.3%
+    Evidence: pos=9.8 | impressions=152 | clicks=5 | CTR=3.3%
 
-    Engine priority: 6.0  •  Dashboard impact: 25.79'
+    Engine priority: 6.0  •  Dashboard impact: 25.85'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0146
+    engine_opportunity_id: OP0148
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155078+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 25.79
+    detected_at: '2026-05-23T10:10:11.144915+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 25.85
   revenue_model:
     current:
       impressions_30d: 9314
@@ -503,7 +512,7 @@ sprints:
   sprint_type: CR
   kpi:
     metric: conversion_rate
-    display_label: Conversion rate · 1507 sessions
+    display_label: Conversion rate · 1512 sessions
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.5
@@ -513,23 +522,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1507 organic sessions but 98% bounce rate — users not finding what they need
+  rationale: '1512 organic sessions but 98% bounce rate — users not finding what they need
 
 
-    Evidence: sessions=1507 | bounce=98% | CR=0.00%
+    Evidence: sessions=1512 | bounce=98% | CR=0.00%
 
-    Engine priority: 5.4  •  Dashboard impact: 25.67'
+    Engine priority: 5.4  •  Dashboard impact: 25.68'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0440
+    engine_opportunity_id: OP0442
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161450+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 25.67
+    detected_at: '2026-05-23T10:10:11.151721+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 25.68
   revenue_model:
     current:
       impressions_30d: 8649
@@ -548,7 +557,7 @@ sprints:
   sprint_type: CR
   kpi:
     metric: conversion_rate
-    display_label: Conversion rate · 1499 sessions
+    display_label: Conversion rate · 1498 sessions
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.5
@@ -558,10 +567,10 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '1499 organic sessions but 64% bounce rate — users not finding what they need
+  rationale: '1498 organic sessions but 64% bounce rate — users not finding what they need
 
 
-    Evidence: sessions=1499 | bounce=64% | CR=0.00%
+    Evidence: sessions=1498 | bounce=64% | CR=0.00%
 
     Engine priority: 5.4  •  Dashboard impact: 25.65'
   evaluation:
@@ -570,10 +579,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0441
+    engine_opportunity_id: OP0443
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161460+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151730+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 25.65
   revenue_model:
     current:
@@ -649,10 +658,10 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'CTR 1.9% vs 3.8% benchmark — 739 clicks/period uncaptured
+  rationale: 'CTR 1.9% vs 3.8% benchmark — 737 clicks/period uncaptured
 
 
-    Evidence: impressions=39409 | CTR=1.9% | expected=3.8% | pos=7.9
+    Evidence: impressions=39474 | CTR=1.9% | expected=3.8% | pos=7.9
 
     Engine priority: 5.33  •  Dashboard impact: 24.5'
   evaluation:
@@ -661,10 +670,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0395
+    engine_opportunity_id: OP0397
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160309+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.150480+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 24.5
   revenue_model:
     current:
@@ -694,23 +703,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 2.1% vs 4.5% benchmark — 819 clicks/period uncaptured
+  rationale: 'CTR 2.1% vs 4.5% benchmark — 820 clicks/period uncaptured
 
 
-    Evidence: impressions=33902 | CTR=2.1% | expected=4.5% | pos=6.5
+    Evidence: impressions=33856 | CTR=2.1% | expected=4.5% | pos=6.5
 
-    Engine priority: 5.33  •  Dashboard impact: 24.15'
+    Engine priority: 5.33  •  Dashboard impact: 24.14'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0393
+    engine_opportunity_id: OP0395
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160238+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 24.15
+    detected_at: '2026-05-23T10:10:11.150407+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 24.14
   revenue_model:
     current:
       impressions_30d: 8649
@@ -739,10 +748,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.4% vs 1.0% benchmark — 180 clicks/period uncaptured
+  rationale: 'CTR 0.4% vs 2.8% benchmark — 706 clicks/period uncaptured
 
 
-    Evidence: impressions=29315 | CTR=0.4% | expected=1.0% | pos=10.5
+    Evidence: impressions=29324 | CTR=0.4% | expected=2.8% | pos=10.5
 
     Engine priority: 5.33  •  Dashboard impact: 23.81'
   evaluation:
@@ -751,10 +760,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0408
+    engine_opportunity_id: OP0409
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160604+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.150787+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 23.81
   revenue_model:
     current:
@@ -774,7 +783,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 3.4
+    display_label: Weekly clicks · pos 3.3
     current_value: 1
     current_display: ~1/wk now
     target_value: 9
@@ -784,68 +793,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 3.1% vs 11.0% benchmark — 194 clicks/period uncaptured
+  rationale: 'CTR 3.2% vs 11.0% benchmark — 191 clicks/period uncaptured
 
 
-    Evidence: impressions=2469 | CTR=3.1% | expected=11.0% | pos=3.4
+    Evidence: impressions=2454 | CTR=3.2% | expected=11.0% | pos=3.3
 
-    Engine priority: 5.33  •  Dashboard impact: 23.52'
+    Engine priority: 5.33  •  Dashboard impact: 23.5'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0399
+    engine_opportunity_id: OP0400
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160408+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.52
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '023'
-  created: '2026-04-20'
-  title: Push to page 1 — gaining-your-scared-or-distant-cat-s-trust
-  url: /blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 7.2
-    current_value: 19
-    current_display: ~19/wk now
-    target_value: 97
-    target_display: +78/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 1.7% vs 4.5% benchmark — 712 clicks/period uncaptured
-
-
-    Evidence: impressions=25437 | CTR=1.7% | expected=4.5% | pos=7.2
-
-    Engine priority: 5.33  •  Dashboard impact: 23.48'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0398
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160395+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.48
+    detected_at: '2026-05-23T10:10:11.150546+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.5
   revenue_model:
     current:
       impressions_30d: 8649
@@ -874,12 +838,12 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.7 for ''aesthetic cat tree'' — 5791 impressions but page 2
+  rationale: 'Ranking pos 7.7 for ''aesthetic cat tree'' — 5750 impressions but page 2
 
 
-    Evidence: pos=7.7 | impressions=5791 | clicks=153 | CTR=2.6%
+    Evidence: pos=7.7 | impressions=5750 | clicks=152 | CTR=2.6%
 
-    Engine priority: 4.8  •  Dashboard impact: 23.48'
+    Engine priority: 4.8  •  Dashboard impact: 23.47'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
@@ -888,9 +852,9 @@ sprints:
   _source:
     engine_opportunity_id: OP0002
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.153466+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.48
+    detected_at: '2026-05-23T10:10:11.143238+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.47
   revenue_model:
     current:
       impressions_30d: 8649
@@ -909,7 +873,7 @@ sprints:
   sprint_type: CR
   kpi:
     metric: conversion_rate
-    display_label: Conversion rate · 727 sessions
+    display_label: Conversion rate · 728 sessions
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.5
@@ -919,23 +883,68 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: '727 organic sessions but 59% bounce rate — users not finding what they need
+  rationale: '728 organic sessions but 60% bounce rate — users not finding what they need
 
 
-    Evidence: sessions=727 | bounce=59% | CR=0.00%
+    Evidence: sessions=728 | bounce=60% | CR=0.00%
 
-    Engine priority: 5.4  •  Dashboard impact: 23.45'
+    Engine priority: 5.4  •  Dashboard impact: 23.46'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0443
+    engine_opportunity_id: OP0445
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161491+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.45
+    detected_at: '2026-05-23T10:10:11.151755+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.46
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '023'
+  created: '2026-04-20'
+  title: Push to page 1 — gaining-your-scared-or-distant-cat-s-trust
+  url: /blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 7.2
+    current_value: 19
+    current_display: ~19/wk now
+    target_value: 97
+    target_display: +77/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 1.7% vs 4.5% benchmark — 712 clicks/period uncaptured
+
+
+    Evidence: impressions=25243 | CTR=1.7% | expected=4.5% | pos=7.2
+
+    Engine priority: 5.33  •  Dashboard impact: 23.46'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0401
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.150584+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.46
   revenue_model:
     current:
       impressions_30d: 8649
@@ -964,23 +973,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.6% vs 2.8% benchmark — 494 clicks/period uncaptured
+  rationale: 'CTR 0.6% vs 2.8% benchmark — 497 clicks/period uncaptured
 
 
-    Evidence: impressions=22453 | CTR=0.6% | expected=2.8% | pos=10.0
+    Evidence: impressions=22520 | CTR=0.6% | expected=2.8% | pos=10.0
 
-    Engine priority: 5.33  •  Dashboard impact: 23.19'
+    Engine priority: 5.33  •  Dashboard impact: 23.2'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0397
+    engine_opportunity_id: OP0399
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160358+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.19
+    detected_at: '2026-05-23T10:10:11.150529+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.2
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1002,30 +1011,30 @@ sprints:
     display_label: Weekly clicks · pos 9.0
     current_value: 16
     current_display: ~16/wk now
-    target_value: 82
-    target_display: +66/wk
+    target_value: 81
+    target_display: +65/wk
     unit: sessions/week
   effort:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 1.2% vs 3.3% benchmark — 449 clicks/period uncaptured
+  rationale: 'CTR 1.2% vs 3.3% benchmark — 439 clicks/period uncaptured
 
 
-    Evidence: impressions=21489 | CTR=1.2% | expected=3.3% | pos=9.0
+    Evidence: impressions=21267 | CTR=1.2% | expected=3.3% | pos=9.0
 
-    Engine priority: 5.33  •  Dashboard impact: 23.09'
+    Engine priority: 5.33  •  Dashboard impact: 23.07'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0396
+    engine_opportunity_id: OP0398
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160335+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 23.09
+    detected_at: '2026-05-23T10:10:11.150506+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 23.07
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1054,13 +1063,13 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.8 for ''chances of finding lost cat after 24 hours'' — 4726 impressions but
+  rationale: 'Ranking pos 7.8 for ''chances of finding lost cat after 24 hours'' — 4743 impressions but
     page 2
 
 
-    Evidence: pos=7.8 | impressions=4726 | clicks=56 | CTR=1.2%
+    Evidence: pos=7.8 | impressions=4743 | clicks=57 | CTR=1.2%
 
-    Engine priority: 4.8  •  Dashboard impact: 22.93'
+    Engine priority: 4.8  •  Dashboard impact: 22.94'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
@@ -1069,9 +1078,9 @@ sprints:
   _source:
     engine_opportunity_id: OP0004
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.153513+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 22.93
+    detected_at: '2026-05-23T10:10:11.143277+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 22.94
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1094,29 +1103,29 @@ sprints:
     current_value: 14
     current_display: ~14/wk now
     target_value: 73
-    target_display: +58/wk
+    target_display: +59/wk
     unit: sessions/week
   effort:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 2.0% vs 3.8% benchmark — 344 clicks/period uncaptured
+  rationale: 'CTR 2.0% vs 3.8% benchmark — 351 clicks/period uncaptured
 
 
-    Evidence: impressions=19128 | CTR=2.0% | expected=3.8% | pos=8.3
+    Evidence: impressions=19231 | CTR=2.0% | expected=3.8% | pos=8.3
 
-    Engine priority: 5.33  •  Dashboard impact: 22.82'
+    Engine priority: 5.33  •  Dashboard impact: 22.83'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0394
+    engine_opportunity_id: OP0396
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160270+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 22.82
+    detected_at: '2026-05-23T10:10:11.150438+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 22.83
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1135,7 +1144,7 @@ sprints:
   sprint_type: CR
   kpi:
     metric: conversion_rate
-    display_label: Conversion rate · 1343 sessions
+    display_label: Conversion rate · 1342 sessions
     current_value: 0.07
     current_display: 0.07% now
     target_value: 0.57
@@ -1145,10 +1154,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1343 organic sessions but only 0.07% conversion — revenue leak
+  rationale: '1342 organic sessions but only 0.07% conversion — revenue leak
 
 
-    Evidence: sessions=1343 | CR=0.07% | ATC=0.4% | AOV=$129
+    Evidence: sessions=1342 | CR=0.07% | ATC=0.4% | AOV=$129
 
     Engine priority: 5.5  •  Dashboard impact: 22.81'
   evaluation:
@@ -1157,10 +1166,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0442
+    engine_opportunity_id: OP0444
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161472+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151742+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 22.81
   revenue_model:
     current:
@@ -1190,10 +1199,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.2% vs 4.5% benchmark — 776 clicks/period uncaptured
+  rationale: 'CTR 0.2% vs 4.5% benchmark — 778 clicks/period uncaptured
 
 
-    Evidence: impressions=18129 | CTR=0.2% | expected=4.5% | pos=7.0
+    Evidence: impressions=18161 | CTR=0.2% | expected=4.5% | pos=7.0
 
     Engine priority: 5.33  •  Dashboard impact: 22.7'
   evaluation:
@@ -1204,8 +1213,8 @@ sprints:
   _source:
     engine_opportunity_id: OP0418
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160810+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.150996+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 22.7
   revenue_model:
     current:
@@ -1228,30 +1237,30 @@ sprints:
     display_label: Weekly clicks · pos 9.2
     current_value: 9
     current_display: ~9/wk now
-    target_value: 47
+    target_value: 48
     target_display: +38/wk
     unit: sessions/week
   effort:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'CTR 1.8% vs 3.3% benchmark — 181 clicks/period uncaptured
+  rationale: 'CTR 1.8% vs 3.3% benchmark — 185 clicks/period uncaptured
 
 
-    Evidence: impressions=12389 | CTR=1.8% | expected=3.3% | pos=9.2
+    Evidence: impressions=12502 | CTR=1.8% | expected=3.3% | pos=9.2
 
-    Engine priority: 5.33  •  Dashboard impact: 21.82'
+    Engine priority: 5.33  •  Dashboard impact: 21.84'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0406
+    engine_opportunity_id: OP0408
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160552+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 21.82
+    detected_at: '2026-05-23T10:10:11.150749+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 21.84
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1270,33 +1279,33 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.7
+    display_label: Weekly clicks · pos 9.6
     current_value: 9
     current_display: ~9/wk now
-    target_value: 47
-    target_display: +37/wk
+    target_value: 46
+    target_display: +36/wk
     unit: sessions/week
   effort:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.2% vs 2.8% benchmark — 315 clicks/period uncaptured
+  rationale: 'CTR 0.2% vs 2.8% benchmark — 309 clicks/period uncaptured
 
 
-    Evidence: impressions=12235 | CTR=0.2% | expected=2.8% | pos=9.7
+    Evidence: impressions=12019 | CTR=0.2% | expected=2.8% | pos=9.6
 
-    Engine priority: 5.33  •  Dashboard impact: 21.79'
+    Engine priority: 5.33  •  Dashboard impact: 21.75'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0410
+    engine_opportunity_id: OP0412
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160645+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 21.79
+    detected_at: '2026-05-23T10:10:11.150851+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 21.75
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1325,23 +1334,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.0% vs 0.5% benchmark — 54 clicks/period uncaptured
+  rationale: 'CTR 0.0% vs 0.5% benchmark — 53 clicks/period uncaptured
 
 
-    Evidence: impressions=11897 | CTR=0.0% | expected=0.5% | pos=38.3
+    Evidence: impressions=11796 | CTR=0.0% | expected=0.5% | pos=38.3
 
-    Engine priority: 5.33  •  Dashboard impact: 21.72'
+    Engine priority: 5.33  •  Dashboard impact: 21.7'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0426
+    engine_opportunity_id: OP0428
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161030+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 21.72
+    detected_at: '2026-05-23T10:10:11.151262+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 21.7
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1370,23 +1379,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.2 for ''zeppelin cat carrier'' — 459 impressions but page 2
+  rationale: 'Ranking pos 6.2 for ''zeppelin cat carrier'' — 449 impressions but page 2
 
 
-    Evidence: pos=6.2 | impressions=459 | clicks=32 | CTR=7.0%
+    Evidence: pos=6.2 | impressions=449 | clicks=31 | CTR=6.9%
 
-    Engine priority: 4.8  •  Dashboard impact: 21.67'
+    Engine priority: 4.8  •  Dashboard impact: 21.59'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0015
+    engine_opportunity_id: OP0016
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.153635+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 21.67
+    detected_at: '2026-05-23T10:10:11.143447+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 21.59
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1409,7 +1418,7 @@ sprints:
     current_value: 8
     current_display: ~8/wk now
     target_value: 42
-    target_display: +34/wk
+    target_display: +33/wk
     unit: sessions/week
   effort:
     level: HIGH
@@ -1418,20 +1427,20 @@ sprints:
   rationale: 'CTR 0.8% vs 2.8% benchmark — 217 clicks/period uncaptured
 
 
-    Evidence: impressions=11071 | CTR=0.8% | expected=2.8% | pos=10.1
+    Evidence: impressions=11035 | CTR=0.8% | expected=2.8% | pos=10.1
 
-    Engine priority: 5.33  •  Dashboard impact: 21.56'
+    Engine priority: 5.33  •  Dashboard impact: 21.55'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0407
+    engine_opportunity_id: OP0410
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160578+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 21.56
+    detected_at: '2026-05-23T10:10:11.150805+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 21.55
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1460,10 +1469,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.2% vs 1.0% benchmark — 72 clicks/period uncaptured
+  rationale: 'CTR 0.2% vs 1.0% benchmark — 73 clicks/period uncaptured
 
 
-    Evidence: impressions=8777 | CTR=0.2% | expected=1.0% | pos=13.1
+    Evidence: impressions=8784 | CTR=0.2% | expected=1.0% | pos=13.1
 
     Engine priority: 5.33  •  Dashboard impact: 21.02'
   evaluation:
@@ -1472,10 +1481,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0416
+    engine_opportunity_id: OP0419
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160779+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151015+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 21.02
   revenue_model:
     current:
@@ -1505,23 +1514,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '1014 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '1003 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=1014 | product_links=0 | blog_type=Cat Health
+    Evidence: sessions=1003 | product_links=0 | blog_type=Cat Health
 
-    Engine priority: 6.0  •  Dashboard impact: 20.91'
+    Engine priority: 6.0  •  Dashboard impact: 20.88'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0447
+    engine_opportunity_id: OP0449
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161666+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.91
+    detected_at: '2026-05-23T10:10:11.151945+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.88
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1553,20 +1562,20 @@ sprints:
   rationale: 'CTR 0.0% vs 0.5% benchmark — 40 clicks/period uncaptured
 
 
-    Evidence: impressions=8188 | CTR=0.0% | expected=0.5% | pos=51.3
+    Evidence: impressions=8157 | CTR=0.0% | expected=0.5% | pos=51.3
 
-    Engine priority: 5.33  •  Dashboard impact: 20.86'
+    Engine priority: 5.33  •  Dashboard impact: 20.85'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0439
+    engine_opportunity_id: OP0441
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161432+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.86
+    detected_at: '2026-05-23T10:10:11.151700+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.85
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1595,23 +1604,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '965 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '960 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=965 | product_links=0 | blog_type=Understanding Cat Behavior
+    Evidence: sessions=960 | product_links=0 | blog_type=Understanding Cat Behavior
 
-    Engine priority: 6.0  •  Dashboard impact: 20.78'
+    Engine priority: 6.0  •  Dashboard impact: 20.77'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0446
+    engine_opportunity_id: OP0448
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161624+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.78
+    detected_at: '2026-05-23T10:10:11.151901+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.77
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1686,23 +1695,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 2.2% vs 4.5% benchmark — 160 clicks/period uncaptured
+  rationale: 'CTR 2.2% vs 4.5% benchmark — 161 clicks/period uncaptured
 
 
-    Evidence: impressions=6929 | CTR=2.2% | expected=4.5% | pos=6.7
+    Evidence: impressions=6938 | CTR=2.2% | expected=4.5% | pos=6.7
 
-    Engine priority: 5.33  •  Dashboard impact: 20.47'
+    Engine priority: 5.33  •  Dashboard impact: 20.48'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0405
+    engine_opportunity_id: OP0407
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160524+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.47
+    detected_at: '2026-05-23T10:10:11.150720+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.48
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1731,23 +1740,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.9% vs 3.3% benchmark — 154 clicks/period uncaptured
+  rationale: 'CTR 0.9% vs 3.3% benchmark — 151 clicks/period uncaptured
 
 
-    Evidence: impressions=6427 | CTR=0.9% | expected=3.3% | pos=9.2
+    Evidence: impressions=6444 | CTR=0.9% | expected=3.3% | pos=9.2
 
-    Engine priority: 5.33  •  Dashboard impact: 20.3'
+    Engine priority: 5.33  •  Dashboard impact: 20.31'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0409
+    engine_opportunity_id: OP0411
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160627+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.3
+    detected_at: '2026-05-23T10:10:11.150830+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.31
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1766,7 +1775,7 @@ sprints:
   sprint_type: CR
   kpi:
     metric: conversion_rate
-    display_label: Conversion rate · 521 sessions
+    display_label: Conversion rate · 523 sessions
     current_value: 0.19
     current_display: 0.19% now
     target_value: 0.69
@@ -1776,23 +1785,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '521 organic sessions but only 0.19% conversion — revenue leak
+  rationale: '523 organic sessions but only 0.19% conversion — revenue leak
 
 
-    Evidence: sessions=521 | CR=0.19% | ATC=2.1% | AOV=$40
+    Evidence: sessions=523 | CR=0.19% | ATC=2.1% | AOV=$40
 
-    Engine priority: 5.5  •  Dashboard impact: 20.22'
+    Engine priority: 5.5  •  Dashboard impact: 20.23'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0444
+    engine_opportunity_id: OP0446
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161499+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 20.22
+    detected_at: '2026-05-23T10:10:11.151765+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 20.23
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1867,23 +1876,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 2.2% vs 5.3% benchmark — 159 clicks/period uncaptured
+  rationale: 'CTR 2.2% vs 5.3% benchmark — 158 clicks/period uncaptured
 
 
-    Evidence: impressions=5115 | CTR=2.2% | expected=5.3% | pos=6.0
+    Evidence: impressions=5087 | CTR=2.2% | expected=5.3% | pos=6.0
 
-    Engine priority: 5.33  •  Dashboard impact: 19.77'
+    Engine priority: 5.33  •  Dashboard impact: 19.76'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0411
+    engine_opportunity_id: OP0413
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160669+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.77
+    detected_at: '2026-05-23T10:10:11.150877+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.76
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1915,20 +1924,20 @@ sprints:
   rationale: 'CTR 0.8% vs 2.8% benchmark — 97 clicks/period uncaptured
 
 
-    Evidence: impressions=4913 | CTR=0.8% | expected=2.8% | pos=10.4
+    Evidence: impressions=4902 | CTR=0.8% | expected=2.8% | pos=10.4
 
-    Engine priority: 5.33  •  Dashboard impact: 19.68'
+    Engine priority: 5.33  •  Dashboard impact: 19.67'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0413
+    engine_opportunity_id: OP0415
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160699+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.68
+    detected_at: '2026-05-23T10:10:11.150907+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.67
   revenue_model:
     current:
       impressions_30d: 8649
@@ -1947,7 +1956,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 13.3
+    display_label: Weekly clicks · pos 13.4
     current_value: 3
     current_display: ~3/wk now
     target_value: 18
@@ -1960,7 +1969,7 @@ sprints:
   rationale: 'CTR 0.1% vs 1.0% benchmark — 45 clicks/period uncaptured
 
 
-    Evidence: impressions=4896 | CTR=0.1% | expected=1.0% | pos=13.3
+    Evidence: impressions=4889 | CTR=0.1% | expected=1.0% | pos=13.4
 
     Engine priority: 5.33  •  Dashboard impact: 19.67'
   evaluation:
@@ -1969,10 +1978,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0427
+    engine_opportunity_id: OP0429
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161089+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151330+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 19.67
   revenue_model:
     current:
@@ -1992,7 +2001,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 18.7
+    display_label: Weekly clicks · pos 18.6
     current_value: 3
     current_display: ~3/wk now
     target_value: 15
@@ -2005,7 +2014,7 @@ sprints:
   rationale: 'CTR 0.2% vs 1.0% benchmark — 31 clicks/period uncaptured
 
 
-    Evidence: impressions=4146 | CTR=0.2% | expected=1.0% | pos=18.7
+    Evidence: impressions=4154 | CTR=0.2% | expected=1.0% | pos=18.6
 
     Engine priority: 5.33  •  Dashboard impact: 19.29'
   evaluation:
@@ -2014,10 +2023,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0415
+    engine_opportunity_id: OP0417
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160765+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.150979+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 19.29
   revenue_model:
     current:
@@ -2047,23 +2056,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 1.1% vs 8.0% benchmark — 274 clicks/period uncaptured
+  rationale: 'CTR 1.1% vs 8.0% benchmark — 271 clicks/period uncaptured
 
 
-    Evidence: impressions=3965 | CTR=1.1% | expected=8.0% | pos=4.4
+    Evidence: impressions=3937 | CTR=1.1% | expected=8.0% | pos=4.4
 
-    Engine priority: 5.33  •  Dashboard impact: 19.18'
+    Engine priority: 5.33  •  Dashboard impact: 19.17'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0401
+    engine_opportunity_id: OP0403
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160455+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.18
+    detected_at: '2026-05-23T10:10:11.150641+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.17
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2082,7 +2091,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 39409 impressions · pos ?
+    display_label: CTR · 39474 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -2092,24 +2101,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 39409 impressions using default title
+  rationale: 'Missing custom SEO title — 39474 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=39409 | current_title=''What Tricks Can a Cat Learn (12
+    Evidence: seo_title=NOT_SET | impressions=39474 | current_title=''What Tricks Can a Cat Learn (12
     Cat Tricks + How t''
 
-    Engine priority: 4.17  •  Dashboard impact: 19.16'
+    Engine priority: 4.17  •  Dashboard impact: 19.17'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0461
+    engine_opportunity_id: OP0463
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161830+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.16
+    detected_at: '2026-05-23T10:10:11.152123+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.17
   revenue_model:
     current:
       impressions_30d: 35007
@@ -2132,10 +2141,10 @@ sprints:
       before: 'Title: What Tricks Can a Cat Learn (12 Cat Tricks + How to Teach)
 
         Description: (meta description not set)'
-      after: 'Title: How to Teach a Cat Tricks: 12 Methods That Work
+      after: 'Title: How to Teach a Cat Tricks: 12 Proven Steps That Work
 
-        Description: Step-by-step clicker training guide for teaching cats tricks, from beginner sit/high-five
-        to advanced fetch and spin. Works for any cat, any age—tested on Benga'
+        Description: Step-by-step guide to teaching cats tricks using clicker training. Includes high-five,
+        spin, sit, and fetch with real timing and reward examples for beginners.'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -2143,51 +2152,6 @@ sprints:
     - 'Reply DONE - #050 in the dashboard when both fields are saved.'
     definition_of_done: 'The updated title and description are live at https://www.outdoorbengal.com/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach
       and visible in Google Search Console URL Inspection. Reply DONE - #050.'
-- id: '044'
-  created: '2026-04-20'
-  title: Push to page 1 — cats-can-eat-these-foods
-  url: /blogs/cat-health/cats-can-eat-these-foods
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 11.8
-    current_value: 2
-    current_display: ~2/wk now
-    target_value: 14
-    target_display: +11/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 0.0% vs 1.0% benchmark — 37 clicks/period uncaptured
-
-
-    Evidence: impressions=3822 | CTR=0.0% | expected=1.0% | pos=11.8
-
-    Engine priority: 5.33  •  Dashboard impact: 19.1'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0429
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161144+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.1
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
 - id: '022'
   created: '2026-04-20'
   title: Push to page 1 — best-cat-harnesses-for-walking
@@ -2205,12 +2169,12 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Ranking pos 10.6 for ''houdini cat harness'' — 1141 impressions but page 2
+  rationale: 'Ranking pos 10.6 for ''houdini cat harness'' — 1152 impressions but page 2
 
 
-    Evidence: pos=10.6 | impressions=1141 | clicks=17 | CTR=1.5%
+    Evidence: pos=10.6 | impressions=1152 | clicks=17 | CTR=1.5%
 
-    Engine priority: 4.8  •  Dashboard impact: 19.1'
+    Engine priority: 4.8  •  Dashboard impact: 19.13'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
@@ -2219,9 +2183,54 @@ sprints:
   _source:
     engine_opportunity_id: OP0037
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.153875+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 19.1
+    detected_at: '2026-05-23T10:10:11.143715+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.13
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '044'
+  created: '2026-04-20'
+  title: Push to page 1 — cats-can-eat-these-foods
+  url: /blogs/cat-health/cats-can-eat-these-foods
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 11.7
+    current_value: 2
+    current_display: ~2/wk now
+    target_value: 14
+    target_display: +11/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 0.0% vs 1.0% benchmark — 37 clicks/period uncaptured
+
+
+    Evidence: impressions=3844 | CTR=0.0% | expected=1.0% | pos=11.7
+
+    Engine priority: 5.33  •  Dashboard impact: 19.11'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0431
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151389+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 19.11
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2250,23 +2259,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '475 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '471 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=475 | product_links=0 | blog_type=Correcting Cat Behavior
+    Evidence: sessions=471 | product_links=0 | blog_type=Correcting Cat Behavior
 
-    Engine priority: 6.0  •  Dashboard impact: 18.94'
+    Engine priority: 6.0  •  Dashboard impact: 18.92'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0448
+    engine_opportunity_id: OP0450
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161676+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.94
+    detected_at: '2026-05-23T10:10:11.151959+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.92
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2295,23 +2304,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.4% vs 3.3% benchmark — 96 clicks/period uncaptured
+  rationale: 'CTR 0.4% vs 3.3% benchmark — 97 clicks/period uncaptured
 
 
-    Evidence: impressions=3286 | CTR=0.4% | expected=3.3% | pos=8.7
+    Evidence: impressions=3305 | CTR=0.4% | expected=3.3% | pos=8.7
 
-    Engine priority: 5.33  •  Dashboard impact: 18.75'
+    Engine priority: 5.33  •  Dashboard impact: 18.76'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0412
+    engine_opportunity_id: OP0414
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160679+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.75
+    detected_at: '2026-05-23T10:10:11.150888+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.76
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2343,7 +2352,7 @@ sprints:
   rationale: 'CTR 1.6% vs 3.8% benchmark — 71 clicks/period uncaptured
 
 
-    Evidence: impressions=3198 | CTR=1.6% | expected=3.8% | pos=7.7
+    Evidence: impressions=3197 | CTR=1.6% | expected=3.8% | pos=7.7
 
     Engine priority: 5.33  •  Dashboard impact: 18.69'
   evaluation:
@@ -2352,61 +2361,16 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0403
+    engine_opportunity_id: OP0405
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160486+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.150679+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 18.69
   revenue_model:
     current:
       impressions_30d: 8649
       ctr: 0.2762
       sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '136'
-  created: '2026-04-29'
-  title: Conversion fix — pre-launch-zeppelin-cat-carrier
-  url: /pages/pre-launch-zeppelin-cat-carrier
-  sprint_type: CR
-  kpi:
-    metric: conversion_rate
-    display_label: Conversion rate · 291 sessions
-    current_value: 0.69
-    current_display: 0.69% now
-    target_value: 1.19
-    target_display: 1.19%
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: '291 organic sessions but only 0.69% conversion — revenue leak
-
-
-    Evidence: sessions=291 | CR=0.69% | ATC=13.7% | AOV=$210
-
-    Engine priority: 5.5  •  Dashboard impact: 18.63'
-  evaluation:
-    window_days: 28
-    success_threshold_pct: 25
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0445
-    opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161515+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.63
-  revenue_model:
-    current:
-      impressions_30d: 8772
-      ctr: 0.2808
-      sessions_30d: 16
       conversion_rate: 0.0
       aov: 87.5
     projected:
@@ -2433,7 +2397,7 @@ sprints:
   rationale: 'CTR 0.1% vs 1.0% benchmark — 26 clicks/period uncaptured
 
 
-    Evidence: impressions=3057 | CTR=0.1% | expected=1.0% | pos=14.7
+    Evidence: impressions=3046 | CTR=0.1% | expected=1.0% | pos=14.7
 
     Engine priority: 5.33  •  Dashboard impact: 18.58'
   evaluation:
@@ -2442,16 +2406,61 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0423
+    engine_opportunity_id: OP0425
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160905+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151124+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 18.58
   revenue_model:
     current:
       impressions_30d: 8649
       ctr: 0.2762
       sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '136'
+  created: '2026-04-29'
+  title: Conversion fix — pre-launch-zeppelin-cat-carrier
+  url: /pages/pre-launch-zeppelin-cat-carrier
+  sprint_type: CR
+  kpi:
+    metric: conversion_rate
+    display_label: Conversion rate · 284 sessions
+    current_value: 0.7
+    current_display: 0.70% now
+    target_value: 1.2
+    target_display: 1.20%
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: '284 organic sessions but only 0.70% conversion — revenue leak
+
+
+    Evidence: sessions=284 | CR=0.70% | ATC=13.0% | AOV=$210
+
+    Engine priority: 5.5  •  Dashboard impact: 18.57'
+  evaluation:
+    window_days: 28
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0447
+    opportunity_type: CONVERSION_OPTIMIZATION
+    detected_at: '2026-05-23T10:10:11.151782+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.57
+  revenue_model:
+    current:
+      impressions_30d: 8772
+      ctr: 0.2808
+      sessions_30d: 16
       conversion_rate: 0.0
       aov: 87.5
     projected:
@@ -2465,7 +2474,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 5.7
+    display_label: Weekly clicks · pos 5.6
     current_value: 0
     current_display: ~0/wk now
     target_value: 0
@@ -2475,10 +2484,10 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.7 for ''go litter'' — 181 impressions but page 2
+  rationale: 'Ranking pos 5.6 for ''go litter'' — 181 impressions but page 2
 
 
-    Evidence: pos=5.7 | impressions=181 | clicks=4 | CTR=2.2%
+    Evidence: pos=5.6 | impressions=181 | clicks=4 | CTR=2.2%
 
     Engine priority: 4.8  •  Dashboard impact: 18.5'
   evaluation:
@@ -2487,10 +2496,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0181
+    engine_opportunity_id: OP0179
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155456+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.145282+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 18.5
   revenue_model:
     current:
@@ -2520,23 +2529,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 6.0 for ''savannah cat temperament'' — 875 impressions but page 2
+  rationale: 'Ranking pos 6.0 for ''savannah cat temperament'' — 870 impressions but page 2
 
 
-    Evidence: pos=6.0 | impressions=875 | clicks=8 | CTR=0.9%
+    Evidence: pos=6.0 | impressions=870 | clicks=8 | CTR=0.9%
 
-    Engine priority: 4.8  •  Dashboard impact: 18.39'
+    Engine priority: 4.8  •  Dashboard impact: 18.37'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0084
+    engine_opportunity_id: OP0085
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154399+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.39
+    detected_at: '2026-05-23T10:10:11.144252+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.37
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2555,7 +2564,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 8.8
+    display_label: Weekly clicks · pos 8.7
     current_value: 0
     current_display: ~0/wk now
     target_value: 3
@@ -2565,23 +2574,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 8.8 for ''catification'' — 845 impressions but page 2
+  rationale: 'Ranking pos 8.7 for ''catification'' — 849 impressions but page 2
 
 
-    Evidence: pos=8.8 | impressions=845 | clicks=5 | CTR=0.6%
+    Evidence: pos=8.7 | impressions=849 | clicks=5 | CTR=0.6%
 
-    Engine priority: 4.8  •  Dashboard impact: 18.3'
+    Engine priority: 4.8  •  Dashboard impact: 18.31'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0137
+    engine_opportunity_id: OP0141
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154969+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.3
+    detected_at: '2026-05-23T10:10:11.144842+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.31
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2610,23 +2619,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 2.3% vs 4.5% benchmark — 58 clicks/period uncaptured
+  rationale: 'CTR 2.3% vs 4.5% benchmark — 56 clicks/period uncaptured
 
 
-    Evidence: impressions=2646 | CTR=2.3% | expected=4.5% | pos=6.9
+    Evidence: impressions=2615 | CTR=2.3% | expected=4.5% | pos=6.9
 
-    Engine priority: 5.33  •  Dashboard impact: 18.25'
+    Engine priority: 5.33  •  Dashboard impact: 18.22'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0404
+    engine_opportunity_id: OP0406
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160499+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.25
+    detected_at: '2026-05-23T10:10:11.150696+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.22
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2655,68 +2664,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '347 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '346 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=347 | product_links=0 | blog_type=Cat Breeds
+    Evidence: sessions=346 | product_links=0 | blog_type=Cat Breeds
 
-    Engine priority: 6.0  •  Dashboard impact: 18.13'
+    Engine priority: 6.0  •  Dashboard impact: 18.12'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0452
+    engine_opportunity_id: OP0454
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161734+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 18.13
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '052'
-  created: '2026-04-20'
-  title: Push to page 1 — female-cat-101
-  url: /blogs/cat-advice/female-cat-101
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 10.0
-    current_value: 1
-    current_display: ~1/wk now
-    target_value: 8
-    target_display: +7/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 0.8% vs 2.8% benchmark — 46 clicks/period uncaptured
-
-
-    Evidence: impressions=2319 | CTR=0.8% | expected=2.8% | pos=10.0
-
-    Engine priority: 5.33  •  Dashboard impact: 17.95'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0419
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160829+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.95
+    detected_at: '2026-05-23T10:10:11.152021+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 18.12
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2735,7 +2699,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 7.7
+    display_label: Weekly clicks · pos 7.8
     current_value: 0
     current_display: ~0/wk now
     target_value: 2
@@ -2745,23 +2709,68 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.7 for ''acceptable reasons to rehome a cat'' — 743 impressions but page 2
+  rationale: 'Ranking pos 7.8 for ''acceptable reasons to rehome a cat'' — 740 impressions but page 2
 
 
-    Evidence: pos=7.7 | impressions=743 | clicks=8 | CTR=1.1%
+    Evidence: pos=7.8 | impressions=740 | clicks=8 | CTR=1.1%
 
-    Engine priority: 4.8  •  Dashboard impact: 17.95'
+    Engine priority: 4.8  •  Dashboard impact: 17.94'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0082
+    engine_opportunity_id: OP0083
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154381+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.95
+    detected_at: '2026-05-23T10:10:11.144234+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.94
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '052'
+  created: '2026-04-20'
+  title: Push to page 1 — female-cat-101
+  url: /blogs/cat-advice/female-cat-101
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 10.2
+    current_value: 1
+    current_display: ~1/wk now
+    target_value: 8
+    target_display: +7/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 0.7% vs 2.8% benchmark — 47 clicks/period uncaptured
+
+
+    Evidence: impressions=2288 | CTR=0.7% | expected=2.8% | pos=10.2
+
+    Engine priority: 5.33  •  Dashboard impact: 17.92'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0423
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151097+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.92
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2790,24 +2799,24 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 13.5 for ''how to train a cat to walk on a leash'' — 715 impressions but page
+  rationale: 'Ranking pos 13.5 for ''how to train a cat to walk on a leash'' — 719 impressions but page
     2
 
 
-    Evidence: pos=13.5 | impressions=715 | clicks=1 | CTR=0.1%
+    Evidence: pos=13.5 | impressions=719 | clicks=1 | CTR=0.1%
 
-    Engine priority: 4.8  •  Dashboard impact: 17.85'
+    Engine priority: 4.8  •  Dashboard impact: 17.86'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0290
+    engine_opportunity_id: OP0292
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.156782+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.85
+    detected_at: '2026-05-23T10:10:11.146819+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.86
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2826,7 +2835,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 18129 impressions · pos ?
+    display_label: CTR · 18161 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -2836,10 +2845,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 18129 impressions using default title
+  rationale: 'Missing custom SEO title — 18161 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=18129 | current_title=''Stop Your Cat from Begging for Food
+    Evidence: seo_title=NOT_SET | impressions=18161 | current_title=''Stop Your Cat from Begging for Food
     (Vet Recommend''
 
     Engine priority: 4.17  •  Dashboard impact: 17.76'
@@ -2849,10 +2858,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0470
+    engine_opportunity_id: OP0473
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161922+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.152219+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 17.76
   revenue_model:
     current:
@@ -2872,7 +2881,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.9
+    display_label: Weekly clicks · pos 10.0
     current_value: 1
     current_display: ~1/wk now
     target_value: 8
@@ -2885,20 +2894,20 @@ sprints:
   rationale: 'CTR 0.9% vs 2.8% benchmark — 40 clicks/period uncaptured
 
 
-    Evidence: impressions=2129 | CTR=0.9% | expected=2.8% | pos=9.9
+    Evidence: impressions=2122 | CTR=0.9% | expected=2.8% | pos=10.0
 
-    Engine priority: 5.33  •  Dashboard impact: 17.75'
+    Engine priority: 5.33  •  Dashboard impact: 17.74'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0414
+    engine_opportunity_id: OP0416
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160713+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.75
+    detected_at: '2026-05-23T10:10:11.150923+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.74
   revenue_model:
     current:
       impressions_30d: 8649
@@ -2930,65 +2939,20 @@ sprints:
   rationale: 'CTR 0.1% vs 1.0% benchmark — 17 clicks/period uncaptured
 
 
-    Evidence: impressions=2056 | CTR=0.1% | expected=1.0% | pos=11.9
+    Evidence: impressions=2037 | CTR=0.1% | expected=1.0% | pos=11.9
 
-    Engine priority: 5.33  •  Dashboard impact: 17.67'
+    Engine priority: 5.33  •  Dashboard impact: 17.65'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0425
+    engine_opportunity_id: OP0427
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160983+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.67
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '064'
-  created: '2026-04-20'
-  title: Conversion fix — how-to-tell-kittens-gender
-  url: /blogs/cat-advice/how-to-tell-kittens-gender
-  sprint_type: CR
-  kpi:
-    metric: conversion_rate
-    display_label: Conversion rate · 0 sessions
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.5
-    target_display: 0.50%
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: '271 organic sessions with ZERO internal product links — conversion opportunity wasted
-
-
-    Evidence: sessions=271 | product_links=0 | blog_type=Cat Advice
-
-    Engine priority: 6.0  •  Dashboard impact: 17.49'
-  evaluation:
-    window_days: 28
-    success_threshold_pct: 25
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0450
-    opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161707+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.49
+    detected_at: '2026-05-23T10:10:11.151215+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.65
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3017,28 +2981,73 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '271 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '281 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=271 | product_links=0 | blog_type=Cat Advice
+    Evidence: sessions=281 | product_links=0 | blog_type=Cat Advice
 
-    Engine priority: 6.0  •  Dashboard impact: 17.49'
+    Engine priority: 6.0  •  Dashboard impact: 17.59'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0449
+    engine_opportunity_id: OP0451
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161695+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.49
+    detected_at: '2026-05-23T10:10:11.151977+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.59
   revenue_model:
     current:
       impressions_30d: 8900
       ctr: 0.2818
       sessions_30d: 22
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '064'
+  created: '2026-04-20'
+  title: Conversion fix — how-to-tell-kittens-gender
+  url: /blogs/cat-advice/how-to-tell-kittens-gender
+  sprint_type: CR
+  kpi:
+    metric: conversion_rate
+    display_label: Conversion rate · 0 sessions
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.5
+    target_display: 0.50%
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: '269 organic sessions with ZERO internal product links — conversion opportunity wasted
+
+
+    Evidence: sessions=269 | product_links=0 | blog_type=Cat Advice
+
+    Engine priority: 6.0  •  Dashboard impact: 17.47'
+  evaluation:
+    window_days: 28
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0452
+    opportunity_type: CONVERSION_OPTIMIZATION
+    detected_at: '2026-05-23T10:10:11.151994+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.47
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
       conversion_rate: 0.0
       aov: 87.5
     projected:
@@ -3062,23 +3071,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'CTR 0.9% vs 3.3% benchmark — 44 clicks/period uncaptured
+  rationale: 'CTR 1.0% vs 3.3% benchmark — 42 clicks/period uncaptured
 
 
-    Evidence: impressions=1857 | CTR=0.9% | expected=3.3% | pos=9.0
+    Evidence: impressions=1838 | CTR=1.0% | expected=3.3% | pos=9.0
 
-    Engine priority: 5.33  •  Dashboard impact: 17.44'
+    Engine priority: 5.33  •  Dashboard impact: 17.41'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0422
+    engine_opportunity_id: OP0424
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160893+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.44
+    detected_at: '2026-05-23T10:10:11.151111+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.41
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3107,68 +3116,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 560 impressions but page 2
+  rationale: 'Ranking pos 10.5 for ''things to do with your cat'' — 553 impressions but page 2
 
 
-    Evidence: pos=10.5 | impressions=560 | clicks=5 | CTR=0.9%
+    Evidence: pos=10.5 | impressions=553 | clicks=5 | CTR=0.9%
 
-    Engine priority: 4.8  •  Dashboard impact: 17.2'
+    Engine priority: 4.8  •  Dashboard impact: 17.16'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0136
+    engine_opportunity_id: OP0140
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154960+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.2
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '071'
-  created: '2026-04-20'
-  title: Push to page 1 — put-a-harness-on-a-cat
-  url: /blogs/adventure-cat-training/put-a-harness-on-a-cat
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.3
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 2
-    target_display: +1/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 9.3 for ''how to put a cat harness on'' — 537 impressions but page 2
-
-
-    Evidence: pos=9.3 | impressions=537 | clicks=3 | CTR=0.6%
-
-    Engine priority: 4.8  •  Dashboard impact: 17.09'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0187
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155527+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.09
+    detected_at: '2026-05-23T10:10:11.144833+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.16
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3197,23 +3161,68 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: '229 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '230 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=229 | product_links=0 | blog_type=Cat Advice
+    Evidence: sessions=230 | product_links=0 | blog_type=Cat Advice
 
-    Engine priority: 6.0  •  Dashboard impact: 17.06'
+    Engine priority: 6.0  •  Dashboard impact: 17.07'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0451
+    engine_opportunity_id: OP0453
     opportunity_type: CONVERSION_OPTIMIZATION
-    detected_at: '2026-05-22T10:10:12.161715+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 17.06
+    detected_at: '2026-05-23T10:10:11.152002+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.07
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '071'
+  created: '2026-04-20'
+  title: Push to page 1 — put-a-harness-on-a-cat
+  url: /blogs/adventure-cat-training/put-a-harness-on-a-cat
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 9.3
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 2
+    target_display: +1/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Copy + internal links
+    estimated_minutes: 45
+  rationale: 'Ranking pos 9.3 for ''how to put a cat harness on'' — 529 impressions but page 2
+
+
+    Evidence: pos=9.3 | impressions=529 | clicks=2 | CTR=0.4%
+
+    Engine priority: 4.8  •  Dashboard impact: 17.05'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0229
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.145900+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 17.05
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3288,23 +3297,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.4 for ''how to teach a cat to sit'' — 504 impressions but page 2
+  rationale: 'Ranking pos 9.4 for ''how to teach a cat to sit'' — 502 impressions but page 2
 
 
-    Evidence: pos=9.4 | impressions=504 | clicks=2 | CTR=0.4%
+    Evidence: pos=9.4 | impressions=502 | clicks=2 | CTR=0.4%
 
-    Engine priority: 4.8  •  Dashboard impact: 16.92'
+    Engine priority: 4.8  •  Dashboard impact: 16.91'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0242
+    engine_opportunity_id: OP0247
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.156149+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 16.92
+    detected_at: '2026-05-23T10:10:11.146126+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 16.91
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3336,7 +3345,7 @@ sprints:
   rationale: 'CTR 0.0% vs 1.0% benchmark — 13 clicks/period uncaptured
 
 
-    Evidence: impressions=1386 | CTR=0.0% | expected=1.0% | pos=10.5
+    Evidence: impressions=1382 | CTR=0.0% | expected=1.0% | pos=10.5
 
     Engine priority: 5.33  •  Dashboard impact: 16.76'
   evaluation:
@@ -3345,10 +3354,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0436
+    engine_opportunity_id: OP0438
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161364+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151629+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 16.76
   revenue_model:
     current:
@@ -3414,7 +3423,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 8188 impressions · pos ?
+    display_label: CTR · 8157 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -3424,24 +3433,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 8188 impressions using default title
+  rationale: 'Missing custom SEO title — 8157 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=8188 | current_title=''How to Find the Best Escape Proof
+    Evidence: seo_title=NOT_SET | impressions=8157 | current_title=''How to Find the Best Escape Proof
     Cat Harness''
 
-    Engine priority: 4.17  •  Dashboard impact: 16.32'
+    Engine priority: 4.17  •  Dashboard impact: 16.31'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0459
+    engine_opportunity_id: OP0461
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161812+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 16.32
+    detected_at: '2026-05-23T10:10:11.152102+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 16.31
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3483,10 +3492,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0277
+    engine_opportunity_id: OP0280
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.156637+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.146667+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 16.3
   revenue_model:
     current:
@@ -3506,7 +3515,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 7610 impressions · pos ?
+    display_label: CTR · 7560 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -3516,24 +3525,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 7610 impressions using default title
+  rationale: 'Missing custom SEO title — 7560 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=7610 | current_title=''Savannah Cat 101 - Personality, Traits,
+    Evidence: seo_title=NOT_SET | impressions=7560 | current_title=''Savannah Cat 101 - Personality, Traits,
     Price & Si''
 
-    Engine priority: 4.17  •  Dashboard impact: 16.19'
+    Engine priority: 4.17  •  Dashboard impact: 16.18'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0476
+    engine_opportunity_id: OP0479
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161981+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 16.19
+    detected_at: '2026-05-23T10:10:11.152280+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 16.18
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3552,7 +3561,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 6929 impressions · pos ?
+    display_label: CTR · 6938 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -3562,10 +3571,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 6929 impressions using default title
+  rationale: 'Missing custom SEO title — 6938 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=6929 | current_title=''Savannah Cat vs. Bengal Cat - Exotic
+    Evidence: seo_title=NOT_SET | impressions=6938 | current_title=''Savannah Cat vs. Bengal Cat - Exotic
     Breeds Side b''
 
     Engine priority: 4.17  •  Dashboard impact: 16.02'
@@ -3575,101 +3584,11 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0478
+    engine_opportunity_id: OP0481
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161997+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.152295+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 16.02
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: 087
-  created: '2026-04-20'
-  title: Push to page 1 — portable-litterboxes
-  url: /blogs/adventure-cat-training/portable-litterboxes
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 16.1
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 1
-    target_display: +1/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 16.1 for ''portable litter box'' — 345 impressions but page 2
-
-
-    Evidence: pos=16.1 | impressions=345 | clicks=2 | CTR=0.6%
-
-    Engine priority: 4.8  •  Dashboard impact: 15.91'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0227
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155985+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.91
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '065'
-  created: '2026-04-20'
-  title: Push to page 1 — cat-birthday-party
-  url: /blogs/fun-stuff/cat-birthday-party
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 12.6
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 3
-    target_display: +2/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 0.4% vs 1.0% benchmark — 5 clicks/period uncaptured
-
-
-    Evidence: impressions=918 | CTR=0.4% | expected=1.0% | pos=12.6
-
-    Engine priority: 5.33  •  Dashboard impact: 15.82'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0430
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161171+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.82
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3688,7 +3607,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.4
+    display_label: Weekly clicks · pos 9.3
     current_value: 0
     current_display: ~0/wk now
     target_value: 3
@@ -3701,24 +3620,69 @@ sprints:
   rationale: 'CTR 0.4% vs 3.3% benchmark — 26 clicks/period uncaptured
 
 
-    Evidence: impressions=910 | CTR=0.4% | expected=3.3% | pos=9.4
+    Evidence: impressions=916 | CTR=0.4% | expected=3.3% | pos=9.3
 
-    Engine priority: 5.33  •  Dashboard impact: 15.8'
+    Engine priority: 5.33  •  Dashboard impact: 15.81'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0420
+    engine_opportunity_id: OP0421
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160863+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.8
+    detected_at: '2026-05-23T10:10:11.151066+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.81
   revenue_model:
     current:
       impressions_30d: 8951
       ctr: 0.2843
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '065'
+  created: '2026-04-20'
+  title: Push to page 1 — cat-birthday-party
+  url: /blogs/fun-stuff/cat-birthday-party
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 12.5
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 3
+    target_display: +2/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 0.4% vs 1.0% benchmark — 5 clicks/period uncaptured
+
+
+    Evidence: impressions=905 | CTR=0.4% | expected=1.0% | pos=12.5
+
+    Engine priority: 5.33  •  Dashboard impact: 15.78'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0432
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151420+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.78
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
       sessions_30d: 17
       conversion_rate: 0.0
       aov: 87.5
@@ -3733,7 +3697,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 5115 impressions · pos ?
+    display_label: CTR · 5087 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -3743,24 +3707,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 5115 impressions using default title
+  rationale: 'Missing custom SEO title — 5087 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=5115 | current_title=''Teaching NO to Your Cat to Stopping
+    Evidence: seo_title=NOT_SET | impressions=5087 | current_title=''Teaching NO to Your Cat to Stopping
     Unwanted Behav''
 
-    Engine priority: 4.17  •  Dashboard impact: 15.47'
+    Engine priority: 4.17  •  Dashboard impact: 15.46'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0468
+    engine_opportunity_id: OP0471
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161904+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.47
+    detected_at: '2026-05-23T10:10:11.152201+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.46
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3779,7 +3743,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 22.9
+    display_label: Weekly clicks · pos 23.0
     current_value: 0
     current_display: ~0/wk now
     target_value: 2
@@ -3792,20 +3756,20 @@ sprints:
   rationale: 'CTR 0.1% vs 0.5% benchmark — 2 clicks/period uncaptured
 
 
-    Evidence: impressions=738 | CTR=0.1% | expected=0.5% | pos=22.9
+    Evidence: impressions=741 | CTR=0.1% | expected=0.5% | pos=23.0
 
-    Engine priority: 5.33  •  Dashboard impact: 15.32'
+    Engine priority: 5.33  •  Dashboard impact: 15.33'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0428
+    engine_opportunity_id: OP0430
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161109+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.32
+    detected_at: '2026-05-23T10:10:11.151356+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.33
   revenue_model:
     current:
       impressions_30d: 8808
@@ -3824,7 +3788,52 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 13.4
+    display_label: Weekly clicks · pos 13.2
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 2
+    target_display: +2/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 0.0% vs 1.0% benchmark — 7 clicks/period uncaptured
+
+
+    Evidence: impressions=702 | CTR=0.0% | expected=1.0% | pos=13.2
+
+    Engine priority: 5.33  •  Dashboard impact: 15.2'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0435
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151549+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.2
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '076'
+  created: '2026-04-20'
+  title: Push to page 1 — adventure-cat-training-guide
+  url: /blogs/adventure-cat-training/adventure-cat-training-guide
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 16.9
     current_value: 0
     current_display: ~0/wk now
     target_value: 2
@@ -3837,20 +3846,111 @@ sprints:
   rationale: 'CTR 0.0% vs 1.0% benchmark — 6 clicks/period uncaptured
 
 
-    Evidence: impressions=693 | CTR=0.0% | expected=1.0% | pos=13.4
+    Evidence: impressions=655 | CTR=0.0% | expected=1.0% | pos=16.9
 
-    Engine priority: 5.33  •  Dashboard impact: 15.17'
+    Engine priority: 5.33  •  Dashboard impact: 15.05'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0433
+    engine_opportunity_id: OP0439
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161294+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 15.17
+    detected_at: '2026-05-23T10:10:11.151649+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.05
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: 087
+  created: '2026-04-20'
+  title: Push to page 1 — portable-litterboxes
+  url: /blogs/adventure-cat-training/portable-litterboxes
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 10.4
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 0
+    target_display: +0/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Copy + internal links
+    estimated_minutes: 45
+  rationale: 'Ranking pos 10.4 for ''foldable litter box'' — 246 impressions but page 2
+
+
+    Evidence: pos=10.4 | impressions=246 | clicks=2 | CTR=0.8%
+
+    Engine priority: 4.8  •  Dashboard impact: 15.03'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0227
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.145882+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 15.03
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: 079
+  created: '2026-04-20'
+  title: Fix title tag — cats-can-eat-these-foods
+  url: /blogs/cat-health/cats-can-eat-these-foods
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 3844 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 3844 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=3844 | current_title=''Foods Your Cat CAN and CAN''T Eat
+    - Don''t Get it Wr''
+
+    Engine priority: 4.17  •  Dashboard impact: 14.95'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0470
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152186+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.95
   revenue_model:
     current:
       impressions_30d: 8649
@@ -3879,204 +3979,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Ranking pos 13.1 for ''how to teach cats their name'' — 240 impressions but page 2
+  rationale: 'Ranking pos 13.1 for ''how to teach cats their name'' — 238 impressions but page 2
 
 
-    Evidence: pos=13.1 | impressions=240 | clicks=1 | CTR=0.4%
+    Evidence: pos=13.1 | impressions=238 | clicks=1 | CTR=0.4%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.96'
+    Engine priority: 4.8  •  Dashboard impact: 14.94'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0324
+    engine_opportunity_id: OP0323
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.157232+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.96
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: 079
-  created: '2026-04-20'
-  title: Fix title tag — cats-can-eat-these-foods
-  url: /blogs/cat-health/cats-can-eat-these-foods
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 3822 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 3822 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=3822 | current_title=''Foods Your Cat CAN and CAN''T Eat
-    - Don''t Get it Wr''
-
-    Engine priority: 4.17  •  Dashboard impact: 14.94'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0467
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161884+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.147308+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 14.94
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '076'
-  created: '2026-04-20'
-  title: Push to page 1 — adventure-cat-training-guide
-  url: /blogs/adventure-cat-training/adventure-cat-training-guide
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 17.0
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 2
-    target_display: +1/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 0.0% vs 1.0% benchmark — 6 clicks/period uncaptured
-
-
-    Evidence: impressions=623 | CTR=0.0% | expected=1.0% | pos=17.0
-
-    Engine priority: 5.33  •  Dashboard impact: 14.93'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0437
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161384+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.93
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: 098
-  created: '2026-04-20'
-  title: Push to page 1 — homepage
-  url: ''
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 6.7
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 0
-    target_display: +0/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 6.7 for ''zeppelin cat carrier'' — 231 impressions but page 2
-
-
-    Evidence: pos=6.7 | impressions=231 | clicks=19 | CTR=8.2%
-
-    Engine priority: 4.8  •  Dashboard impact: 14.86'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0032
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.153825+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.86
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '060'
-  created: '2026-04-20'
-  title: Push to page 1 — top-cat-breeds
-  url: /blogs/cat-breeds/top-cat-breeds
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 8.3
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 2
-    target_display: +1/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 1.5% vs 3.8% benchmark — 13 clicks/period uncaptured
-
-
-    Evidence: impressions=588 | CTR=1.5% | expected=3.8% | pos=8.3
-
-    Engine priority: 5.33  •  Dashboard impact: 14.8'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0424
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160920+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.8
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4105,23 +4024,113 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 5.7 for ''how to train a bengal cat'' — 224 impressions but page 2
+  rationale: 'Ranking pos 5.7 for ''how to train a bengal cat'' — 227 impressions but page 2
 
 
-    Evidence: pos=5.7 | impressions=224 | clicks=4 | CTR=1.8%
+    Evidence: pos=5.7 | impressions=227 | clicks=4 | CTR=1.8%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.78'
+    Engine priority: 4.8  •  Dashboard impact: 14.82'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0154
+    engine_opportunity_id: OP0155
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155165+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.78
+    detected_at: '2026-05-23T10:10:11.144998+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.82
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: 098
+  created: '2026-04-20'
+  title: Push to page 1 — homepage
+  url: ''
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 6.7
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 0
+    target_display: +0/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Copy + internal links
+    estimated_minutes: 45
+  rationale: 'Ranking pos 6.7 for ''zeppelin cat carrier'' — 226 impressions but page 2
+
+
+    Evidence: pos=6.7 | impressions=226 | clicks=19 | CTR=8.4%
+
+    Engine priority: 4.8  •  Dashboard impact: 14.81'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0032
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.143658+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.81
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '060'
+  created: '2026-04-20'
+  title: Push to page 1 — top-cat-breeds
+  url: /blogs/cat-breeds/top-cat-breeds
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 8.3
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 2
+    target_display: +1/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 1.6% vs 3.8% benchmark — 13 clicks/period uncaptured
+
+
+    Evidence: impressions=579 | CTR=1.6% | expected=3.8% | pos=8.3
+
+    Engine priority: 5.33  •  Dashboard impact: 14.76'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0426
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151140+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.76
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4162,10 +4171,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0325
+    engine_opportunity_id: OP0324
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.157241+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.147318+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 14.68
   revenue_model:
     current:
@@ -4195,23 +4204,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.7 for ''best kitten harness'' — 211 impressions but page 2
+  rationale: 'Ranking pos 9.7 for ''best kitten harness'' — 212 impressions but page 2
 
 
-    Evidence: pos=9.7 | impressions=211 | clicks=6 | CTR=2.8%
+    Evidence: pos=9.7 | impressions=212 | clicks=6 | CTR=2.8%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.63'
+    Engine priority: 4.8  •  Dashboard impact: 14.64'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0107
+    engine_opportunity_id: OP0109
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154645+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.63
+    detected_at: '2026-05-23T10:10:11.144505+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.64
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4230,7 +4239,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 41.4
+    display_label: Weekly clicks · pos 41.6
     current_value: 0
     current_display: ~0/wk now
     target_value: 2
@@ -4243,20 +4252,20 @@ sprints:
   rationale: 'CTR 0.0% vs 0.5% benchmark — 2 clicks/period uncaptured
 
 
-    Evidence: impressions=542 | CTR=0.0% | expected=0.5% | pos=41.4
+    Evidence: impressions=538 | CTR=0.0% | expected=0.5% | pos=41.6
 
-    Engine priority: 5.33  •  Dashboard impact: 14.61'
+    Engine priority: 5.33  •  Dashboard impact: 14.6'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0438
+    engine_opportunity_id: OP0440
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161401+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.61
+    detected_at: '2026-05-23T10:10:11.151667+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.6
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4275,7 +4284,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 11.0
+    display_label: Weekly clicks · pos 10.9
     current_value: 0
     current_display: ~0/wk now
     target_value: 0
@@ -4285,12 +4294,12 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 11.0 for ''persian cat history'' — 201 impressions but page 2
+  rationale: 'Ranking pos 10.9 for ''persian cat history'' — 198 impressions but page 2
 
 
-    Evidence: pos=11.0 | impressions=201 | clicks=1 | CTR=0.5%
+    Evidence: pos=10.9 | impressions=198 | clicks=1 | CTR=0.5%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.5'
+    Engine priority: 4.8  •  Dashboard impact: 14.46'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
@@ -4299,9 +4308,9 @@ sprints:
   _source:
     engine_opportunity_id: OP0318
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.157147+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.5
+    detected_at: '2026-05-23T10:10:11.147215+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.46
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4366,7 +4375,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 17.9
+    display_label: Weekly clicks · pos 17.8
     current_value: 0
     current_display: ~0/wk now
     target_value: 0
@@ -4376,10 +4385,10 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 17.9 for ''is cat grass good for cats'' — 190 impressions but page 2
+  rationale: 'Ranking pos 17.8 for ''is cat grass good for cats'' — 190 impressions but page 2
 
 
-    Evidence: pos=17.9 | impressions=190 | clicks=1 | CTR=0.5%
+    Evidence: pos=17.8 | impressions=190 | clicks=2 | CTR=1.1%
 
     Engine priority: 4.8  •  Dashboard impact: 14.36'
   evaluation:
@@ -4388,10 +4397,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0322
+    engine_opportunity_id: OP0240
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.157205+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.146046+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 14.36
   revenue_model:
     current:
@@ -4450,52 +4459,6 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
-- id: 099
-  created: '2026-04-20'
-  title: Fix title tag — zeppelin-cat-carrier
-  url: /blogs/product-reviews/zeppelin-cat-carrier
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 2646 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 2646 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=2646 | current_title=''Zeppelin Cat Carrier Review - Deep
-    Dive''
-
-    Engine priority: 4.17  •  Dashboard impact: 14.28'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0471
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161930+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.28
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
 - id: '102'
   created: '2026-04-20'
   title: Push to page 1 — bengal-cat-tips
@@ -4513,22 +4476,68 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 9.3 for ''why are bengal cats so vocal'' — 183 impressions but page 2
+  rationale: 'Ranking pos 9.3 for ''why are bengal cats so vocal'' — 186 impressions but page 2
 
 
-    Evidence: pos=9.3 | impressions=183 | clicks=3 | CTR=1.6%
+    Evidence: pos=9.3 | impressions=186 | clicks=3 | CTR=1.6%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.26'
+    Engine priority: 4.8  •  Dashboard impact: 14.3'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0193
+    engine_opportunity_id: OP0190
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155593+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.145406+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.3
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: 099
+  created: '2026-04-20'
+  title: Fix title tag — zeppelin-cat-carrier
+  url: /blogs/product-reviews/zeppelin-cat-carrier
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 2615 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 2615 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=2615 | current_title=''Zeppelin Cat Carrier Review - Deep
+    Dive''
+
+    Engine priority: 4.17  •  Dashboard impact: 14.26'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0474
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152228+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 14.26
   revenue_model:
     current:
@@ -4561,7 +4570,7 @@ sprints:
   rationale: 'CTR 0.0% vs 0.5% benchmark — 2 clicks/period uncaptured
 
 
-    Evidence: impressions=462 | CTR=0.0% | expected=0.5% | pos=26.3
+    Evidence: impressions=461 | CTR=0.0% | expected=0.5% | pos=26.3
 
     Engine priority: 5.33  •  Dashboard impact: 14.25'
   evaluation:
@@ -4570,10 +4579,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0434
+    engine_opportunity_id: OP0436
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161322+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.151582+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 14.25
   revenue_model:
     current:
@@ -4593,7 +4602,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 25.2
+    display_label: Weekly clicks · pos 25.3
     current_value: 0
     current_display: ~0/wk now
     target_value: 1
@@ -4606,20 +4615,20 @@ sprints:
   rationale: 'CTR 0.0% vs 0.5% benchmark — 2 clicks/period uncaptured
 
 
-    Evidence: impressions=444 | CTR=0.0% | expected=0.5% | pos=25.2
+    Evidence: impressions=446 | CTR=0.0% | expected=0.5% | pos=25.3
 
-    Engine priority: 5.33  •  Dashboard impact: 14.16'
+    Engine priority: 5.33  •  Dashboard impact: 14.17'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0435
+    engine_opportunity_id: OP0437
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161333+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.16
+    detected_at: '2026-05-23T10:10:11.151595+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.17
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4648,69 +4657,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 11.4 for ''cat training books'' — 171 impressions but page 2
+  rationale: 'Ranking pos 11.4 for ''cat training books'' — 170 impressions but page 2
 
 
-    Evidence: pos=11.4 | impressions=171 | clicks=1 | CTR=0.6%
+    Evidence: pos=11.4 | impressions=170 | clicks=1 | CTR=0.6%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.09'
+    Engine priority: 4.8  •  Dashboard impact: 14.07'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0326
+    engine_opportunity_id: OP0325
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.157254+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.09
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: 096
-  created: '2026-04-20'
-  title: Fix title tag — female-cat-101
-  url: /blogs/cat-advice/female-cat-101
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 2319 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 2319 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=2319 | current_title=''Female Cat 101 | Behavior, Personality
-    & Traits of''
-
-    Engine priority: 4.17  •  Dashboard impact: 14.04'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0473
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161949+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.04
+    detected_at: '2026-05-23T10:10:11.147332+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.07
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4739,23 +4702,69 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'Ranking pos 7.6 for ''facts about male cats'' — 166 impressions but page 2
+  rationale: 'Ranking pos 7.6 for ''facts about male cats'' — 167 impressions but page 2
 
 
-    Evidence: pos=7.6 | impressions=166 | clicks=4 | CTR=2.4%
+    Evidence: pos=7.6 | impressions=167 | clicks=4 | CTR=2.4%
 
-    Engine priority: 4.8  •  Dashboard impact: 14.01'
+    Engine priority: 4.8  •  Dashboard impact: 14.03'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0156
+    engine_opportunity_id: OP0157
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.155184+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 14.01
+    detected_at: '2026-05-23T10:10:11.145018+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.03
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: 096
+  created: '2026-04-20'
+  title: Fix title tag — female-cat-101
+  url: /blogs/cat-advice/female-cat-101
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 2288 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 2288 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=2288 | current_title=''Female Cat 101 | Behavior, Personality
+    & Traits of''
+
+    Engine priority: 4.17  •  Dashboard impact: 14.02'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0476
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152248+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 14.02
   revenue_model:
     current:
       impressions_30d: 8649
@@ -4774,7 +4783,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.0
+    display_label: Weekly clicks · pos 9.1
     current_value: 0
     current_display: ~0/wk now
     target_value: 1
@@ -4787,115 +4796,25 @@ sprints:
   rationale: 'CTR 0.2% vs 3.3% benchmark — 12 clicks/period uncaptured
 
 
-    Evidence: impressions=409 | CTR=0.2% | expected=3.3% | pos=9.0
+    Evidence: impressions=406 | CTR=0.2% | expected=3.3% | pos=9.1
 
-    Engine priority: 5.33  •  Dashboard impact: 13.98'
+    Engine priority: 5.33  •  Dashboard impact: 13.96'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0431
+    engine_opportunity_id: OP0433
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.161185+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 13.98
+    detected_at: '2026-05-23T10:10:11.151436+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 13.96
   revenue_model:
     current:
       impressions_30d: 9118
       ctr: 0.2827
       sessions_30d: 20
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '103'
-  created: '2026-04-20'
-  title: Push to page 1 — bright-vs-neutral-collars-for-cats
-  url: /blogs/cat-advice/bright-vs-neutral-collars-for-cats
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 6.4
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 1
-    target_display: +1/wk
-    unit: sessions/week
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'CTR 2.5% vs 5.3% benchmark — 11 clicks/period uncaptured
-
-
-    Evidence: impressions=404 | CTR=2.5% | expected=5.3% | pos=6.4
-
-    Engine priority: 5.33  •  Dashboard impact: 13.95'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0421
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160880+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 13.95
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: 097
-  created: '2026-04-20'
-  title: Push to page 1 — cat-breed-directory
-  url: /pages/cat-breed-directory
-  sprint_type: RNK
-  kpi:
-    metric: organic_clicks_weekly
-    display_label: Weekly clicks · pos 9.8
-    current_value: 0
-    current_display: ~0/wk now
-    target_value: 0
-    target_display: +0/wk
-    unit: sessions/week
-  effort:
-    level: MEDIUM
-    description: Copy + internal links
-    estimated_minutes: 45
-  rationale: 'Ranking pos 9.8 for ''cat breed identifier chart'' — 159 impressions but page 2
-
-
-    Evidence: pos=9.8 | impressions=159 | clicks=2 | CTR=1.3%
-
-    Engine priority: 4.8  •  Dashboard impact: 13.9'
-  evaluation:
-    window_days: 42
-    success_threshold_pct: 15
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0272
-    opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.156515+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 13.9
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
       conversion_rate: 0.0
       aov: 87.5
     projected:
@@ -4995,6 +4914,51 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
+- id: 097
+  created: '2026-04-20'
+  title: Push to page 1 — cat-breed-directory
+  url: /pages/cat-breed-directory
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 9.8
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 0
+    target_display: +0/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Copy + internal links
+    estimated_minutes: 45
+  rationale: 'Ranking pos 9.8 for ''cat breed identifier chart'' — 157 impressions but page 2
+
+
+    Evidence: pos=9.8 | impressions=157 | clicks=2 | CTR=1.3%
+
+    Engine priority: 4.8  •  Dashboard impact: 13.87'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0275
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.146510+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 13.87
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
 - id: 081
   created: '2026-04-20'
   title: Push to page 1 — leaving-your-cat-alone-tips-to-prevent-separation-anxiety
@@ -5024,10 +4988,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0138
+    engine_opportunity_id: OP0142
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.154978+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.144851+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 13.85
   revenue_model:
     current:
@@ -5047,7 +5011,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 2056 impressions · pos ?
+    display_label: CTR · 2037 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5057,24 +5021,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 2056 impressions using default title
+  rationale: 'Missing custom SEO title — 2037 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=2056 | current_title=''20 Cat Harness Training Tips NOBODY
+    Evidence: seo_title=NOT_SET | impressions=2037 | current_title=''20 Cat Harness Training Tips NOBODY
     Tells You (but''
 
-    Engine priority: 4.17  •  Dashboard impact: 13.82'
+    Engine priority: 4.17  •  Dashboard impact: 13.81'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0458
+    engine_opportunity_id: OP0460
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161805+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 13.82
+    detected_at: '2026-05-23T10:10:11.152095+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 13.81
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5167,6 +5131,51 @@ sprints:
     last_refreshed: '2026-05-05T10:10:17Z'
     dashboard_impact: 13.68
     stale_since: '2026-05-06T10:10:15Z'
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '103'
+  created: '2026-04-20'
+  title: Push to page 1 — bright-vs-neutral-collars-for-cats
+  url: /blogs/cat-advice/bright-vs-neutral-collars-for-cats
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 6.5
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 1
+    target_display: +1/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'CTR 2.5% vs 5.3% benchmark — 9 clicks/period uncaptured
+
+
+    Evidence: impressions=356 | CTR=2.5% | expected=5.3% | pos=6.5
+
+    Engine priority: 5.33  •  Dashboard impact: 13.66'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0422
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-05-23T10:10:11.151084+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 13.66
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5287,23 +5296,23 @@ sprints:
     level: MEDIUM
     description: Copy + internal links
     estimated_minutes: 45
-  rationale: 'CTR 1.6% vs 2.8% benchmark — 3 clicks/period uncaptured
+  rationale: 'CTR 1.3% vs 2.8% benchmark — 4 clicks/period uncaptured
 
 
-    Evidence: impressions=310 | CTR=1.6% | expected=2.8% | pos=9.5
+    Evidence: impressions=306 | CTR=1.3% | expected=2.8% | pos=9.5
 
-    Engine priority: 5.33  •  Dashboard impact: 13.35'
+    Engine priority: 5.33  •  Dashboard impact: 13.32'
   evaluation:
     window_days: 42
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0417
+    engine_opportunity_id: OP0420
     opportunity_type: TRAFFIC_GROWTH
-    detected_at: '2026-05-22T10:10:12.160789+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 13.35
+    detected_at: '2026-05-23T10:10:11.151029+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 13.32
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5322,7 +5331,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 1239 impressions · pos ?
+    display_label: CTR · 1232 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5332,24 +5341,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 1239 impressions using default title
+  rationale: 'Missing custom SEO title — 1232 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1239 | current_title=''How to Put a Harness on a Cat - Easy
+    Evidence: seo_title=NOT_SET | impressions=1232 | current_title=''How to Put a Harness on a Cat - Easy
     Way to Put On''
 
-    Engine priority: 4.17  •  Dashboard impact: 12.91'
+    Engine priority: 4.17  •  Dashboard impact: 12.9'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0456
+    engine_opportunity_id: OP0458
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161786+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 12.91
+    detected_at: '2026-05-23T10:10:11.152077+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 12.9
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5368,7 +5377,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 1228 impressions · pos ?
+    display_label: CTR · 1227 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5378,10 +5387,10 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 1228 impressions using default title
+  rationale: 'Missing custom SEO title — 1227 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=1228 | current_title=''Leaving Your Cat Alone - A Complete
+    Evidence: seo_title=NOT_SET | impressions=1227 | current_title=''Leaving Your Cat Alone - A Complete
     Guide to Preve''
 
     Engine priority: 4.17  •  Dashboard impact: 12.9'
@@ -5391,10 +5400,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0466
+    engine_opportunity_id: OP0469
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161876+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.152176+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 12.9
   revenue_model:
     current:
@@ -5414,7 +5423,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 999 impressions · pos ?
+    display_label: CTR · 993 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5424,24 +5433,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 999 impressions using default title
+  rationale: 'Missing custom SEO title — 993 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=999 | current_title=''My Cat Doesn''t Like Treats - Train
+    Evidence: seo_title=NOT_SET | impressions=993 | current_title=''My Cat Doesn''t Like Treats - Train
     a Cat That''s NO''
 
-    Engine priority: 4.17  •  Dashboard impact: 12.53'
+    Engine priority: 4.17  •  Dashboard impact: 12.52'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0462
+    engine_opportunity_id: OP0464
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161838+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 12.53
+    detected_at: '2026-05-23T10:10:11.152133+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 12.52
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5460,7 +5469,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 878 impressions · pos ?
+    display_label: CTR · 882 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5470,24 +5479,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 878 impressions using default title
+  rationale: 'Missing custom SEO title — 882 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=878 | current_title=''Ultimate Method To Teach Your Cat
+    Evidence: seo_title=NOT_SET | impressions=882 | current_title=''Ultimate Method To Teach Your Cat
     to Walk on a Lea''
 
-    Engine priority: 4.17  •  Dashboard impact: 12.29'
+    Engine priority: 4.17  •  Dashboard impact: 12.3'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0453
+    engine_opportunity_id: OP0455
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161758+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 12.29
+    detected_at: '2026-05-23T10:10:11.152048+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 12.3
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5506,7 +5515,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 738 impressions · pos ?
+    display_label: CTR · 741 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5516,24 +5525,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 738 impressions using default title
+  rationale: 'Missing custom SEO title — 741 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=738 | current_title=''Camping with Cats - Training, Gear
+    Evidence: seo_title=NOT_SET | impressions=741 | current_title=''Camping with Cats - Training, Gear
     and Tips to Cam''
 
-    Engine priority: 4.17  •  Dashboard impact: 11.98'
+    Engine priority: 4.17  •  Dashboard impact: 11.99'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0455
+    engine_opportunity_id: OP0457
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161774+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.98
+    detected_at: '2026-05-23T10:10:11.152068+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.99
   revenue_model:
     current:
       impressions_30d: 8808
@@ -5552,7 +5561,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 686 impressions · pos ?
+    display_label: CTR · 679 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5562,24 +5571,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 686 impressions using default title
+  rationale: 'Missing custom SEO title — 679 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=686 | current_title=''Turn Your Cat into a Shoulder Cat
+    Evidence: seo_title=NOT_SET | impressions=679 | current_title=''Turn Your Cat into a Shoulder Cat
     - Jump on Should''
 
-    Engine priority: 4.17  •  Dashboard impact: 11.85'
+    Engine priority: 4.17  •  Dashboard impact: 11.84'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0464
+    engine_opportunity_id: OP0466
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161859+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.85
+    detected_at: '2026-05-23T10:10:11.152151+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.84
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5598,7 +5607,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 623 impressions · pos ?
+    display_label: CTR · 655 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5608,70 +5617,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 623 impressions using default title
+  rationale: 'Missing custom SEO title — 655 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=623 | current_title=''What is an Adventure Cat | Cat Training
+    Evidence: seo_title=NOT_SET | impressions=655 | current_title=''What is an Adventure Cat | Cat Training
     Guide''
 
-    Engine priority: 4.17  •  Dashboard impact: 11.68'
+    Engine priority: 4.17  •  Dashboard impact: 11.77'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0454
+    engine_opportunity_id: OP0456
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161767+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.68
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '129'
-  created: '2026-04-20'
-  title: Fix title tag — persian-cat-101
-  url: /blogs/cat-breeds/persian-cat-101
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 564 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 564 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=564 | current_title=''Persian Cat 101 - History, Personality
-    and Traits''
-
-    Engine priority: 4.17  •  Dashboard impact: 11.5'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0477
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161990+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.5
+    detected_at: '2026-05-23T10:10:11.152060+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.77
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5713,11 +5676,57 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0472
+    engine_opportunity_id: OP0475
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161940+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.152236+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 11.49
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '129'
+  created: '2026-04-20'
+  title: Fix title tag — persian-cat-101
+  url: /blogs/cat-breeds/persian-cat-101
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 556 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 556 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=556 | current_title=''Persian Cat 101 - History, Personality
+    and Traits''
+
+    Engine priority: 4.17  •  Dashboard impact: 11.48'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0480
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152288+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.48
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5736,7 +5745,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 542 impressions · pos ?
+    display_label: CTR · 538 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5746,24 +5755,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 542 impressions using default title
+  rationale: 'Missing custom SEO title — 538 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=542 | current_title=''Benefits of Using a Cat Harness -
+    Evidence: seo_title=NOT_SET | impressions=538 | current_title=''Benefits of Using a Cat Harness -
     Enjoying the Gre''
 
-    Engine priority: 4.17  •  Dashboard impact: 11.43'
+    Engine priority: 4.17  •  Dashboard impact: 11.42'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0457
+    engine_opportunity_id: OP0459
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161797+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.43
+    detected_at: '2026-05-23T10:10:11.152087+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.42
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5782,7 +5791,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 468 impressions · pos ?
+    display_label: CTR · 470 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5792,70 +5801,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 468 impressions using default title
+  rationale: 'Missing custom SEO title — 470 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=468 | current_title=''Train Your Cat for Agility: A Step-by-Step
+    Evidence: seo_title=NOT_SET | impressions=470 | current_title=''Train Your Cat for Agility: A Step-by-Step
     Guide''
 
-    Engine priority: 4.17  •  Dashboard impact: 11.17'
+    Engine priority: 4.17  •  Dashboard impact: 11.18'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0465
+    engine_opportunity_id: OP0467
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161867+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 11.17
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '123'
-  created: '2026-04-20'
-  title: Fix title tag — bright-vs-neutral-collars-for-cats
-  url: /blogs/cat-advice/bright-vs-neutral-collars-for-cats
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 404 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 404 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=404 | current_title=''How to Choose the Best Collar Color
-    for Your Cat''
-
-    Engine priority: 4.17  •  Dashboard impact: 10.91'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0475
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161971+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 10.91
+    detected_at: '2026-05-23T10:10:11.152158+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 11.18
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5874,7 +5837,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 381 impressions · pos ?
+    display_label: CTR · 380 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5884,24 +5847,70 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 381 impressions using default title
+  rationale: 'Missing custom SEO title — 380 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=381 | current_title=''Don´t Read Anything Else - 10 Must-Read
+    Evidence: seo_title=NOT_SET | impressions=380 | current_title=''Don´t Read Anything Else - 10 Must-Read
     Cat Traini''
 
-    Engine priority: 4.17  •  Dashboard impact: 10.81'
+    Engine priority: 4.17  •  Dashboard impact: 10.8'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0463
+    engine_opportunity_id: OP0465
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161848+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 10.81
+    detected_at: '2026-05-23T10:10:11.152141+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 10.8
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '123'
+  created: '2026-04-20'
+  title: Fix title tag — bright-vs-neutral-collars-for-cats
+  url: /blogs/cat-advice/bright-vs-neutral-collars-for-cats
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 356 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 356 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=356 | current_title=''How to Choose the Best Collar Color
+    for Your Cat''
+
+    Engine priority: 4.17  •  Dashboard impact: 10.69'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0478
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152271+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 10.69
   revenue_model:
     current:
       impressions_30d: 8649
@@ -5920,7 +5929,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 310 impressions · pos ?
+    display_label: CTR · 306 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -5930,24 +5939,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 310 impressions using default title
+  rationale: 'Missing custom SEO title — 306 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=310 | current_title=''Teach Your Cat to Use the New Cat
+    Evidence: seo_title=NOT_SET | impressions=306 | current_title=''Teach Your Cat to Use the New Cat
     Tree''
 
-    Engine priority: 4.17  •  Dashboard impact: 10.45'
+    Engine priority: 4.17  •  Dashboard impact: 10.42'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0474
+    engine_opportunity_id: OP0477
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161958+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 10.45
+    detected_at: '2026-05-23T10:10:11.152262+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 10.42
   revenue_model:
     current:
       impressions_30d: 8649
@@ -6060,7 +6069,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 212 impressions · pos ?
+    display_label: CTR · 209 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -6070,23 +6079,23 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 212 impressions using default title
+  rationale: 'Missing custom SEO title — 209 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=212 | current_title=''Making Cat Videos that Go Viral (Step-by-Step)''
+    Evidence: seo_title=NOT_SET | impressions=209 | current_title=''Making Cat Videos that Go Viral (Step-by-Step)''
 
-    Engine priority: 4.17  •  Dashboard impact: 9.78'
+    Engine priority: 4.17  •  Dashboard impact: 9.76'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0479
+    engine_opportunity_id: OP0482
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.162010+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 9.78
+    detected_at: '2026-05-23T10:10:11.152308+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 9.76
   revenue_model:
     current:
       impressions_30d: 8649
@@ -6105,7 +6114,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 202 impressions · pos ?
+    display_label: CTR · 200 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -6115,24 +6124,70 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 202 impressions using default title
+  rationale: 'Missing custom SEO title — 200 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=202 | current_title=''How to STOP Your Cat from Eating Your
+    Evidence: seo_title=NOT_SET | impressions=200 | current_title=''How to STOP Your Cat from Eating Your
     Plants (Prov''
 
-    Engine priority: 4.17  •  Dashboard impact: 9.7'
+    Engine priority: 4.17  •  Dashboard impact: 9.68'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0469
+    engine_opportunity_id: OP0472
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161911+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 9.7
+    detected_at: '2026-05-23T10:10:11.152210+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 9.68
+  revenue_model:
+    current:
+      impressions_30d: 8649
+      ctr: 0.2762
+      sessions_30d: 17
+      conversion_rate: 0.0
+      aov: 87.5
+    projected:
+      impressions_multiplier: 3.0
+      ctr: 0.06
+    confidence: medium
+- id: '131'
+  created: '2026-04-20'
+  title: Fix title tag — cat-does-not-listen
+  url: /blogs/clicker-training-cats/cat-does-not-listen
+  sprint_type: CTR
+  kpi:
+    metric: ctr
+    display_label: CTR · 165 impressions · pos ?
+    current_value: 0.0
+    current_display: 0.00% now
+    target_value: 0.0
+    target_display: 0.0%+
+    unit: percent
+  effort:
+    level: HIGH
+    description: Full rewrite / restructure
+    estimated_minutes: 120
+  rationale: 'Missing custom SEO title — 165 impressions using default title
+
+
+    Evidence: seo_title=NOT_SET | impressions=165 | current_title=''Reasons Why Your Cat Does Not Listen
+    to You''
+
+    Engine priority: 4.17  •  Dashboard impact: 9.35'
+  evaluation:
+    window_days: 21
+    success_threshold_pct: 30
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    engine_opportunity_id: OP0468
+    opportunity_type: SEARCH_VISIBILITY
+    detected_at: '2026-05-23T10:10:11.152166+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 9.35
   revenue_model:
     current:
       impressions_30d: 8649
@@ -6198,7 +6253,7 @@ sprints:
   sprint_type: CTR
   kpi:
     metric: ctr
-    display_label: CTR · 156 impressions · pos ?
+    display_label: CTR · 154 impressions · pos ?
     current_value: 0.0
     current_display: 0.00% now
     target_value: 0.0
@@ -6208,71 +6263,24 @@ sprints:
     level: HIGH
     description: Full rewrite / restructure
     estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 156 impressions using default title
+  rationale: 'Missing custom SEO title — 154 impressions using default title
 
 
-    Evidence: seo_title=NOT_SET | impressions=156 | current_title=''Cat Body Language Explained - 18 Things
+    Evidence: seo_title=NOT_SET | impressions=154 | current_title=''Cat Body Language Explained - 18 Things
     Your Cat i''
 
-    Engine priority: 4.17  •  Dashboard impact: 9.26'
+    Engine priority: 4.17  •  Dashboard impact: 9.24'
   evaluation:
     window_days: 21
     success_threshold_pct: 30
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0460
+    engine_opportunity_id: OP0462
     opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-05-22T10:10:12.161822+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
-    dashboard_impact: 9.26
-  revenue_model:
-    current:
-      impressions_30d: 8649
-      ctr: 0.2762
-      sessions_30d: 17
-      conversion_rate: 0.0
-      aov: 87.5
-    projected:
-      impressions_multiplier: 3.0
-      ctr: 0.06
-    confidence: medium
-- id: '131'
-  created: '2026-04-20'
-  title: Fix title tag — cat-does-not-listen
-  url: /blogs/clicker-training-cats/cat-does-not-listen
-  sprint_type: CTR
-  kpi:
-    metric: ctr
-    display_label: CTR · 117 impressions · pos ?
-    current_value: 0.0
-    current_display: 0.00% now
-    target_value: 0.0
-    target_display: 0.0%+
-    unit: percent
-  effort:
-    level: HIGH
-    description: Full rewrite / restructure
-    estimated_minutes: 120
-  rationale: 'Missing custom SEO title — 117 impressions using default title
-
-
-    Evidence: seo_title=NOT_SET | impressions=117 | current_title=''Reasons Why Your Cat Does Not Listen
-    to You''
-
-    Engine priority: 4.17  •  Dashboard impact: 8.77'
-  evaluation:
-    window_days: 21
-    success_threshold_pct: 30
-    neutral_threshold_pct: 0
-  evidence_urls: []
-  _source:
-    engine_opportunity_id: OP0467
-    opportunity_type: SEARCH_VISIBILITY
-    detected_at: '2026-04-29T12:47:56.522843+00:00'
-    last_refreshed: '2026-04-29T12:48:00Z'
-    dashboard_impact: 8.77
-    stale_since: '2026-04-30T10:00:16Z'
+    detected_at: '2026-05-23T10:10:11.152115+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
+    dashboard_impact: 9.24
   revenue_model:
     current:
       impressions_30d: 8649
@@ -6291,7 +6299,7 @@ sprints:
   sprint_type: RNK
   kpi:
     metric: consolidated_page_clicks
-    display_label: Clicks on consolidated page · 14911 total impressions
+    display_label: Clicks on consolidated page · 14822 total impressions
     current_value: 0
     current_display: split across pages
     target_value: 34
@@ -6304,7 +6312,7 @@ sprints:
   rationale: 'Keyword cannibalization: ''outdoor bengal'' split across 16 pages — consolidate
 
 
-    Evidence: pages=16 | total_impressions=14911
+    Evidence: pages=16 | total_impressions=14822
 
     Engine priority: 3.0  •  Dashboard impact: 3.9'
   evaluation:
@@ -6313,10 +6321,10 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0480
+    engine_opportunity_id: OP0483
     opportunity_type: SERP_DISCOVERY
-    detected_at: '2026-05-22T10:10:12.164186+00:00'
-    last_refreshed: '2026-05-22T10:10:17Z'
+    detected_at: '2026-05-23T10:10:11.154895+00:00'
+    last_refreshed: '2026-05-23T10:10:15Z'
     dashboard_impact: 3.9
   revenue_model:
     current:
