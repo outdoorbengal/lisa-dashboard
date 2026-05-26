@@ -30,9 +30,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: null
-    days_elapsed: 40
+    days_elapsed: 41
     note: no impressions in window
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
@@ -61,9 +61,9 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: null
-    days_elapsed: 34
+    days_elapsed: 35
     note: no sessions since launch
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
@@ -95,9 +95,9 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: null
-    days_elapsed: 33
+    days_elapsed: 34
     note: no impressions in window
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
@@ -126,10 +126,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: 0.0
-    days_elapsed: 33
-    note: 0 clicks over 33d
+    days_elapsed: 34
+    note: 0 clicks over 34d
 - id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
@@ -158,9 +158,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: null
-    days_elapsed: 32
+    days_elapsed: 33
     note: no impressions in window
 - id: '135'
   name: Push to page 1 — extra-safe-cat-harness
@@ -189,7 +189,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-05-25T10:12:15Z'
+    last_measured: '2026-05-26T10:10:06Z'
     current_value: 0.0
-    days_elapsed: 32
-    note: 0 clicks over 32d
+    days_elapsed: 33
+    note: 0 clicks over 33d
