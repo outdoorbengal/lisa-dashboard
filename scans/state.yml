@@ -9,20 +9,20 @@ current_week:
   - 0
   - 0
   - 0
-  - 0
+  - 205
   - 0
   - 0
   sources:
   - name: Google Search Console
-    connected: false
-    last_pull: '2026-05-24T10:11:28Z'
+    connected: true
+    last_pull: '2026-05-29T10:10:49Z'
   - name: Google Analytics 4
-    connected: false
-    last_pull: '2026-05-25T10:12:36Z'
+    connected: true
+    last_pull: '2026-05-29T10:10:49Z'
   - name: Shopify Admin API
-    connected: false
-    last_pull: '2026-05-25T10:12:36Z'
+    connected: true
+    last_pull: '2026-05-29T10:10:49Z'
   - name: Ahrefs API
     connected: true
     last_pull: '2026-04-19T06:00:00Z'
-  opportunities_discovered: 139
+  opportunities_discovered: 140
