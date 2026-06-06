@@ -30,9 +30,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
+    last_measured: '2026-06-06T10:10:15Z'
     current_value: 12.93
-    days_elapsed: 51
+    days_elapsed: 52
     note: 701 clicks / 5421 impressions
 - id: '004'
   name: Conversion fix — zeppelin-cat-carrier
@@ -61,10 +61,10 @@ experiments:
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
-    current_value: 1.17
-    days_elapsed: 45
-    note: 1712 sessions this window
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 1.14
+    days_elapsed: 46
+    note: 1748 sessions this window
 - id: '005'
   name: Meta description rewrite — extra-safe-cat-harness
   sprint_type: CTR
@@ -95,9 +95,9 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
+    last_measured: '2026-06-06T10:10:15Z'
     current_value: 4.58
-    days_elapsed: 44
+    days_elapsed: 45
     note: 2046 clicks / 44631 impressions
 - id: '007'
   name: Push to page 1 — keeper-airtag-holder-for-cat-collar
@@ -126,10 +126,10 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
+    last_measured: '2026-06-06T10:10:15Z'
     current_value: 0.2
-    days_elapsed: 44
-    note: 1 clicks over 44d
+    days_elapsed: 45
+    note: 1 clicks over 45d
 - id: 008
   name: Collection page improvement — adventure-cat-gear
   sprint_type: RNK
@@ -158,9 +158,9 @@ experiments:
     success_threshold_pct: 10
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
+    last_measured: '2026-06-06T10:10:15Z'
     current_value: 982
-    days_elapsed: 43
+    days_elapsed: 44
     note: 982 impressions | 24 clicks | 2.44% CTR
 - id: '135'
   name: Push to page 1 — extra-safe-cat-harness
@@ -189,7 +189,7 @@ experiments:
     success_threshold_pct: 15
     neutral_threshold_pct: 0
   current_reading:
-    last_measured: '2026-06-05T10:10:17Z'
-    current_value: 333.1
-    days_elapsed: 43
-    note: 2046 clicks over 43d
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 325.5
+    days_elapsed: 44
+    note: 2046 clicks over 44d
