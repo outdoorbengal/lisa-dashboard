@@ -1,0 +1,63 @@
+name: test-anthropic-key
+
+# One-shot wiring test for the ANTHROPIC_API_KEY secret. Runs a free
+# count_tokens auth check plus a tiny generation on the configured model.
+# Files an issue with the error if it fails (runner logs aren't readable
+# anonymously). Delete this file once verified.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  issues: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SDK
+        run: pip install anthropic
+
+      - name: Verify key wiring
+        id: probe
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LISA_COPY_MODEL: claude-opus-4-8
+        run: |
+          python - <<'EOF'
+          import os, sys
+          if not os.environ.get("ANTHROPIC_API_KEY"):
+              print("SECRET MISSING: ANTHROPIC_API_KEY is not set in repo secrets")
+              sys.exit(1)
+          import anthropic
+          client = anthropic.Anthropic()
+          model = os.environ["LISA_COPY_MODEL"]
+          n = client.messages.count_tokens(
+              model=model, messages=[{"role": "user", "content": "ping"}])
+          print(f"auth OK — count_tokens({model}) = {n.input_tokens}")
+          r = client.messages.create(
+              model=model, max_tokens=64,
+              messages=[{"role": "user", "content": "Reply with exactly: WIRED"}])
+          text = next((b.text for b in r.content if b.type == "text"), "")
+          print(f"generation OK — model said: {text.strip()!r}, "
+                f"usage {r.usage.input_tokens}in/{r.usage.output_tokens}out")
+          EOF
+        continue-on-error: true
+
+      - name: Report failure as issue
+        if: steps.probe.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: 'ANTHROPIC_API_KEY wiring test failed',
+              body: 'The test-anthropic-key workflow could not authenticate or generate. ' +
+                    'Check the [run](' + context.serverUrl + '/' + context.repo.owner + '/' +
+                    context.repo.repo + '/actions/runs/' + context.runId + ') — most likely the ' +
+                    'secret is missing, misnamed, or the key is invalid.',
+              labels: ['lisa'],
+            });
+            core.setFailed('probe failed');
