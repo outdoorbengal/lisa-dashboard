@@ -585,10 +585,12 @@ def check_page_rank(ctx) -> list:
 
 def check_page_cr(ctx) -> list:
     out = []
+    class_cr = (ctx["class_stats"].get("product") or {}).get("cr", 0.01)
     for path, a in ctx["ga4"].items():
         if not is_scannable(path) or not path.startswith("/products/"):
             continue
-        if a["sessions"] >= 300 and (a["purchases"] / a["sessions"]) < 0.01:
+        # Below 85% of the product-class average = underperforming its peers
+        if a["sessions"] >= 300 and (a["purchases"] / a["sessions"]) < 0.85 * class_cr:
             impact = score_impact("CR", path, ctx)
             if not impact:
                 continue
@@ -736,7 +738,9 @@ def check_funnel_stage(ctx) -> list:
             continue
         rate = ev[num] / ev[den]
         ratio = rate / bench
-        if ratio < 0.6 and (worst is None or ratio < worst[3]):
+        # Below benchmark at all is an opportunity — "good to great" gaps
+        # are where the money is, not just broken stages.
+        if ratio < 1.0 and (worst is None or ratio < worst[3]):
             worst = (metric, num, den, ratio, rate, bench)
     if not worst:
         return []
