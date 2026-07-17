@@ -242,6 +242,46 @@ def score_impact(sprint_type: str, path: str, gsc: dict, ga4: dict, ga4_totals: 
     return None  # unscoreable (LINK plays etc.) — keep previous score
 
 
+# ── revenue model (what build_data.py ranks and renders from) ────────
+def build_revenue_model(sprint_type: str, path: str, gsc: dict, ga4: dict, ga4_totals: dict, aov: float):
+    """Emit the queue.yml revenue_model block build_data.py expects.
+    Sprints without one fall to the bottom of the dashboard ranking."""
+    g, a = gsc.get(path), ga4.get(path)
+    month = 30 / WINDOW_DAYS
+    cr = page_cr(path, ga4, ga4_totals)
+    if sprint_type in ("CTR", "RNK"):
+        if not g:
+            return None
+        current = {
+            "impressions_30d": int(g["impressions"] * month),
+            "ctr": round(g["ctr"], 4),
+            "sessions_30d": int(a["sessions"] * month) if a else int(g["clicks"] * month),
+            "conversion_rate": round(cr, 4),
+            "aov": round(aov, 2),
+        }
+        if sprint_type == "CTR":
+            projected = {"ctr": round(expected_ctr(g["position"]), 4)}
+            confidence = "medium"
+        else:
+            target_pos = max(g["position"] - 5, 4)
+            projected = {"impressions_multiplier": 2.0, "ctr": round(expected_ctr(target_pos), 4)}
+            confidence = "low"
+        return {"current": current, "projected": projected, "confidence": confidence}
+    if sprint_type == "CR":
+        if not a or a["sessions"] < 30:
+            return None
+        current = {
+            "impressions_30d": int(g["impressions"] * month) if g else 0,
+            "ctr": round(g["ctr"], 4) if g else 0.0,
+            "sessions_30d": int(a["sessions"] * month),
+            "conversion_rate": round(a["purchases"] / a["sessions"], 4),
+            "aov": round(aov, 2),
+        }
+        projected = {"conversion_rate": round(max(a["purchases"] / a["sessions"] * 1.5, 0.01), 4)}
+        return {"current": current, "projected": projected, "confidence": "medium"}
+    return None
+
+
 # ── opportunity detection ────────────────────────────────────────────
 def detect_opportunities(gsc, ga4, ga4_totals, aov, taken: set):
     found = []
@@ -327,6 +367,7 @@ def build_sprint(next_id: int, stype: str, path: str, gsc, ga4, ga4_totals, aov,
         "evidence_urls": [],
         "_source": {"opportunity_type": {"CTR": "SEARCH_VISIBILITY", "RNK": "TRAFFIC_GROWTH", "CR": "CONVERSION_OPTIMIZATION"}[stype],
                     "detected_at": now_iso, "last_refreshed": now_iso, "dashboard_impact": impact},
+        "revenue_model": build_revenue_model(stype, path, gsc, ga4, ga4_totals, aov),
     }
 
 
@@ -404,6 +445,16 @@ def main() -> int:
         if impact is not None:
             src["dashboard_impact"] = impact
         src["last_refreshed"] = now_iso
+        # Keep the revenue model's inputs live: refresh `current` with today's
+        # measurements (the dashboard ranks by this), add the whole block for
+        # entries that never had one, and leave `projected` as authored.
+        rm = build_revenue_model(sp.get("sprint_type", ""), path, gsc, ga4, ga4_totals, aov)
+        if rm:
+            existing = sp.get("revenue_model")
+            if isinstance(existing, dict) and existing.get("projected"):
+                existing["current"] = rm["current"]
+            else:
+                sp["revenue_model"] = rm
         if m or impact is not None:
             reranked += 1
     queue.get("sprints", []).sort(key=lambda s: s.get("_source", {}).get("dashboard_impact", 0), reverse=True)
