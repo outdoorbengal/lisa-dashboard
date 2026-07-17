@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Called by lisa-scan.yml / evaluate-experiments.yml after their pushes —
+  # GITHUB_TOKEN pushes never fire the `push` trigger, so they invoke this
+  # workflow directly instead.
+  workflow_call:
 
 permissions:
   contents: write

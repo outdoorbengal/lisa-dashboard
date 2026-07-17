@@ -1,0 +1,74 @@
+name: lisa-scan
+
+# Lisa's daily scan — pulls GSC / GA4 / Shopify, updates the YAML source
+# files, commits, then rebuilds and deploys the dashboard.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SHOPIFY_CLIENT_ID
+#   SHOPIFY_CLIENT_SECRET
+#   GOOGLE_SERVICE_ACCOUNT_JSON   (the full JSON key file contents)
+
+on:
+  schedule:
+    - cron: "0 10 * * *" # daily at 10:00 UTC (~6am US Eastern)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lisa-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Write Google service account key
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/google-key.json"
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Run scan
+        run: python scripts/lisa_sync.py
+        env:
+          SHOPIFY_STORE_DOMAIN: outdoorbengal.myshopify.com
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/google-key.json
+          GSC_SITE_URL: sc-domain:outdoorbengal.com
+          GA4_PROPERTY_ID: "322039711"
+
+      - name: Commit and push
+        run: |
+          git config user.name  "Lisa"
+          git config user.email "lisa@outdoorbengal.com"
+          git add scans/state.yml sprints/queue.yml sprints/active.yml logs/runs.jsonl
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "lisa scan: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+  # GITHUB_TOKEN pushes don't fire the push trigger, so rebuild explicitly.
+  rebuild:
+    needs: scan
+    uses: ./.github/workflows/build-dashboard.yml
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
