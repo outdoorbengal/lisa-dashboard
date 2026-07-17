@@ -1,0 +1,17 @@
+# Secrets — this repo is PUBLIC. Real credentials must never be committed.
+.env
+.env.local
+.env.*.local
+*.pem
+service-account*.json
+google-credentials*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
