@@ -434,9 +434,10 @@ def build_revenue_model(sprint_type: str, path: str, ctx: dict):
 # wraps them into queue sprints. Diagnostics (tracking health) are
 # separate: they produce warnings, not revenue-ranked sprints.
 
-# Assumed gross margin for valuing paid-traffic plays (ads pay from margin,
-# not revenue). Tune to actual COGS when known.
-GROSS_MARGIN = 0.60
+# Gross margin for valuing paid-traffic plays (ads pay from margin, not
+# revenue). Set to 30% per Albert (2026-07-18) — "assume margins are 30%
+# to stay healthy."
+GROSS_MARGIN = 0.30
 
 FUNNEL_BENCHMARKS = {  # conservative DTC medians: (numerator, denominator, benchmark rate)
     "atc_rate": ("add_to_cart", "view_item", 0.07),
