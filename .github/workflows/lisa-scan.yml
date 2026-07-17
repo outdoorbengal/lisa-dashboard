@@ -52,6 +52,14 @@ jobs:
           GSC_SITE_URL: sc-domain:outdoorbengal.com
           GA4_PROPERTY_ID: "322039711"
 
+      # Claude drafts AFTER copy for new metadata sprints (skips cleanly
+      # when the ANTHROPIC_API_KEY secret isn't configured).
+      - name: Draft copy proposals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LISA_COPY_MODEL: claude-opus-4-8
+        run: python scripts/draft_copy.py
+
       - name: Commit and push
         run: |
           git config user.name  "Lisa"
