@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-06",
+  "generated": "2026-07-17",
   "week_of": "Jun 01 2026",
   "system": {
     "status": "OK",
@@ -8,7 +8,7 @@
     "sources_connected": 4,
     "sources_total": 4,
     "opportunities": 142,
-    "active_tests": 6,
+    "active_tests": 0,
     "days_complete": 6,
     "scan_bars": [
       100,
@@ -22,20 +22,20 @@
   },
   "donuts": {
     "total": {
-      "win": 1,
-      "total": 1
+      "win": 5,
+      "total": 7
     },
     "rnk": {
-      "win": 0,
-      "total": 0
+      "win": 2,
+      "total": 4
     },
     "ctr": {
-      "win": 0,
-      "total": 0
-    },
-    "cr": {
       "win": 1,
       "total": 1
+    },
+    "cr": {
+      "win": 2,
+      "total": 2
     },
     "link": {
       "win": 0,
@@ -47,38 +47,29 @@
       "id": "001",
       "name": "Cannibalization fix \u2014 Zeppelin redirect",
       "type": "RNK",
-      "status": "RUNNING",
+      "status": "LOSER",
       "unit": "percent",
       "kpi_label": "Zeppelin CTR",
       "before_val": 41.7,
       "before_display": "41.7%",
-      "before_caption": "Baseline reading",
       "before_pct": 41.7,
-      "before_window_days": 30,
       "target_val": 46.0,
       "target_display": "46%",
-      "target_caption": "Goal for this experiment",
       "target_pct": 46.0,
-      "target_window_days": 42,
       "current_val": 12.93,
       "current_display": "12.93%",
-      "current_caption": "701 clicks / 5421 impressions",
       "current_note": "701 clicks / 5421 impressions",
-      "current_measured": "2026-06-06T10:10:15Z",
+      "current_measured": "2026-07-17",
       "current_pct": 12.9,
-      "current_window_days": 52,
-      "current_per_day": null,
-      "baseline_per_day": null,
       "after_val": 12.93,
       "after_display": "12.93%",
       "after_pct": 12.9,
-      "delta": "-69%",
-      "delta_basis": "relative",
+      "delta": "-69.0%",
       "start_date": "Apr 14",
-      "end_date": "May 26",
+      "end_date": "Jul 17",
       "progress_pct": 100,
-      "days_elapsed": 52,
-      "note": "52 days in",
+      "days_elapsed": 42,
+      "note": "701 clicks / 5421 impressions",
       "week_current": 6,
       "week_total": 6
     },
@@ -86,155 +77,29 @@
       "id": "004",
       "name": "Conversion fix \u2014 zeppelin-cat-carrier",
       "type": "CR",
-      "status": "RUNNING",
+      "status": "WINNER",
       "unit": "percent",
       "kpi_label": "Conversion rate \u00b7 4772 sessions",
       "before_val": 0.86,
       "before_display": "0.86% now",
-      "before_caption": "Baseline reading",
       "before_pct": 17.2,
-      "before_window_days": 30,
       "target_val": 1.36,
       "target_display": "1.36%",
-      "target_caption": "Goal for this experiment",
       "target_pct": 27.2,
-      "target_window_days": 28,
       "current_val": 1.14,
       "current_display": "1.14%",
-      "current_caption": "1748 sessions this window",
       "current_note": "1748 sessions this window",
-      "current_measured": "2026-06-06T10:10:15Z",
+      "current_measured": "2026-07-17",
       "current_pct": 22.8,
-      "current_window_days": 46,
-      "current_per_day": null,
-      "baseline_per_day": null,
       "after_val": 1.14,
       "after_display": "1.14%",
       "after_pct": 22.8,
-      "delta": "+33%",
-      "delta_basis": "relative",
+      "delta": "+32.6%",
       "start_date": "Apr 20",
-      "end_date": "May 18",
+      "end_date": "Jul 17",
       "progress_pct": 100,
-      "days_elapsed": 46,
-      "note": "46 days in",
-      "week_current": 4,
-      "week_total": 4
-    },
-    {
-      "id": "005",
-      "name": "Meta description rewrite \u2014 extra-safe-cat-harness",
-      "type": "CTR",
-      "status": "RUNNING",
-      "unit": "percent",
-      "kpi_label": "CTR \u00b7 79K impressions \u00b7 pos 12.9",
-      "before_val": 2.26,
-      "before_display": "2.26% (last 30 days)",
-      "before_caption": "Baseline reading",
-      "before_pct": 45.2,
-      "before_window_days": 30,
-      "target_val": 2.8,
-      "target_display": "2.8%",
-      "target_caption": "Goal for this experiment",
-      "target_pct": 56.0,
-      "target_window_days": 30,
-      "current_val": 4.58,
-      "current_display": "4.58%",
-      "current_caption": "2046 clicks / 44631 impressions",
-      "current_note": "2046 clicks / 44631 impressions",
-      "current_measured": "2026-06-06T10:10:15Z",
-      "current_pct": 91.6,
-      "current_window_days": 45,
-      "current_per_day": null,
-      "baseline_per_day": null,
-      "after_val": 4.58,
-      "after_display": "4.58%",
-      "after_pct": 91.6,
-      "delta": "+103%",
-      "delta_basis": "relative",
-      "start_date": "Apr 21",
-      "end_date": "May 21",
-      "progress_pct": 100,
-      "days_elapsed": 45,
-      "note": "45 days in",
-      "week_current": 4,
-      "week_total": 4
-    },
-    {
-      "id": "007",
-      "name": "Push to page 1 \u2014 keeper-airtag-holder-for-cat-collar",
-      "type": "RNK",
-      "status": "RUNNING",
-      "unit": "sessions/week",
-      "kpi_label": "Weekly clicks \u00b7 pos 11.2",
-      "before_val": 0,
-      "before_display": "~0/wk now",
-      "before_caption": "Baseline reading",
-      "before_pct": 0.0,
-      "before_window_days": 30,
-      "target_val": 2,
-      "target_display": "+2/wk",
-      "target_caption": "Goal for this experiment",
-      "target_pct": 2.0,
-      "target_window_days": 42,
-      "current_val": 0.2,
-      "current_display": "0.2",
-      "current_caption": "1 clicks over 45d",
-      "current_note": "1 clicks over 45d",
-      "current_measured": "2026-06-06T10:10:15Z",
-      "current_pct": 0.2,
-      "current_window_days": 45,
-      "current_per_day": null,
-      "baseline_per_day": null,
-      "after_val": 0.2,
-      "after_display": "0.2",
-      "after_pct": 0.2,
-      "delta": "new",
-      "delta_basis": "relative",
-      "start_date": "Apr 21",
-      "end_date": "Jun 02",
-      "progress_pct": 100,
-      "days_elapsed": 45,
-      "note": "45 days in",
-      "week_current": 6,
-      "week_total": 6
-    },
-    {
-      "id": "008",
-      "name": "Collection page improvement \u2014 adventure-cat-gear",
-      "type": "RNK",
-      "status": "RUNNING",
-      "unit": "count",
-      "kpi_label": "Impressions \u00b7 /collections/adventure-cat-gear",
-      "before_val": 3577,
-      "before_display": "119/day",
-      "before_caption": "Impressions per day \u00b7 last 30 days",
-      "before_pct": 63.6,
-      "before_window_days": 30,
-      "target_val": 4500,
-      "target_display": "150/day",
-      "target_caption": "Impressions per day \u00b7 goal over 30 days",
-      "target_pct": 80.0,
-      "target_window_days": 30,
-      "current_val": 982,
-      "current_display": "22/day",
-      "current_caption": "Impressions per day \u00b7 last 44 days",
-      "current_note": "982 impressions | 24 clicks | 2.44% CTR",
-      "current_measured": "2026-06-06T10:10:15Z",
-      "current_pct": 17.5,
-      "current_window_days": 44,
-      "current_per_day": 22.318181818181817,
-      "baseline_per_day": 119.23333333333333,
-      "after_val": 982,
-      "after_display": "22/day",
-      "after_pct": 17.5,
-      "delta": "-81%",
-      "delta_basis": "run_rate",
-      "start_date": "Apr 22",
-      "end_date": "May 22",
-      "progress_pct": 100,
-      "days_elapsed": 44,
-      "note": "44 days in",
+      "days_elapsed": 28,
+      "note": "1748 sessions this window",
       "week_current": 4,
       "week_total": 4
     }
@@ -242,7 +107,7 @@
   "sprints": [
     {
       "id": "006",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 portable-litterbox",
       "url": "/products/portable-litterbox",
       "sprint_type": "RNK",
@@ -309,7 +174,7 @@
     },
     {
       "id": "050",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Fix title tag \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
       "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
       "sprint_type": "CTR",
@@ -376,7 +241,7 @@
     },
     {
       "id": "012",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Conversion fix \u2014 clicker-training-starter-kit",
       "url": "/products/clicker-training-starter-kit",
       "sprint_type": "CR",
@@ -443,7 +308,7 @@
     },
     {
       "id": "002",
-      "days_waiting": 49,
+      "days_waiting": 90,
       "title": "Add Zeppelin link to cat training guide",
       "url": "/blogs/clicker-training-cats/cat-training-guide",
       "sprint_type": "LINK",
@@ -510,7 +375,7 @@
     },
     {
       "id": "003",
-      "days_waiting": 47,
+      "days_waiting": 88,
       "title": "Fix title tag \u2014 best cat names article",
       "url": "/blogs/fun-stuff/best-cat-names",
       "sprint_type": "CTR",
@@ -577,7 +442,7 @@
     },
     {
       "id": "009",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 catgility-cat-agility-course",
       "url": "/products/catgility-cat-agility-course",
       "sprint_type": "RNK",
@@ -644,7 +509,7 @@
     },
     {
       "id": "015",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 rope-leash",
       "url": "/products/rope-leash",
       "sprint_type": "RNK",
@@ -711,7 +576,7 @@
     },
     {
       "id": "013",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 breakaway-cat-collar",
       "url": "/products/breakaway-cat-collar",
       "sprint_type": "RNK",
@@ -778,7 +643,7 @@
     },
     {
       "id": "010",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
       "url": "/products/zeppelin-cat-carrier",
       "sprint_type": "RNK",
@@ -845,7 +710,7 @@
     },
     {
       "id": "011",
-      "days_waiting": 46,
+      "days_waiting": 87,
       "title": "Push to page 1 \u2014 clicker-training-starter-kit",
       "url": "/products/clicker-training-starter-kit",
       "sprint_type": "RNK",
@@ -7981,200 +7846,7 @@
         }
       }
     ],
-    "active": [
-      {
-        "id": "001",
-        "name": "Cannibalization fix \u2014 Zeppelin redirect",
-        "sprint_type": "RNK",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "zeppelin_ctr",
-          "display_label": "Zeppelin CTR",
-          "baseline_value": 41.7,
-          "baseline_display": "41.7%",
-          "target_value": 46.0,
-          "target_display": "46%",
-          "unit": "percent"
-        },
-        "timeline": {
-          "started": "2026-04-14",
-          "evaluation_date": "2026-05-26",
-          "window_days": 42
-        },
-        "url": "/products/zeppelin-cat-carrier",
-        "rationale": "Two pages were competing for the same query cluster. Implemented 301\nredirect from the older generic page to the Zeppelin product page.\nExpecting CTR lift as Google consolidates rankings.\n",
-        "evaluation": {
-          "success_threshold_pct": 10,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 12.93,
-          "days_elapsed": 52,
-          "note": "701 clicks / 5421 impressions"
-        }
-      },
-      {
-        "id": "004",
-        "name": "Conversion fix \u2014 zeppelin-cat-carrier",
-        "sprint_type": "CR",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "conversion_rate",
-          "display_label": "Conversion rate \u00b7 4772 sessions",
-          "baseline_value": 0.86,
-          "baseline_display": "0.86% now",
-          "target_value": 1.36,
-          "target_display": "1.36%",
-          "unit": "percent"
-        },
-        "timeline": {
-          "started": "2026-04-20",
-          "evaluation_date": "2026-05-18",
-          "window_days": 28
-        },
-        "url": "/products/zeppelin-cat-carrier",
-        "rationale": "4772 organic sessions but only 0.86% conversion \u2014 revenue leak\n\nEvidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220\nEngine priority: 5.5  \u2022  Dashboard impact: 39.43",
-        "evaluation": {
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 1.14,
-          "days_elapsed": 46,
-          "note": "1748 sessions this window"
-        }
-      },
-      {
-        "id": "005",
-        "name": "Meta description rewrite \u2014 extra-safe-cat-harness",
-        "sprint_type": "CTR",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 79K impressions \u00b7 pos 12.9",
-          "baseline_value": 2.26,
-          "baseline_display": "2.26% (last 30 days)",
-          "target_value": 2.8,
-          "target_display": "2.8%",
-          "unit": "percent"
-        },
-        "timeline": {
-          "started": "2026-04-21",
-          "evaluation_date": "2026-05-21",
-          "window_days": 30
-        },
-        "url": "/products/extra-safe-cat-harness",
-        "rationale": "Updated meta description on 2026-04-21. Baseline: 2.26% CTR on 79,317\nimpressions over the prior 30 days (1,790 clicks, pos 12.9).\nEvaluating CTR change over next 30 days vs prior 30 days.\nTarget: 2.8% (+24% lift).\n",
-        "evaluation": {
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 4.58,
-          "days_elapsed": 45,
-          "note": "2046 clicks / 44631 impressions"
-        }
-      },
-      {
-        "id": "007",
-        "name": "Push to page 1 \u2014 keeper-airtag-holder-for-cat-collar",
-        "sprint_type": "RNK",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 11.2",
-          "baseline_value": 0,
-          "baseline_display": "~0/wk now",
-          "target_value": 2,
-          "target_display": "+2/wk",
-          "unit": "sessions/week"
-        },
-        "timeline": {
-          "started": "2026-04-21",
-          "evaluation_date": "2026-06-02",
-          "window_days": 42
-        },
-        "url": "/products/keeper-airtag-holder-for-cat-collar",
-        "rationale": "Ranking pos 11.2 for 'airtag cat collar' \u2014 727 impressions but page 2\n\nEvidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%\nEngine priority: 6.0  \u2022  Dashboard impact: 33.55",
-        "evaluation": {
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 0.2,
-          "days_elapsed": 45,
-          "note": "1 clicks over 45d"
-        }
-      },
-      {
-        "id": "008",
-        "name": "Collection page improvement \u2014 adventure-cat-gear",
-        "sprint_type": "RNK",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "impressions_total",
-          "display_label": "Impressions \u00b7 /collections/adventure-cat-gear",
-          "baseline_value": 3577,
-          "baseline_display": "3,577 impressions (last 30 days)",
-          "target_value": 4500,
-          "target_display": "4,500 impressions",
-          "unit": "count"
-        },
-        "timeline": {
-          "started": "2026-04-22",
-          "evaluation_date": "2026-05-22",
-          "window_days": 30
-        },
-        "url": "/collections/adventure-cat-gear",
-        "rationale": "Collection page improved on 2026-04-22. Baseline: 3,577 impressions\nand 41 clicks (1.15% CTR, pos 9.6) over the prior 30 days (Mar 23 \u2013 Apr 21).\nTracking impressions growth over the next 30 days vs the prior 30 days.\n",
-        "evaluation": {
-          "success_threshold_pct": 10,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 982,
-          "days_elapsed": 44,
-          "note": "982 impressions | 24 clicks | 2.44% CTR"
-        }
-      },
-      {
-        "id": "135",
-        "name": "Push to page 1 \u2014 extra-safe-cat-harness",
-        "sprint_type": "RNK",
-        "status": "RUNNING",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 7.4",
-          "baseline_value": 0,
-          "baseline_display": "~0/wk now",
-          "target_value": 4,
-          "target_display": "+4/wk",
-          "unit": "sessions/week"
-        },
-        "timeline": {
-          "started": "2026-04-22",
-          "evaluation_date": "2026-06-03",
-          "window_days": 42
-        },
-        "url": "/products/extra-safe-cat-harness",
-        "rationale": "Ranking pos 7.4 for 'best cat harness escape proof' \u2014 1185 impressions but page 2\n\nEvidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%\nEngine priority: 6.0  \u2022  Dashboard impact: 36.01",
-        "evaluation": {
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "current_reading": {
-          "last_measured": "2026-06-06T10:10:15Z",
-          "current_value": 325.5,
-          "days_elapsed": 44,
-          "note": "2046 clicks over 44d"
-        }
-      }
-    ],
+    "active": [],
     "archive": [
       {
         "id": "000",
@@ -8200,10 +7872,292 @@
         "url": "/products/extra-safe-harness",
         "outcome_note": "+$8.2K projected / 90d",
         "evaluation_details": "Baseline measured over 14 days pre-change. Post-change measured over\n14 days following a 7-day stabilization window. Statistical significance\nconfirmed via 2-proportion z-test (p < 0.05).\n"
+      },
+      {
+        "id": "001",
+        "name": "Cannibalization fix \u2014 Zeppelin redirect",
+        "sprint_type": "RNK",
+        "status": "LOSER",
+        "kpi": {
+          "metric": "zeppelin_ctr",
+          "display_label": "Zeppelin CTR",
+          "baseline_value": 41.7,
+          "baseline_display": "41.7%",
+          "target_value": 46.0,
+          "target_display": "46%",
+          "unit": "percent",
+          "final_value": 12.93,
+          "final_display": "12.93%",
+          "delta_pct": -69.0,
+          "delta_display": "-69.0%"
+        },
+        "timeline": {
+          "started": "2026-04-14",
+          "evaluation_date": "2026-05-26",
+          "window_days": 42,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/products/zeppelin-cat-carrier",
+        "rationale": "Two pages were competing for the same query cluster. Implemented 301\nredirect from the older generic page to the Zeppelin product page.\nExpecting CTR lift as Google consolidates rankings.\n",
+        "evaluation": {
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 12.93,
+          "days_elapsed": 52,
+          "note": "701 clicks / 5421 impressions"
+        },
+        "outcome_note": "701 clicks / 5421 impressions"
+      },
+      {
+        "id": "004",
+        "name": "Conversion fix \u2014 zeppelin-cat-carrier",
+        "sprint_type": "CR",
+        "status": "WINNER",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Conversion rate \u00b7 4772 sessions",
+          "baseline_value": 0.86,
+          "baseline_display": "0.86% now",
+          "target_value": 1.36,
+          "target_display": "1.36%",
+          "unit": "percent",
+          "final_value": 1.14,
+          "final_display": "1.14%",
+          "delta_pct": 32.6,
+          "delta_display": "+32.6%"
+        },
+        "timeline": {
+          "started": "2026-04-20",
+          "evaluation_date": "2026-05-18",
+          "window_days": 28,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/products/zeppelin-cat-carrier",
+        "rationale": "4772 organic sessions but only 0.86% conversion \u2014 revenue leak\n\nEvidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220\nEngine priority: 5.5  \u2022  Dashboard impact: 39.43",
+        "evaluation": {
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 1.14,
+          "days_elapsed": 46,
+          "note": "1748 sessions this window"
+        },
+        "outcome_note": "1748 sessions this window"
+      },
+      {
+        "id": "005",
+        "name": "Meta description rewrite \u2014 extra-safe-cat-harness",
+        "sprint_type": "CTR",
+        "status": "WINNER",
+        "kpi": {
+          "metric": "ctr",
+          "display_label": "CTR \u00b7 79K impressions \u00b7 pos 12.9",
+          "baseline_value": 2.26,
+          "baseline_display": "2.26% (last 30 days)",
+          "target_value": 2.8,
+          "target_display": "2.8%",
+          "unit": "percent",
+          "final_value": 4.58,
+          "final_display": "4.58%",
+          "delta_pct": 102.7,
+          "delta_display": "+102.7%"
+        },
+        "timeline": {
+          "started": "2026-04-21",
+          "evaluation_date": "2026-05-21",
+          "window_days": 30,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/products/extra-safe-cat-harness",
+        "rationale": "Updated meta description on 2026-04-21. Baseline: 2.26% CTR on 79,317\nimpressions over the prior 30 days (1,790 clicks, pos 12.9).\nEvaluating CTR change over next 30 days vs prior 30 days.\nTarget: 2.8% (+24% lift).\n",
+        "evaluation": {
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 4.58,
+          "days_elapsed": 45,
+          "note": "2046 clicks / 44631 impressions"
+        },
+        "outcome_note": "2046 clicks / 44631 impressions"
+      },
+      {
+        "id": "007",
+        "name": "Push to page 1 \u2014 keeper-airtag-holder-for-cat-collar",
+        "sprint_type": "RNK",
+        "status": "WINNER",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 11.2",
+          "baseline_value": 0,
+          "baseline_display": "~0/wk now",
+          "target_value": 2,
+          "target_display": "+2/wk",
+          "unit": "sessions/week",
+          "final_value": 0.2,
+          "final_display": "0.2",
+          "delta_pct": 100.0,
+          "delta_display": "+100.0%"
+        },
+        "timeline": {
+          "started": "2026-04-21",
+          "evaluation_date": "2026-06-02",
+          "window_days": 42,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/products/keeper-airtag-holder-for-cat-collar",
+        "rationale": "Ranking pos 11.2 for 'airtag cat collar' \u2014 727 impressions but page 2\n\nEvidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%\nEngine priority: 6.0  \u2022  Dashboard impact: 33.55",
+        "evaluation": {
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 0.2,
+          "days_elapsed": 45,
+          "note": "1 clicks over 45d"
+        },
+        "outcome_note": "1 clicks over 45d"
+      },
+      {
+        "id": "008",
+        "name": "Collection page improvement \u2014 adventure-cat-gear",
+        "sprint_type": "RNK",
+        "status": "LOSER",
+        "kpi": {
+          "metric": "impressions_total",
+          "display_label": "Impressions \u00b7 /collections/adventure-cat-gear",
+          "baseline_value": 3577,
+          "baseline_display": "3,577 impressions (last 30 days)",
+          "target_value": 4500,
+          "target_display": "4,500 impressions",
+          "unit": "count",
+          "final_value": 982.0,
+          "final_display": "982.0",
+          "delta_pct": -72.5,
+          "delta_display": "-72.5%"
+        },
+        "timeline": {
+          "started": "2026-04-22",
+          "evaluation_date": "2026-05-22",
+          "window_days": 30,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/collections/adventure-cat-gear",
+        "rationale": "Collection page improved on 2026-04-22. Baseline: 3,577 impressions\nand 41 clicks (1.15% CTR, pos 9.6) over the prior 30 days (Mar 23 \u2013 Apr 21).\nTracking impressions growth over the next 30 days vs the prior 30 days.\n",
+        "evaluation": {
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 982,
+          "days_elapsed": 44,
+          "note": "982 impressions | 24 clicks | 2.44% CTR"
+        },
+        "outcome_note": "982 impressions | 24 clicks | 2.44% CTR"
+      },
+      {
+        "id": "135",
+        "name": "Push to page 1 \u2014 extra-safe-cat-harness",
+        "sprint_type": "RNK",
+        "status": "WINNER",
+        "kpi": {
+          "metric": "organic_clicks_weekly",
+          "display_label": "Weekly clicks \u00b7 pos 7.4",
+          "baseline_value": 0,
+          "baseline_display": "~0/wk now",
+          "target_value": 4,
+          "target_display": "+4/wk",
+          "unit": "sessions/week",
+          "final_value": 325.5,
+          "final_display": "325.5",
+          "delta_pct": 100.0,
+          "delta_display": "+100.0%"
+        },
+        "timeline": {
+          "started": "2026-04-22",
+          "evaluation_date": "2026-06-03",
+          "window_days": 42,
+          "evaluated": "2026-07-17"
+        },
+        "url": "/products/extra-safe-cat-harness",
+        "rationale": "Ranking pos 7.4 for 'best cat harness escape proof' \u2014 1185 impressions but page 2\n\nEvidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%\nEngine priority: 6.0  \u2022  Dashboard impact: 36.01",
+        "evaluation": {
+          "success_threshold_pct": 15,
+          "neutral_threshold_pct": 0
+        },
+        "current_reading": {
+          "last_measured": "2026-06-06T10:10:15Z",
+          "current_value": 325.5,
+          "days_elapsed": 44,
+          "note": "2046 clicks over 44d"
+        },
+        "outcome_note": "2046 clicks over 44d"
       }
     ]
   },
   "log": [
+    {
+      "run_id": "sprint-001-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "001",
+      "outcome": "LOSER",
+      "summary": "Sprint #001 evaluated. Zeppelin CTR: 41.7 \u2192 12.93 (-69.0%). Outcome: LOSER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
+    {
+      "run_id": "sprint-004-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "004",
+      "outcome": "WINNER",
+      "summary": "Sprint #004 evaluated. Conversion rate \u00b7 4772 sessions: 0.86 \u2192 1.14 (+32.6%). Outcome: WINNER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
+    {
+      "run_id": "sprint-005-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "005",
+      "outcome": "WINNER",
+      "summary": "Sprint #005 evaluated. CTR \u00b7 79K impressions \u00b7 pos 12.9: 2.26 \u2192 4.58 (+102.7%). Outcome: WINNER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
+    {
+      "run_id": "sprint-007-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "007",
+      "outcome": "WINNER",
+      "summary": "Sprint #007 evaluated. Weekly clicks \u00b7 pos 11.2: 0 \u2192 0.2 (+100.0%). Outcome: WINNER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
+    {
+      "run_id": "sprint-008-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "008",
+      "outcome": "LOSER",
+      "summary": "Sprint #008 evaluated. Impressions \u00b7 /collections/adventure-cat-gear: 3577 \u2192 982.0 (-72.5%). Outcome: LOSER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
+    {
+      "run_id": "sprint-135-evaluated",
+      "type": "sprint_evaluated",
+      "status": "success",
+      "sprint_id": "135",
+      "outcome": "WINNER",
+      "summary": "Sprint #135 evaluated. Weekly clicks \u00b7 pos 7.4: 0 \u2192 325.5 (+100.0%). Outcome: WINNER.",
+      "ts": "2026-07-17T07:26:20Z"
+    },
     {
       "run_id": "scan-20260606-101001",
       "type": "daily_scan",
@@ -8793,77 +8747,6 @@
       ],
       "summary": "Scanned 219 pages. 1 new opportunities, 122 reranked. 7 active experiments re-measured.",
       "ts": "2026-04-29T12:48:48Z"
-    },
-    {
-      "run_id": "sprint-008-started",
-      "type": "sprint_started",
-      "status": "success",
-      "sprint_id": "008",
-      "summary": "Sprint #008 moved from queue to active. Baseline Weekly clicks \u00b7 pos 9.7: ~960/wk now. Evaluation date: 2026-06-08.",
-      "ts": "2026-04-27T17:30:59Z"
-    },
-    {
-      "run_id": "scan-20260427-153408",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 108823,
-      "pages_scanned": 216,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 216 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
-      "ts": "2026-04-27T15:35:57Z"
-    },
-    {
-      "run_id": "scan-20260427-153158",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 52221,
-      "pages_scanned": 216,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 216 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
-      "ts": "2026-04-27T15:32:50Z"
-    },
-    {
-      "run_id": "scan-20260427-151053",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 138197,
-      "pages_scanned": 216,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 216 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
-      "ts": "2026-04-27T15:13:11Z"
-    },
-    {
-      "run_id": "scan-20260427-100003",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 12268,
-      "pages_scanned": 216,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 216 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
-      "ts": "2026-04-27T10:00:15Z"
-    },
-    {
-      "run_id": "rollover-2026-04-27",
-      "type": "manual_action",
-      "status": "success",
-      "summary": "Weekly rollover: daily_counts reset for week of 2026-04-27",
-      "ts": "2026-04-27T09:30:05Z"
     }
   ]
 }

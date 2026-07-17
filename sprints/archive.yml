@@ -1,29 +1,260 @@
-# Archived experiments — completed, with outcome recorded.
-# Written by the evaluate-experiment workflow (run on evaluation_date).
-# Donut win-rates are calculated from this file.
+# Archived experiments — auto-managed.
 
 experiments:
-  - id: "000"
-    name: "Copy rewrite — Extra Safe Harness"
-    sprint_type: CR
-    status: WINNER  # WINNER | NEUTRAL | LOSER
-    kpi:
-      metric: "add_to_cart_rate"
-      display_label: "Add-to-cart rate"
-      baseline_value: 1.4
-      baseline_display: "1.4%"
-      final_value: 2.4
-      final_display: "2.4%"
-      delta_pct: 71
-      delta_display: "+71%"
-      unit: "percent"
-    timeline:
-      started: "2026-03-10"
-      evaluated: "2026-04-07"
-      window_days: 28
-    url: "/products/extra-safe-harness"
-    outcome_note: "+$8.2K projected / 90d"
-    evaluation_details: |
-      Baseline measured over 14 days pre-change. Post-change measured over
-      14 days following a 7-day stabilization window. Statistical significance
-      confirmed via 2-proportion z-test (p < 0.05).
+- id: '000'
+  name: Copy rewrite — Extra Safe Harness
+  sprint_type: CR
+  status: WINNER
+  kpi:
+    metric: add_to_cart_rate
+    display_label: Add-to-cart rate
+    baseline_value: 1.4
+    baseline_display: 1.4%
+    final_value: 2.4
+    final_display: 2.4%
+    delta_pct: 71
+    delta_display: +71%
+    unit: percent
+  timeline:
+    started: '2026-03-10'
+    evaluated: '2026-04-07'
+    window_days: 28
+  url: /products/extra-safe-harness
+  outcome_note: +$8.2K projected / 90d
+  evaluation_details: 'Baseline measured over 14 days pre-change. Post-change measured
+    over
+
+    14 days following a 7-day stabilization window. Statistical significance
+
+    confirmed via 2-proportion z-test (p < 0.05).
+
+    '
+- id: '001'
+  name: Cannibalization fix — Zeppelin redirect
+  sprint_type: RNK
+  status: LOSER
+  kpi:
+    metric: zeppelin_ctr
+    display_label: Zeppelin CTR
+    baseline_value: 41.7
+    baseline_display: 41.7%
+    target_value: 46.0
+    target_display: 46%
+    unit: percent
+    final_value: 12.93
+    final_display: 12.93%
+    delta_pct: -69.0
+    delta_display: -69.0%
+  timeline:
+    started: '2026-04-14'
+    evaluation_date: '2026-05-26'
+    window_days: 42
+    evaluated: '2026-07-17'
+  url: /products/zeppelin-cat-carrier
+  rationale: 'Two pages were competing for the same query cluster. Implemented 301
+
+    redirect from the older generic page to the Zeppelin product page.
+
+    Expecting CTR lift as Google consolidates rankings.
+
+    '
+  evaluation:
+    success_threshold_pct: 10
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 12.93
+    days_elapsed: 52
+    note: 701 clicks / 5421 impressions
+  outcome_note: 701 clicks / 5421 impressions
+- id: '004'
+  name: Conversion fix — zeppelin-cat-carrier
+  sprint_type: CR
+  status: WINNER
+  kpi:
+    metric: conversion_rate
+    display_label: Conversion rate · 4772 sessions
+    baseline_value: 0.86
+    baseline_display: 0.86% now
+    target_value: 1.36
+    target_display: 1.36%
+    unit: percent
+    final_value: 1.14
+    final_display: 1.14%
+    delta_pct: 32.6
+    delta_display: +32.6%
+  timeline:
+    started: '2026-04-20'
+    evaluation_date: '2026-05-18'
+    window_days: 28
+    evaluated: '2026-07-17'
+  url: /products/zeppelin-cat-carrier
+  rationale: '4772 organic sessions but only 0.86% conversion — revenue leak
+
+
+    Evidence: sessions=4772 | CR=0.86% | ATC=8.6% | AOV=$220
+
+    Engine priority: 5.5  •  Dashboard impact: 39.43'
+  evaluation:
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 1.14
+    days_elapsed: 46
+    note: 1748 sessions this window
+  outcome_note: 1748 sessions this window
+- id: '005'
+  name: Meta description rewrite — extra-safe-cat-harness
+  sprint_type: CTR
+  status: WINNER
+  kpi:
+    metric: ctr
+    display_label: CTR · 79K impressions · pos 12.9
+    baseline_value: 2.26
+    baseline_display: 2.26% (last 30 days)
+    target_value: 2.8
+    target_display: 2.8%
+    unit: percent
+    final_value: 4.58
+    final_display: 4.58%
+    delta_pct: 102.7
+    delta_display: +102.7%
+  timeline:
+    started: '2026-04-21'
+    evaluation_date: '2026-05-21'
+    window_days: 30
+    evaluated: '2026-07-17'
+  url: /products/extra-safe-cat-harness
+  rationale: 'Updated meta description on 2026-04-21. Baseline: 2.26% CTR on 79,317
+
+    impressions over the prior 30 days (1,790 clicks, pos 12.9).
+
+    Evaluating CTR change over next 30 days vs prior 30 days.
+
+    Target: 2.8% (+24% lift).
+
+    '
+  evaluation:
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 4.58
+    days_elapsed: 45
+    note: 2046 clicks / 44631 impressions
+  outcome_note: 2046 clicks / 44631 impressions
+- id: '007'
+  name: Push to page 1 — keeper-airtag-holder-for-cat-collar
+  sprint_type: RNK
+  status: WINNER
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 11.2
+    baseline_value: 0
+    baseline_display: ~0/wk now
+    target_value: 2
+    target_display: +2/wk
+    unit: sessions/week
+    final_value: 0.2
+    final_display: '0.2'
+    delta_pct: 100.0
+    delta_display: +100.0%
+  timeline:
+    started: '2026-04-21'
+    evaluation_date: '2026-06-02'
+    window_days: 42
+    evaluated: '2026-07-17'
+  url: /products/keeper-airtag-holder-for-cat-collar
+  rationale: 'Ranking pos 11.2 for ''airtag cat collar'' — 727 impressions but page
+    2
+
+
+    Evidence: pos=11.2 | impressions=727 | clicks=1 | CTR=0.1%
+
+    Engine priority: 6.0  •  Dashboard impact: 33.55'
+  evaluation:
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 0.2
+    days_elapsed: 45
+    note: 1 clicks over 45d
+  outcome_note: 1 clicks over 45d
+- id: 008
+  name: Collection page improvement — adventure-cat-gear
+  sprint_type: RNK
+  status: LOSER
+  kpi:
+    metric: impressions_total
+    display_label: Impressions · /collections/adventure-cat-gear
+    baseline_value: 3577
+    baseline_display: 3,577 impressions (last 30 days)
+    target_value: 4500
+    target_display: 4,500 impressions
+    unit: count
+    final_value: 982.0
+    final_display: '982.0'
+    delta_pct: -72.5
+    delta_display: -72.5%
+  timeline:
+    started: '2026-04-22'
+    evaluation_date: '2026-05-22'
+    window_days: 30
+    evaluated: '2026-07-17'
+  url: /collections/adventure-cat-gear
+  rationale: 'Collection page improved on 2026-04-22. Baseline: 3,577 impressions
+
+    and 41 clicks (1.15% CTR, pos 9.6) over the prior 30 days (Mar 23 – Apr 21).
+
+    Tracking impressions growth over the next 30 days vs the prior 30 days.
+
+    '
+  evaluation:
+    success_threshold_pct: 10
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 982
+    days_elapsed: 44
+    note: 982 impressions | 24 clicks | 2.44% CTR
+  outcome_note: 982 impressions | 24 clicks | 2.44% CTR
+- id: '135'
+  name: Push to page 1 — extra-safe-cat-harness
+  sprint_type: RNK
+  status: WINNER
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · pos 7.4
+    baseline_value: 0
+    baseline_display: ~0/wk now
+    target_value: 4
+    target_display: +4/wk
+    unit: sessions/week
+    final_value: 325.5
+    final_display: '325.5'
+    delta_pct: 100.0
+    delta_display: +100.0%
+  timeline:
+    started: '2026-04-22'
+    evaluation_date: '2026-06-03'
+    window_days: 42
+    evaluated: '2026-07-17'
+  url: /products/extra-safe-cat-harness
+  rationale: 'Ranking pos 7.4 for ''best cat harness escape proof'' — 1185 impressions
+    but page 2
+
+
+    Evidence: pos=7.4 | impressions=1185 | clicks=24 | CTR=2.0%
+
+    Engine priority: 6.0  •  Dashboard impact: 36.01'
+  evaluation:
+    success_threshold_pct: 15
+    neutral_threshold_pct: 0
+  current_reading:
+    last_measured: '2026-06-06T10:10:15Z'
+    current_value: 325.5
+    days_elapsed: 44
+    note: 2046 clicks over 44d
+  outcome_note: 2046 clicks over 44d

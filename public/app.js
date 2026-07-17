@@ -134,6 +134,33 @@ async function loadData() {
 }
 
 // ─────────────────────────────────────────────
+// Staleness — the pill must never say "OK" over dead data
+// ─────────────────────────────────────────────
+const STALE_AFTER_DAYS = 3;
+
+// Last successful daily scan is the real "Lisa is alive" signal; the
+// generated date only tells us when data.json was last rebuilt.
+function lastScanDate(d) {
+  if (!d.log || !d.log.length) return d.generated ? new Date(d.generated) : null;
+  const scans = d.log.filter((r) => r.type === "daily_scan" && r.status === "success" && r.ts);
+  // No scan in the recent log at all → treat as unknown/stale, not fresh.
+  return scans.length ? new Date(scans.map((r) => r.ts).sort().pop()) : null;
+}
+
+function buildStatusPill(d, sys) {
+  const last = lastScanDate(d);
+  const ageDays = last ? Math.floor((Date.now() - last.getTime()) / 86400000) : null;
+  if (ageDays === null || ageDays > STALE_AFTER_DAYS) {
+    const since = last
+      ? last.toLocaleDateString("en-US", { month: "short", day: "numeric" })
+      : "unknown";
+    const label = ageDays === null ? "No scan data" : `Stale — last scan ${since} (${ageDays}d ago)`;
+    return `<div class="status-pill stale"><div class="hdot"></div>${escapeHtml(label)}</div>`;
+  }
+  return `<div class="status-pill"><div class="hdot"></div>${escapeHtml(sys.status || "Running")}</div>`;
+}
+
+// ─────────────────────────────────────────────
 // Main render
 // ─────────────────────────────────────────────
 let currentData = null;
@@ -320,7 +347,7 @@ function render(d) {
           <div class="page-title">Lisa Dashboard</div>
           <div class="page-sub">SEO & growth agent · OutdoorBengal.com</div>
           <div class="page-meta">
-            <div class="status-pill"><div class="hdot"></div>${escapeHtml(sys.status || "Running")}</div>
+            ${buildStatusPill(d, sys)}
             <span class="page-date">${escapeHtml(d.week_of)}</span>
           </div>
         </div>

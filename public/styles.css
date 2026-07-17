@@ -107,6 +107,8 @@ body {
   font-size: 12px; font-weight: 500; color: var(--muted);
 }
 .hdot { width: 6px; height: 6px; border-radius: 50%; background: var(--pos); animation: blink 3s ease infinite; }
+.status-pill.stale { color: var(--neg); border-color: var(--neg); background: var(--neg-soft); }
+.status-pill.stale .hdot { background: var(--neg); animation: none; }
 @keyframes blink { 0%,100% {opacity:1} 50% {opacity:.35} }
 .page-date { font-size: 12px; color: var(--faint); }
 
