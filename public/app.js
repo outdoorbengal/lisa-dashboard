@@ -84,7 +84,7 @@ function findExperimentRaw(id) {
 // Used to color the type pill and the row's left-edge accent.
 function typeAccent(t) {
   const x = (t || "").toLowerCase();
-  return ["rnk", "ctr", "cr", "link"].includes(x) ? x : "rnk";
+  return ["rnk", "ctr", "cr", "link", "dec", "fun"].includes(x) ? x : "rnk";
 }
 
 // Format a per-day rate for inline text. Integer when ≥10, 1 decimal below.

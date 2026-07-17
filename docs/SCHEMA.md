@@ -48,7 +48,9 @@ sprints:
 
 **Rules:**
 - `id` must be unique across queue + active + archive.
-- `sprint_type` must be exactly one of `RNK`, `CTR`, `CR`, `LINK`.
+- `sprint_type` must be exactly one of `RNK`, `CTR`, `CR`, `LINK`, `DEC`
+  (declining-content refresh) or `FUN` (funnel / UX, usually site-level
+  with `url: /`).
 - `current_value` and `target_value` are numbers, not strings.
 - `rationale` should be a real explanation — not just the title restated.
 

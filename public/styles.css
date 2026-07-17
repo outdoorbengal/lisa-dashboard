@@ -275,12 +275,18 @@ body {
   --type-cr-soft:    #f6eae6;
   --type-link:       #3d7a4a;   /* forest green — internal links */
   --type-link-soft:  #e9f1ec;
+  --type-dec:        #8f6a2d;   /* ochre — declining content */
+  --type-dec-soft:   #f6f0e2;
+  --type-fun:        #2d7f7a;   /* teal — funnel / UX */
+  --type-fun-soft:   #e5f2f1;
 }
 
 .tag-rnk  { background: var(--type-rnk-soft);  color: var(--type-rnk);  }
 .tag-ctr  { background: var(--type-ctr-soft);  color: var(--type-ctr);  }
 .tag-cr   { background: var(--type-cr-soft);   color: var(--type-cr);   }
 .tag-link { background: var(--type-link-soft); color: var(--type-link); }
+.tag-dec  { background: var(--type-dec-soft);  color: var(--type-dec);  }
+.tag-fun  { background: var(--type-fun-soft);  color: var(--type-fun);  }
 
 /* 3px colored left-edge on the row so the list scans by type. Uses
    box-shadow inset rather than border so nothing shifts layout. */
@@ -288,6 +294,8 @@ body {
 .row-type-ctr  { box-shadow: inset 3px 0 0 var(--type-ctr);  }
 .row-type-cr   { box-shadow: inset 3px 0 0 var(--type-cr);   }
 .row-type-link { box-shadow: inset 3px 0 0 var(--type-link); }
+.row-type-dec  { box-shadow: inset 3px 0 0 var(--type-dec);  }
+.row-type-fun  { box-shadow: inset 3px 0 0 var(--type-fun);  }
 
 /* Sprint-type chip sitting under the sprint number */
 .sprint-type-chip {
