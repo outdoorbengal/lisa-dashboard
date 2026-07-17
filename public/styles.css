@@ -281,6 +281,8 @@ body {
   --type-fun-soft:   #e5f2f1;
   --type-aov:        #8f2d5f;   /* plum — AOV / merchandising */
   --type-aov-soft:   #f6e5ee;
+  --type-ads:        #b07a00;   /* amber — paid / traffic acquisition */
+  --type-ads-soft:   #f9f1dd;
 }
 
 .tag-rnk  { background: var(--type-rnk-soft);  color: var(--type-rnk);  }
@@ -290,6 +292,7 @@ body {
 .tag-dec  { background: var(--type-dec-soft);  color: var(--type-dec);  }
 .tag-fun  { background: var(--type-fun-soft);  color: var(--type-fun);  }
 .tag-aov  { background: var(--type-aov-soft);  color: var(--type-aov);  }
+.tag-ads  { background: var(--type-ads-soft);  color: var(--type-ads);  }
 
 /* 3px colored left-edge on the row so the list scans by type. Uses
    box-shadow inset rather than border so nothing shifts layout. */
@@ -300,6 +303,7 @@ body {
 .row-type-dec  { box-shadow: inset 3px 0 0 var(--type-dec);  }
 .row-type-fun  { box-shadow: inset 3px 0 0 var(--type-fun);  }
 .row-type-aov  { box-shadow: inset 3px 0 0 var(--type-aov);  }
+.row-type-ads  { box-shadow: inset 3px 0 0 var(--type-ads);  }
 
 /* Sprint-type chip sitting under the sprint number */
 .sprint-type-chip {

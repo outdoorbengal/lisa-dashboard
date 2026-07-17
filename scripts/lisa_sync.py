@@ -434,6 +434,10 @@ def build_revenue_model(sprint_type: str, path: str, ctx: dict):
 # wraps them into queue sprints. Diagnostics (tracking health) are
 # separate: they produce warnings, not revenue-ranked sprints.
 
+# Assumed gross margin for valuing paid-traffic plays (ads pay from margin,
+# not revenue). Tune to actual COGS when known.
+GROSS_MARGIN = 0.60
+
 FUNNEL_BENCHMARKS = {  # conservative DTC medians: (numerator, denominator, benchmark rate)
     "atc_rate": ("add_to_cart", "view_item", 0.07),
     "checkout_rate": ("begin_checkout", "add_to_cart", 0.35),
@@ -685,9 +689,64 @@ def check_funnel_stage(ctx) -> list:
     }]
 
 
+def check_traffic_starved(ctx) -> list:
+    """Proven converters with narrow traffic → buy/build more of it (ADS).
+    Inverse of the hold-constant rule: when a page's OBSERVED (not blended)
+    revenue-per-session is well above its class, each additional session has
+    known value — so acquiring traffic (paid or internal links) is the play,
+    and the page's session value sets the breakeven CPC."""
+    out, month = [], 30 / WINDOW_DAYS
+    for path, a in ctx["ga4"].items():
+        if not is_scannable(path):
+            continue
+        # Some real purchase evidence; the sample-size blend below handles
+        # the rest (a 2-purchase fluke gets pulled hard toward its class).
+        if a["sessions"] < 50 or a["purchases"] < 2:
+            continue
+        rps = page_economics(path, ctx)["rps"]
+        class_rps = (ctx["class_stats"].get(page_class(path)) or {}).get("rps", 0.0)
+        if not class_rps or rps < 1.3 * class_rps:
+            continue
+        sessions_mo = a["sessions"] * month
+        if sessions_mo > 2500:
+            continue  # not narrow — already a main traffic surface
+        margin_value = rps * GROSS_MARGIN
+        breakeven_cpc = margin_value
+        # Assume traffic can be doubled at ~50% of margin value per session.
+        impact = round(sessions_mo * margin_value * 0.5, 2)
+        if impact < MIN_IMPACT_USD:
+            continue
+        cr_pct = a["purchases"] / a["sessions"] * 100
+        out.append({
+            "type": "ADS", "url": path, "impact": impact,
+            "title": f"Scale traffic to proven converter — {_slug(path)} (${rps:.2f}/session)",
+            "kpi": {"metric": "sessions_28d", "display_label": f"Sessions/{WINDOW_DAYS}d · ${rps:.2f} per session",
+                    "current_value": round(a["sessions"], 0), "current_display": f"{int(a['sessions'])} now",
+                    "target_value": round(a["sessions"] * 2, 0), "target_display": f"{int(a['sessions'] * 2)}",
+                    "unit": "count"},
+            "effort": {"level": "MEDIUM", "description": "Paid campaign + internal links to a proven page", "estimated_minutes": 90},
+            "rationale": (f"This page converts exceptionally: ${rps:.2f}/session revenue "
+                          f"({cr_pct:.1f}% CR, {int(a['purchases'])} purchases / {int(a['sessions'])} sessions in {WINDOW_DAYS}d) "
+                          f"vs ${class_rps:.2f}/session for its page class — but traffic is narrow "
+                          f"({int(sessions_mo)} sessions/mo). Every added session is worth ~${margin_value:.2f} in gross margin "
+                          f"(at {GROSS_MARGIN * 100:.0f}% margin), so any channel delivering clicks under "
+                          f"${breakeven_cpc:.2f} CPC is profitable. Cheapest first: internal links from high-traffic "
+                          f"blogs; then Google Shopping / PMax and Meta catalog capped near "
+                          f"${breakeven_cpc * 0.5:.2f} CPC for healthy ROAS."),
+            "evaluation": {"window_days": 28, "success_threshold_pct": 40, "neutral_threshold_pct": 0},
+            "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
+                                          "sessions_30d": int(sessions_mo),
+                                          "conversion_rate": round(margin_value * 0.5 / ctx["aov"], 5) if ctx["aov"] else 0.0,
+                                          "aov": round(ctx["aov"], 2)},
+                              "projected": {"impressions_multiplier": 2.0}, "confidence": "medium"},
+        })
+    out.sort(key=lambda f: -f["impact"])
+    return out[:2]  # at most two per run
+
+
 CHECKS = [check_page_ctr, check_page_rank, check_page_cr,
           check_declining_pages, check_cannibalization,
-          check_mobile_gap, check_funnel_stage]
+          check_mobile_gap, check_funnel_stage, check_traffic_starved]
 
 
 def run_diagnostics(ctx) -> list[str]:
@@ -718,7 +777,8 @@ def run_diagnostics(ctx) -> list[str]:
 
 def finding_to_sprint(next_id: int, f: dict, now_iso: str) -> dict:
     opportunity_type = {"CTR": "SEARCH_VISIBILITY", "RNK": "TRAFFIC_GROWTH", "CR": "CONVERSION_OPTIMIZATION",
-                        "DEC": "CONTENT_DECAY", "FUN": "FUNNEL_OPTIMIZATION"}.get(f["type"], "OPPORTUNITY")
+                        "DEC": "CONTENT_DECAY", "FUN": "FUNNEL_OPTIMIZATION",
+                        "ADS": "TRAFFIC_ACQUISITION"}.get(f["type"], "OPPORTUNITY")
     return {
         "id": f"{next_id:03d}",
         "created": date.today().isoformat(),

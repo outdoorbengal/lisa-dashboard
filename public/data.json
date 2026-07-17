@@ -7,7 +7,7 @@
     "pages_total": 773,
     "sources_connected": 3,
     "sources_total": 3,
-    "opportunities": 161,
+    "opportunities": 163,
     "active_tests": 0,
     "days_complete": 1,
     "scan_bars": [
@@ -307,6 +307,140 @@
       "has_exec_brief": true
     },
     {
+      "id": "168",
+      "days_waiting": 0,
+      "title": "Scale traffic to proven converter \u2014 cat-car-seat ($4.08/session)",
+      "url": "/products/cat-car-seat",
+      "sprint_type": "ADS",
+      "impact_label": "Sessions/28d \u00b7 $4.08 per session",
+      "current_pct": 100.0,
+      "current_label": "168 now",
+      "target_pct": 100.0,
+      "target_label": "336",
+      "effort_label": "MEDIUM \u2014 Paid campaign + internal links to a proven page",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 90,
+      "queue_position": 4,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 220.38,
+        "monthly_projected_usd": 440.76,
+        "monthly_lift_usd": 220.38,
+        "monthly_lift_usd_adjusted": 132.23,
+        "annual_lift_usd_adjusted": 1586.75,
+        "confidence": "medium",
+        "haircut_pct": 60,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "0",
+            "after": "0",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "0.00%",
+            "after": "0.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "180",
+            "after": "360",
+            "delta_pct": "+100%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "1.00%",
+            "after": "1.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$123",
+            "after": "$123",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$132/mo",
+      "has_exec_brief": false
+    },
+    {
+      "id": "169",
+      "days_waiting": 0,
+      "title": "Scale traffic to proven converter \u2014 all ($2.35/session)",
+      "url": "/collections/all",
+      "sprint_type": "ADS",
+      "impact_label": "Sessions/28d \u00b7 $2.35 per session",
+      "current_pct": 100.0,
+      "current_label": "219 now",
+      "target_pct": 100.0,
+      "target_label": "438",
+      "effort_label": "MEDIUM \u2014 Paid campaign + internal links to a proven page",
+      "effort_pct": 12,
+      "effort_level": "MEDIUM",
+      "effort_minutes": 90,
+      "queue_position": 5,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 165.07,
+        "monthly_projected_usd": 330.13,
+        "monthly_lift_usd": 165.07,
+        "monthly_lift_usd_adjusted": 99.04,
+        "annual_lift_usd_adjusted": 1188.47,
+        "confidence": "medium",
+        "haircut_pct": 60,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "0",
+            "after": "0",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "0.00%",
+            "after": "0.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "234",
+            "after": "468",
+            "delta_pct": "+100%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "0.57%",
+            "after": "0.57%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "AOV",
+            "before": "$123",
+            "after": "$123",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$99/mo",
+      "has_exec_brief": false
+    },
+    {
       "id": "160",
       "days_waiting": 0,
       "title": "Fix title/meta \u2014 collections (1525 impressions)",
@@ -321,7 +455,7 @@
       "effort_pct": 6,
       "effort_level": "LOW",
       "effort_minutes": 20,
-      "queue_position": 4,
+      "queue_position": 6,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -388,7 +522,7 @@
       "effort_pct": 6,
       "effort_level": "LOW",
       "effort_minutes": 20,
-      "queue_position": 5,
+      "queue_position": 7,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -455,7 +589,7 @@
       "effort_pct": 6,
       "effort_level": "LOW",
       "effort_minutes": 20,
-      "queue_position": 6,
+      "queue_position": 8,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -522,7 +656,7 @@
       "effort_pct": 18,
       "effort_level": "HIGH",
       "effort_minutes": 120,
-      "queue_position": 7,
+      "queue_position": 9,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -589,7 +723,7 @@
       "effort_pct": 18,
       "effort_level": "HIGH",
       "effort_minutes": 120,
-      "queue_position": 8,
+      "queue_position": 10,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -640,140 +774,6 @@
       },
       "revenue_headline": "$66/mo",
       "has_exec_brief": false
-    },
-    {
-      "id": "024",
-      "days_waiting": 87,
-      "title": "Conversion fix \u2014 cat-training-guide",
-      "url": "/blogs/clicker-training-cats/cat-training-guide",
-      "sprint_type": "CR",
-      "impact_label": "Conversion rate \u00b7 701 sessions",
-      "current_pct": 5,
-      "current_label": "0% now",
-      "target_pct": 10.0,
-      "target_label": "0.50%",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 9,
-      "status": "QUEUED",
-      "revenue": {
-        "available": true,
-        "monthly_current_usd": 0.0,
-        "monthly_projected_usd": 105.21,
-        "monthly_lift_usd": 105.21,
-        "monthly_lift_usd_adjusted": 63.13,
-        "annual_lift_usd_adjusted": 757.51,
-        "confidence": "medium",
-        "haircut_pct": 60,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "79,719",
-            "after": "79,719",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "0.31%",
-            "after": "0.31%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "1,072",
-            "after": "1,072",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Conversion rate",
-            "before": "0.00%",
-            "after": "0.08%",
-            "delta_pct": "+\u221e",
-            "changed": true
-          },
-          {
-            "label": "AOV",
-            "before": "$123",
-            "after": "$123",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
-      },
-      "revenue_headline": "$63/mo",
-      "has_exec_brief": false
-    },
-    {
-      "id": "017",
-      "days_waiting": 87,
-      "title": "Conversion fix \u2014 what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
-      "url": "/blogs/clicker-training-cats/what-tricks-can-a-cat-learn-list-of-cat-tricks-how-to-teach",
-      "sprint_type": "CR",
-      "impact_label": "Conversion rate \u00b7 1598 sessions",
-      "current_pct": 5,
-      "current_label": "0% now",
-      "target_pct": 10.0,
-      "target_label": "0.50%",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
-      "queue_position": 10,
-      "status": "QUEUED",
-      "revenue": {
-        "available": true,
-        "monthly_current_usd": 0.0,
-        "monthly_projected_usd": 99.62,
-        "monthly_lift_usd": 99.62,
-        "monthly_lift_usd_adjusted": 59.77,
-        "annual_lift_usd_adjusted": 717.24,
-        "confidence": "medium",
-        "haircut_pct": 60,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "22,572",
-            "after": "22,572",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "2.28%",
-            "after": "2.28%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "1,015",
-            "after": "1,015",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Conversion rate",
-            "before": "0.00%",
-            "after": "0.08%",
-            "delta_pct": "+\u221e",
-            "changed": true
-          },
-          {
-            "label": "AOV",
-            "before": "$123",
-            "after": "$123",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
-      },
-      "revenue_headline": "$60/mo",
-      "has_exec_brief": false
     }
   ],
   "details": {
@@ -808,7 +808,7 @@
         "_source": {
           "opportunity_type": "FUNNEL_OPTIMIZATION",
           "detected_at": "2026-07-17T00:00:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1100.0
         },
         "revenue_model": {
@@ -884,7 +884,7 @@
         "_source": {
           "opportunity_type": "LIFECYCLE",
           "detected_at": "2026-07-17T00:00:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 527.0
         },
         "revenue_model": {
@@ -960,7 +960,7 @@
         "_source": {
           "opportunity_type": "AOV_MERCHANDISING",
           "detected_at": "2026-07-17T00:00:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 319.0
         },
         "revenue_model": {
@@ -1031,7 +1031,7 @@
           "engine_opportunity_id": "OP0387",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942538+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 228.2
         },
         "revenue_model": {
@@ -1046,6 +1046,100 @@
             "ctr": 0.07
           },
           "confidence": "low"
+        }
+      },
+      {
+        "id": "168",
+        "created": "2026-07-17",
+        "title": "Scale traffic to proven converter \u2014 cat-car-seat ($4.08/session)",
+        "url": "/products/cat-car-seat",
+        "sprint_type": "ADS",
+        "kpi": {
+          "metric": "sessions_28d",
+          "display_label": "Sessions/28d \u00b7 $4.08 per session",
+          "current_value": 168.0,
+          "current_display": "168 now",
+          "target_value": 336.0,
+          "target_display": "336",
+          "unit": "count"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Paid campaign + internal links to a proven page",
+          "estimated_minutes": 90
+        },
+        "rationale": "This page converts exceptionally: $4.08/session revenue (1.6% CR, 2 purchases / 168 sessions in 28d) vs $2.02/session for its page class \u2014 but traffic is narrow (180 sessions/mo). Every added session is worth ~$2.45 in gross margin (at 60% margin), so any channel delivering clicks under $2.45 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $1.22 CPC for healthy ROAS.\n\nDashboard impact: $220.33/mo estimated",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 40,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "opportunity_type": "TRAFFIC_ACQUISITION",
+          "detected_at": "2026-07-17T14:29:07Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
+          "dashboard_impact": 220.33
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 0,
+            "ctr": 0.0,
+            "sessions_30d": 180,
+            "conversion_rate": 0.00998,
+            "aov": 122.68
+          },
+          "projected": {
+            "impressions_multiplier": 2.0
+          },
+          "confidence": "medium"
+        }
+      },
+      {
+        "id": "169",
+        "created": "2026-07-17",
+        "title": "Scale traffic to proven converter \u2014 all ($2.35/session)",
+        "url": "/collections/all",
+        "sprint_type": "ADS",
+        "kpi": {
+          "metric": "sessions_28d",
+          "display_label": "Sessions/28d \u00b7 $2.35 per session",
+          "current_value": 219.0,
+          "current_display": "219 now",
+          "target_value": 438.0,
+          "target_display": "438",
+          "unit": "count"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Paid campaign + internal links to a proven page",
+          "estimated_minutes": 90
+        },
+        "rationale": "This page converts exceptionally: $2.35/session revenue (1.2% CR, 2 purchases / 219 sessions in 28d) vs $1.04/session for its page class \u2014 but traffic is narrow (234 sessions/mo). Every added session is worth ~$1.41 in gross margin (at 60% margin), so any channel delivering clicks under $1.41 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.71 CPC for healthy ROAS.\n\nDashboard impact: $165.49/mo estimated",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 40,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "opportunity_type": "TRAFFIC_ACQUISITION",
+          "detected_at": "2026-07-17T14:29:07Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
+          "dashboard_impact": 165.49
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 0,
+            "ctr": 0.0,
+            "sessions_30d": 234,
+            "conversion_rate": 0.00575,
+            "aov": 122.68
+          },
+          "projected": {
+            "impressions_multiplier": 2.0
+          },
+          "confidence": "medium"
         }
       },
       {
@@ -1079,7 +1173,7 @@
           "engine_opportunity_id": "OP0061",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936164+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 160.5
         },
         "revenue_model": {
@@ -1145,7 +1239,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T13:09:06Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 155.44
         },
         "revenue_model": {
@@ -1193,7 +1287,7 @@
           "engine_opportunity_id": "OP0273",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938806+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 148.68
         },
         "revenue_model": {
@@ -1240,7 +1334,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T14:07:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 125.88
         },
         "revenue_model": {
@@ -1288,7 +1382,7 @@
           "engine_opportunity_id": "OP0384",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942480+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 125.72
         },
         "revenue_model": {
@@ -1335,7 +1429,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T13:28:39Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 125.72
         },
         "revenue_model": {
@@ -1383,7 +1477,7 @@
           "engine_opportunity_id": "OP0438",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-05-29T10:10:08.608207+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 113.65,
           "stale_since": "2026-05-30T10:10:14Z"
         },
@@ -1432,7 +1526,7 @@
           "engine_opportunity_id": "OP0419",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943562+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 107.99
         },
         "revenue_model": {
@@ -1480,7 +1574,7 @@
           "engine_opportunity_id": "OP0271",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-29T10:10:08.602421+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 106.42,
           "stale_since": "2026-05-30T10:10:14Z"
         },
@@ -1529,7 +1623,7 @@
           "engine_opportunity_id": "OP0391",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942655+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 106.23
         },
         "revenue_model": {
@@ -1577,7 +1671,7 @@
           "engine_opportunity_id": "OP0209",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-21T16:17:41.045328+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 103.46,
           "stale_since": "2026-04-22T10:00:13Z"
         },
@@ -1626,7 +1720,7 @@
           "engine_opportunity_id": "OP0401",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942943+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 103.33
         },
         "revenue_model": {
@@ -1674,7 +1768,7 @@
           "engine_opportunity_id": "OP0029",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.935771+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 103.04
         },
         "revenue_model": {
@@ -1722,7 +1816,7 @@
           "engine_opportunity_id": "OP0417",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943533+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 102.19
         },
         "revenue_model": {
@@ -1770,7 +1864,7 @@
           "engine_opportunity_id": "OP0421",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943676+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 97.41
         },
         "revenue_model": {
@@ -1818,7 +1912,7 @@
           "engine_opportunity_id": "OP0380",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942408+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 82.18
         },
         "revenue_model": {
@@ -1885,7 +1979,7 @@
           "engine_opportunity_id": "OP0027",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.935748+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 81.36
         },
         "revenue_model": {
@@ -1933,7 +2027,7 @@
           "engine_opportunity_id": "OP0069",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936262+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 80.09
         },
         "revenue_model": {
@@ -1981,7 +2075,7 @@
           "engine_opportunity_id": "OP0271",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938737+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 77.78
         },
         "revenue_model": {
@@ -2029,7 +2123,7 @@
           "engine_opportunity_id": "OP0448",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943966+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 77.48
         },
         "revenue_model": {
@@ -2077,7 +2171,7 @@
           "engine_opportunity_id": "OP0424",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943737+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 68.56
         },
         "revenue_model": {
@@ -2125,7 +2219,7 @@
           "engine_opportunity_id": "OP0378",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942351+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 67.74
         },
         "revenue_model": {
@@ -2173,7 +2267,7 @@
           "engine_opportunity_id": "OP0381",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942420+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 62.73
         },
         "revenue_model": {
@@ -2221,7 +2315,7 @@
           "engine_opportunity_id": "OP0003",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.935445+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 60.23
         },
         "revenue_model": {
@@ -2269,7 +2363,7 @@
           "engine_opportunity_id": "OP0422",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943712+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 57.98
         },
         "revenue_model": {
@@ -2317,7 +2411,7 @@
           "engine_opportunity_id": "OP0122",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936922+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 50.55
         },
         "revenue_model": {
@@ -2365,7 +2459,7 @@
           "engine_opportunity_id": "OP0423",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943722+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 50.44
         },
         "revenue_model": {
@@ -2413,7 +2507,7 @@
           "engine_opportunity_id": "OP0296",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939038+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 47.06
         },
         "revenue_model": {
@@ -2461,7 +2555,7 @@
           "engine_opportunity_id": "OP0386",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942524+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 45.79
         },
         "revenue_model": {
@@ -2509,7 +2603,7 @@
           "engine_opportunity_id": "OP0223",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-01T10:10:12.635623+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 44.62,
           "stale_since": "2026-06-02T10:10:16Z"
         },
@@ -2558,7 +2652,7 @@
           "engine_opportunity_id": "OP0392",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942676+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 42.3
         },
         "revenue_model": {
@@ -2606,7 +2700,7 @@
           "engine_opportunity_id": "OP0379",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942383+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 41.25
         },
         "revenue_model": {
@@ -2654,7 +2748,7 @@
           "engine_opportunity_id": "OP0144",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937202+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 37.97
         },
         "revenue_model": {
@@ -2702,7 +2796,7 @@
           "engine_opportunity_id": "OP0393",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942702+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 37.68
         },
         "revenue_model": {
@@ -2750,7 +2844,7 @@
           "engine_opportunity_id": "OP0390",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942622+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 34.92
         },
         "revenue_model": {
@@ -2798,7 +2892,7 @@
           "engine_opportunity_id": "OP0374",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942244+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 33.15
         },
         "revenue_model": {
@@ -2846,7 +2940,7 @@
           "engine_opportunity_id": "OP0420",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943582+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 31.75
         },
         "revenue_model": {
@@ -2894,7 +2988,7 @@
           "engine_opportunity_id": "OP0375",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942271+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 29.41
         },
         "revenue_model": {
@@ -2942,7 +3036,7 @@
           "engine_opportunity_id": "OP0388",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942569+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 27.8
         },
         "revenue_model": {
@@ -2989,7 +3083,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T08:32:03Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 26.93
         },
         "revenue_model": {
@@ -3064,7 +3158,7 @@
           "engine_opportunity_id": "OP0383",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942453+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 24.31
         },
         "revenue_model": {
@@ -3112,7 +3206,7 @@
           "engine_opportunity_id": "OP0377",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942333+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 23.91
         },
         "revenue_model": {
@@ -3160,7 +3254,7 @@
           "engine_opportunity_id": "OP0395",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942784+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 19.88
         },
         "revenue_model": {
@@ -3208,7 +3302,7 @@
           "engine_opportunity_id": "OP0002",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.935421+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 19.82
         },
         "revenue_model": {
@@ -3256,7 +3350,7 @@
           "engine_opportunity_id": "OP0398",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942866+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 19.67
         },
         "revenue_model": {
@@ -3304,7 +3398,7 @@
           "engine_opportunity_id": "OP0441",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-02T10:10:10.899957+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 17.67,
           "stale_since": "2026-06-03T10:10:19Z"
         },
@@ -3354,7 +3448,7 @@
           "engine_opportunity_id": "OP0376",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942307+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 17.17
         },
         "revenue_model": {
@@ -3401,7 +3495,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T12:25:23Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 16.93
         },
         "revenue_model": {
@@ -3476,7 +3570,7 @@
           "engine_opportunity_id": "OP0405",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943128+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 16.68
         },
         "revenue_model": {
@@ -3524,7 +3618,7 @@
           "engine_opportunity_id": "OP0425",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943747+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 16.52
         },
         "revenue_model": {
@@ -3572,7 +3666,7 @@
           "engine_opportunity_id": "OP0399",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942886+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 15.98
         },
         "revenue_model": {
@@ -3619,7 +3713,7 @@
         "_source": {
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-07-17T13:09:06Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 15.92
         },
         "revenue_model": {
@@ -3666,7 +3760,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T12:25:23Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 15.83
         },
         "revenue_model": {
@@ -3740,7 +3834,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T12:30:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 15.76
         },
         "revenue_model": {
@@ -3787,7 +3881,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T08:32:03Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 15.23
         },
         "revenue_model": {
@@ -3861,7 +3955,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T08:32:03Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 14.71
         },
         "revenue_model": {
@@ -3936,7 +4030,7 @@
           "engine_opportunity_id": "OP0217",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938133+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 14.62
         },
         "revenue_model": {
@@ -3984,7 +4078,7 @@
           "engine_opportunity_id": "OP0427",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943781+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 13.92
         },
         "revenue_model": {
@@ -4032,7 +4126,7 @@
           "engine_opportunity_id": "OP0445",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943943+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 13.67
         },
         "revenue_model": {
@@ -4080,7 +4174,7 @@
           "engine_opportunity_id": "OP0419",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-30T10:00:12.674942+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 13.26,
           "stale_since": "2026-05-01T10:00:14Z"
         },
@@ -4129,7 +4223,7 @@
           "engine_opportunity_id": "OP0408",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943219+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 13.13
         },
         "revenue_model": {
@@ -4176,7 +4270,7 @@
         "_source": {
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-07-17T13:28:39Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 13.1
         },
         "revenue_model": {
@@ -4224,7 +4318,7 @@
           "engine_opportunity_id": "OP0125",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936976+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 12.48
         },
         "revenue_model": {
@@ -4272,7 +4366,7 @@
           "engine_opportunity_id": "OP0237",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938374+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 12.43
         },
         "revenue_model": {
@@ -4320,7 +4414,7 @@
           "engine_opportunity_id": "OP0456",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.944026+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 12.24
         },
         "revenue_model": {
@@ -4367,7 +4461,7 @@
         "_source": {
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-07-17T12:30:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 11.7
         },
         "revenue_model": {
@@ -4415,7 +4509,7 @@
           "engine_opportunity_id": "OP0426",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943766+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 11.02
         },
         "revenue_model": {
@@ -4461,7 +4555,7 @@
         "_source": {
           "stale_since": "2026-04-20T13:43:43Z",
           "dashboard_impact": 10.98,
-          "last_refreshed": "2026-07-17T14:10:55Z"
+          "last_refreshed": "2026-07-17T14:29:07Z"
         },
         "revenue_model": {
           "current": {
@@ -4507,7 +4601,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T12:25:23Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 10.79
         },
         "revenue_model": {
@@ -4582,7 +4676,7 @@
           "engine_opportunity_id": "OP0447",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943958+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 10.56
         },
         "revenue_model": {
@@ -4630,7 +4724,7 @@
           "engine_opportunity_id": "OP0453",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.944004+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 9.79
         },
         "revenue_model": {
@@ -4678,7 +4772,7 @@
           "engine_opportunity_id": "OP0318",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939291+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 9.57
         },
         "revenue_model": {
@@ -4726,7 +4820,7 @@
           "engine_opportunity_id": "OP0389",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942585+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 9.55
         },
         "revenue_model": {
@@ -4773,7 +4867,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T13:09:06Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 9.01
         },
         "revenue_model": {
@@ -4820,7 +4914,7 @@
         "_source": {
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-07-17T12:30:00Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 8.59
         },
         "revenue_model": {
@@ -4868,7 +4962,7 @@
           "engine_opportunity_id": "OP0382",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942436+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 8.24
         },
         "revenue_model": {
@@ -4916,7 +5010,7 @@
           "engine_opportunity_id": "OP0441",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-05-13T10:10:14.736183+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 8.12,
           "stale_since": "2026-05-14T10:10:18Z"
         },
@@ -4965,7 +5059,7 @@
           "engine_opportunity_id": "OP0138",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937122+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 7.84
         },
         "revenue_model": {
@@ -5013,7 +5107,7 @@
           "engine_opportunity_id": "OP0139",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937133+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 7.53
         },
         "revenue_model": {
@@ -5061,7 +5155,7 @@
           "engine_opportunity_id": "OP0286",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938918+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 7.27
         },
         "revenue_model": {
@@ -5108,7 +5202,7 @@
         "_source": {
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-07-17T13:28:39Z",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 7.26
         },
         "revenue_model": {
@@ -5156,7 +5250,7 @@
           "engine_opportunity_id": "OP0151",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937287+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 7.02
         },
         "revenue_model": {
@@ -5204,7 +5298,7 @@
           "engine_opportunity_id": "OP0436",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-21T16:17:41.050881+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 6.5,
           "stale_since": "2026-04-22T10:00:13Z"
         },
@@ -5253,7 +5347,7 @@
           "engine_opportunity_id": "OP0378",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-29T12:47:56.519215+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.84,
           "stale_since": "2026-04-30T10:00:16Z"
         },
@@ -5302,7 +5396,7 @@
           "engine_opportunity_id": "OP0055",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936100+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.66
         },
         "revenue_model": {
@@ -5350,7 +5444,7 @@
           "engine_opportunity_id": "OP0440",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943892+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.66
         },
         "revenue_model": {
@@ -5398,7 +5492,7 @@
           "engine_opportunity_id": "OP0444",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943929+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.19
         },
         "revenue_model": {
@@ -5446,7 +5540,7 @@
           "engine_opportunity_id": "OP0231",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938311+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.18
         },
         "revenue_model": {
@@ -5494,7 +5588,7 @@
           "engine_opportunity_id": "OP0187",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937734+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 5.14
         },
         "revenue_model": {
@@ -5542,7 +5636,7 @@
           "engine_opportunity_id": "OP0407",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943177+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.93
         },
         "revenue_model": {
@@ -5590,7 +5684,7 @@
           "engine_opportunity_id": "OP0304",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939140+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.67
         },
         "revenue_model": {
@@ -5638,7 +5732,7 @@
           "engine_opportunity_id": "OP0295",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939022+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.45
         },
         "revenue_model": {
@@ -5686,7 +5780,7 @@
           "engine_opportunity_id": "OP0409",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943261+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.29
         },
         "revenue_model": {
@@ -5734,7 +5828,7 @@
           "engine_opportunity_id": "OP0288",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-05T10:10:11.561415+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.28,
           "stale_since": "2026-06-06T10:10:15Z"
         },
@@ -5783,7 +5877,7 @@
           "engine_opportunity_id": "OP0114",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936820+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 4.13
         },
         "revenue_model": {
@@ -5831,7 +5925,7 @@
           "engine_opportunity_id": "OP0285",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938911+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.72
         },
         "revenue_model": {
@@ -5879,7 +5973,7 @@
           "engine_opportunity_id": "OP0186",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937724+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.57
         },
         "revenue_model": {
@@ -5927,7 +6021,7 @@
           "engine_opportunity_id": "OP0442",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943909+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.54
         },
         "revenue_model": {
@@ -5975,7 +6069,7 @@
           "engine_opportunity_id": "OP0118",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.936870+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.38
         },
         "revenue_model": {
@@ -6023,7 +6117,7 @@
           "engine_opportunity_id": "OP0397",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942851+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.15
         },
         "revenue_model": {
@@ -6071,7 +6165,7 @@
           "engine_opportunity_id": "OP0327",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-14T10:10:14.295232+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 3.06,
           "stale_since": "2026-05-15T10:10:17Z"
         },
@@ -6120,7 +6214,7 @@
           "engine_opportunity_id": "OP0473",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-04T10:10:12.869722+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 2.88,
           "stale_since": "2026-06-05T10:10:17Z"
         },
@@ -6169,7 +6263,7 @@
           "engine_opportunity_id": "OP0425",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-05T10:10:13.301440+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 2.84,
           "stale_since": "2026-05-06T10:10:15Z"
         },
@@ -6218,7 +6312,7 @@
           "engine_opportunity_id": "OP0313",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939226+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 2.72
         },
         "revenue_model": {
@@ -6266,7 +6360,7 @@
           "engine_opportunity_id": "OP0400",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942901+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 2.49
         },
         "revenue_model": {
@@ -6314,7 +6408,7 @@
           "engine_opportunity_id": "OP0403",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943008+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 2.23
         },
         "revenue_model": {
@@ -6362,7 +6456,7 @@
           "engine_opportunity_id": "OP0394",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942763+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.68
         },
         "revenue_model": {
@@ -6410,7 +6504,7 @@
           "engine_opportunity_id": "OP0449",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943973+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.6
         },
         "revenue_model": {
@@ -6458,7 +6552,7 @@
           "engine_opportunity_id": "OP0281",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-15T10:10:13.596649+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.58,
           "stale_since": "2026-05-16T10:10:17Z"
         },
@@ -6507,7 +6601,7 @@
           "engine_opportunity_id": "OP0450",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943982+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.57
         },
         "revenue_model": {
@@ -6555,7 +6649,7 @@
           "engine_opportunity_id": "OP0438",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943878+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.52
         },
         "revenue_model": {
@@ -6603,7 +6697,7 @@
           "engine_opportunity_id": "OP0452",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943996+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.49
         },
         "revenue_model": {
@@ -6651,7 +6745,7 @@
           "engine_opportunity_id": "OP0428",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943801+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.45
         },
         "revenue_model": {
@@ -6699,7 +6793,7 @@
           "engine_opportunity_id": "OP0256",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-22T10:00:09.969451+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.43,
           "stale_since": "2026-04-24T14:17:14Z"
         },
@@ -6748,7 +6842,7 @@
           "engine_opportunity_id": "OP0432",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943831+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.31
         },
         "revenue_model": {
@@ -6796,7 +6890,7 @@
           "engine_opportunity_id": "OP0439",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943886+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.2
         },
         "revenue_model": {
@@ -6844,7 +6938,7 @@
           "engine_opportunity_id": "OP0430",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943817+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 1.03
         },
         "revenue_model": {
@@ -6892,7 +6986,7 @@
           "engine_opportunity_id": "OP0443",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943920+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.99
         },
         "revenue_model": {
@@ -6940,7 +7034,7 @@
           "engine_opportunity_id": "OP0454",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.944011+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.8
         },
         "revenue_model": {
@@ -6988,7 +7082,7 @@
           "engine_opportunity_id": "OP0319",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-21T10:10:12.594052+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.8,
           "stale_since": "2026-05-22T10:10:17Z"
         },
@@ -7037,7 +7131,7 @@
           "engine_opportunity_id": "OP0477",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-05-21T10:10:12.599070+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.8,
           "stale_since": "2026-05-22T10:10:17Z"
         },
@@ -7086,7 +7180,7 @@
           "engine_opportunity_id": "OP0189",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.937760+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.66
         },
         "revenue_model": {
@@ -7134,7 +7228,7 @@
           "engine_opportunity_id": "OP0455",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.944019+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.63
         },
         "revenue_model": {
@@ -7182,7 +7276,7 @@
           "engine_opportunity_id": "OP0436",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943862+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.61
         },
         "revenue_model": {
@@ -7230,7 +7324,7 @@
           "engine_opportunity_id": "OP0413",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943449+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.61
         },
         "revenue_model": {
@@ -7278,7 +7372,7 @@
           "engine_opportunity_id": "OP0445",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-05-15T10:10:13.601617+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.57,
           "stale_since": "2026-05-16T10:10:17Z"
         },
@@ -7327,7 +7421,7 @@
           "engine_opportunity_id": "OP0426",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-02T10:10:10.899502+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.53,
           "stale_since": "2026-06-03T10:10:19Z"
         },
@@ -7376,7 +7470,7 @@
           "engine_opportunity_id": "OP0434",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943846+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.5
         },
         "revenue_model": {
@@ -7424,7 +7518,7 @@
           "engine_opportunity_id": "OP0230",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.938299+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.49
         },
         "revenue_model": {
@@ -7472,7 +7566,7 @@
           "engine_opportunity_id": "OP0367",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-26T10:00:09.708428+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.38,
           "stale_since": "2026-04-27T10:00:15Z"
         },
@@ -7521,7 +7615,7 @@
           "engine_opportunity_id": "OP0446",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943950+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.36
         },
         "revenue_model": {
@@ -7569,7 +7663,7 @@
           "engine_opportunity_id": "OP0412",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943415+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.36
         },
         "revenue_model": {
@@ -7617,7 +7711,7 @@
           "engine_opportunity_id": "OP0474",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-05-05T10:10:13.302313+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.3,
           "stale_since": "2026-05-06T10:10:15Z"
         },
@@ -7666,7 +7760,7 @@
           "engine_opportunity_id": "OP0424",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-04T10:10:12.868914+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.26,
           "stale_since": "2026-06-05T10:10:17Z"
         },
@@ -7715,7 +7809,7 @@
           "engine_opportunity_id": "OP0414",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943468+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.19
         },
         "revenue_model": {
@@ -7763,7 +7857,7 @@
           "engine_opportunity_id": "OP0429",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943810+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.19
         },
         "revenue_model": {
@@ -7811,7 +7905,7 @@
           "engine_opportunity_id": "OP0404",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943053+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.19
         },
         "revenue_model": {
@@ -7859,7 +7953,7 @@
           "engine_opportunity_id": "OP0319",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.939298+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.16
         },
         "revenue_model": {
@@ -7907,7 +8001,7 @@
           "engine_opportunity_id": "OP0451",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943989+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.15
         },
         "revenue_model": {
@@ -7955,7 +8049,7 @@
           "engine_opportunity_id": "OP0416",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943513+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.12
         },
         "revenue_model": {
@@ -8003,7 +8097,7 @@
           "engine_opportunity_id": "OP0435",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943853+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.12
         },
         "revenue_model": {
@@ -8051,7 +8145,7 @@
           "engine_opportunity_id": "OP0410",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943372+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.08
         },
         "revenue_model": {
@@ -8099,7 +8193,7 @@
           "engine_opportunity_id": "OP0406",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943154+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.04
         },
         "revenue_model": {
@@ -8147,7 +8241,7 @@
           "engine_opportunity_id": "OP0431",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943824+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.04
         },
         "revenue_model": {
@@ -8195,7 +8289,7 @@
           "engine_opportunity_id": "OP0415",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943483+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.03
         },
         "revenue_model": {
@@ -8243,7 +8337,7 @@
           "engine_opportunity_id": "OP0433",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943839+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.03
         },
         "revenue_model": {
@@ -8291,7 +8385,7 @@
           "engine_opportunity_id": "OP0411",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.943401+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.02
         },
         "revenue_model": {
@@ -8339,7 +8433,7 @@
           "engine_opportunity_id": "OP0418",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-06-06T10:10:09.943549+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         }
       },
@@ -8374,7 +8468,7 @@
           "engine_opportunity_id": "OP0444",
           "opportunity_type": "CONVERSION_OPTIMIZATION",
           "detected_at": "2026-05-03T10:10:12.321734+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0,
           "stale_since": "2026-05-04T10:10:16Z"
         },
@@ -8441,7 +8535,7 @@
           "engine_opportunity_id": "OP0396",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.942806+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         }
       },
@@ -8476,7 +8570,7 @@
           "engine_opportunity_id": "OP0289",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-04-20T13:44:13.971647+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0,
           "stale_since": "2026-04-21T16:00:11Z"
         },
@@ -8525,7 +8619,7 @@
           "engine_opportunity_id": "OP0429",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-05-14T10:10:14.299224+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0,
           "stale_since": "2026-05-15T10:10:17Z"
         },
@@ -8574,7 +8668,7 @@
           "engine_opportunity_id": "OP0437",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943871+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         },
         "revenue_model": {
@@ -8641,7 +8735,7 @@
           "engine_opportunity_id": "OP0023",
           "opportunity_type": "TRAFFIC_GROWTH",
           "detected_at": "2026-06-06T10:10:09.935702+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         },
         "revenue_model": {
@@ -8689,7 +8783,7 @@
           "engine_opportunity_id": "OP0441",
           "opportunity_type": "SEARCH_VISIBILITY",
           "detected_at": "2026-06-06T10:10:09.943899+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         },
         "revenue_model": {
@@ -8737,7 +8831,7 @@
           "engine_opportunity_id": "OP0457",
           "opportunity_type": "SERP_DISCOVERY",
           "detected_at": "2026-06-06T10:10:09.946288+00:00",
-          "last_refreshed": "2026-07-17T14:10:55Z",
+          "last_refreshed": "2026-07-17T14:29:07Z",
           "dashboard_impact": 0.0
         },
         "revenue_model": {
@@ -8785,7 +8879,7 @@
         ],
         "_source": {
           "stale_since": "2026-04-20T13:43:43Z",
-          "last_refreshed": "2026-07-17T14:10:55Z"
+          "last_refreshed": "2026-07-17T14:29:07Z"
         },
         "revenue_model": {
           "current": {
@@ -9079,6 +9173,24 @@
     ]
   },
   "log": [
+    {
+      "run_id": "scan-20260717-142907",
+      "type": "daily_scan",
+      "status": "warning",
+      "duration_ms": 6260,
+      "pages_scanned": 773,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 773 pages. 2 new opportunities, 156 reranked. 0 active experiments re-measured. 2 tracking warnings.",
+      "warnings": [
+        "Revenue mismatch: GA4 $35,852 vs Shopify online-store $58,026 (38% gap, 28d) \u2014 check purchase tracking, refunds, payment referral exclusions",
+        "Order-count mismatch: GA4 352 purchases vs Shopify 473 online-store orders (26% gap) \u2014 duplicate or missing purchase events"
+      ],
+      "ts": "2026-07-17T14:29:07Z"
+    },
     {
       "run_id": "scan-20260717-141055",
       "type": "daily_scan",
@@ -9739,20 +9851,6 @@
       ],
       "summary": "Scanned 219 pages. 1 new opportunities, 120 reranked. 6 active experiments re-measured.",
       "ts": "2026-05-08T10:10:55Z"
-    },
-    {
-      "run_id": "scan-20260507-101001",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 48022,
-      "pages_scanned": 219,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 219 pages. 1 new opportunities, 121 reranked. 6 active experiments re-measured.",
-      "ts": "2026-05-07T10:10:49Z"
     }
   ]
 }
