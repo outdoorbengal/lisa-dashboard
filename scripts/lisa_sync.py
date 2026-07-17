@@ -296,54 +296,118 @@ def measure(metric: str, path: str, gsc: dict, ga4: dict, ga4_totals: dict, extr
 
 
 # ── impact scoring: estimated incremental $ per month ────────────────
-def page_cr(path: str, ga4: dict, ga4_totals: dict) -> float:
-    a = ga4.get(path)
-    if a and a["sessions"] >= 100 and a["purchases"] > 0:
-        return a["purchases"] / a["sessions"]
-    return (ga4_totals["purchases"] / ga4_totals["sessions"]) if ga4_totals["sessions"] else 0.01
+# Principle (Albert, 2026-07): hold everything constant except the lever
+# being pulled. A traffic play (CTR/RNK) is valued at the page's OWN
+# revenue-per-session — a blog that doesn't convert must not be priced
+# like a product page. A conversion play (CR) holds the page's traffic
+# constant and only moves its conversion rate.
+#
+# Page economics use an empirical-Bayes blend: the page's observed
+# revenue/session weighted by its sample size, with the page-CLASS
+# average (products / collections / blogs / other) as the prior. Never
+# the site average. Cross-session assisted value (blog reader buys next
+# week from a product page) is NOT credited — landing-page attribution
+# can't see it, so scores for content pages are conservative.
+
+PRIOR_SESSIONS = 200  # sessions at which observed data outweighs the class prior
 
 
-def score_impact(sprint_type: str, path: str, gsc: dict, ga4: dict, ga4_totals: dict, aov: float):
-    g, a = gsc.get(path), ga4.get(path)
+def page_class(path: str) -> str:
+    if path == "/":
+        return "home"  # kept separate so it can't inflate the content-page prior
+    if path.startswith("/products"):
+        return "product"
+    if path.startswith("/collections"):
+        return "collection"
+    if path.startswith("/blogs"):
+        return "blog"
+    return "other"
+
+
+def build_class_stats(ga4: dict) -> dict:
+    cls = {}
+    for path, a in ga4.items():
+        c = cls.setdefault(page_class(path), {"sessions": 0.0, "purchases": 0.0, "revenue": 0.0})
+        for k in c:
+            c[k] += a[k]
+    out = {}
+    for name, c in cls.items():
+        out[name] = {"rps": c["revenue"] / c["sessions"] if c["sessions"] else 0.0,
+                     "cr": c["purchases"] / c["sessions"] if c["sessions"] else 0.0}
+    return out
+
+
+def page_economics(path: str, ctx: dict) -> dict:
+    """Blended revenue-per-session and CR for a page (observed ⊕ class prior)."""
+    a = ctx["ga4"].get(path)
+    cstats = ctx["class_stats"].get(page_class(path)) or {"rps": 0.0, "cr": 0.0}
+    if not a or not a["sessions"]:
+        return dict(cstats)
+    w = a["sessions"] / (a["sessions"] + PRIOR_SESSIONS)
+    return {"rps": w * (a["revenue"] / a["sessions"]) + (1 - w) * cstats["rps"],
+            "cr": w * (a["purchases"] / a["sessions"]) + (1 - w) * cstats["cr"]}
+
+
+def score_impact(sprint_type: str, path: str, ctx: dict):
+    g, a = ctx["gsc"].get(path), ctx["ga4"].get(path)
     month = 30 / WINDOW_DAYS
-    cr = page_cr(path, ga4, ga4_totals)
     if sprint_type == "CTR" and g:
         gap = max(expected_ctr(g["position"]) - g["ctr"], 0)
-        return round(g["impressions"] * month * gap * cr * aov, 2)
+        extra_sessions = g["impressions"] * month * gap
+        return round(extra_sessions * page_economics(path, ctx)["rps"], 2)
     if sprint_type == "RNK" and g:
         target_pos = max(g["position"] - 5, 4)
         gap = max(expected_ctr(target_pos) - g["ctr"], 0)
-        return round(g["impressions"] * month * gap * cr * aov, 2)
+        extra_sessions = g["impressions"] * month * gap
+        return round(extra_sessions * page_economics(path, ctx)["rps"], 2)
     if sprint_type == "CR" and a and a["sessions"] > 0:
         current = a["purchases"] / a["sessions"]
-        target = max(current * 1.5, 0.01)
-        return round(a["sessions"] * month * (target - current) * aov, 2)
+        target = cr_target(current, path, ctx)
+        return round(a["sessions"] * month * (target - current) * ctx["aov"], 2)
     return None  # unscoreable (LINK plays etc.) — keep previous score
 
 
+def cr_target(current: float, path: str, ctx: dict) -> float:
+    """A realistic conversion target: toward the page-CLASS average, capped
+    at 1.5× class — a blog cannot be pushed to product-page conversion."""
+    class_cr = (ctx["class_stats"].get(page_class(path)) or {}).get("cr", 0.0)
+    if not class_cr:
+        return current * 1.5
+    target = min(max(current * 1.5, class_cr), class_cr * 1.5)
+    return max(target, current)
+
+
 # ── revenue model (what build_data.py ranks and renders from) ────────
-def build_revenue_model(sprint_type: str, path: str, gsc: dict, ga4: dict, ga4_totals: dict, aov: float):
+def build_revenue_model(sprint_type: str, path: str, ctx: dict):
     """Emit the queue.yml revenue_model block build_data.py expects.
-    Sprints without one fall to the bottom of the dashboard ranking."""
+    Sprints without one fall to the bottom of the dashboard ranking.
+    For traffic plays the model's conversion_rate is derived from the
+    page's blended revenue-per-session (rps / aov), so the dashboard's
+    cr × aov math reproduces the page's actual session value."""
+    gsc, ga4, aov = ctx["gsc"], ctx["ga4"], ctx["aov"]
     g, a = gsc.get(path), ga4.get(path)
     month = 30 / WINDOW_DAYS
-    cr = page_cr(path, ga4, ga4_totals)
     if sprint_type in ("CTR", "RNK"):
         if not g:
             return None
+        econ = page_economics(path, ctx)
         current = {
             "impressions_30d": int(g["impressions"] * month),
             "ctr": round(g["ctr"], 4),
-            "sessions_30d": int(a["sessions"] * month) if a else int(g["clicks"] * month),
-            "conversion_rate": round(cr, 4),
+            # Session base = organic clicks: a CTR/position change only moves
+            # organic traffic, so paid/direct sessions must not be scaled.
+            "sessions_30d": int(g["clicks"] * month),
+            "conversion_rate": round(econ["rps"] / aov, 5) if aov else 0.0,
             "aov": round(aov, 2),
         }
         if sprint_type == "CTR":
             projected = {"ctr": round(expected_ctr(g["position"]), 4)}
             confidence = "medium"
         else:
+            # Same assumption set as score_impact: CTR moves to the target
+            # position's curve value; impressions held constant (no multiplier).
             target_pos = max(g["position"] - 5, 4)
-            projected = {"impressions_multiplier": 2.0, "ctr": round(expected_ctr(target_pos), 4)}
+            projected = {"ctr": round(expected_ctr(target_pos), 4)}
             confidence = "low"
         return {"current": current, "projected": projected, "confidence": confidence}
     if sprint_type == "CR":
@@ -356,7 +420,7 @@ def build_revenue_model(sprint_type: str, path: str, gsc: dict, ga4: dict, ga4_t
             "conversion_rate": round(a["purchases"] / a["sessions"], 4),
             "aov": round(aov, 2),
         }
-        projected = {"conversion_rate": round(max(a["purchases"] / a["sessions"] * 1.5, 0.01), 4)}
+        projected = {"conversion_rate": round(cr_target(a["purchases"] / a["sessions"], path, ctx), 4)}
         return {"current": current, "projected": projected, "confidence": "medium"}
     return None
 
@@ -388,7 +452,7 @@ def check_page_ctr(ctx) -> list:
         if not is_scannable(path):
             continue
         if g["impressions"] >= 1000 and g["position"] <= 12 and g["ctr"] < 0.5 * expected_ctr(g["position"]):
-            impact = score_impact("CTR", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"])
+            impact = score_impact("CTR", path, ctx)
             if not impact:
                 continue
             v, tgt = round(g["ctr"] * 100, 2), round(expected_ctr(g["position"]) * 100, 2)
@@ -403,7 +467,7 @@ def check_page_ctr(ctx) -> list:
                 "rationale": f"Ranking pos {g['position']:.1f}" + (f" for '{q}'" if q else "")
                              + f" but CTR is {v:g}% vs ~{tgt:g}% expected — title/meta underselling the click",
                 "evaluation": {"window_days": 42, "success_threshold_pct": 15, "neutral_threshold_pct": 0},
-                "revenue_model": build_revenue_model("CTR", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"]),
+                "revenue_model": build_revenue_model("CTR", path, ctx),
             })
     return out
 
@@ -414,7 +478,7 @@ def check_page_rank(ctx) -> list:
         if not is_scannable(path):
             continue
         if 8 <= g["position"] <= 20 and g["impressions"] >= 500:
-            impact = score_impact("RNK", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"])
+            impact = score_impact("RNK", path, ctx)
             if not impact:
                 continue
             wk = round(g["clicks"] / (WINDOW_DAYS / 7), 1)
@@ -430,7 +494,7 @@ def check_page_rank(ctx) -> list:
                 "rationale": f"Ranking pos {g['position']:.1f}" + (f" for '{q}'" if q else "")
                              + f" — {int(g['impressions'])} impressions stuck on page 2",
                 "evaluation": {"window_days": 42, "success_threshold_pct": 15, "neutral_threshold_pct": 0},
-                "revenue_model": build_revenue_model("RNK", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"]),
+                "revenue_model": build_revenue_model("RNK", path, ctx),
             })
     return out
 
@@ -441,7 +505,7 @@ def check_page_cr(ctx) -> list:
         if not is_scannable(path) or not path.startswith("/products/"):
             continue
         if a["sessions"] >= 300 and (a["purchases"] / a["sessions"]) < 0.01:
-            impact = score_impact("CR", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"])
+            impact = score_impact("CR", path, ctx)
             if not impact:
                 continue
             cr = a["purchases"] / a["sessions"]
@@ -455,7 +519,7 @@ def check_page_cr(ctx) -> list:
                 "effort": {"level": "MEDIUM", "description": "PDP copy / offer / trust review", "estimated_minutes": 60},
                 "rationale": f"{int(a['sessions'])} sessions/{WINDOW_DAYS}d but only {cr * 100:.2f}% conversion — revenue leak",
                 "evaluation": {"window_days": 28, "success_threshold_pct": 25, "neutral_threshold_pct": 0},
-                "revenue_model": build_revenue_model("CR", path, ctx["gsc"], ctx["ga4"], ctx["ga4_totals"], ctx["aov"]),
+                "revenue_model": build_revenue_model("CR", path, ctx),
             })
     return out
 
@@ -470,8 +534,9 @@ def check_declining_pages(ctx) -> list:
         drop = (prev["clicks"] - cur["clicks"]) / prev["clicks"]
         if drop < 0.30:
             continue
-        cr = page_cr(path, ctx["ga4"], ctx["ga4_totals"])
-        impact = round((prev["clicks"] - cur["clicks"]) * month * cr * ctx["aov"], 2)
+        econ = page_economics(path, ctx)
+        cr = econ["rps"] / ctx["aov"] if ctx["aov"] else 0.0
+        impact = round((prev["clicks"] - cur["clicks"]) * month * econ["rps"], 2)
         if impact < MIN_IMPACT_USD:
             continue
         wk = round(cur["clicks"] / (WINDOW_DAYS / 7), 1)
@@ -515,10 +580,11 @@ def check_cannibalization(ctx) -> list:
         if len(splitters) < 2:
             continue
         top = splitters[0]
-        cr = page_cr(top[0], ctx["ga4"], ctx["ga4_totals"])
+        econ = page_economics(top[0], ctx)
+        cr = econ["rps"] / ctx["aov"] if ctx["aov"] else 0.0
         q_ctr = sum(r[1] for r in rows) / total_imp
         gain = max(expected_ctr(top[3]) - q_ctr, 0) * 0.5  # 50% consolidation credit
-        impact = round(total_imp * month * gain * cr * ctx["aov"], 2)
+        impact = round(total_imp * month * gain * econ["rps"], 2)
         if impact < MIN_IMPACT_USD:
             continue
         wk = round(top[1] / (WINDOW_DAYS / 7), 1)
@@ -742,7 +808,8 @@ def main() -> int:
 
     ctx = {"gsc": gsc, "gsc_prev": gsc_prev, "query_pages": query_pages,
            "ga4": ga4, "ga4_totals": ga4_totals, "events": events,
-           "devices": devices, "shop": shop, "aov": aov, "top_query": top_query}
+           "devices": devices, "shop": shop, "aov": aov, "top_query": top_query,
+           "class_stats": None}  # filled after calibration below
     extra = {"events": events, "devices": devices, "shop": shop}
 
     # 0. Diagnostics first — never optimize on top of broken measurement
@@ -770,6 +837,10 @@ def main() -> int:
             events[k] = int(events[k] * calib)
         print(f"  · GA4 volumes calibrated ×{calib} to Shopify online-store orders")
 
+    ctx["class_stats"] = build_class_stats(ga4)
+    print("  · page-class $/session: " + " · ".join(
+        f"{k} ${v['rps']:.2f}" for k, v in sorted(ctx["class_stats"].items())))
+
     queue = load_yaml(QUEUE)
     active = load_yaml(ACTIVE)
     archive = load_yaml(ARCHIVE)
@@ -779,24 +850,29 @@ def main() -> int:
     reranked = 0
     for sp in queue.get("sprints", []):
         path = norm_path(sp.get("url", ""))
+        # A page absent from BOTH sources for the whole window is dead or
+        # junk ("(not set)") — sink it instead of keeping a stale score.
+        if path.startswith("(") or (path != "/" and path not in gsc and path not in ga4):
+            sp.setdefault("_source", {})["dashboard_impact"] = 0.0
+            sp["_source"]["last_refreshed"] = now_iso
+            sp.pop("revenue_model", None)  # else the model would still rank it
+            continue
         m = measure(sp["kpi"].get("metric", ""), path, gsc, ga4, ga4_totals, extra)
         if m:
             sp["kpi"]["current_value"], sp["kpi"]["current_display"], _ = m
-        impact = score_impact(sp.get("sprint_type", ""), path, gsc, ga4, ga4_totals, aov)
+        impact = score_impact(sp.get("sprint_type", ""), path, ctx)
         src = sp.setdefault("_source", {})
         if impact is not None:
             src["dashboard_impact"] = impact
         src["last_refreshed"] = now_iso
-        # Keep the revenue model's inputs live: refresh `current` with today's
-        # measurements (the dashboard ranks by this), add the whole block for
-        # entries that never had one, and leave `projected` as authored.
-        rm = build_revenue_model(sp.get("sprint_type", ""), path, gsc, ga4, ga4_totals, aov)
+        # One source of truth for prize size: for the types this engine can
+        # model (CTR/RNK/CR) the model — current AND projected — is rebuilt
+        # from today's data with the same assumptions score_impact uses, so
+        # the dashboard ranking and the queue ranking agree. Hand-authored
+        # models (AOV/FUN/LINK) are left alone.
+        rm = build_revenue_model(sp.get("sprint_type", ""), path, ctx)
         if rm:
-            existing = sp.get("revenue_model")
-            if isinstance(existing, dict) and existing.get("projected"):
-                existing["current"] = rm["current"]
-            else:
-                sp["revenue_model"] = rm
+            sp["revenue_model"] = rm
         if m or impact is not None:
             reranked += 1
     queue.get("sprints", []).sort(key=lambda s: s.get("_source", {}).get("dashboard_impact", 0), reverse=True)

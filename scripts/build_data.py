@@ -300,7 +300,7 @@ def compute_revenue_model(rm: dict | None) -> dict:
     except (TypeError, ValueError):
         return empty
 
-    if imp <= 0 or aov <= 0:
+    if aov <= 0 or (imp <= 0 and sess <= 0):
         # No meaningful monetary baseline — can't project a lift.
         return empty
 
@@ -310,7 +310,12 @@ def compute_revenue_model(rm: dict | None) -> dict:
     cr_p       = float(prj.get("conversion_rate") if prj.get("conversion_rate") is not None else cr)
     aov_p      = float(prj.get("aov") if prj.get("aov") is not None else aov)
     imp_p      = imp * imp_mult_p
-    sess_p     = imp_p * ctr_p  # rebuild from the top of the funnel
+    # Hold-everything-else-constant: the traffic side changes RELATIVE to the
+    # observed session base. A conversion play (no imp/ctr change) keeps
+    # sessions as-is; a traffic play scales them by the CTR/impressions
+    # change instead of rebuilding from the top of the funnel.
+    traffic_ratio = imp_mult_p * ((ctr_p / ctr) if ctr > 0 else 1.0)
+    sess_p        = sess * traffic_ratio
 
     # Revenue: the classic ecommerce chain.
     current_rev   = sess * cr * aov
