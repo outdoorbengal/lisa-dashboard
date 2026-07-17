@@ -744,6 +744,26 @@ def main() -> int:
     for w in warnings:
         print(f"  ⚠ {w}")
 
+    # Calibrate GA4 volumes to Shopify order truth. Ad blockers and consent
+    # banners hide a user's sessions AND purchases together, so GA4 rates
+    # (CR, funnel stages) are unbiased but volumes undercount — verified
+    # 2026-07 by order-level transactionId matching (~31% of web orders
+    # missing, uniform across gateways, worst on desktop Chrome/Firefox and
+    # EU consent countries). Scaling all GA4 volumes by the order ratio
+    # keeps rates intact and makes revenue models honest.
+    ga4_purch_site = sum(v["purchases"] for v in devices.values())
+    calib = round(min(max(shop["web_orders"] / ga4_purch_site, 1.0), 2.0), 3) if ga4_purch_site else 1.0
+    if calib > 1.05:
+        for coll in [ga4, devices]:
+            for v in coll.values():
+                for k in ("sessions", "purchases", "revenue"):
+                    v[k] *= calib
+        for k in ga4_totals:
+            ga4_totals[k] *= calib
+        for k in events:
+            events[k] = int(events[k] * calib)
+        print(f"  · GA4 volumes calibrated ×{calib} to Shopify online-store orders")
+
     queue = load_yaml(QUEUE)
     active = load_yaml(ACTIVE)
     archive = load_yaml(ARCHIVE)
