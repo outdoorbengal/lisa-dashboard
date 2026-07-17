@@ -308,6 +308,79 @@ sprints:
     - No checkout changes in this sprint.
     - No desktop changes — mobile template only.
     definition_of_done: All 3 live on mobile; ATC rate read at day 28 vs 12.4% baseline.
+- id: '173'
+  created: '2026-07-17'
+  title: Win the head term 'cat harness' — 16.5K impressions stuck at pos 12
+  url: /products/extra-safe-cat-harness
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · 'cat harness' pos 12.3
+    current_value: 6
+    current_display: ~6/wk on head term
+    target_value: 60
+    target_display: 60/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: On-page head-term optimization + internal anchors
+    estimated_minutes: 90
+  rationale: 'The Houdini PDP ranks pos 4.7 for ''escape proof cat harness'' but only
+    pos 12.3 for the head term ''cat harness'' — 16,511 impressions/90d, your single
+    biggest keyword. The page converts at 3.0%, so head-term clicks are worth ~$1.94/session.
+    Google sees a page optimized for the modifier, not the category.
+
+
+    Evidence: ''cat harness'' 16.5K imp @ pos 12.3 | ''escape proof'' variants 12.7K
+    imp @ pos 4.7-5.4 | page CR 3.0%
+
+    Dashboard impact: $640/mo estimated at pos ~5'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 640.0
+  revenue_model:
+    current:
+      impressions_30d: 5500
+      ctr: 0.011
+      sessions_30d: 61
+      conversion_rate: 0.016
+      aov: 122.68
+    projected:
+      ctr: 0.05
+    confidence: medium
+  execution_brief:
+    action: Make the Houdini PDP rank for 'cat harness', not just 'escape proof cat
+      harness'
+    summary: The escape-proof positioning won its niche; now claim the category head
+      term without losing it.
+    steps:
+    - title: H1 + title carry the head term
+      location: Shopify → Products → extra-safe-cat-harness
+      before: Title/H1 lead with 'Houdini™ Escape Proof Cat Harness' — modifier-first.
+      after: 'SEO title: ''Cat Harness — Escape-Proof Houdini™ | Vet-Trainer Designed''.
+        Keep ''escape proof'' in H1; add a ''Why this cat harness'' section using
+        the bare term naturally 4-6x.'
+    - title: Internal anchors say 'cat harness'
+      location: Top blogs (cat-training-guide, travel-with-a-cat, harness guides)
+      before: Blog links to the PDP use 'Houdini harness' brand anchors.
+      after: 'Switch 3-5 high-authority blog links to exact/partial anchors: ''cat
+        harness'', ''escape-proof cat harness''.'
+    - title: FAQ schema for category questions
+      location: PDP description / theme section
+      before: No sizing/'do cats need a harness' FAQ on page.
+      after: Add 4-question FAQ (sizing, safety, kitten fit, leash pairing) — targets
+        People-Also-Ask real estate.
+    out_of_scope:
+    - Do not remove 'escape proof' positioning — it holds pos ~5 on 12.7K impressions.
+    definition_of_done: '''cat harness'' position <=8 in GSC within 6 weeks; escape-proof
+      variants hold <=6.'
 - id: '172'
   created: '2026-07-17'
   title: Conversion fix — portable-litterbox
@@ -349,6 +422,78 @@ sprints:
     projected:
       conversion_rate: 0.0279
     confidence: medium
+- id: '174'
+  created: '2026-07-17'
+  title: 'Zeppelin: claim ''airline approved cat carrier'' (pos 22-25 today)'
+  url: /products/zeppelin-cat-carrier
+  sprint_type: RNK
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · airline queries pos 22-25
+    current_value: 0
+    current_display: ~0/wk now
+    target_value: 15
+    target_display: 15/wk
+    unit: sessions/week
+  effort:
+    level: MEDIUM
+    description: Airline-fit content section + schema + blog anchor links
+    estimated_minutes: 60
+  rationale: 'Zeppelin ranks #1 for its brand terms but pos 22-25 for ''airline cat
+    carrier'' / ''airline approved cat carrier'' / ''cat carrier for airplane'' (~1,500
+    imp/90d visible, more latent). The page never says ''airline approved'' or lists
+    airline dimensions. Buyers searching these terms are the exact $190 customer,
+    and the how-to-fly blog (queued #134) can funnel authority.
+
+
+    Evidence: ''airline cat carrier'' 333 imp @22 | ''airline approved'' 200 imp @25
+    | ''for airplane'' 227 imp @13
+
+    Dashboard impact: $420/mo estimated (Zeppelin RPS $2.37, order value $216)'
+  evaluation:
+    window_days: 42
+    success_threshold_pct: 25
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: TRAFFIC_GROWTH
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 420.0
+  revenue_model:
+    current:
+      impressions_30d: 500
+      ctr: 0.004
+      sessions_30d: 2
+      conversion_rate: 0.019
+      aov: 216.0
+    projected:
+      ctr: 0.04
+      impressions_multiplier: 1.5
+    confidence: medium
+  execution_brief:
+    action: Add an airline-fit section to the Zeppelin PDP and wire airline-intent
+      anchors to it
+    summary: 'The page has the authority (ranks #1 on brand); it just never says the
+      words buyers search.'
+    steps:
+    - title: '''Fits under the seat'' section with airline table'
+      location: Shopify → Products → zeppelin-cat-carrier
+      before: No mention of airline compliance, under-seat dimensions, or specific
+        airlines.
+      after: 'Add section: ''Airline-approved carry-on for cats'' with a dimensions
+        table vs Delta/United/AA/Southwest under-seat specs, TSA screening note, and
+        in-cabin policy links.'
+    - title: Anchor links from travel content
+      location: how-to-fly-with-a-cat blog + travel-with-a-cat
+      before: Blogs link with brand anchors.
+      after: 'Anchors: ''airline approved cat carrier'', ''cat carrier for airplane
+        travel'' -> Zeppelin PDP.'
+    out_of_scope:
+    - No claims of formal airline certification — phrase as 'meets under-seat dimensions
+      for...'
+    definition_of_done: '''airline approved cat carrier'' pos <=10 within 6 weeks;
+      airline-query clicks visible in GSC.'
 - id: '165'
   created: '2026-07-17'
   title: 'Merchandise bundles: Adventure Kit + existing Zeppelin travel kit'
@@ -531,6 +676,71 @@ sprints:
     - 'Reply DONE - #006 in the dashboard when both fields are saved.'
     definition_of_done: 'The updated title and description are live at https://www.outdoorbengal.com/products/portable-litterbox
       and visible in Google Search Console URL Inspection. Reply DONE - #006.'
+- id: '175'
+  created: '2026-07-17'
+  title: 'NEW content: cat travel anxiety & calming guide (links Calming Sticks)'
+  url: /blogs/adventure-cat-training/cat-travel-anxiety-calming-guide
+  sprint_type: DEC
+  kpi:
+    metric: organic_clicks_weekly
+    display_label: Weekly clicks · new article
+    current_value: 0
+    current_display: 0 (page doesn't exist)
+    target_value: 20
+    target_display: 20/wk
+    unit: sessions/week
+  effort:
+    level: HIGH
+    description: Write 1,500-2,000 word guide + product links
+    estimated_minutes: 180
+  rationale: 'True content gap: ~1,700 impressions/90d rank deeper than pos 15 on
+    calming/anxiety queries (''cat stress relief'' 511 imp @19, ''best calming treats
+    for cats'' 172 imp @37) and you SELL Cat Calming Sticks with zero supporting content.
+    Travel anxiety is the natural angle for the brand and internally links Zeppelin
+    + Calming Sticks + harness desensitization. Long-tail compounds over months.
+
+
+    Evidence: theme deep-impressions 1,671/90d | best current pos 19 | product: /products/cat-calming-sticks
+
+    Dashboard impact: $150/mo direct estimated (plus assisted product sales, uncounted)'
+  evaluation:
+    window_days: 84
+    success_threshold_pct: 100
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: NEW_CONTENT
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 150.0
+  revenue_model:
+    current:
+      impressions_30d: 560
+      ctr: 0.0
+      sessions_30d: 0
+      conversion_rate: 0.012
+      aov: 122.68
+    projected:
+      ctr: 0.035
+    confidence: low
+  execution_brief:
+    action: 'Publish a trainer-authored guide: ''Cat Travel Anxiety: How to Calm Your
+      Cat for Car & Plane Trips'''
+    summary: Cover the queries people actually search, in your trainer voice, with
+      honest product placement.
+    steps:
+    - title: Outline against real queries
+      location: New article
+      before: 'No page targets: cat stress relief, calming treats for cats, how to
+        sedate a cat for travel (answer: usually don''t), cat anxiety car ride.'
+      after: 'Sections: signs of travel stress -> desensitization protocol (your clicker
+        method) -> carrier training (link Zeppelin) -> calming aids compared incl.
+        Calming Sticks -> when to see a vet. FAQ schema at the end.'
+    out_of_scope:
+    - No medical claims for Calming Sticks; position as one tool in the protocol.
+    definition_of_done: Published, indexed, ranking for >=3 target queries within
+      12 weeks; second gap ('camping with a cat', 860 deep imp) queued after this
+      ships.
 - id: '134'
   created: '2026-04-21'
   title: Push to page 1 — how-to-fly-with-a-cat-on-a-plane

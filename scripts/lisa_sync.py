@@ -1054,7 +1054,8 @@ def main() -> int:
         path = norm_path(sp.get("url", ""))
         # A page absent from BOTH sources for the whole window is dead or
         # junk ("(not set)") — sink it instead of keeping a stale score.
-        if path.startswith("(") or (path != "/" and path not in gsc and path not in ga4):
+        is_new_content = (sp.get("_source") or {}).get("opportunity_type") == "NEW_CONTENT"
+        if not is_new_content and (path.startswith("(") or (path != "/" and path not in gsc and path not in ga4)):
             sp.setdefault("_source", {})["dashboard_impact"] = 0.0
             sp["_source"]["last_refreshed"] = now_iso
             sp.pop("revenue_model", None)  # else the model would still rank it
