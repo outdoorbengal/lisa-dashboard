@@ -159,7 +159,7 @@ def fetch_shopify(env: dict, start: date, end: date) -> dict:
     orders, url = [], (f"https://{domain}/admin/api/2025-04/orders.json"
                       f"?status=any&created_at_min={start.isoformat()}T00:00:00Z"
                       f"&created_at_max={end.isoformat()}T23:59:59Z"
-                      f"&limit=250&fields=total_price,line_items,financial_status,source_name")
+                      f"&limit=250&fields=total_price,line_items,financial_status,source_name,landing_site")
     for _ in range(8):  # up to 2000 orders via cursor pagination
         r = requests.get(url, headers=headers, timeout=60)
         r.raise_for_status()
@@ -174,6 +174,11 @@ def fetch_shopify(env: dict, start: date, end: date) -> dict:
     web = [o for o in paid if o.get("source_name") == "web"]
     totals = [float(o["total_price"]) for o in paid]
     web_totals = [float(o["total_price"]) for o in web]
+    # Orders whose landing URL carries an ad click id — ground truth for
+    # paid-driven orders regardless of GA4's channel classification.
+    paid_click_orders = sum(
+        1 for o in web
+        if any(t in (o.get("landing_site") or "") for t in ("fbclid=", "gclid=", "gbraid=", "wbraid=", "ttclid=")))
     single = sum(1 for o in paid if sum(int(li.get("quantity", 1)) for li in o.get("line_items", [])) == 1)
     by_source = {}
     for o in paid:
@@ -188,6 +193,7 @@ def fetch_shopify(env: dict, start: date, end: date) -> dict:
         "orders": len(paid),
         "web_orders": len(web),
         "orders_by_source": by_source,
+        "paid_click_orders": paid_click_orders,
         "single_item_share": round(single / len(paid), 3) if paid else None,
         "products": count.json().get("count", 0) if count.status_code == 200 else 0,
     }
@@ -228,6 +234,38 @@ def fetch_ga4_devices(env: dict, headers: dict, start: date, end: date) -> dict:
         vals = [float(m["value"] or 0) for m in row["metricValues"]]
         out[row["dimensionValues"][0]["value"]] = {"sessions": vals[0], "purchases": vals[1], "revenue": vals[2]}
     return out
+
+
+PAID_CHANNELS = ("Paid Social", "Paid Search", "Paid Shopping", "Display", "Paid Other")
+
+
+def fetch_ga4_paid_landing(env: dict, headers: dict, start: date, end: date) -> tuple[dict, dict]:
+    """({path: {sessions, purchases, revenue}} for PAID channels,
+    {channel: sessions}) — direct evidence of how bought traffic performs
+    per page, plus the channel mix for tagging diagnostics."""
+    r = requests.post(
+        f"https://analyticsdata.googleapis.com/v1beta/properties/{env['GA4_PROPERTY_ID']}:runReport",
+        headers=headers,
+        json={"dateRanges": [{"startDate": start.isoformat(), "endDate": end.isoformat()}],
+              "dimensions": [{"name": "landingPage"}, {"name": "sessionDefaultChannelGroup"}],
+              "metrics": [{"name": "sessions"}, {"name": "ecommercePurchases"}, {"name": "purchaseRevenue"}],
+              "limit": 25000},
+        timeout=60,
+    )
+    r.raise_for_status()
+    pages, channels = {}, {}
+    for row in r.json().get("rows", []):
+        channel = row["dimensionValues"][1]["value"]
+        vals = [float(m["value"] or 0) for m in row["metricValues"]]
+        channels[channel] = channels.get(channel, 0.0) + vals[0]
+        if channel not in PAID_CHANNELS:
+            continue
+        path = norm_path(row["dimensionValues"][0]["value"] or "/")
+        agg = pages.setdefault(path, {"sessions": 0.0, "purchases": 0.0, "revenue": 0.0})
+        agg["sessions"] += vals[0]
+        agg["purchases"] += vals[1]
+        agg["revenue"] += vals[2]
+    return pages, channels
 
 
 def fetch_gsc_query_pages(env: dict, headers: dict, start: date, end: date) -> list:
@@ -719,7 +757,7 @@ def check_traffic_starved(ctx) -> list:
             continue
         cr_pct = a["purchases"] / a["sessions"] * 100
         out.append({
-            "type": "ADS", "url": path, "impact": impact,
+            "type": "ADS", "url": path, "impact": impact, "flavor": "underfed",
             "title": f"Scale traffic to proven converter — {_slug(path)} (${rps:.2f}/session)",
             "kpi": {"metric": "sessions_28d", "display_label": f"Sessions/{WINDOW_DAYS}d · ${rps:.2f} per session",
                     "current_value": round(a["sessions"], 0), "current_display": f"{int(a['sessions'])} now",
@@ -740,6 +778,47 @@ def check_traffic_starved(ctx) -> list:
                                           "conversion_rate": round(margin_value * 0.5 / ctx["aov"], 5) if ctx["aov"] else 0.0,
                                           "aov": round(ctx["aov"], 2)},
                               "projected": {"impressions_multiplier": 2.0}, "confidence": "medium"},
+        })
+    # Scale-winner flavor: pages where PAID traffic already demonstrably
+    # performs (measured, not inferred from blended averages — Albert's
+    # Zeppelin case: reported Meta ROAS 4-9 vs the 1/margin breakeven).
+    # No traffic cap here: scaling a winner is valid at any size.
+    breakeven_roas = 1 / GROSS_MARGIN
+    for path, p in ctx.get("ga4_paid", {}).items():
+        if not is_scannable(path) or p["sessions"] < 100 or p["purchases"] < 3:
+            continue
+        paid_rps = p["revenue"] / p["sessions"]
+        class_rps = (ctx["class_stats"].get(page_class(path)) or {}).get("rps", 0.0)
+        if not class_rps or paid_rps < 1.2 * class_rps:
+            continue
+        sessions_mo = p["sessions"] * month
+        # Assume +50% paid volume at similar performance; value at margin
+        # minus ad cost ≈ half the margin value (spend near 50% of breakeven).
+        impact = round(sessions_mo * 0.5 * paid_rps * GROSS_MARGIN * 0.5, 2)
+        if impact < MIN_IMPACT_USD:
+            continue
+        cr_pct = p["purchases"] / p["sessions"] * 100
+        out.append({
+            "type": "ADS", "url": path, "impact": impact, "flavor": "scale-winner",
+            "title": f"Scale paid traffic — {_slug(path)} (paid sessions already earn ${paid_rps:.2f})",
+            "kpi": {"metric": "sessions_28d", "display_label": f"Sessions/{WINDOW_DAYS}d · paid ${paid_rps:.2f}/session",
+                    "current_value": round(ctx["ga4"].get(path, p)["sessions"], 0),
+                    "current_display": f"{int(ctx['ga4'].get(path, p)['sessions'])} now",
+                    "target_value": round(ctx["ga4"].get(path, p)["sessions"] + sessions_mo * 0.5, 0),
+                    "target_display": f"+{int(sessions_mo * 0.5)}/mo paid", "unit": "count"},
+            "effort": {"level": "LOW", "description": "Raise budget on the working campaign; watch marginal ROAS", "estimated_minutes": 30},
+            "rationale": (f"Paid traffic landing on this page ALREADY performs: ${paid_rps:.2f}/session revenue, "
+                          f"{cr_pct:.1f}% CR on {int(p['sessions'])} paid sessions/{WINDOW_DAYS}d (GA4-attributed, which "
+                          f"undercounts paid less than organic). At {GROSS_MARGIN * 100:.0f}% gross margin the breakeven ROAS "
+                          f"is {breakeven_roas:.1f}× — scale budget while the platform's MARGINAL ROAS stays above "
+                          f"~{breakeven_roas * 1.3:.1f}× (buffer for view-through inflation in platform reporting). "
+                          f"Watch frequency and CPM creep as you scale."),
+            "evaluation": {"window_days": 28, "success_threshold_pct": 25, "neutral_threshold_pct": 0},
+            "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
+                                          "sessions_30d": int(sessions_mo),
+                                          "conversion_rate": round(paid_rps * GROSS_MARGIN * 0.5 / ctx["aov"], 5) if ctx["aov"] else 0.0,
+                                          "aov": round(ctx["aov"], 2)},
+                              "projected": {"impressions_multiplier": 1.5}, "confidence": "medium"},
         })
     out.sort(key=lambda f: -f["impact"])
     return out[:2]  # at most two per run
@@ -773,6 +852,18 @@ def run_diagnostics(ctx) -> list[str]:
     if shop.get("single_item_share") is not None and shop["single_item_share"] >= 0.70:
         warnings.append(f"{shop['single_item_share'] * 100:.0f}% of orders contain a single item — "
                         f"bundle/cross-sell headroom (AOV ${ctx['aov']:g})")
+    # Campaign tagging: if ad-click orders (fbclid/gclid in the landing URL)
+    # far outnumber GA4's paid-channel purchases, ads are missing UTMs and
+    # GA4 is booking paid traffic as Organic Social / Unassigned.
+    ga4_paid_purch = sum(p["purchases"] for p in ctx.get("ga4_paid", {}).values())
+    if shop.get("paid_click_orders", 0) >= 5 and ga4_paid_purch < 0.5 * shop["paid_click_orders"]:
+        warnings.append(f"Campaign tagging broken: {shop['paid_click_orders']} orders carry ad click-ids "
+                        f"but GA4 paid channels show only {int(ga4_paid_purch)} purchases — add UTM "
+                        f"templates to Meta/Google ads so paid performance is measurable")
+    unassigned = ctx.get("unassigned_share")
+    if unassigned and unassigned > 0.15:
+        warnings.append(f"{unassigned * 100:.0f}% of GA4 sessions are 'Unassigned' — tagging/consent "
+                        f"artifact worth investigating")
     return warnings
 
 
@@ -852,6 +943,7 @@ def main() -> int:
     gsc_prev = fetch_gsc(env, gheaders, prev_end - timedelta(days=WINDOW_DAYS - 1), prev_end)
     query_pages = fetch_gsc_query_pages(env, gheaders, start, end)
     ga4, ga4_totals = fetch_ga4(env, gheaders, start, end)
+    ga4_paid, ga4_channels = fetch_ga4_paid_landing(env, gheaders, start, end)
     events = fetch_ga4_events(env, gheaders, start, end)
     devices = fetch_ga4_devices(env, gheaders, start, end)
     shop = fetch_shopify(env, start, end)
@@ -870,6 +962,9 @@ def main() -> int:
     ctx = {"gsc": gsc, "gsc_prev": gsc_prev, "query_pages": query_pages,
            "ga4": ga4, "ga4_totals": ga4_totals, "events": events,
            "devices": devices, "shop": shop, "aov": aov, "top_query": top_query,
+           "ga4_paid": ga4_paid,
+           "unassigned_share": (ga4_channels.get("Unassigned", 0.0) / sum(ga4_channels.values()))
+                               if ga4_channels else None,
            "class_stats": None}  # filled after calibration below
     extra = {"events": events, "devices": devices, "shop": shop}
 
