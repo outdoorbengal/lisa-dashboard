@@ -1,0 +1,45 @@
+name: cleanup-issues
+
+# One-shot janitor: the old evaluate-experiments workflow filed one
+# "Experiment evaluation failed" issue per day for weeks. This closes all
+# open lisa/evaluation issues in bulk. Delete this file once it has run.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  issues: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close stale evaluation issues
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'lisa,evaluation',
+              state: 'open',
+              per_page: 100,
+            });
+            core.info(`Found ${issues.length} open evaluation issues.`);
+            for (const issue of issues) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: 'Closing: the evaluator was being invoked without arguments and failed on schedule every day, filing one duplicate issue per run. Fixed in 24cae1c — the evaluator now auto-evaluates due experiments and the workflow files at most one issue at a time.',
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed',
+                state_reason: 'not_planned',
+              });
+              core.info(`Closed #${issue.number}`);
+            }
