@@ -112,6 +112,51 @@ def apply_product(env: dict, headers: dict, apply: dict) -> str:
     return f"product {apply['handle']} (id {pid})"
 
 
+def apply_page(env: dict, headers: dict, apply: dict) -> str:
+    domain = env["SHOPIFY_STORE_DOMAIN"]
+    pages = requests.get(
+        f"https://{domain}/admin/api/{API}/pages.json?handle={apply['handle']}&limit=1&fields=id,handle",
+        headers=headers, timeout=30)
+    pages.raise_for_status()
+    found = pages.json().get("pages", [])
+    if not found:
+        raise SystemExit(f"page handle '{apply['handle']}' not found")
+    pid = found[0]["id"]
+    resp = requests.put(
+        f"https://{domain}/admin/api/{API}/pages/{pid}.json",
+        headers=headers,
+        json={"page": {"id": pid, "metafields": seo_metafields(apply["set"])}},
+        timeout=30)
+    if resp.status_code == 403:
+        raise SystemExit("403 from Shopify — the app is missing the write_content scope.")
+    resp.raise_for_status()
+    return f"page {apply['handle']} (id {pid})"
+
+
+def apply_collection(env: dict, headers: dict, apply: dict) -> str:
+    domain = env["SHOPIFY_STORE_DOMAIN"]
+    for kind in ("custom_collections", "smart_collections"):
+        r = requests.get(
+            f"https://{domain}/admin/api/{API}/{kind}.json?handle={apply['handle']}&limit=1&fields=id,handle",
+            headers=headers, timeout=30)
+        r.raise_for_status()
+        found = r.json().get(kind, [])
+        if found:
+            cid = found[0]["id"]
+            key = kind[:-1]  # custom_collection / smart_collection
+            resp = requests.put(
+                f"https://{domain}/admin/api/{API}/{kind}/{cid}.json",
+                headers=headers,
+                json={key: {"id": cid, "metafields": seo_metafields(apply["set"])}},
+                timeout=30)
+            if resp.status_code == 403:
+                raise SystemExit("403 from Shopify — the app is missing the write_products scope "
+                                 "(collections are governed by it).")
+            resp.raise_for_status()
+            return f"collection {apply['handle']} (id {cid})"
+    raise SystemExit(f"collection handle '{apply['handle']}' not found")
+
+
 def main() -> int:
     if len(sys.argv) != 2:
         print("usage: apply_change.py <sprint_id>", file=sys.stderr)
@@ -135,6 +180,10 @@ def main() -> int:
         target = apply_article(env, headers, apply)
     elif resource == "product":
         target = apply_product(env, headers, apply)
+    elif resource == "page":
+        target = apply_page(env, headers, apply)
+    elif resource == "collection":
+        target = apply_collection(env, headers, apply)
     else:
         print(f"unsupported apply resource: {resource}", file=sys.stderr)
         return 1

@@ -389,6 +389,11 @@ def page_economics(path: str, ctx: dict) -> dict:
 def score_impact(sprint_type: str, path: str, ctx: dict):
     g, a = ctx["gsc"].get(path), ctx["ga4"].get(path)
     month = 30 / WINDOW_DAYS
+    # Brand-dominated pages: CTR/position "gaps" on searches for the brand
+    # itself are SERP-split artifacts (the homepage takes the clicks), not
+    # fixable by copy. No prize.
+    if sprint_type in ("CTR", "RNK") and is_brand_query(ctx.get("top_query", {}).get(path, "")):
+        return 0.0
     if sprint_type == "CTR" and g:
         gap = max(expected_ctr(g["position"]) - g["ctr"], 0)
         extra_sessions = g["impressions"] * month * gap
@@ -489,10 +494,46 @@ def _slug(path: str) -> str:
     return path.rstrip("/").split("/")[-1] or path
 
 
+def is_brand_query(query: str) -> bool:
+    return any(t in (query or "").lower() for t in BRAND_TOKENS)
+
+
+def fetch_live_meta(path: str) -> dict | None:
+    """Current <title> and meta description from the live storefront —
+    the honest BEFORE for a metadata rewrite brief."""
+    try:
+        import html as html_mod
+        h = requests.get(f"https://www.outdoorbengal.com{path}",
+                         timeout=15, headers={"User-Agent": "Mozilla/5.0 (LisaBot)"}).text
+        t = re.search(r"<title[^>]*>(.*?)</title>", h, re.S)
+        d = re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\'](.*?)["\']', h, re.S)
+        return {"title": html_mod.unescape(t.group(1).strip()) if t else "(none)",
+                "description": html_mod.unescape(d.group(1).strip()) if d else "(none)"}
+    except Exception:
+        return None
+
+
+def resource_of(path: str) -> dict | None:
+    """Map a storefront path to the Shopify Admin resource that owns its SEO."""
+    m = re.match(r"^/blogs/([^/]+)/([^/]+)$", path)
+    if m:
+        return {"resource": "article", "blog_handle": m.group(1), "article_handle": m.group(2)}
+    m = re.match(r"^/products/([^/]+)$", path)
+    if m:
+        return {"resource": "product", "handle": m.group(1)}
+    m = re.match(r"^/pages/([^/]+)$", path)
+    if m:
+        return {"resource": "page", "handle": m.group(1)}
+    m = re.match(r"^/collections/([^/]+)$", path)
+    if m:
+        return {"resource": "collection", "handle": m.group(1)}
+    return None  # theme-owned templates (/, /collections, /blogs index …)
+
+
 def check_page_ctr(ctx) -> list:
     out = []
     for path, g in ctx["gsc"].items():
-        if not is_scannable(path):
+        if not is_scannable(path) or is_brand_query(ctx["top_query"].get(path, "")):
             continue
         if g["impressions"] >= 1000 and g["position"] <= 12 and g["ctr"] < 0.5 * expected_ctr(g["position"]):
             impact = score_impact("CTR", path, ctx)
@@ -518,7 +559,7 @@ def check_page_ctr(ctx) -> list:
 def check_page_rank(ctx) -> list:
     out = []
     for path, g in ctx["gsc"].items():
-        if not is_scannable(path):
+        if not is_scannable(path) or is_brand_query(ctx["top_query"].get(path, "")):
             continue
         if 8 <= g["position"] <= 20 and g["impressions"] >= 500:
             impact = score_impact("RNK", path, ctx)
@@ -885,6 +926,7 @@ def finding_to_sprint(next_id: int, f: dict, now_iso: str) -> dict:
         "_source": {"opportunity_type": opportunity_type, "detected_at": now_iso,
                     "last_refreshed": now_iso, "dashboard_impact": f["impact"]},
         "revenue_model": f["revenue_model"],
+        **({"execution_brief": f["execution_brief"]} if f.get("execution_brief") else {}),
     }
 
 
@@ -1020,6 +1062,8 @@ def main() -> int:
         src = sp.setdefault("_source", {})
         if impact is not None:
             src["dashboard_impact"] = impact
+            if impact == 0:
+                sp.pop("revenue_model", None)
         src["last_refreshed"] = now_iso
         # One source of truth for prize size: for the types this engine can
         # model (CTR/RNK/CR) the model — current AND projected — is rebuilt
@@ -1027,7 +1071,7 @@ def main() -> int:
         # the dashboard ranking and the queue ranking agree. Hand-authored
         # models (AOV/FUN/LINK) are left alone.
         rm = build_revenue_model(sp.get("sprint_type", ""), path, ctx)
-        if rm:
+        if rm and (impact is None or impact > 0):  # zero-prize sprints keep no model
             sp["revenue_model"] = rm
         if m or impact is not None:
             reranked += 1
@@ -1052,6 +1096,22 @@ def main() -> int:
     next_id = max(all_ids((queue, "sprints"), (active, "experiments"), (archive, "experiments")), default=0) + 1
     new_sprints = []
     for f in findings[:MAX_NEW_PER_RUN]:
+        if f["type"] == "CTR" and not f.get("execution_brief"):
+            meta = fetch_live_meta(f["url"])
+            res = resource_of(f["url"])
+            if meta:
+                f["execution_brief"] = {
+                    "action": f"Rewrite SEO title and meta description for {f['url']}",
+                    "summary": ("Current metadata below. Proposed copy pending review — "
+                                "write the AFTER, then the ACCEPT button can apply it."),
+                    "steps": [{
+                        "title": "Update SEO title and meta description",
+                        "location": ("Shopify admin → edit website SEO for this "
+                                     + (res["resource"] if res else "page (theme-owned template)")),
+                        "before": f"Title: {meta['title']}\nDescription: {meta['description']}",
+                    }],
+                    "definition_of_done": f"Updated metadata live at https://www.outdoorbengal.com{f['url']}.",
+                }
         new_sprints.append(finding_to_sprint(next_id, f, now_iso))
         next_id += 1
     if new_sprints:
