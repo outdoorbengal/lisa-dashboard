@@ -208,6 +208,40 @@ sprints:
     projected:
       ctr: 0.025
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/clicker-training-cats/cat-training-guide
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → cat-training-guide → Edit website
+        SEO
+      before: 'Title: How to Train a Cat: The Complete Beginner''s Guide – OutdoorBengal
+
+        Description: Learn how cat training actually works; the science, the setup,
+        and my step-by-step method. A professional cat trainer''s guide for new and
+        skeptical cat parents.'
+      after: 'Title: How to Train a Cat in 10 Minutes a Day (Trainer''s Guide)
+
+        Description: Yes, cats can be trained. A professional trainer shares the exact
+        steps — clicker basics, your first 3 tricks, and the mistakes that make cats
+        ignore you.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/clicker-training-cats/cat-training-guide
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: clicker-training-cats
+      article_handle: cat-training-guide
+      set:
+        title_tag: How to Train a Cat in 10 Minutes a Day (Trainer's Guide)
+        description_tag: Yes, cats can be trained. A professional trainer shares the
+          exact steps — clicker basics, your first 3 tricks, and the mistakes that
+          make cats ignore you.
 - id: 019
   created: '2026-04-20'
   title: Push to page 1 — how-to-discipline-a-cat
@@ -569,6 +603,39 @@ sprints:
     projected:
       ctr: 0.03
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → gaining-your-scared-or-distant-cat-s-trust
+        → Edit website SEO
+      before: 'Title: Gaining ANY Cat''s Trust - Complete Guide to Bond with Your
+        Cat – OutdoorBengal
+
+        Description: Win over even the shyest feline, learn to read cat body language,
+        earn trust, and build a lifelong bond. Start your purrfect friendship today!'
+      after: 'Title: How to Get a Cat to Like You: 9 Trust-Building Steps
+
+        Description: Scared or distant cat? The 9 steps behaviorists use to earn feline
+        trust fast — how to approach, read body language, and build a bond that sticks.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/understanding-cat-behavior/gaining-your-scared-or-distant-cat-s-trust
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: understanding-cat-behavior
+      article_handle: gaining-your-scared-or-distant-cat-s-trust
+      set:
+        title_tag: 'How to Get a Cat to Like You: 9 Trust-Building Steps'
+        description_tag: Scared or distant cat? The 9 steps behaviorists use to earn
+          feline trust fast — how to approach, read body language, and build a bond
+          that sticks.
 - id: '032'
   created: '2026-04-20'
   title: Conversion fix — most-aesthetic-cat-trees
@@ -843,6 +910,40 @@ sprints:
     projected:
       ctr: 0.04
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/correcting-cat-behavior/how-to-discipline-a-cat
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → how-to-discipline-a-cat → Edit
+        website SEO
+      before: 'Title: How to Discipline a Cat: 7 Methods That Actually Work – OutdoorBengal
+
+        Description: Learn effective cat discipline techniques without punishment.
+        Discover training methods that correct behavior, plus why your current approach
+        might backfire.'
+      after: 'Title: How to Discipline a Cat the Right Way (7 Humane Fixes)
+
+        Description: Stop scratching, biting and counter-surfing without spray bottles
+        or fear. 7 science-backed corrections a professional cat trainer actually
+        uses.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/correcting-cat-behavior/how-to-discipline-a-cat
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: correcting-cat-behavior
+      article_handle: how-to-discipline-a-cat
+      set:
+        title_tag: How to Discipline a Cat the Right Way (7 Humane Fixes)
+        description_tag: Stop scratching, biting and counter-surfing without spray
+          bottles or fear. 7 science-backed corrections a professional cat trainer
+          actually uses.
 - id: '152'
   created: '2026-07-17'
   title: Fix title/meta — lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing (57046
@@ -889,6 +990,38 @@ sprints:
     projected:
       ctr: 0.018
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/cat-advice/lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing
+        → Edit website SEO
+      before: 'Title: Lost Your Cat? How to Find Them Fast (Step-by-Step) – OutdoorBengal
+
+        Description: Most indoor cats are found within 24–48 hours with this search
+        method. Act fast! Here''s exactly what to do.'
+      after: 'Title: Chances of Finding a Lost Cat: First 24 Hours Matter Most
+
+        Description: Most lost indoor cats hide within 3 houses of home. Your hour-by-hour
+        search plan for the first 24–48 hours — and the mistakes that push cats away.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/cat-advice/lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: cat-advice
+      article_handle: lost-cat-tips-to-find-an-indoor-cat-thats-gone-missing
+      set:
+        title_tag: 'Chances of Finding a Lost Cat: First 24 Hours Matter Most'
+        description_tag: Most lost indoor cats hide within 3 houses of home. Your
+          hour-by-hour search plan for the first 24–48 hours — and the mistakes that
+          push cats away.
 - id: '037'
   created: '2026-04-20'
   title: Conversion fix — gaining-your-scared-or-distant-cat-s-trust
@@ -980,6 +1113,79 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
+- id: '166'
+  created: '2026-07-17'
+  title: 'Mobile PDP test: lift view→add-to-cart (11.3% vs 16.7% desktop)'
+  url: /
+  sprint_type: FUN
+  kpi:
+    metric: atc_rate
+    display_label: view→ATC · 20.5K product views/28d
+    current_value: 12.4
+    current_display: 12.4% now
+    target_value: 14.0
+    target_display: 14%
+    unit: percent
+  effort:
+    level: HIGH
+    description: 'Mobile PDP: sticky ATC, above-fold price/CTA, gallery weight'
+    estimated_minutes: 120
+  rationale: 'Mobile gets 4× desktop''s product views (16.3K vs 3.9K/28d) but converts
+    views to cart at 11.3% vs 16.7%. Honest caveat: overall mobile session-CR (1.34%)
+    already beats desktop (1.15%), so this is a test, not a broken funnel — casual
+    mobile browsing may explain part of the gap. Ship sticky add-to-cart + above-fold
+    price/CTA and judge on measured ATC rate, not vibes.
+
+
+    Evidence: mobile_view_atc=11.3% | desktop_view_atc=16.7% | mobile_views_28d=16290
+    | mobile_session_cr=1.34%
+
+    Dashboard impact: $1100/mo estimated'
+  evaluation:
+    window_days: 28
+    success_threshold_pct: 8
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: FUNNEL_OPTIMIZATION
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 1100.0
+  revenue_model:
+    current:
+      impressions_30d: 0
+      ctr: 0.0
+      sessions_30d: 17500
+      conversion_rate: 0.0158
+      aov: 122.68
+    projected:
+      conversion_rate: 0.0175
+    confidence: low
+  execution_brief:
+    action: Ship 3 mobile PDP changes, measure view→ATC for 28 days
+    summary: Highest-traffic surface in the store. Three standard mobile fixes, one
+      measurable KPI.
+    steps:
+    - title: Sticky add-to-cart bar on mobile PDP
+      location: Theme editor → product template
+      before: CTA scrolls away under gallery + description.
+      after: Price + Add-to-cart pinned at bottom of viewport once the main CTA scrolls
+        out.
+    - title: Tighten above-the-fold
+      location: Theme editor → product template
+      before: Gallery dominates first screen; price/variant/CTA below fold on small
+        screens.
+      after: 'First viewport shows: product name, price, review stars, variant selector,
+        CTA.'
+    - title: Check pop-up & chat interference on mobile
+      location: Apps → popup/chat settings
+      before: Unknown — audit whether popups cover the CTA on small screens.
+      after: Popups delayed ≥30s and never covering the ATC; chat bubble above the
+        sticky bar.
+    out_of_scope:
+    - No checkout changes in this sprint.
+    - No desktop changes — mobile template only.
+    definition_of_done: All 3 live on mobile; ATC rate read at day 28 vs 12.4% baseline.
 - id: '025'
   created: '2026-04-20'
   title: Push to page 1 — best-cat-names
@@ -1252,6 +1458,40 @@ sprints:
     projected:
       ctr: 0.02
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/correcting-cat-behavior/what-to-do-if-my-cat-wont-let-me-sleep
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → what-to-do-if-my-cat-wont-let-me-sleep
+        → Edit website SEO
+      before: 'Title: Teach Your Cat to Sleep When You Do - Cat Sleeping Through Night
+        – OutdoorBengal
+
+        Description: Tired of midnight zoomies? Learn how to gently train your cat
+        to sleep through the night and sync their schedule with yours.'
+      after: 'Title: Cat Won''t Let You Sleep? 8 Fixes That Work Tonight
+
+        Description: 3AM zoomies, door meowing, feet attacks — why it happens and
+        the 8-step routine that gets your nights back within a week. By a professional
+        trainer.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/correcting-cat-behavior/what-to-do-if-my-cat-wont-let-me-sleep
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: correcting-cat-behavior
+      article_handle: what-to-do-if-my-cat-wont-let-me-sleep
+      set:
+        title_tag: Cat Won't Let You Sleep? 8 Fixes That Work Tonight
+        description_tag: 3AM zoomies, door meowing, feet attacks — why it happens
+          and the 8-step routine that gets your nights back within a week. By a professional
+          trainer.
 - id: 049
   created: '2026-04-20'
   title: Conversion fix — what-to-do-if-my-cat-wont-let-me-sleep
@@ -1388,6 +1628,85 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
+- id: '164'
+  created: '2026-07-17'
+  title: 'Stand up lifecycle email: post-purchase + winback flows'
+  url: /
+  sprint_type: FUN
+  kpi:
+    metric: repeat_rate
+    display_label: Repeat-buyer rate · 1,134 customers/365d
+    current_value: 4.1
+    current_display: 4.1% now
+    target_value: 10.0
+    target_display: 10%
+    unit: percent
+  effort:
+    level: HIGH
+    description: 'Email flows: welcome, post-purchase onboarding, winback'
+    estimated_minutes: 240
+  rationale: 'Only 4.1% of 1,134 customers ever buy again (DTC pet benchmark: 20-30%);
+    repeat orders are 4% of revenue ($4.4K of $123.8K/365d). Buyers who DO return
+    do so fast (median 8 days, a quarter same-day) — flows must fire in week one.
+    Email-attributed orders in the last 28d: ~2. The product ladder exists and is
+    proven by co-purchase data: harness → leash → carrier ($286-LTV cohort) → Bootcamp
+    (14% repeat rate, best in store).
+
+
+    Evidence: repeat_rate=4.1% | repeat_revenue_share=4% | median_days_to_2nd=8 |
+    email_orders_28d≈2
+
+    Dashboard impact: $527/mo estimated'
+  evaluation:
+    window_days: 90
+    success_threshold_pct: 50
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: LIFECYCLE
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 527.0
+  revenue_model:
+    current:
+      impressions_30d: 0
+      ctr: 0.0
+      sessions_30d: 95
+      conversion_rate: 0.041
+      aov: 94.0
+    projected:
+      conversion_rate: 0.1
+    confidence: medium
+  execution_brief:
+    action: 'Build 3 email flows in Klaviyo (or Shopify Email): welcome, post-purchase,
+      winback'
+    summary: 'The store acquires ~95 new customers/month and loses 96% of them after
+      one order. Three automated flows recover the proven ladder: harness buyers →
+      leash (160 manual co-purchases/yr), carrier buyers → travel kit, everyone →
+      Bootcamp.'
+    steps:
+    - title: Post-purchase onboarding (fires day 2-7)
+      location: Klaviyo → Flows
+      before: No post-purchase flow. Median 2nd purchase happens at day 8 — unsupported.
+      after: 'Day 2: setup/fit guide for the product bought (cuts returns). Day 5:
+        cross-sell the proven pair — Houdini buyers get Kushma leash, Zeppelin buyers
+        get Go Litter. Day 12: Cat Bootcamp intro (its buyers repeat at 14%).'
+    - title: Welcome flow for non-buyers
+      location: Klaviyo → Flows
+      before: Signup incentive exists (WELCOMEBACK code used 31×/yr) but no structured
+        flow.
+      after: '3 emails: brand story + best-seller guide + first-purchase nudge. Personalize
+        by landing page category (training blog reader vs product browser).'
+    - title: Winback (fires day 45)
+      location: Klaviyo → Flows
+      before: No winback. 96% of customers never hear from the store again.
+      after: 'Day 45: ''How''s the harness working out?'' + review request + ladder
+        offer. Non-discount first; discount variant only if no purchase by day 60.'
+    out_of_scope:
+    - No list buying. No daily campaigns — flows only.
+    - Deliverability check (SPF/DKIM/DMARC) before ramping volume.
+    definition_of_done: Three flows live; email-attributed orders visible in Shopify
+      order attribution within 30 days.
 - id: '154'
   created: '2026-07-17'
   title: Fix title/meta — how-to-tell-kittens-gender (12364 impressions)
@@ -1433,6 +1752,39 @@ sprints:
     projected:
       ctr: 0.025
     confidence: medium
+  execution_brief:
+    action: Rewrite SEO title and meta description for /blogs/cat-advice/how-to-tell-kittens-gender
+    summary: Page ranks well but the snippet undersells the click. Lead with the query
+      phrasing searchers actually type, add a concrete hook, keep title ≤60 chars
+      and description ≤155.
+    steps:
+    - title: Update SEO title and meta description
+      location: Shopify → Online Store → Blog posts → how-to-tell-kittens-gender →
+        Edit website SEO
+      before: 'Title: How to Tell Cat Gender - Differences Between Male and Female
+        – OutdoorBengal
+
+        Description: Confused about the gender of your kitten? Discover the 2 main
+        methods to determine the sex of a kitten with our easy-to-follow guide with
+        images. Learn how!'
+      after: 'Title: How to Tell a Kitten''s Gender (With Pictures)
+
+        Description: Male or female? Compare these two things — with side-by-side
+        photos. Works from 3 weeks old, no vet visit needed.'
+      note: Or click ACCEPT below to apply automatically. Body copy unchanged.
+    out_of_scope:
+    - Do not change the article body in this sprint.
+    - Do not change the URL/handle (would need redirects).
+    definition_of_done: Updated title/description live at https://www.outdoorbengal.com/blogs/cat-advice/how-to-tell-kittens-gender
+      and visible in GSC URL inspection.
+    apply:
+      resource: article
+      blog_handle: cat-advice
+      article_handle: how-to-tell-kittens-gender
+      set:
+        title_tag: How to Tell a Kitten's Gender (With Pictures)
+        description_tag: Male or female? Compare these two things — with side-by-side
+          photos. Works from 3 weeks old, no vet visit needed.
 - id: '155'
   created: '2026-07-17'
   title: Fix title/meta — kitten-collars (18594 impressions)
@@ -2064,6 +2416,76 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
+- id: '165'
+  created: '2026-07-17'
+  title: 'Merchandise bundles: Adventure Kit + existing Zeppelin travel kit'
+  url: /products/extra-safe-cat-harness
+  sprint_type: AOV
+  kpi:
+    metric: aov
+    display_label: Store AOV · online-store orders
+    current_value: 122.68
+    current_display: $122.68 now
+    target_value: 135.0
+    target_display: $135
+    unit: usd
+  effort:
+    level: MEDIUM
+    description: 1 bundle product + PDP cross-sell blocks on 2 pages
+    estimated_minutes: 90
+  rationale: '160 orders/yr manually combine Houdini harness ($29.99) + Kushma leash
+    ($39.99) — 31% of Houdini buyers — yet no Adventure Kit bundle exists. Meanwhile
+    the Zeppelin + Go Litter kit EXISTS ($199.99, saves $30) but barely sells while
+    69 buyers/yr assemble the pair manually at full price: a merchandising gap, not
+    a product gap. 52% of all orders are single-unit.
+
+
+    Evidence: houdini_kushma_pairs=160/yr | zeppelin_golitter_pairs=69/yr | single_unit_orders=52%
+    | AOV=$122.68
+
+    Dashboard impact: $319/mo estimated'
+  evaluation:
+    window_days: 60
+    success_threshold_pct: 5
+    neutral_threshold_pct: 0
+  evidence_urls: []
+  _source:
+    opportunity_type: AOV_MERCHANDISING
+    detected_at: '2026-07-17T00:00:00Z'
+    last_refreshed: '2026-07-17T00:00:00Z'
+    dashboard_impact: 319.0
+  revenue_model:
+    current:
+      impressions_30d: 0
+      ctr: 0.0
+      sessions_30d: 42
+      conversion_rate: 0.31
+      aov: 40.0
+    projected:
+      conversion_rate: 0.5
+    confidence: medium
+  execution_brief:
+    action: Create the Adventure Kit bundle and surface both kits on their component
+      PDPs
+    summary: Customers already buy these pairs at full price — package them, price
+      with a modest save, and put them where the pair-buyers are deciding.
+    steps:
+    - title: Create 'Adventure Kit' bundle product
+      location: Shopify → Products → Add product (or Shopify Bundles app)
+      before: No Houdini + Kushma bundle. 160 orders/yr pair them manually at $69.98.
+      after: Adventure Kit™ — Houdini harness + Kushma leash at $64.99 (save $5).
+        Use existing photography of the pair in use.
+    - title: Add kit cross-sell block on both PDPs
+      location: Theme editor → product template
+      before: Houdini and Kushma PDPs don't mention each other or any kit.
+      after: '''Complete the kit'' block under add-to-cart: on Houdini show Adventure
+        Kit; on Zeppelin show the existing Zeppelin + Go Litter kit ($199.99, save
+        $30).'
+    out_of_scope:
+    - No sitewide discounting.
+    - No new photography required to launch.
+    definition_of_done: Adventure Kit purchasable; both PDPs show their kit; AOV tracked
+      for 60 days.
 - id: '062'
   created: '2026-04-20'
   title: Push to page 1 — how-to-teach-a-cat-to-sit-and-stay

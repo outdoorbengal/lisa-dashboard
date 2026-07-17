@@ -84,7 +84,7 @@ function findExperimentRaw(id) {
 // Used to color the type pill and the row's left-edge accent.
 function typeAccent(t) {
   const x = (t || "").toLowerCase();
-  return ["rnk", "ctr", "cr", "link", "dec", "fun"].includes(x) ? x : "rnk";
+  return ["rnk", "ctr", "cr", "link", "dec", "fun", "aov"].includes(x) ? x : "rnk";
 }
 
 // Format a per-day rate for inline text. Integer when ≥10, 1 decimal below.
@@ -531,7 +531,8 @@ function openSprintDetail(id) {
       </div>
 
       <div class="detail-actions">
-        <button class="rbtn r-done" data-modal-action="done" data-sprint-id="${escapeHtml(sprint.id)}">&#10003; DONE &mdash; Start experiment</button>
+        ${brief.apply ? `<button class="rbtn r-apply" data-modal-action="apply" data-sprint-id="${escapeHtml(sprint.id)}">&#9889; ACCEPT &mdash; Apply to store</button>` : ""}
+        <button class="rbtn r-done" data-modal-action="done" data-sprint-id="${escapeHtml(sprint.id)}">&#10003; DONE &mdash; ${brief.apply ? "I did it manually" : "Start experiment"}</button>
         <button class="rbtn r-skip" data-modal-action="skip" data-sprint-id="${escapeHtml(sprint.id)}">SKIP</button>
       </div>
     </div>
@@ -882,6 +883,13 @@ async function handleAction(action, id) {
       withInput: true,
       inputPlaceholder: "Optional reason",
       onConfirm: (reason) => dispatchAction("skip", id, { reason }),
+    });
+  } else if (action === "apply") {
+    confirm({
+      title: `Apply sprint #${id}'s change to the live store?`,
+      message: "The proposed change (see the brief's AFTER column) is written to Shopify via the Admin API — no manual editing needed. The sprint then starts tracking as an experiment, exactly like DONE.",
+      withInput: false,
+      onConfirm: () => dispatchAction("apply", id),
     });
   }
 }

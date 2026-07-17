@@ -48,15 +48,28 @@ jobs:
             exit 1
           fi
           case "$ACTION" in
-            done|skip|modify) ;;
+            done|skip|modify|apply) ;;
             *) echo "Unknown action: $ACTION"; exit 1 ;;
           esac
 
       - name: Run sprint action
+        env:
+          SHOPIFY_STORE_DOMAIN: outdoorbengal.myshopify.com
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+          GOOGLE_APPLICATION_CREDENTIALS: /dev/null
+          GSC_SITE_URL: unused
+          GA4_PROPERTY_ID: unused
         run: |
           ACTION='${{ github.event.client_payload.action }}'
           SPRINT_ID='${{ github.event.client_payload.sprint_id }}'
           case "$ACTION" in
+            apply)
+              # Push the proposed change to Shopify, then start tracking it
+              # as an experiment exactly like a manual DONE.
+              python scripts/apply_change.py "$SPRINT_ID"
+              python scripts/sprint_action.py done "$SPRINT_ID"
+              ;;
             done)
               python scripts/sprint_action.py done "$SPRINT_ID"
               ;;

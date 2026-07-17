@@ -252,6 +252,12 @@ def measure(metric: str, path: str, gsc: dict, ga4: dict, ga4_totals: dict, extr
     a = ga4.get(path)
     extra = extra or {}
     devices, events = extra.get("devices") or {}, extra.get("events") or {}
+    if metric == "aov":
+        shop = extra.get("shop") or {}
+        if not shop.get("aov"):
+            return None
+        v = round(shop["aov"], 2)
+        return v, f"${v:g} now", f"{shop.get('web_orders', '?')} online-store orders ({WINDOW_DAYS}d)"
     if metric == "mobile_conversion_rate":
         m = devices.get("mobile")
         if not m or m["sessions"] < 100:
@@ -737,7 +743,7 @@ def main() -> int:
     ctx = {"gsc": gsc, "gsc_prev": gsc_prev, "query_pages": query_pages,
            "ga4": ga4, "ga4_totals": ga4_totals, "events": events,
            "devices": devices, "shop": shop, "aov": aov, "top_query": top_query}
-    extra = {"events": events, "devices": devices}
+    extra = {"events": events, "devices": devices, "shop": shop}
 
     # 0. Diagnostics first — never optimize on top of broken measurement
     warnings = run_diagnostics(ctx)

@@ -49,8 +49,12 @@ sprints:
 **Rules:**
 - `id` must be unique across queue + active + archive.
 - `sprint_type` must be exactly one of `RNK`, `CTR`, `CR`, `LINK`, `DEC`
-  (declining-content refresh) or `FUN` (funnel / UX, usually site-level
-  with `url: /`).
+  (declining-content refresh), `FUN` (funnel / UX / lifecycle, usually
+  site-level with `url: /`) or `AOV` (merchandising / bundles).
+- `execution_brief.apply` (optional) makes the dashboard show an ACCEPT
+  button that writes the change straight to Shopify via the sprint-action
+  workflow: `{resource: article|product, blog_handle?, article_handle?,
+  handle?, set: {title_tag, description_tag}}`.
 - `current_value` and `target_value` are numbers, not strings.
 - `rationale` should be a real explanation — not just the title restated.
 

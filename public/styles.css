@@ -279,6 +279,8 @@ body {
   --type-dec-soft:   #f6f0e2;
   --type-fun:        #2d7f7a;   /* teal — funnel / UX */
   --type-fun-soft:   #e5f2f1;
+  --type-aov:        #8f2d5f;   /* plum — AOV / merchandising */
+  --type-aov-soft:   #f6e5ee;
 }
 
 .tag-rnk  { background: var(--type-rnk-soft);  color: var(--type-rnk);  }
@@ -287,6 +289,7 @@ body {
 .tag-link { background: var(--type-link-soft); color: var(--type-link); }
 .tag-dec  { background: var(--type-dec-soft);  color: var(--type-dec);  }
 .tag-fun  { background: var(--type-fun-soft);  color: var(--type-fun);  }
+.tag-aov  { background: var(--type-aov-soft);  color: var(--type-aov);  }
 
 /* 3px colored left-edge on the row so the list scans by type. Uses
    box-shadow inset rather than border so nothing shifts layout. */
@@ -296,6 +299,7 @@ body {
 .row-type-link { box-shadow: inset 3px 0 0 var(--type-link); }
 .row-type-dec  { box-shadow: inset 3px 0 0 var(--type-dec);  }
 .row-type-fun  { box-shadow: inset 3px 0 0 var(--type-fun);  }
+.row-type-aov  { box-shadow: inset 3px 0 0 var(--type-aov);  }
 
 /* Sprint-type chip sitting under the sprint number */
 .sprint-type-chip {
@@ -741,6 +745,8 @@ body {
 }
 .r-done { border-color: var(--accent); color: var(--accent); }
 .r-skip { border-color: var(--hairline-2); color: var(--muted); }
+.r-apply { border-color: var(--accent); background: var(--accent); color: #fff; font-weight: 600; }
+.r-apply:hover { opacity: .88; }
 .r-mod  { border-color: var(--hairline-2); color: var(--muted); }
 .r-done:hover { background: var(--accent-soft); }
 .r-skip:hover, .r-mod:hover { background: var(--surface-3); }
