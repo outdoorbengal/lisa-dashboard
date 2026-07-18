@@ -41,6 +41,24 @@ COPY_SCHEMA = {
     "additionalProperties": False,
 }
 
+LEARNINGS = REPO_ROOT / "learnings" / "ab-tests.yml"
+
+
+def learnings_block() -> str:
+    """Concluded A/B test learnings, injected into the drafting prompt so
+    copy improves with every test — the self-improving half of the loop."""
+    try:
+        tests = (yaml.safe_load(LEARNINGS.open()) or {}).get("tests") or []
+    except FileNotFoundError:
+        return ""
+    lessons = [f"- [{t.get('result')}] {t.get('learning')}"
+               for t in tests[-10:] if t.get("learning")]
+    if not lessons:
+        return ""
+    return ("\n\nLearnings from this store's concluded A/B tests — apply them:\n"
+            + "\n".join(lessons))
+
+
 SYSTEM = """You write SEO titles and meta descriptions for OutdoorBengal.com,
 a cat adventure-gear store (harnesses, carriers, leashes) run by a professional
 cat trainer. Voice: expert, warm, concrete — never clickbait, never ALL CAPS,
@@ -84,6 +102,7 @@ def main() -> int:
 
     client = anthropic.Anthropic()
     model = os.environ.get("LISA_COPY_MODEL", "claude-opus-4-8")
+    system = SYSTEM + learnings_block()
     drafted = []
     for sp in pending[:MAX_DRAFTS_PER_RUN]:
         step = sp["execution_brief"]["steps"][0]
@@ -98,7 +117,7 @@ def main() -> int:
             model=model,
             max_tokens=16000,
             thinking={"type": "adaptive"},
-            system=SYSTEM,
+            system=system,
             messages=[{"role": "user", "content": prompt}],
             output_config={"format": {"type": "json_schema", "schema": COPY_SCHEMA}},
         )

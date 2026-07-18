@@ -3,20 +3,20 @@
   "week_of": "Jul 13 2026",
   "system": {
     "status": "OK",
-    "pages_scanned": 773,
-    "pages_total": 773,
+    "pages_scanned": 1553,
+    "pages_total": 780,
     "sources_connected": 3,
     "sources_total": 3,
-    "opportunities": 166,
+    "opportunities": 170,
     "active_tests": 0,
-    "days_complete": 1,
+    "days_complete": 2,
     "scan_bars": [
       0,
       0,
       0,
       0,
       100,
-      0,
+      100,
       0
     ]
   },
@@ -374,6 +374,140 @@
       "has_exec_brief": true
     },
     {
+      "id": "176",
+      "days_waiting": 0,
+      "title": "A/B test #1 \u2014 Houdini PDP headline: benefit-led vs feature-led (ATC)",
+      "url": "/products/extra-safe-cat-harness",
+      "sprint_type": "FUN",
+      "impact_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+      "current_pct": 3.1,
+      "current_label": "3.08% CR / 14.6% ATC",
+      "target_pct": 3.1,
+      "target_label": "ATC +15%",
+      "effort_label": "LOW \u2014 Set up in Essential A/B Testing; 28-day pre-registered run",
+      "effort_pct": 6,
+      "effort_level": "LOW",
+      "effort_minutes": 45,
+      "queue_position": 5,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 18221.28,
+        "monthly_projected_usd": 19877.76,
+        "monthly_lift_usd": 1656.48,
+        "monthly_lift_usd_adjusted": 496.94,
+        "annual_lift_usd_adjusted": 5963.33,
+        "confidence": "low",
+        "haircut_pct": 30,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "0",
+            "after": "0",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "0.00%",
+            "after": "0.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "5,800",
+            "after": "5,800",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Conversion rate",
+            "before": "3.08%",
+            "after": "3.36%",
+            "delta_pct": "+9%",
+            "changed": true
+          },
+          {
+            "label": "AOV",
+            "before": "$102",
+            "after": "$102",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$497/mo",
+      "has_exec_brief": true
+    },
+    {
+      "id": "177",
+      "days_waiting": 0,
+      "title": "A/B test #2 \u2014 Zeppelin PDP hero: travel-usp framing (ATC)",
+      "url": "/products/zeppelin-cat-carrier",
+      "sprint_type": "FUN",
+      "impact_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+      "current_pct": 1.0,
+      "current_label": "1.04% CR / 7.0% ATC",
+      "target_pct": 1.0,
+      "target_label": "ATC +20%",
+      "effort_label": "LOW \u2014 Set up in Essential A/B Testing; 42-day pre-registered run",
+      "effort_pct": 6,
+      "effort_level": "LOW",
+      "effort_minutes": 45,
+      "queue_position": 6,
+      "status": "QUEUED",
+      "revenue": {
+        "available": true,
+        "monthly_current_usd": 11175.84,
+        "monthly_projected_usd": 12572.82,
+        "monthly_lift_usd": 1396.98,
+        "monthly_lift_usd_adjusted": 419.09,
+        "annual_lift_usd_adjusted": 5029.13,
+        "confidence": "low",
+        "haircut_pct": 30,
+        "breakdown": [
+          {
+            "label": "Impressions / mo",
+            "before": "0",
+            "after": "0",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "CTR",
+            "before": "0.00%",
+            "after": "0.00%",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Sessions / mo",
+            "before": "4,975",
+            "after": "4,975",
+            "delta_pct": "",
+            "changed": false
+          },
+          {
+            "label": "Conversion rate",
+            "before": "1.04%",
+            "after": "1.17%",
+            "delta_pct": "+13%",
+            "changed": true
+          },
+          {
+            "label": "AOV",
+            "before": "$216",
+            "after": "$216",
+            "delta_pct": "",
+            "changed": false
+          }
+        ]
+      },
+      "revenue_headline": "$419/mo",
+      "has_exec_brief": true
+    },
+    {
       "id": "172",
       "days_waiting": 0,
       "title": "Conversion fix \u2014 portable-litterbox",
@@ -388,7 +522,7 @@
       "effort_pct": 12,
       "effort_level": "MEDIUM",
       "effort_minutes": 60,
-      "queue_position": 5,
+      "queue_position": 7,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -455,7 +589,7 @@
       "effort_pct": 12,
       "effort_level": "MEDIUM",
       "effort_minutes": 90,
-      "queue_position": 6,
+      "queue_position": 8,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -522,7 +656,7 @@
       "effort_pct": 12,
       "effort_level": "MEDIUM",
       "effort_minutes": 90,
-      "queue_position": 7,
+      "queue_position": 9,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -589,7 +723,7 @@
       "effort_pct": 12,
       "effort_level": "MEDIUM",
       "effort_minutes": 60,
-      "queue_position": 8,
+      "queue_position": 10,
       "status": "QUEUED",
       "revenue": {
         "available": true,
@@ -640,140 +774,6 @@
       },
       "revenue_headline": "$69/mo",
       "has_exec_brief": true
-    },
-    {
-      "id": "056",
-      "days_waiting": 88,
-      "title": "Push to page 1 \u2014 zeppelin-cat-carrier",
-      "url": "/blogs/product-reviews/zeppelin-cat-carrier",
-      "sprint_type": "RNK",
-      "impact_label": "Weekly clicks \u00b7 pos 7.0",
-      "current_pct": 15.2,
-      "current_label": "~15.2/wk now",
-      "target_pct": 8.0,
-      "target_label": "+6/wk",
-      "effort_label": "HIGH \u2014 Full rewrite / restructure",
-      "effort_pct": 18,
-      "effort_level": "HIGH",
-      "effort_minutes": 120,
-      "queue_position": 9,
-      "status": "QUEUED",
-      "revenue": {
-        "available": true,
-        "monthly_current_usd": 122.8,
-        "monthly_projected_usd": 349.44,
-        "monthly_lift_usd": 226.64,
-        "monthly_lift_usd_adjusted": 67.99,
-        "annual_lift_usd_adjusted": 815.89,
-        "confidence": "low",
-        "haircut_pct": 30,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "2,659",
-            "after": "2,659",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "2.46%",
-            "after": "7.00%",
-            "delta_pct": "+185%",
-            "changed": true
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "65",
-            "after": "185",
-            "delta_pct": "+185%",
-            "changed": true
-          },
-          {
-            "label": "Conversion rate",
-            "before": "1.54%",
-            "after": "1.54%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "AOV",
-            "before": "$123",
-            "after": "$123",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
-      },
-      "revenue_headline": "$68/mo",
-      "has_exec_brief": false
-    },
-    {
-      "id": "032",
-      "days_waiting": 88,
-      "title": "Conversion fix \u2014 most-aesthetic-cat-trees",
-      "url": "/blogs/enriching-indoors/most-aesthetic-cat-trees",
-      "sprint_type": "CR",
-      "impact_label": "Conversion rate \u00b7 1400 sessions",
-      "current_pct": 5,
-      "current_label": "0% now",
-      "target_pct": 11.4,
-      "target_label": "0.57%",
-      "effort_label": "HIGH \u2014 Full rewrite / restructure",
-      "effort_pct": 18,
-      "effort_level": "HIGH",
-      "effort_minutes": 120,
-      "queue_position": 10,
-      "status": "QUEUED",
-      "revenue": {
-        "available": true,
-        "monthly_current_usd": 0.0,
-        "monthly_projected_usd": 110.71,
-        "monthly_lift_usd": 110.71,
-        "monthly_lift_usd_adjusted": 66.42,
-        "annual_lift_usd_adjusted": 797.09,
-        "confidence": "medium",
-        "haircut_pct": 60,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "30,761",
-            "after": "30,761",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "2.63%",
-            "after": "2.63%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "1,128",
-            "after": "1,128",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Conversion rate",
-            "before": "0.00%",
-            "after": "0.08%",
-            "delta_pct": "+\u221e",
-            "changed": true
-          },
-          {
-            "label": "AOV",
-            "before": "$123",
-            "after": "$123",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
-      },
-      "revenue_headline": "$66/mo",
-      "has_exec_brief": false
     }
   ],
   "details": {
@@ -1011,6 +1011,81 @@
         }
       },
       {
+        "id": "177",
+        "created": "2026-07-18",
+        "title": "A/B test #2 \u2014 Zeppelin PDP hero: travel-usp framing (ATC)",
+        "url": "/products/zeppelin-cat-carrier",
+        "sprint_type": "FUN",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+          "current_value": 1.04,
+          "current_display": "1.04% CR / 7.0% ATC",
+          "target_value": 1.04,
+          "target_display": "ATC +20%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "LOW",
+          "description": "Set up in Essential A/B Testing; 42-day pre-registered run",
+          "estimated_minutes": 45
+        },
+        "rationale": "Zeppelin converts views to cart at 7.0% vs Houdini's 14.6% \u2014 the weakest ATC among the money PDPs, on a $190 product. Detectable: \u00b123% ATC in 4wk, \u00b117% in 8 \u2014 so this tests a BOLD swing only. Hypothesis: buyers hesitate because fit/airline anxiety isn't answered above the fold. Variant B leads the hero with 'Fits under airline seats' + head-hole comfort framing + kit savings.\n\nPRE-REGISTERED PROTOCOL: primary metric = add-to-cart rate; horizon = 42 days; no early stop; ship at >=95% AND horizon AND clean guardrails. NOTE: run AFTER sprint #174 ships the always-on airline section (SEO content must not be inside an A/B variant \u2014 Google must always see it).\n\nDashboard impact: $1,300/mo estimated (+20% ATC x ~60% pass-through on ~$10.9K/mo page revenue)",
+        "evaluation": {
+          "window_days": 42,
+          "success_threshold_pct": 12,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "opportunity_type": "AB_TEST",
+          "detected_at": "2026-07-18T00:00:00Z",
+          "last_refreshed": "2026-07-18T00:00:00Z",
+          "dashboard_impact": 1300.0
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 0,
+            "ctr": 0.0,
+            "sessions_30d": 4975,
+            "conversion_rate": 0.0104,
+            "aov": 216.0
+          },
+          "projected": {
+            "conversion_rate": 0.0117
+          },
+          "confidence": "low"
+        },
+        "execution_brief": {
+          "action": "Run a 42-day hero-copy A/B on the Zeppelin PDP after #174's airline section is live",
+          "summary": "Bold swing only \u2014 the traffic supports detecting \u00b117-23% ATC changes, not tweaks.",
+          "steps": [
+            {
+              "title": "Ship #174 first (sequencing)",
+              "location": "Sprint #174",
+              "before": "Airline-fit section not yet on the page.",
+              "after": "Airline section live for ALL visitors (SEO needs one consistent version). The A/B tests the hero copy only."
+            },
+            {
+              "title": "Create the test",
+              "location": "Apps \u2192 A/B Testing \u2192 New test",
+              "before": "Hero leads with 'ZEPPELIN\u2122 Cat Carrier With Head Hole'.",
+              "after": "Variant B: 'The Airline-Ready Carrier Cats Actually Like' + subline 'Head-hole design keeps them calm \u00b7 fits under the seat \u00b7 save $30 in the Travel Kit'."
+            },
+            {
+              "title": "Pre-register, decide at day 42, log",
+              "location": "learnings/ab-tests.yml",
+              "before": "\u2014",
+              "after": "Same protocol as test #1; learning logged regardless of outcome."
+            }
+          ],
+          "out_of_scope": [
+            "Not concurrent with any other Zeppelin test; ads (#171) may run \u2014 randomization keeps arms comparable."
+          ],
+          "definition_of_done": "Concluded at horizon, logged, winner live."
+        }
+      },
+      {
         "id": "166",
         "created": "2026-07-17",
         "title": "Mobile PDP test: lift view\u2192add-to-cart (11.3% vs 16.7% desktop)",
@@ -1084,6 +1159,82 @@
             "No desktop changes \u2014 mobile template only."
           ],
           "definition_of_done": "All 3 live on mobile; ATC rate read at day 28 vs 12.4% baseline."
+        }
+      },
+      {
+        "id": "176",
+        "created": "2026-07-18",
+        "title": "A/B test #1 \u2014 Houdini PDP headline: benefit-led vs feature-led (ATC)",
+        "url": "/products/extra-safe-cat-harness",
+        "sprint_type": "FUN",
+        "kpi": {
+          "metric": "conversion_rate",
+          "display_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+          "current_value": 3.08,
+          "current_display": "3.08% CR / 14.6% ATC",
+          "target_value": 3.08,
+          "target_display": "ATC +15%",
+          "unit": "percent"
+        },
+        "effort": {
+          "level": "LOW",
+          "description": "Set up in Essential A/B Testing; 28-day pre-registered run",
+          "estimated_minutes": 45
+        },
+        "rationale": "First loop iteration on the highest-power surface: Houdini PDP gets 9,049 product views/28d at 14.6% add-to-cart \u2014 enough traffic to detect a \u00b114% ATC change in 4 weeks (\u00b110% in 8). Hypothesis: the above-fold copy leads with the product name/feature; a benefit-led headline plus a one-line trust row (509 buyers last year, trainer-designed, escape-proof guarantee) raises ATC.\n\nPRE-REGISTERED PROTOCOL: primary metric = add-to-cart rate; horizon = 28 days (full weeks), no early stop; ship if >=95% probability AND horizon reached AND guardrails clean (AOV, refund rate, page CR). Log result to learnings/ab-tests.yml either way.\n\nDashboard impact: $950/mo estimated (+15% ATC x ~60% pass-through on ~$10.5K/mo page revenue)",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 10,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "opportunity_type": "AB_TEST",
+          "detected_at": "2026-07-18T00:00:00Z",
+          "last_refreshed": "2026-07-18T00:00:00Z",
+          "dashboard_impact": 950.0
+        },
+        "revenue_model": {
+          "current": {
+            "impressions_30d": 0,
+            "ctr": 0.0,
+            "sessions_30d": 5800,
+            "conversion_rate": 0.0308,
+            "aov": 102.0
+          },
+          "projected": {
+            "conversion_rate": 0.0336
+          },
+          "confidence": "low"
+        },
+        "execution_brief": {
+          "action": "Run a 28-day headline A/B on the Houdini PDP in Essential A/B Testing",
+          "summary": "One variable, one metric, fixed horizon. The app randomizes and computes significance; Lisa keeps the ground-truth guardrails.",
+          "steps": [
+            {
+              "title": "Create the test in Essential A/B Testing",
+              "location": "Shopify admin \u2192 Apps \u2192 A/B Testing \u2192 New test \u2192 this product",
+              "before": "Above-fold: 'Houdini\u2122 Escape Proof Cat Harness' + price + variants.",
+              "after": "Variant B headline: 'The Cat Harness They Can't Escape' + subline 'Trainer-designed \u00b7 escape-proof \u00b7 500+ adventure cats geared up last year'. Nothing else changes.",
+              "note": "50/50 split, all traffic. One variable only \u2014 no simultaneous price or image changes."
+            },
+            {
+              "title": "Pre-register and calendar the decision",
+              "location": "learnings/ab-tests.yml",
+              "before": "No entry.",
+              "after": "Add the test entry with started date, baseline 14.6% ATC, horizon 28 days. Decision date goes in your calendar \u2014 results are read once, at the horizon."
+            },
+            {
+              "title": "At day 28: decide and log",
+              "location": "A/B app results + learnings/ab-tests.yml",
+              "before": "\u2014",
+              "after": ">=95% prob & guardrails clean -> ship B store-wide, log WINNER + learning. Otherwise revert, log LOSER/INCONCLUSIVE + learning. Either way the ledger feeds Claude's future copy."
+            }
+          ],
+          "out_of_scope": [
+            "No peeking-to-stop. No mid-test edits to either variant. No second concurrent test on this page."
+          ],
+          "definition_of_done": "Test concluded at horizon, result logged in learnings/ab-tests.yml, winner live."
         }
       },
       {
@@ -9379,6 +9530,26 @@
   },
   "log": [
     {
+      "run_id": "scan-20260718-110717",
+      "type": "daily_scan",
+      "status": "warning",
+      "duration_ms": 7642,
+      "pages_scanned": 780,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 780 pages. 1 new opportunities, 163 reranked. 0 active experiments re-measured. 4 tracking warnings.",
+      "warnings": [
+        "Revenue mismatch: GA4 $37,361 vs Shopify online-store $59,645 (37% gap, 28d) \u2014 check purchase tracking, refunds, payment referral exclusions",
+        "Order-count mismatch: GA4 357 purchases vs Shopify 478 online-store orders (25% gap) \u2014 duplicate or missing purchase events",
+        "Campaign tagging broken: 31 orders carry ad click-ids but GA4 paid channels show only 5 purchases \u2014 add UTM templates to Meta/Google ads so paid performance is measurable",
+        "18% of GA4 sessions are 'Unassigned' \u2014 tagging/consent artifact worth investigating"
+      ],
+      "ts": "2026-07-18T11:07:17Z"
+    },
+    {
       "run_id": "scan-20260717-185341",
       "type": "daily_scan",
       "status": "warning",
@@ -10077,20 +10248,6 @@
       ],
       "summary": "Scanned 214 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
       "ts": "2026-05-13T10:10:53Z"
-    },
-    {
-      "run_id": "scan-20260512-101000",
-      "type": "daily_scan",
-      "status": "success",
-      "duration_ms": 52543,
-      "pages_scanned": 215,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 215 pages. 0 new opportunities, 122 reranked. 6 active experiments re-measured.",
-      "ts": "2026-05-12T10:10:52Z"
     }
   ]
 }

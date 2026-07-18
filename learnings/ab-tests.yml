@@ -1,0 +1,27 @@
+# A/B test ledger — the self-improving loop's memory.
+# Every concluded test gets an entry; scripts/draft_copy.py feeds recent
+# learnings into Claude's prompt so future copy builds on what worked.
+# Result values: WINNER | LOSER | INCONCLUSIVE (all three are learnings).
+#
+# Protocol (pre-registered, per test):
+#   - ONE primary metric, declared before launch (usually add-to-cart rate)
+#   - Fixed horizon in full weeks, computed from the MDE table — no peeking-
+#     to-stop; the app's significance % is read only AT the horizon
+#   - Ship rule: >=95% probability AND horizon reached AND guardrails clean
+#     (AOV, refund rate, bounce) — otherwise revert and log
+#   - One test per page; parallel tests only on different surfaces
+tests: []
+# Example entry:
+# - id: ab-001
+#   page: /products/extra-safe-cat-harness
+#   hypothesis: Benefit-led headline raises ATC vs feature-led
+#   variant_a: "Houdini™ Escape Proof Cat Harness"
+#   variant_b: "The Cat Harness They Can't Escape — Trainer-Designed"
+#   primary_metric: add_to_cart_rate
+#   baseline: 14.6%
+#   horizon_days: 28
+#   started: 2026-07-21
+#   concluded: 2026-08-18
+#   result: WINNER
+#   observed: "+11% ATC (95.8% prob), AOV flat, refunds flat"
+#   learning: "Benefit-led framing beats feature-led on harness PDP"
