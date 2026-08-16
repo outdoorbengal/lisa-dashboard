@@ -2,8 +2,8 @@
 
 current_week:
   week_of: '2026-08-10'
-  pages_total: 780
-  daily_target: 112
+  pages_total: 771
+  daily_target: 111
   daily_counts:
   - 789
   - 790
@@ -11,15 +11,15 @@ current_week:
   - 781
   - 777
   - 780
-  - 0
+  - 771
   sources:
   - name: Google Search Console
     connected: true
-    last_pull: '2026-08-15T10:25:55Z'
+    last_pull: '2026-08-16T10:26:41Z'
   - name: Google Analytics 4
     connected: true
-    last_pull: '2026-08-15T10:25:55Z'
+    last_pull: '2026-08-16T10:26:41Z'
   - name: Shopify Admin API
     connected: true
-    last_pull: '2026-08-15T10:25:55Z'
+    last_pull: '2026-08-16T10:26:41Z'
   opportunities_discovered: 185
