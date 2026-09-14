@@ -1,23 +1,23 @@
 {
-  "generated": "2026-09-13",
-  "week_of": "Sep 07 2026",
+  "generated": "2026-09-14",
+  "week_of": "Sep 14 2026",
   "system": {
     "status": "OK",
-    "pages_scanned": 4962,
+    "pages_scanned": 0,
     "pages_total": 662,
     "sources_connected": 3,
     "sources_total": 3,
     "opportunities": 209,
     "active_tests": 0,
-    "days_complete": 7,
+    "days_complete": 0,
     "scan_bars": [
-      100,
-      100,
-      100,
-      100,
-      100,
-      100,
-      100
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ]
   },
   "donuts": {
@@ -107,7 +107,7 @@
   "sprints": [
     {
       "id": "184",
-      "days_waiting": 37,
+      "days_waiting": 38,
       "title": "Conversion fix \u2014 cat-car-seat",
       "url": "/products/cat-car-seat",
       "sprint_type": "CR",
@@ -174,7 +174,7 @@
     },
     {
       "id": "173",
-      "days_waiting": 57,
+      "days_waiting": 58,
       "title": "Win the head term 'cat harness' \u2014 16.5K impressions stuck at pos 12",
       "url": "/products/extra-safe-cat-harness",
       "sprint_type": "RNK",
@@ -241,7 +241,7 @@
     },
     {
       "id": "172",
-      "days_waiting": 57,
+      "days_waiting": 58,
       "title": "Conversion fix \u2014 portable-litterbox",
       "url": "/products/portable-litterbox",
       "sprint_type": "CR",
@@ -308,7 +308,7 @@
     },
     {
       "id": "186",
-      "days_waiting": 36,
+      "days_waiting": 37,
       "title": "Conversion fix \u2014 cat-bootcamp",
       "url": "/products/cat-bootcamp",
       "sprint_type": "CR",
@@ -375,7 +375,7 @@
     },
     {
       "id": "187",
-      "days_waiting": 34,
+      "days_waiting": 35,
       "title": "Conversion fix \u2014 the-click-crusade",
       "url": "/products/the-click-crusade",
       "sprint_type": "CR",
@@ -442,7 +442,7 @@
     },
     {
       "id": "192",
-      "days_waiting": 24,
+      "days_waiting": 25,
       "title": "Refresh declining content \u2014 zeppelin-cat-carrier (-32% clicks)",
       "url": "/products/zeppelin-cat-carrier",
       "sprint_type": "DEC",
@@ -509,7 +509,7 @@
     },
     {
       "id": "191",
-      "days_waiting": 30,
+      "days_waiting": 31,
       "title": "Conversion fix \u2014 always-on-cat-harness",
       "url": "/products/always-on-cat-harness",
       "sprint_type": "CR",
@@ -576,7 +576,7 @@
     },
     {
       "id": "012",
-      "days_waiting": 145,
+      "days_waiting": 146,
       "title": "Conversion fix \u2014 clicker-training-starter-kit",
       "url": "/products/clicker-training-starter-kit",
       "sprint_type": "CR",
@@ -643,7 +643,7 @@
     },
     {
       "id": "024",
-      "days_waiting": 145,
+      "days_waiting": 146,
       "title": "Conversion fix \u2014 cat-training-guide",
       "url": "/blogs/clicker-training-cats/cat-training-guide",
       "sprint_type": "CR",
@@ -710,7 +710,7 @@
     },
     {
       "id": "201",
-      "days_waiting": 1,
+      "days_waiting": 2,
       "title": "Refresh declining content \u2014 cat-car-seat (-37% clicks)",
       "url": "/products/cat-car-seat",
       "sprint_type": "DEC",
@@ -12210,6 +12210,13 @@
   },
   "log": [
     {
+      "run_id": "rollover-2026-09-14",
+      "type": "manual_action",
+      "status": "success",
+      "summary": "Weekly rollover: daily_counts reset for week of 2026-09-14",
+      "ts": "2026-09-14T09:30:00Z"
+    },
+    {
       "run_id": "scan-20260913-184552",
       "type": "daily_scan",
       "status": "success",
@@ -13157,26 +13164,6 @@
         "17% of GA4 sessions are 'Unassigned' \u2014 tagging/consent artifact worth investigating"
       ],
       "ts": "2026-07-29T12:04:07Z"
-    },
-    {
-      "run_id": "scan-20260728-115952",
-      "type": "daily_scan",
-      "status": "warning",
-      "duration_ms": 18444,
-      "pages_scanned": 793,
-      "sources": [
-        "Google Search Console",
-        "Google Analytics 4",
-        "Shopify Admin API"
-      ],
-      "summary": "Scanned 793 pages. 0 new opportunities, 170 reranked. 0 active experiments re-measured. 4 tracking warnings.",
-      "warnings": [
-        "Revenue mismatch: GA4 $36,087 vs Shopify online-store $63,170 (43% gap, 28d) \u2014 check purchase tracking, refunds, payment referral exclusions",
-        "Order-count mismatch: GA4 310 purchases vs Shopify 460 online-store orders (33% gap) \u2014 duplicate or missing purchase events",
-        "Campaign tagging broken: 30 orders carry ad click-ids but GA4 paid channels show only 4 purchases \u2014 add UTM templates to Meta/Google ads so paid performance is measurable",
-        "17% of GA4 sessions are 'Unassigned' \u2014 tagging/consent artifact worth investigating"
-      ],
-      "ts": "2026-07-28T11:59:52Z"
     }
   ]
 }
