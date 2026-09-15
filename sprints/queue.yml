@@ -3,9 +3,9 @@
 # First item = UNACKNOWLEDGED on the dashboard.
 
 sprints:
-- id: '222'
+- id: '223'
   created: '2026-09-15'
-  title: Product pages convert to cart at 10.3% vs 14% benchmark
+  title: Structural — homepage
   url: /
   sprint_type: CR
   kpi:
@@ -32,36 +32,36 @@ sprints:
       ≥ 44px).
     - Instrument an event on the changed step so the next scan can attribute movement.
     - Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses.
-    expected_impact_usd_month: 10789.83
+    expected_impact_usd_month: 8413.52
     effort: MEDIUM · ~45 min
     owner: Lisa (funnel/analytics)
     success_metric: unspecified
     success_target: 1
     measurement_window_days: 28
-    evidence: 13,249 PDP sessions → 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC→purchase 27.4%
-      | AOV=$101.46
+    evidence: 1,362 ATC → 640 checkouts = 47.0% (benchmark 55%) | downstream checkout→purchase 58% | AOV=$101.46
     risk_note: Re-measure before/after; roll back if the metric regresses beyond the neutral threshold.
-  rationale: 'Product pages convert to cart at 10.3% vs 14% benchmark
+  rationale: 'Product pages convert to cart at 10.1% vs 14% benchmark
 
 
-    Evidence: 13,249 PDP sessions → 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC→purchase 27.4%
-    | AOV=$101.46
+    Evidence: 12,294 PDP sessions → 1,239 ATC = 10.1% (benchmark 14%) | downstream ATC→purchase 27.0%
+    | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)
 
-    Engine priority: 8299.87  •  Dashboard impact: 10789.83'
+    Engine priority: 7989.84  •  Dashboard impact: 10386.79'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0903
+    engine_opportunity_id: OP0902
     opportunity_type: STRUCTURAL
     structural_kind: PDP_TO_ATC
     priority_class: structural
-    detected_at: '2026-09-15T21:09:05.890125+00:00'
-    dashboard_impact: 10789.83
-    watchlist_restored: '2026-09-15T21:53:39Z'
-    stale_since: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T21:51:03.965633+00:00'
+    last_refreshed: '2026-09-15T21:51:17Z'
+    dashboard_impact: 10386.79
+    watchlist_restored: '2026-09-15T21:58:31Z'
+    stale_since: '2026-09-15T22:00:52Z'
   revenue_model:
     current:
       impressions_30d: 8791
@@ -73,7 +73,7 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
-- id: '224'
+- id: '227'
   created: '2026-09-15'
   title: Product pages convert to cart at 10.1% vs 14% benchmark
   url: /
@@ -128,20 +128,20 @@ sprints:
     opportunity_type: STRUCTURAL
     structural_kind: PDP_TO_ATC
     priority_class: structural
-    detected_at: '2026-09-15T21:58:18.301906+00:00'
+    detected_at: '2026-09-15T22:00:39.098592+00:00'
     dashboard_impact: 4615.61
   revenue_model:
     current:
       impressions_30d: 8791
       ctr: 0.3209
-      sessions_30d: 2821
-      conversion_rate: 0.0
+      sessions_30d: 2900
+      conversion_rate: 0.04
       aov: 87.5
     projected:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
-- id: '225'
+- id: '228'
   created: '2026-09-15'
   title: 'Cart → checkout drop-off: 47% vs 55% benchmark'
   url: /
@@ -196,20 +196,20 @@ sprints:
     opportunity_type: STRUCTURAL
     structural_kind: ATC_TO_CHECKOUT
     priority_class: structural
-    detected_at: '2026-09-15T21:58:18.301892+00:00'
+    detected_at: '2026-09-15T22:00:39.098578+00:00'
     dashboard_impact: 2998.09
   revenue_model:
     current:
       impressions_30d: 8791
       ctr: 0.3209
-      sessions_30d: 2821
-      conversion_rate: 0.0
+      sessions_30d: 2900
+      conversion_rate: 0.04
       aov: 87.5
     projected:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
-- id: '226'
+- id: '229'
   created: '2026-09-15'
   title: OUT OF STOCK everywhere but earning 2,177 impressions/28d — restock to unlock organic demand
   url: https://www.outdoorbengal.com/products/feastfuls-cat-treats
@@ -245,14 +245,14 @@ sprints:
     opportunity_type: STRUCTURAL
     structural_kind: OOS_DEMAND
     priority_class: structural
-    detected_at: '2026-09-15T21:58:24.101781+00:00'
+    detected_at: '2026-09-15T22:00:45.197192+00:00'
     dashboard_impact: 14.16
   revenue_model:
     current:
       impressions_30d: 8791
       ctr: 0.3209
-      sessions_30d: 2821
-      conversion_rate: 0.0
+      sessions_30d: 2900
+      conversion_rate: 0.04
       aov: 87.5
     projected:
       impressions_multiplier: 3.0
@@ -1959,8 +1959,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877089+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.310443+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 40.1
   revenue_model:
     current:
@@ -2008,8 +2008,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.875363+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.308752+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 37.49
   revenue_model:
     current:
@@ -2032,10 +2032,10 @@ sprints:
       before: 'Title: Escape-Proof Cat Harness | Houdini Harness by OutdoorBengal
 
         Description: (meta description not set)'
-      after: 'Title: Houdini Escape-Proof Cat Harness: Tested on 12 Cats
+      after: 'Title: Escape-Proof Cat Harness Reviewed: What 12 Owners Say
 
-        Description: Comparing escape-proof cat harnesses? The Houdini harness from OutdoorBengal was
-        tested on 12 real cats for a fit that holds - secure and leash-ready.'
+        Description: Comparing escape-proof cat harnesses? 12 owners tested this Houdini Harness on real
+        cats. OutdoorBengal shares sizing, escape tests and the honest verdict.'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -2082,8 +2082,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876132+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309536+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 37.36
   revenue_model:
     current:
@@ -2106,10 +2106,10 @@ sprints:
       before: 'Title: 2in1 Car Seat and Carrier for Cats | Dakar™ by OutdoorBengal
 
         Description: (meta description not set)'
-      after: 'Title: Cat Car Seat Reviews: What 40 Bengal Owners Say (2026)
+      after: 'Title: Cat Car Seat, Carrier and Bed: 2-in-1, Road-Tested 2026
 
-        Description: See why 40 cat owners chose the Dakar 2-in-1 car seat and carrier. Padded and secure
-        for Bengals, with free returns if your cat won''t settle.'
+        Description: The 2-in-1 cat car seat that doubles as a carrier and bed, so cats stay calm and
+        secure on every road trip. Easy to buckle in and clean after.'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -2194,14 +2194,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0509
+    engine_opportunity_id: OP0507
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545602+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.317751+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 33.82
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 6541
@@ -2251,8 +2250,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.881220+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.314765+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 31.65
   revenue_model:
     current:
@@ -2297,8 +2296,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.875787+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309197+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 30.67
   revenue_model:
     current:
@@ -2346,8 +2345,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.879260+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312671+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 28.77
   revenue_model:
     current:
@@ -2398,8 +2397,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.879206+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312611+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 27.68
   revenue_model:
     current:
@@ -2444,8 +2443,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883184+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316668+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 26.8
   revenue_model:
     current:
@@ -2493,8 +2492,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876321+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309729+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 26.41
   revenue_model:
     current:
@@ -2543,8 +2542,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.881264+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.314813+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 26.1
   recommendation_level: standard
   recommendation:
@@ -2695,8 +2694,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883098+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316578+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 24.76
   revenue_model:
     current:
@@ -2744,8 +2743,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883259+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316751+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 24.16
   revenue_model:
     current:
@@ -2793,8 +2792,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883147+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316631+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.98
   revenue_model:
     current:
@@ -2842,8 +2841,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883219+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316704+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.91
   recommendation_level: standard
   recommendation:
@@ -2888,14 +2887,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0507
+    engine_opportunity_id: OP0506
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545580+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.317738+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.82
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 15515
@@ -2942,8 +2940,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883280+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316772+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.5
   revenue_model:
     current:
@@ -2991,8 +2989,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883707+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317180+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.46
   revenue_model:
     current:
@@ -3040,8 +3038,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883650+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317124+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.17
   revenue_model:
     current:
@@ -3089,8 +3087,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883390+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316882+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.16
   revenue_model:
     current:
@@ -3116,10 +3114,10 @@ sprints:
       before: 'Title: Best Escape-Proof Cat Harness for Walking (2026)
 
         Description: (meta description not set)'
-      after: 'Title: Best Cat Harnesses for Walking: Tested on Bengals (2026)
+      after: 'Title: Best Bengal Cat Harness for Walking: 7 Tested Picks (2026)
 
-        Description: We tested cat harnesses on our own Bengals to find which ones actually stay on. See
-        the escape-proof picks, fit notes, and walking tips for your cat.'
+        Description: Comparing cat harnesses for walking? We tested 7 on Bengal cats to find escape-proof
+        picks that fit securely, move freely, and let your cat explore safely.'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -3160,8 +3158,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876059+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309468+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 23.03
   recommendation_level: standard
   recommendation:
@@ -3213,8 +3211,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883853+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317326+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 22.42
   revenue_model:
     current:
@@ -3238,10 +3236,10 @@ sprints:
       before: 'Title: (title not available — check Shopify)
 
         Description: (meta description not set)'
-      after: 'Title: Houdini Cat Harness and Leash: What 198 Owners Say
+      after: 'Title: Houdini Cat Harness Tested: Escape-Proof, Light & Safe
 
-        Description: The Houdini escape-proof cat harness and leash that stops cats backing out, vet-approved
-        and loved by 198 owners. Light and snug for daily adventures.'
+        Description: Houdini-proof cat harness and leash: escape-proof, light, safe. Made for escape-artist
+        cats, with sizing help so the fit''s right the first time.'
       note: Max 60 chars for title, max 155 for description. Lead with primary keyword.
     out_of_scope:
     - Do not change the page body copy in this sprint.
@@ -3282,8 +3280,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883205+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316689+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 22.38
   revenue_model:
     current:
@@ -3379,8 +3377,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883471+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316955+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.95
   revenue_model:
     current:
@@ -3428,8 +3426,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883550+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317036+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.88
   revenue_model:
     current:
@@ -3477,8 +3475,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883505+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316990+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.86
   revenue_model:
     current:
@@ -3529,8 +3527,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883680+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317152+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.86
   revenue_model:
     current:
@@ -3575,8 +3573,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883526+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317012+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.19
   revenue_model:
     current:
@@ -3624,8 +3622,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883599+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317076+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 21.14
   revenue_model:
     current:
@@ -3673,8 +3671,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.875410+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.308807+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.96
   revenue_model:
     current:
@@ -3722,8 +3720,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883448+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316932+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.87
   revenue_model:
     current:
@@ -3771,8 +3769,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883491+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316975+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.73
   revenue_model:
     current:
@@ -3816,14 +3814,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0513
+    engine_opportunity_id: OP0510
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545757+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.317988+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.59
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 1291
@@ -3866,14 +3863,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0516
+    engine_opportunity_id: OP0513
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545791+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.318031+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.54
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 59091
@@ -3923,8 +3919,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877794+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.311191+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.49
   revenue_model:
     current:
@@ -3966,14 +3962,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0512
+    engine_opportunity_id: OP0509
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545728+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.317940+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.42
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 35143
@@ -4020,8 +4015,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876000+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309407+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.27
   revenue_model:
     current:
@@ -4069,8 +4064,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883995+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317468+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 20.2
   revenue_model:
     current:
@@ -4118,8 +4113,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883572+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317057+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 19.73
   revenue_model:
     current:
@@ -4167,8 +4162,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883970+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317441+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 19.47
   revenue_model:
     current:
@@ -4216,8 +4211,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883662+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317137+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 19.38
   revenue_model:
     current:
@@ -4264,14 +4259,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0511
+    engine_opportunity_id: OP0508
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545624+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.317770+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 19.2
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 8791
@@ -4319,8 +4313,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883827+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317300+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 19.1
   revenue_model:
     current:
@@ -4365,8 +4359,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883411+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316894+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.97
   recommendation_level: standard
   recommendation:
@@ -4415,8 +4409,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876606+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309997+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.89
   revenue_model:
     current:
@@ -4464,8 +4458,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883295+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316789+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.78
   revenue_model:
     current:
@@ -4513,8 +4507,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883753+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317229+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.71
   revenue_model:
     current:
@@ -4562,8 +4556,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883638+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317111+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.66
   recommendation_level: standard
   recommendation:
@@ -4609,12 +4603,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0514
+    engine_opportunity_id: OP0524
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884419+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318160+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.63
   recommendation_level: standard
   recommendation:
@@ -4663,8 +4657,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876822+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.310159+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.24
   revenue_model:
     current:
@@ -4712,8 +4706,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883770+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317245+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.16
   revenue_model:
     current:
@@ -4761,8 +4755,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877647+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.311043+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 18.03
   revenue_model:
     current:
@@ -4810,8 +4804,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883427+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.316911+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.96
   revenue_model:
     current:
@@ -4855,14 +4849,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0514
+    engine_opportunity_id: OP0511
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545771+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.318003+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.87
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 25606
@@ -4909,8 +4902,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.879035+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312441+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.81
   revenue_model:
     current:
@@ -4961,8 +4954,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883615+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317091+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.71
   revenue_model:
     current:
@@ -5052,14 +5045,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0518
+    engine_opportunity_id: OP0515
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545815+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.318064+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.15
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 6961
@@ -5106,8 +5098,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876585+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309975+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.13
   revenue_model:
     current:
@@ -5152,12 +5144,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0523
+    engine_opportunity_id: OP0533
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884509+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318249+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.12
   revenue_model:
     current:
@@ -5201,14 +5193,13 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0517
+    engine_opportunity_id: OP0514
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545801+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
+    detected_at: '2026-09-15T22:00:37.318045+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 17.08
-    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 12613
@@ -5242,26 +5233,25 @@ sprints:
   recommendation_level: standard
   recommendation:
     guidance: 214 organic sessions with ZERO internal product links — conversion opportunity wasted
-  rationale: '217 organic sessions with ZERO internal product links — conversion opportunity wasted
+  rationale: '216 organic sessions with ZERO internal product links — conversion opportunity wasted
 
 
-    Evidence: sessions=217 | product_links=0 | blog_type=Correcting Cat Behavior
+    Evidence: sessions=216 | product_links=0 | blog_type=Correcting Cat Behavior
 
-    Engine priority: 6.0  •  Dashboard impact: 16.92'
+    Engine priority: 6.0  •  Dashboard impact: 16.91'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0515
+    engine_opportunity_id: OP0512
     opportunity_type: CONVERSION_OPTIMIZATION
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:53:25.545778+00:00'
-    last_refreshed: '2026-09-15T21:53:39Z'
-    dashboard_impact: 16.92
-    stale_since: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318011+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
+    dashboard_impact: 16.91
   revenue_model:
     current:
       impressions_30d: 17836
@@ -5305,8 +5295,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876365+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309771+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.9
   revenue_model:
     current:
@@ -5357,8 +5347,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883814+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317287+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.84
   revenue_model:
     current:
@@ -5403,8 +5393,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883800+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317272+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.83
   revenue_model:
     current:
@@ -5452,8 +5442,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877154+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.310512+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.63
   revenue_model:
     current:
@@ -5498,12 +5488,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0530
+    engine_opportunity_id: OP0540
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884576+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318319+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.33
   revenue_model:
     current:
@@ -5551,8 +5541,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884228+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317710+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.21
   revenue_model:
     current:
@@ -5603,8 +5593,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884032+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317508+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.17
   revenue_model:
     current:
@@ -5649,8 +5639,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876596+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309986+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 16.1
   revenue_model:
     current:
@@ -5760,8 +5750,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884008+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317482+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.93
   revenue_model:
     current:
@@ -5806,12 +5796,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0506
+    engine_opportunity_id: OP0516
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884346+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318090+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.76
   revenue_model:
     current:
@@ -5859,8 +5849,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884160+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317642+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.56
   revenue_model:
     current:
@@ -5908,8 +5898,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883983+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317454+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.51
   revenue_model:
     current:
@@ -5957,8 +5947,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883694+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317167+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.45
   revenue_model:
     current:
@@ -6003,12 +5993,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0521
+    engine_opportunity_id: OP0531
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884491+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318228+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.43
   revenue_model:
     current:
@@ -6056,8 +6046,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876975+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.310308+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.42
   revenue_model:
     current:
@@ -6105,8 +6095,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.876419+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309821+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.38
   revenue_model:
     current:
@@ -6151,12 +6141,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0526
+    engine_opportunity_id: OP0536
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884537+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318283+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.16
   revenue_model:
     current:
@@ -6204,8 +6194,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883886+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317359+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.11
   revenue_model:
     current:
@@ -6253,8 +6243,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.878920+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312328+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.1
   revenue_model:
     current:
@@ -6350,8 +6340,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.883908+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317378+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 15.04
   revenue_model:
     current:
@@ -6399,8 +6389,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.880236+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.313784+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.89
   revenue_model:
     current:
@@ -6448,8 +6438,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.875647+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309059+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.85
   revenue_model:
     current:
@@ -6498,8 +6488,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.878456+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.311853+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.84
   revenue_model:
     current:
@@ -6548,8 +6538,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884208+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317688+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.8
   revenue_model:
     current:
@@ -6600,8 +6590,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877378+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.310768+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.73
   revenue_model:
     current:
@@ -6643,12 +6633,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0524
+    engine_opportunity_id: OP0534
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884518+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318257+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.69
   revenue_model:
     current:
@@ -6699,8 +6689,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.877770+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.311167+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.59
   revenue_model:
     current:
@@ -6742,12 +6732,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0528
+    engine_opportunity_id: OP0538
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884558+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318304+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.54
   revenue_model:
     current:
@@ -6795,8 +6785,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.875712+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.309119+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.53
   recommendation_level: standard
   recommendation:
@@ -6848,8 +6838,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884062+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317539+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.48
   revenue_model:
     current:
@@ -6894,8 +6884,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.878530+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.311932+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.41
   revenue_model:
     current:
@@ -6991,8 +6981,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884184+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317665+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.21
   revenue_model:
     current:
@@ -7037,12 +7027,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0510
+    engine_opportunity_id: OP0520
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884382+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318123+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.21
   revenue_model:
     current:
@@ -7090,8 +7080,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.879558+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312973+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.19
   revenue_model:
     current:
@@ -7139,8 +7129,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.880014+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.313554+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.19
   recommendation_level: standard
   recommendation:
@@ -7189,8 +7179,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884052+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317529+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.19
   revenue_model:
     current:
@@ -7241,8 +7231,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.880224+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.313770+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.15
   revenue_model:
     current:
@@ -7287,8 +7277,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.880356+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.313900+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 14.12
   revenue_model:
     current:
@@ -7336,8 +7326,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.879166+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.312568+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 13.97
   revenue_model:
     current:
@@ -7382,12 +7372,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0517
+    engine_opportunity_id: OP0527
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884447+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318184+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 13.85
   revenue_model:
     current:
@@ -7438,8 +7428,8 @@ sprints:
     opportunity_type: TRAFFIC_GROWTH
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884018+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.317492+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 13.66
   revenue_model:
     current:
@@ -7481,12 +7471,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0519
+    engine_opportunity_id: OP0529
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884464+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318201+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 12.87
   revenue_model:
     current:
@@ -7531,12 +7521,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0515
+    engine_opportunity_id: OP0525
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884427+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318168+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 12.8
   revenue_model:
     current:
@@ -7581,12 +7571,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0508
+    engine_opportunity_id: OP0518
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884368+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318108+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 12.68
   revenue_model:
     current:
@@ -7634,12 +7624,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0531
+    engine_opportunity_id: OP0541
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884585+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318327+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 12.65
   revenue_model:
     current:
@@ -7681,12 +7671,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0512
+    engine_opportunity_id: OP0522
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884399+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318140+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.82
   revenue_model:
     current:
@@ -7731,12 +7721,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0507
+    engine_opportunity_id: OP0517
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884359+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318100+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.76
   revenue_model:
     current:
@@ -7781,12 +7771,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0509
+    engine_opportunity_id: OP0519
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884375+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318116+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.58
   revenue_model:
     current:
@@ -7831,12 +7821,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0525
+    engine_opportunity_id: OP0535
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884527+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318266+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.55
   recommendation_level: standard
   recommendation:
@@ -7881,12 +7871,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0513
+    engine_opportunity_id: OP0523
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884407+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318148+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.12
   revenue_model:
     current:
@@ -7931,12 +7921,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0518
+    engine_opportunity_id: OP0528
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884454+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318191+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 11.1
   revenue_model:
     current:
@@ -7981,12 +7971,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0516
+    engine_opportunity_id: OP0526
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884435+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318178+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 10.29
   revenue_model:
     current:
@@ -8031,12 +8021,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0529
+    engine_opportunity_id: OP0539
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884566+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318312+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 10.13
   revenue_model:
     current:
@@ -8081,12 +8071,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0520
+    engine_opportunity_id: OP0530
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884475+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318212+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 9.99
   revenue_model:
     current:
@@ -8227,12 +8217,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0527
+    engine_opportunity_id: OP0537
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884549+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318295+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 9.66
   revenue_model:
     current:
@@ -8277,12 +8267,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0522
+    engine_opportunity_id: OP0532
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884499+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318237+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 9.38
   revenue_model:
     current:
@@ -8327,12 +8317,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0511
+    engine_opportunity_id: OP0521
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884392+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318133+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 9.03
   revenue_model:
     current:
@@ -8424,12 +8414,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0532
+    engine_opportunity_id: OP0542
     opportunity_type: SEARCH_VISIBILITY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.884595+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.318337+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 8.59
   revenue_model:
     current:
@@ -8473,12 +8463,12 @@ sprints:
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0533
+    engine_opportunity_id: OP0543
     opportunity_type: SERP_DISCOVERY
     structural_kind: null
     priority_class: page
-    detected_at: '2026-09-15T21:58:16.887304+00:00'
-    last_refreshed: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T22:00:37.320884+00:00'
+    last_refreshed: '2026-09-15T22:00:52Z'
     dashboard_impact: 3.9
   recommendation_level: standard
   recommendation:
@@ -10907,9 +10897,9 @@ sprints:
       impressions_multiplier: 3.0
       ctr: 0.06
     confidence: medium
-- id: '223'
+- id: '222'
   created: '2026-09-15'
-  title: Structural — homepage
+  title: Product pages convert to cart at 10.3% vs 14% benchmark
   url: /
   sprint_type: CR
   kpi:
@@ -10936,35 +10926,36 @@ sprints:
       ≥ 44px).
     - Instrument an event on the changed step so the next scan can attribute movement.
     - Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses.
-    expected_impact_usd_month: 8413.52
+    expected_impact_usd_month: 10789.83
     effort: MEDIUM · ~45 min
     owner: Lisa (funnel/analytics)
     success_metric: unspecified
     success_target: 1
     measurement_window_days: 28
-    evidence: 1,362 ATC → 640 checkouts = 47.0% (benchmark 55%) | downstream checkout→purchase 58% | AOV=$101.46
+    evidence: 13,249 PDP sessions → 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC→purchase 27.4%
+      | AOV=$101.46
     risk_note: Re-measure before/after; roll back if the metric regresses beyond the neutral threshold.
-  rationale: 'Product pages convert to cart at 10.1% vs 14% benchmark
+  rationale: 'Product pages convert to cart at 10.3% vs 14% benchmark
 
 
-    Evidence: 12,294 PDP sessions → 1,239 ATC = 10.1% (benchmark 14%) | downstream ATC→purchase 27.0%
-    | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)
+    Evidence: 13,249 PDP sessions → 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC→purchase 27.4%
+    | AOV=$101.46
 
-    Engine priority: 7989.84  •  Dashboard impact: 10386.79'
+    Engine priority: 8299.87  •  Dashboard impact: 10789.83'
   evaluation:
     window_days: 28
     success_threshold_pct: 25
     neutral_threshold_pct: 0
   evidence_urls: []
   _source:
-    engine_opportunity_id: OP0902
+    engine_opportunity_id: OP0903
     opportunity_type: STRUCTURAL
     structural_kind: PDP_TO_ATC
     priority_class: structural
-    detected_at: '2026-09-15T21:51:03.965633+00:00'
-    last_refreshed: '2026-09-15T21:51:17Z'
-    dashboard_impact: 10386.79
-    watchlist_restored: '2026-09-15T21:58:31Z'
+    detected_at: '2026-09-15T21:09:05.890125+00:00'
+    dashboard_impact: 10789.83
+    watchlist_restored: '2026-09-15T22:00:52Z'
+    stale_since: '2026-09-15T21:58:31Z'
   revenue_model:
     current:
       impressions_30d: 8791
