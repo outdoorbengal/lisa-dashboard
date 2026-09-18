@@ -1,25 +1,25 @@
-# Weekly scan state — updated by lisa_dashboard_sync.py.
+# Weekly scan state — updated by lisa_sync.py.
 
 current_week:
   week_of: '2026-09-14'
-  pages_total: 661
-  daily_target: 95
+  pages_total: 652
+  daily_target: 94
   daily_counts:
   - 665
   - 2037
   - 195
   - 196
-  - 195
+  - 652
   - 0
   - 0
   sources:
   - name: Google Search Console
     connected: true
-    last_pull: '2026-09-18T10:12:47Z'
+    last_pull: '2026-09-18T14:13:13Z'
   - name: Google Analytics 4
     connected: true
-    last_pull: '2026-09-18T10:12:47Z'
+    last_pull: '2026-09-18T14:13:13Z'
   - name: Shopify Admin API
     connected: true
-    last_pull: '2026-09-18T10:12:47Z'
-  opportunities_discovered: 217
+    last_pull: '2026-09-18T14:13:13Z'
+  opportunities_discovered: 226
