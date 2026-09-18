@@ -1,4 +1,4 @@
-# Weekly scan state — updated by lisa_sync.py.
+# Weekly scan state — updated by lisa_dashboard_sync.py.
 
 current_week:
   week_of: '2026-09-14'
@@ -8,18 +8,18 @@ current_week:
   - 665
   - 2037
   - 195
-  - 661
-  - 0
+  - 196
+  - 195
   - 0
   - 0
   sources:
   - name: Google Search Console
     connected: true
-    last_pull: '2026-09-17T14:46:17Z'
+    last_pull: '2026-09-18T10:12:47Z'
   - name: Google Analytics 4
     connected: true
-    last_pull: '2026-09-17T14:46:17Z'
+    last_pull: '2026-09-18T10:12:47Z'
   - name: Shopify Admin API
     connected: true
-    last_pull: '2026-09-17T14:46:17Z'
-  opportunities_discovered: 335
+    last_pull: '2026-09-18T10:12:47Z'
+  opportunities_discovered: 217
