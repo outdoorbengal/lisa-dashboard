@@ -22,7 +22,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Check out the branch tip, not the triggering SHA: when called from
+      # lisa-scan / evaluate-experiments, github.sha predates their push.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
