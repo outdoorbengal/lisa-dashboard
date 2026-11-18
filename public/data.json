@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-11-18",
   "week_of": "Sep 21 2026",
   "system": {
     "status": "OK",
-    "pages_scanned": 1424,
+    "pages_scanned": 1151,
     "pages_total": 653,
     "sources_connected": 3,
     "sources_total": 3,
-    "opportunities": 239,
+    "opportunities": 206,
     "active_tests": 0,
-    "days_complete": 5,
+    "days_complete": 6,
     "scan_bars": [
       100,
       100,
       100,
       100,
       100,
-      0,
+      100,
       0
     ]
   },
@@ -107,7 +107,7 @@
   "sprints": [
     {
       "id": "246",
-      "days_waiting": 4,
+      "days_waiting": 57,
       "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -174,7 +174,7 @@
     },
     {
       "id": "266",
-      "days_waiting": 0,
+      "days_waiting": 53,
       "title": "Product pages convert to cart at 10.0% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -241,7 +241,7 @@
     },
     {
       "id": "267",
-      "days_waiting": 0,
+      "days_waiting": 53,
       "title": "Cart \u2192 checkout drop-off: 45% vs 55% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -308,7 +308,7 @@
     },
     {
       "id": "223",
-      "days_waiting": 10,
+      "days_waiting": 63,
       "title": "Structural \u2014 homepage",
       "url": "/",
       "sprint_type": "CR",
@@ -375,7 +375,7 @@
     },
     {
       "id": "222",
-      "days_waiting": 10,
+      "days_waiting": 63,
       "title": "Product pages convert to cart at 10.3% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -442,7 +442,7 @@
     },
     {
       "id": "225",
-      "days_waiting": 10,
+      "days_waiting": 63,
       "title": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -509,7 +509,7 @@
     },
     {
       "id": "257",
-      "days_waiting": 2,
+      "days_waiting": 55,
       "title": "Product pages convert to cart at 10.1% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -576,7 +576,7 @@
     },
     {
       "id": "246",
-      "days_waiting": 4,
+      "days_waiting": 57,
       "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -643,7 +643,7 @@
     },
     {
       "id": "223",
-      "days_waiting": 10,
+      "days_waiting": 63,
       "title": "Structural \u2014 homepage",
       "url": "/",
       "sprint_type": "CR",
@@ -710,7 +710,7 @@
     },
     {
       "id": "222",
-      "days_waiting": 10,
+      "days_waiting": 63,
       "title": "Product pages convert to cart at 10.3% vs 14% benchmark",
       "url": "/",
       "sprint_type": "CR",
@@ -13994,29 +13994,18 @@
   },
   "log": [
     {
-      "run_id": "draft-20260925-150433",
-      "type": "manual_action",
-      "status": "success",
-      "summary": "Claude (claude-opus-4-8) drafted metadata copy for sprint(s) 272 \u2014 pending review/ACCEPT.",
-      "ts": "2026-09-25T15:04:33Z"
-    },
-    {
-      "run_id": "scan-20260925-150400",
+      "run_id": "scan-20260926-101000",
       "type": "daily_scan",
-      "status": "warning",
-      "duration_ms": 24701,
-      "pages_scanned": 653,
+      "status": "success",
+      "duration_ms": 99310,
+      "pages_scanned": 190,
       "sources": [
         "Google Search Console",
         "Google Analytics 4",
         "Shopify Admin API"
       ],
-      "summary": "Scanned 653 pages. 2 new opportunities, 232 reranked. 0 active experiments re-measured. 2 tracking warnings.",
-      "warnings": [
-        "Revenue mismatch: GA4 $36,056 vs Shopify online-store $50,863 (29% gap, 28d) \u2014 check purchase tracking, refunds, payment referral exclusions",
-        "Order-count mismatch: GA4 370 purchases vs Shopify 440 online-store orders (16% gap) \u2014 duplicate or missing purchase events"
-      ],
-      "ts": "2026-09-25T15:04:00Z"
+      "summary": "Scanned 190 pages. 6 new opportunities, 116 reranked. 0 active experiments re-measured.",
+      "ts": "2026-09-26T10:11:39Z"
     },
     {
       "run_id": "scan-20260925-101001",
@@ -14812,6 +14801,26 @@
         "35% of GA4 sessions are 'Unassigned' \u2014 tagging/consent artifact worth investigating"
       ],
       "ts": "2026-08-22T10:27:27Z"
+    },
+    {
+      "run_id": "scan-20260821-103403",
+      "type": "daily_scan",
+      "status": "warning",
+      "duration_ms": 18027,
+      "pages_scanned": 731,
+      "sources": [
+        "Google Search Console",
+        "Google Analytics 4",
+        "Shopify Admin API"
+      ],
+      "summary": "Scanned 731 pages. 0 new opportunities, 180 reranked. 0 active experiments re-measured. 4 tracking warnings.",
+      "warnings": [
+        "Revenue mismatch: GA4 $42,887 vs Shopify online-store $67,031 (36% gap, 28d) \u2014 check purchase tracking, refunds, payment referral exclusions",
+        "Order-count mismatch: GA4 373 purchases vs Shopify 503 online-store orders (26% gap) \u2014 duplicate or missing purchase events",
+        "Campaign tagging broken: 53 orders carry ad click-ids but GA4 paid channels show only 20 purchases \u2014 add UTM templates to Meta/Google ads so paid performance is measurable",
+        "28% of GA4 sessions are 'Unassigned' \u2014 tagging/consent artifact worth investigating"
+      ],
+      "ts": "2026-08-21T10:34:03Z"
     }
   ]
 }
