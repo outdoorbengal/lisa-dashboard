@@ -10910,6 +10910,47 @@
           "dashboard_impact": 0.0,
           "stale_since": "2026-09-23T10:10:25Z"
         }
+      },
+      {
+        "id": "270",
+        "created": "2026-09-25",
+        "title": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand",
+        "url": "https://www.outdoorbengal.com/products/feastfuls-cat-treats",
+        "sprint_type": "CR",
+        "kpi": {
+          "metric": "unspecified",
+          "display_label": "TBD",
+          "current_value": 0,
+          "current_display": "baseline pending",
+          "target_value": 1,
+          "target_display": "improvement",
+          "unit": "count"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Copy + internal links",
+          "estimated_minutes": 45
+        },
+        "recommendation_level": "detailed",
+        "recommendation": {
+          "guidance": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand"
+        },
+        "rationale": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand\n\nEvidence: impressions=2045 | clicks=38 | stock=0 at every location | est. lost revenue $28/mo\nEngine priority: 72.06  \u2022  Dashboard impact: 13.8",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 25,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "engine_opportunity_id": "OP0901",
+          "opportunity_type": "STRUCTURAL",
+          "structural_kind": "ATC_TO_CHECKOUT",
+          "priority_class": "structural",
+          "detected_at": "2026-09-25T10:10:18.567988+00:00",
+          "dashboard_impact": 0.0,
+          "last_refreshed": "2026-11-18T18:43:28Z"
+        }
       }
     ],
     "active": [],
