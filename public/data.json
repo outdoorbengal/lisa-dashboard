@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18",
+  "generated": "2026-11-19",
   "week_of": "Nov 16 2026",
   "system": {
     "status": "OK",
@@ -114,8 +114,8 @@
       "impact_label": "Mobile CR \u00b7 22730 sessions",
       "current_pct": 1.2,
       "current_label": "1.24% now",
-      "target_pct": 2.1,
-      "target_label": "2.06%",
+      "target_pct": 1.6,
+      "target_label": "1.64%",
       "effort_label": "HIGH \u2014 Mobile PDP/cart/checkout UX audit + fixes",
       "effort_pct": 18,
       "effort_level": "HIGH",
@@ -125,12 +125,12 @@
       "revenue": {
         "available": true,
         "monthly_current_usd": 35603.11,
-        "monthly_projected_usd": 59147.11,
-        "monthly_lift_usd": 23543.99,
-        "monthly_lift_usd_adjusted": 14126.4,
-        "annual_lift_usd_adjusted": 169516.75,
-        "confidence": "medium",
-        "haircut_pct": 60,
+        "monthly_projected_usd": 47087.99,
+        "monthly_lift_usd": 11484.87,
+        "monthly_lift_usd_adjusted": 3445.46,
+        "annual_lift_usd_adjusted": 41345.55,
+        "confidence": "low",
+        "haircut_pct": 30,
         "breakdown": [
           {
             "label": "Impressions / mo",
@@ -156,8 +156,8 @@
           {
             "label": "Conversion rate",
             "before": "1.24%",
-            "after": "2.06%",
-            "delta_pct": "+66%",
+            "after": "1.64%",
+            "delta_pct": "+32%",
             "changed": true
           },
           {
@@ -169,62 +169,62 @@
           }
         ]
       },
-      "revenue_headline": "$14.1K/mo",
+      "revenue_headline": "$3,445/mo",
       "has_exec_brief": false
     },
     {
-      "id": "246",
-      "days_waiting": 57,
-      "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
-      "url": "/",
+      "id": "184",
+      "days_waiting": 104,
+      "title": "Conversion fix \u2014 cat-car-seat",
+      "url": "/products/cat-car-seat",
       "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "impact_label": "Conversion rate \u00b7 1296 sessions",
+      "current_pct": 17.6,
+      "current_label": "0.88% now",
+      "target_pct": 20.8,
+      "target_label": "1.04%",
+      "effort_label": "MEDIUM \u2014 PDP copy / offer / trust review",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 60,
       "queue_position": 2,
       "status": "NEXT_UP",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "monthly_current_usd": 2906.09,
+        "monthly_projected_usd": 6604.76,
+        "monthly_lift_usd": 3698.66,
+        "monthly_lift_usd_adjusted": 2219.2,
+        "annual_lift_usd_adjusted": 26630.38,
         "confidence": "medium",
         "haircut_pct": 60,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "10,407",
+            "after": "10,407",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "4.78%",
+            "after": "4.78%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "2,801",
+            "after": "2,801",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
+            "before": "0.88%",
+            "after": "2.00%",
+            "delta_pct": "+127%",
             "changed": true
           },
           {
@@ -236,62 +236,62 @@
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$2,219/mo",
       "has_exec_brief": false
     },
     {
-      "id": "266",
-      "days_waiting": 53,
-      "title": "Product pages convert to cart at 10.0% vs 14% benchmark",
+      "id": "233",
+      "days_waiting": 63,
+      "title": "Fix funnel stage: add-to-cart \u2192 checkout (28.9% vs ~35% benchmark)",
       "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "sprint_type": "FUN",
+      "impact_label": "add-to-cart \u2192 checkout \u00b7 2480 add_to_cart/28d",
+      "current_pct": 28.9,
+      "current_label": "28.9% now",
+      "target_pct": 35.0,
+      "target_label": "35%",
+      "effort_label": "HIGH \u2014 Diagnose stage drop-off, fix top friction",
+      "effort_pct": 18,
+      "effort_level": "HIGH",
+      "effort_minutes": 120,
       "queue_position": 3,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
-        "confidence": "medium",
-        "haircut_pct": 60,
+        "monthly_current_usd": 58511.74,
+        "monthly_projected_usd": 64512.95,
+        "monthly_lift_usd": 6001.2,
+        "monthly_lift_usd_adjusted": 1800.36,
+        "annual_lift_usd_adjusted": 21604.34,
+        "confidence": "low",
+        "haircut_pct": 30,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "0",
+            "after": "0",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "0.00%",
+            "after": "0.00%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "31,813",
+            "after": "31,813",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
+            "before": "1.56%",
+            "after": "1.72%",
+            "delta_pct": "+10%",
             "changed": true
           },
           {
@@ -303,264 +303,194 @@
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$1,800/mo",
       "has_exec_brief": false
     },
     {
-      "id": "267",
-      "days_waiting": 53,
-      "title": "Cart \u2192 checkout drop-off: 45% vs 55% benchmark",
-      "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "id": "171",
+      "days_waiting": 124,
+      "title": "Scale Meta budget on Zeppelin (reported ROAS 4-9 vs 3.3x breakeven)",
+      "url": "/products/zeppelin-cat-carrier",
+      "sprint_type": "ADS",
+      "impact_label": "Conversion rate \u00b7 1227 sessions",
+      "current_pct": 0.9,
+      "current_label": "0.91% now",
+      "target_pct": 1.1,
+      "target_label": "1.07%",
+      "effort_label": "MEDIUM \u2014 PDP copy / offer / trust review",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 60,
       "queue_position": 4,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "monthly_current_usd": 2515.04,
+        "monthly_projected_usd": 5107.07,
+        "monthly_lift_usd": 2592.03,
+        "monthly_lift_usd_adjusted": 1555.22,
+        "annual_lift_usd_adjusted": 18662.63,
         "confidence": "medium",
         "haircut_pct": 60,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "6,467",
+            "after": "6,467",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "3.03%",
+            "after": "3.03%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "2,144",
+            "after": "2,144",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
+            "before": "0.98%",
+            "after": "1.99%",
+            "delta_pct": "+103%",
             "changed": true
           },
           {
             "label": "AOV",
-            "before": "$118",
-            "after": "$118",
+            "before": "$120",
+            "after": "$120",
             "delta_pct": "",
             "changed": false
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$1,555/mo",
       "has_exec_brief": false
     },
     {
-      "id": "223",
-      "days_waiting": 63,
-      "title": "Structural \u2014 homepage",
-      "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
+      "id": "177",
+      "days_waiting": 123,
+      "title": "A/B test #2 \u2014 Zeppelin PDP hero: travel-usp framing (ATC)",
+      "url": "/products/zeppelin-cat-carrier",
+      "sprint_type": "FUN",
+      "impact_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+      "current_pct": 0.9,
+      "current_label": "0.91% now",
+      "target_pct": 1.0,
+      "target_label": "ATC +20%",
+      "effort_label": "LOW \u2014 Set up in Essential A/B Testing; 42-day pre-registered run",
+      "effort_pct": 6,
+      "effort_level": "LOW",
       "effort_minutes": 45,
       "queue_position": 5,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "estimate_only": true,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 1300.0,
+        "monthly_lift_usd": 1300.0,
+        "monthly_lift_usd_adjusted": 780.0,
+        "annual_lift_usd_adjusted": 9360.0,
         "confidence": "medium",
         "haircut_pct": 60,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
-            "changed": true
-          },
-          {
-            "label": "AOV",
-            "before": "$118",
-            "after": "$118",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
+        "breakdown": []
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$780/mo",
       "has_exec_brief": false
     },
     {
-      "id": "222",
-      "days_waiting": 63,
-      "title": "Product pages convert to cart at 10.3% vs 14% benchmark",
-      "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
-      "effort_pct": 12,
-      "effort_level": "MEDIUM",
+      "id": "176",
+      "days_waiting": 123,
+      "title": "A/B test #1 \u2014 Houdini PDP headline: benefit-led vs feature-led (ATC)",
+      "url": "/products/extra-safe-cat-harness",
+      "sprint_type": "FUN",
+      "impact_label": "Guardrail: page CR \u00b7 primary metric = ATC in A/B app",
+      "current_pct": 2.9,
+      "current_label": "2.85% now",
+      "target_pct": 3.1,
+      "target_label": "ATC +15%",
+      "effort_label": "LOW \u2014 Set up in Essential A/B Testing; 28-day pre-registered run",
+      "effort_pct": 6,
+      "effort_level": "LOW",
       "effort_minutes": 45,
       "queue_position": 6,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "estimate_only": true,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": 950.0,
+        "monthly_lift_usd": 950.0,
+        "monthly_lift_usd_adjusted": 570.0,
+        "annual_lift_usd_adjusted": 6840.0,
         "confidence": "medium",
         "haircut_pct": 60,
-        "breakdown": [
-          {
-            "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
-            "delta_pct": "",
-            "changed": false
-          },
-          {
-            "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
-            "changed": true
-          },
-          {
-            "label": "AOV",
-            "before": "$118",
-            "after": "$118",
-            "delta_pct": "",
-            "changed": false
-          }
-        ]
+        "breakdown": []
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$570/mo",
       "has_exec_brief": false
     },
     {
-      "id": "225",
-      "days_waiting": 63,
-      "title": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark",
-      "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "id": "173",
+      "days_waiting": 124,
+      "title": "Win the head term 'cat harness' \u2014 16.5K impressions stuck at pos 12",
+      "url": "/products/extra-safe-cat-harness",
+      "sprint_type": "RNK",
+      "impact_label": "Weekly clicks \u00b7 pos 5.7",
+      "current_pct": 100.0,
+      "current_label": "~161.8/wk now",
+      "target_pct": 6.0,
+      "target_label": "+4/wk",
+      "effort_label": "MEDIUM \u2014 On-page head-term optimization + internal anchors",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 90,
       "queue_position": 7,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
-        "confidence": "medium",
-        "haircut_pct": 60,
+        "monthly_current_usd": 1450.26,
+        "monthly_projected_usd": 3182.39,
+        "monthly_lift_usd": 1732.13,
+        "monthly_lift_usd_adjusted": 519.64,
+        "annual_lift_usd_adjusted": 6235.66,
+        "confidence": "low",
+        "haircut_pct": 30,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "21,728",
+            "after": "21,728",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
-            "delta_pct": "",
-            "changed": false
+            "before": "3.19%",
+            "after": "7.00%",
+            "delta_pct": "+119%",
+            "changed": true
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
-            "delta_pct": "",
-            "changed": false
+            "before": "693",
+            "after": "1,521",
+            "delta_pct": "+119%",
+            "changed": true
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
-            "changed": true
+            "before": "1.77%",
+            "after": "1.77%",
+            "delta_pct": "",
+            "changed": false
           },
           {
             "label": "AOV",
@@ -571,129 +501,129 @@
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
-      "has_exec_brief": false
+      "revenue_headline": "$520/mo",
+      "has_exec_brief": true
     },
     {
-      "id": "257",
-      "days_waiting": 55,
-      "title": "Product pages convert to cart at 10.1% vs 14% benchmark",
-      "url": "/",
-      "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "id": "271",
+      "days_waiting": 54,
+      "title": "Refresh declining content \u2014 extra-safe-cat-harness (-32% clicks)",
+      "url": "/products/extra-safe-cat-harness",
+      "sprint_type": "DEC",
+      "impact_label": "Weekly clicks \u00b7 was 430/wk",
+      "current_pct": 100.0,
+      "current_label": "~161.8/wk now",
+      "target_pct": 100.0,
+      "target_label": "430/wk",
+      "effort_label": "MEDIUM \u2014 Update facts, intent match, media, internal links",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 60,
       "queue_position": 8,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
-        "confidence": "medium",
-        "haircut_pct": 60,
+        "monthly_current_usd": 3250.71,
+        "monthly_projected_usd": 4746.03,
+        "monthly_lift_usd": 1495.33,
+        "monthly_lift_usd_adjusted": 448.6,
+        "annual_lift_usd_adjusted": 5383.17,
+        "confidence": "low",
+        "haircut_pct": 30,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
-            "delta_pct": "",
-            "changed": false
+            "before": "31,647",
+            "after": "46,205",
+            "delta_pct": "+46%",
+            "changed": true
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "3.98%",
+            "after": "3.98%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "1,261",
+            "after": "1,841",
+            "delta_pct": "+46%",
+            "changed": true
+          },
+          {
+            "label": "Conversion rate",
+            "before": "2.23%",
+            "after": "2.23%",
             "delta_pct": "",
             "changed": false
           },
           {
-            "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
-            "changed": true
-          },
-          {
             "label": "AOV",
-            "before": "$118",
-            "after": "$118",
+            "before": "$116",
+            "after": "$116",
             "delta_pct": "",
             "changed": false
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$449/mo",
       "has_exec_brief": false
     },
     {
-      "id": "246",
-      "days_waiting": 57,
-      "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
-      "url": "/",
+      "id": "172",
+      "days_waiting": 124,
+      "title": "Conversion fix \u2014 portable-litterbox",
+      "url": "/products/portable-litterbox",
       "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "impact_label": "Conversion rate \u00b7 434 sessions",
+      "current_pct": 26.4,
+      "current_label": "1.32% now",
+      "target_pct": 55.8,
+      "target_label": "2.79%",
+      "effort_label": "MEDIUM \u2014 PDP copy / offer / trust review",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 60,
       "queue_position": 9,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "monthly_current_usd": 1388.2,
+        "monthly_projected_usd": 2103.34,
+        "monthly_lift_usd": 715.13,
+        "monthly_lift_usd_adjusted": 429.08,
+        "annual_lift_usd_adjusted": 5148.97,
         "confidence": "medium",
         "haircut_pct": 60,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "3,380",
+            "after": "3,380",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "1.90%",
+            "after": "1.90%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "892",
+            "after": "892",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
+            "before": "1.32%",
+            "after": "2.00%",
+            "delta_pct": "+52%",
             "changed": true
           },
           {
@@ -705,62 +635,62 @@
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$429/mo",
       "has_exec_brief": false
     },
     {
-      "id": "223",
-      "days_waiting": 63,
-      "title": "Structural \u2014 homepage",
-      "url": "/",
+      "id": "275",
+      "days_waiting": 0,
+      "title": "Conversion fix \u2014 free-houdini-with-cat-bootcamp",
+      "url": "/products/free-houdini-with-cat-bootcamp",
       "sprint_type": "CR",
-      "impact_label": "TBD",
-      "current_pct": 5,
-      "current_label": "baseline pending",
-      "target_pct": 20.0,
-      "target_label": "improvement",
-      "effort_label": "MEDIUM \u2014 Copy + internal links",
+      "impact_label": "Conversion rate \u00b7 343 sessions",
+      "current_pct": 17.4,
+      "current_label": "0.87% now",
+      "target_pct": 26.2,
+      "target_label": "1.31%",
+      "effort_label": "MEDIUM \u2014 PDP copy / offer / trust review",
       "effort_pct": 12,
       "effort_level": "MEDIUM",
-      "effort_minutes": 45,
+      "effort_minutes": 60,
       "queue_position": 10,
       "status": "QUEUED",
       "revenue": {
         "available": true,
-        "monthly_current_usd": 10498.0,
-        "monthly_projected_usd": 15747.01,
-        "monthly_lift_usd": 5249.0,
-        "monthly_lift_usd_adjusted": 3149.4,
-        "annual_lift_usd_adjusted": 37792.82,
+        "monthly_current_usd": 376.44,
+        "monthly_projected_usd": 865.39,
+        "monthly_lift_usd": 488.94,
+        "monthly_lift_usd_adjusted": 293.37,
+        "annual_lift_usd_adjusted": 3520.39,
         "confidence": "medium",
         "haircut_pct": 60,
         "breakdown": [
           {
             "label": "Impressions / mo",
-            "before": "8,059",
-            "after": "8,059",
+            "before": "1",
+            "after": "1",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "CTR",
-            "before": "8.60%",
-            "after": "8.60%",
+            "before": "0.00%",
+            "after": "0.00%",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Sessions / mo",
-            "before": "5,858",
-            "after": "5,858",
+            "before": "367",
+            "after": "367",
             "delta_pct": "",
             "changed": false
           },
           {
             "label": "Conversion rate",
-            "before": "1.52%",
-            "after": "2.28%",
-            "delta_pct": "+50%",
+            "before": "0.87%",
+            "after": "2.00%",
+            "delta_pct": "+130%",
             "changed": true
           },
           {
@@ -772,7 +702,7 @@
           }
         ]
       },
-      "revenue_headline": "$3,149/mo",
+      "revenue_headline": "$293/mo",
       "has_exec_brief": false
     }
   ],
@@ -789,8 +719,8 @@
           "display_label": "Mobile CR \u00b7 22730 sessions",
           "current_value": 1.24,
           "current_display": "1.24% now",
-          "target_value": 2.06,
-          "target_display": "2.06%",
+          "target_value": 1.64,
+          "target_display": "1.64%",
           "unit": "percent"
         },
         "effort": {
@@ -798,7 +728,7 @@
           "description": "Mobile PDP/cart/checkout UX audit + fixes",
           "estimated_minutes": 120
         },
-        "rationale": "Mobile converts at 1.24% vs 2.74% on desktop (22730 vs 6963 sessions/28d). Audit mobile PDP hierarchy, sticky add-to-cart, tap targets, pop-up interference, checkout usability.\n\nDashboard impact: $23574.7/mo estimated",
+        "rationale": "Mobile converts at 1.24% vs 2.74% on desktop (22730 vs 6963 sessions/28d). Prize assumes mobile reaches 60% of desktop conversion, not parity. Audit mobile PDP hierarchy, sticky add-to-cart, tap targets, pop-up interference, checkout usability.\n\nDashboard impact: $11600/mo estimated",
         "evaluation": {
           "window_days": 28,
           "success_threshold_pct": 15,
@@ -809,7 +739,7 @@
           "opportunity_type": "FUNNEL_OPTIMIZATION",
           "detected_at": "2026-11-18T18:43:28Z",
           "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 23574.73
+          "dashboard_impact": 11600.0
         },
         "revenue_model": {
           "current": {
@@ -820,996 +750,61 @@
             "aov": 117.9
           },
           "projected": {
-            "conversion_rate": 0.0206
+            "conversion_rate": 0.0164
           },
-          "confidence": "medium"
+          "confidence": "low"
         }
       },
       {
-        "id": "246",
-        "created": "2026-09-21",
-        "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 4914.8,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "12,316 PDP sessions \u2192 1,216 ATC = 9.9% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$100.29 | bot-filtered: excluded 3,542 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 9.9% vs 14% benchmark\n\nEvidence: 12,316 PDP sessions \u2192 1,216 ATC = 9.9% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$100.29 | bot-filtered: excluded 3,542 sessions from 2 source(s)\nEngine priority: 8502.87  \u2022  Dashboard impact: 4914.8",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-21T10:10:11.558545+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-24T10:10:25Z",
-          "stale_since": "2026-09-25T10:10:26Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "266",
-        "created": "2026-09-25",
-        "title": "Product pages convert to cart at 10.0% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 4550.38,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "12,002 PDP sessions \u2192 1,203 ATC = 10.0% (benchmark 14%) | downstream ATC\u2192purchase 27.8% | AOV=$97.82 | bot-filtered: excluded 3,527 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.0% vs 14% benchmark\n\nEvidence: 12,002 PDP sessions \u2192 1,203 ATC = 10.0% (benchmark 14%) | downstream ATC\u2192purchase 27.8% | AOV=$97.82 | bot-filtered: excluded 3,527 sessions from 2 source(s)\nEngine priority: 7876.27  \u2022  Dashboard impact: 4550.38",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-25T10:10:12.178748+00:00",
-          "dashboard_impact": 5242.34,
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "267",
-        "created": "2026-09-25",
-        "title": "Cart \u2192 checkout drop-off: 45% vs 55% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 3506.96,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,203 ATC \u2192 545 checkouts = 45.3% (benchmark 55%) | downstream checkout\u2192purchase 61% | AOV=$97.82 | bot-filtered: excluded 3,527 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Cart \u2192 checkout drop-off: 45% vs 55% benchmark\n\nEvidence: 1,203 ATC \u2192 545 checkouts = 45.3% (benchmark 55%) | downstream checkout\u2192purchase 61% | AOV=$97.82 | bot-filtered: excluded 3,527 sessions from 2 source(s)\nEngine priority: 7032.95  \u2022  Dashboard impact: 3506.96",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
-          "priority_class": "structural",
-          "detected_at": "2026-09-25T10:10:12.178736+00:00",
-          "dashboard_impact": 5242.34,
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "223",
-        "created": "2026-09-15",
-        "title": "Structural \u2014 homepage",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 8413.52,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,362 ATC \u2192 640 checkouts = 47.0% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.1% vs 14% benchmark\n\nEvidence: 12,294 PDP sessions \u2192 1,239 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.0% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)\nEngine priority: 7989.84  \u2022  Dashboard impact: 10386.79",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:51:03.965633+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-24T10:10:25Z",
-          "stale_since": "2026-09-15T22:00:52Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "222",
-        "created": "2026-09-15",
-        "title": "Product pages convert to cart at 10.3% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 10789.83,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "13,249 PDP sessions \u2192 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC\u2192purchase 27.4% | AOV=$101.46",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.3% vs 14% benchmark\n\nEvidence: 13,249 PDP sessions \u2192 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC\u2192purchase 27.4% | AOV=$101.46\nEngine priority: 8299.87  \u2022  Dashboard impact: 10789.83",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0903",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:09:05.890125+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-24T10:10:25Z",
-          "stale_since": "2026-09-15T21:58:31Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "225",
-        "created": "2026-09-15",
-        "title": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 7820.24,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,239 ATC \u2192 579 checkouts = 46.7% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark\n\nEvidence: 1,239 ATC \u2192 579 checkouts = 46.7% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)\nEngine priority: 6015.57  \u2022  Dashboard impact: 7820.24",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:51:03.965620+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-24T10:10:25Z",
-          "stale_since": "2026-09-17T10:10:25Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "257",
-        "created": "2026-09-23",
-        "title": "Product pages convert to cart at 10.1% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 4487.99,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "12,206 PDP sessions \u2192 1,230 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$97.45 | bot-filtered: excluded 3,555 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.1% vs 14% benchmark\n\nEvidence: 12,206 PDP sessions \u2192 1,230 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$97.45 | bot-filtered: excluded 3,555 sessions from 2 source(s)\nEngine priority: 7770.53  \u2022  Dashboard impact: 4487.99",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-23T10:10:18.133925+00:00",
-          "dashboard_impact": 5242.34,
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "stale_since": "2026-09-25T10:10:26Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "246",
-        "created": "2026-09-21",
-        "title": "Product pages convert to cart at 9.9% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 4914.8,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "12,316 PDP sessions \u2192 1,216 ATC = 9.9% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$100.29 | bot-filtered: excluded 3,542 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 9.9% vs 14% benchmark\n\nEvidence: 12,316 PDP sessions \u2192 1,216 ATC = 9.9% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$100.29 | bot-filtered: excluded 3,542 sessions from 2 source(s)\nEngine priority: 8502.87  \u2022  Dashboard impact: 4914.8",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-21T10:10:11.558545+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-24T10:10:25Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "223",
-        "created": "2026-09-15",
-        "title": "Structural \u2014 homepage",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 8413.52,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,362 ATC \u2192 640 checkouts = 47.0% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.1% vs 14% benchmark\n\nEvidence: 12,294 PDP sessions \u2192 1,239 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.0% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)\nEngine priority: 7989.84  \u2022  Dashboard impact: 10386.79",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:51:03.965633+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "stale_since": "2026-09-15T22:00:52Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "222",
-        "created": "2026-09-15",
-        "title": "Product pages convert to cart at 10.3% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 10789.83,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "13,249 PDP sessions \u2192 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC\u2192purchase 27.4% | AOV=$101.46",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.3% vs 14% benchmark\n\nEvidence: 13,249 PDP sessions \u2192 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC\u2192purchase 27.4% | AOV=$101.46\nEngine priority: 8299.87  \u2022  Dashboard impact: 10789.83",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0903",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:09:05.890125+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "stale_since": "2026-09-15T21:58:31Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "225",
-        "created": "2026-09-15",
-        "title": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 7820.24,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,239 ATC \u2192 579 checkouts = 46.7% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Cart \u2192 checkout drop-off: 47% vs 55% benchmark\n\nEvidence: 1,239 ATC \u2192 579 checkouts = 46.7% (benchmark 55%) | downstream checkout\u2192purchase 58% | AOV=$101.46 | bot-filtered: excluded 41,573 sessions from 2 source(s)\nEngine priority: 6015.57  \u2022  Dashboard impact: 7820.24",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
-          "priority_class": "structural",
-          "detected_at": "2026-09-15T21:51:03.965620+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "stale_since": "2026-09-17T10:10:25Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "257",
-        "created": "2026-09-23",
-        "title": "Product pages convert to cart at 10.1% vs 14% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 4487.99,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "12,206 PDP sessions \u2192 1,230 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$97.45 | bot-filtered: excluded 3,555 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Product pages convert to cart at 10.1% vs 14% benchmark\n\nEvidence: 12,206 PDP sessions \u2192 1,230 ATC = 10.1% (benchmark 14%) | downstream ATC\u2192purchase 27.5% | AOV=$97.45 | bot-filtered: excluded 3,555 sessions from 2 source(s)\nEngine priority: 7770.53  \u2022  Dashboard impact: 4487.99",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0902",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "PDP_TO_ATC",
-          "priority_class": "structural",
-          "detected_at": "2026-09-23T10:10:11.860073+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "231",
+        "id": "233",
         "created": "2026-09-16",
-        "title": "Cart \u2192 checkout drop-off: 46% vs 55% benchmark",
+        "title": "Fix funnel stage: add-to-cart \u2192 checkout (28.9% vs ~35% benchmark)",
         "url": "/",
-        "sprint_type": "CR",
+        "sprint_type": "FUN",
         "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
+          "metric": "checkout_rate",
+          "display_label": "add-to-cart \u2192 checkout \u00b7 2480 add_to_cart/28d",
+          "current_value": 28.9,
+          "current_display": "28.9% now",
+          "target_value": 35.0,
+          "target_display": "35%",
+          "unit": "percent"
         },
         "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
+          "level": "HIGH",
+          "description": "Diagnose stage drop-off, fix top friction",
+          "estimated_minutes": 120
         },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 3346.14,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,241 ATC \u2192 571 checkouts = 46.0% (benchmark 55%) | downstream checkout\u2192purchase 59% | AOV=$101.35 | bot-filtered: excluded 41,591 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Cart \u2192 checkout drop-off: 46% vs 55% benchmark\n\nEvidence: 1,241 ATC \u2192 571 checkouts = 46.0% (benchmark 55%) | downstream checkout\u2192purchase 59% | AOV=$101.35 | bot-filtered: excluded 41,591 sessions from 2 source(s)\nEngine priority: 6711.69  \u2022  Dashboard impact: 3346.14",
+        "rationale": "add-to-cart \u2192 checkout converts at 28.9% (716/2480 over 28d) vs a ~35% benchmark. Investigate with device split, error logs and session recordings before changing UI.\n\nDashboard impact: $6194.83/mo estimated",
         "evaluation": {
           "window_days": 28,
-          "success_threshold_pct": 25,
+          "success_threshold_pct": 15,
           "neutral_threshold_pct": 0
         },
         "evidence_urls": [],
         "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
-          "priority_class": "structural",
-          "detected_at": "2026-09-16T10:10:11.813404+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "stale_since": "2026-09-18T10:10:27Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
+          "opportunity_type": "FUNNEL_OPTIMIZATION",
+          "detected_at": "2026-09-16T14:42:27Z",
+          "last_refreshed": "2026-11-18T18:43:28Z",
+          "dashboard_impact": 6194.83,
+          "stale_since": "2026-09-18T10:10:27Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.0228
-          },
-          "confidence": "medium"
-        }
-      },
-      {
-        "id": "255",
-        "created": "2026-09-22",
-        "title": "Cart \u2192 checkout drop-off: 44% vs 55% benchmark",
-        "url": "/",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
-          "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "detailed",
+        "recommendation_level": "standard",
         "recommendation": {
-          "objective": "Lift TBD from baseline pending to improvement on /",
-          "steps": [
-            "Pull the last 28 days of funnel data for / (sessions \u2192 PDP \u2192 ATC \u2192 checkout \u2192 purchase) and screenshot the exact drop-off step.",
-            "Reproduce the worst drop-off on a real phone at 4G speed; log layout shift, tap-target size, and any pop-up/modal interference.",
-            "Ship the 2-3 highest-friction fixes first (sticky add-to-cart, above-the-fold price/CTA, tap targets \u2265 44px).",
-            "Instrument an event on the changed step so the next scan can attribute movement.",
-            "Re-measure after 28 days against the pre-change 28-day baseline; roll back any step that regresses."
-          ],
-          "expected_impact_usd_month": 3928.5,
-          "effort": "MEDIUM \u00b7 ~45 min",
-          "owner": "Lisa (funnel/analytics)",
-          "success_metric": "unspecified",
-          "success_target": 1,
-          "measurement_window_days": 28,
-          "evidence": "1,228 ATC \u2192 544 checkouts = 44.3% (benchmark 55%) | downstream checkout\u2192purchase 61% | AOV=$97.39 | bot-filtered: excluded 3,470 sessions from 2 source(s)",
-          "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        },
-        "rationale": "Cart \u2192 checkout drop-off: 44% vs 55% benchmark\n\nEvidence: 1,228 ATC \u2192 544 checkouts = 44.3% (benchmark 55%) | downstream checkout\u2192purchase 61% | AOV=$97.39 | bot-filtered: excluded 3,470 sessions from 2 source(s)\nEngine priority: 7876.29  \u2022  Dashboard impact: 3928.5",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
-          "priority_class": "structural",
-          "detected_at": "2026-09-22T10:10:11.517194+00:00",
-          "dashboard_impact": 5242.34,
-          "watchlist_restored": "2026-09-25T10:10:26Z",
-          "stale_since": "2026-09-24T10:10:25Z",
-          "last_refreshed": "2026-11-18T18:43:28Z"
+          "guidance": "add-to-cart \u2192 checkout converts at 34.3% (1040/3028 over 28d) vs a ~35% benchmark \u2014 the weakest stage of the funnel. Investigate with device split, error logs and session recordings before changing UI."
         },
         "revenue_model": {
           "current": {
-            "impressions_30d": 8059,
-            "ctr": 0.086,
-            "sessions_30d": 5858,
-            "conversion_rate": 0.0152,
+            "impressions_30d": 0,
+            "ctr": 0.0,
+            "sessions_30d": 31813,
+            "conversion_rate": 0.0156,
             "aov": 117.9
           },
           "projected": {
-            "conversion_rate": 0.0228
+            "conversion_rate": 0.0172
           },
-          "confidence": "medium"
+          "confidence": "low"
         }
       },
       {
@@ -1845,60 +840,6 @@
           "structural_kind": null,
           "priority_class": "page",
           "detected_at": "2026-09-24T10:10:10.136031+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 3686.09
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 10407,
-            "ctr": 0.0478,
-            "sessions_30d": 2801,
-            "conversion_rate": 0.0088,
-            "aov": 117.9
-          },
-          "projected": {
-            "conversion_rate": 0.02
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "1201 organic sessions but only 0.58% conversion \u2014 revenue leak"
-        }
-      },
-      {
-        "id": "184",
-        "created": "2026-08-06",
-        "title": "Conversion fix \u2014 cat-car-seat",
-        "url": "/products/cat-car-seat",
-        "sprint_type": "CR",
-        "kpi": {
-          "metric": "conversion_rate",
-          "display_label": "Conversion rate \u00b7 1300 sessions",
-          "current_value": 0.88,
-          "current_display": "0.88% now",
-          "target_value": 1.04,
-          "target_display": "1.04%",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "PDP copy / offer / trust review",
-          "estimated_minutes": 60
-        },
-        "rationale": "1300 organic sessions but only 0.54% conversion \u2014 revenue leak\n\nEvidence: sessions=1300 | CR=0.54% | ATC=5.8% | AOV=$214\nEngine priority: 5.5  \u2022  Dashboard impact: 34.08",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0499",
-          "opportunity_type": "CONVERSION_OPTIMIZATION",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-25T10:10:10.584227+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 3686.09
         },
@@ -2064,80 +1005,6 @@
         }
       },
       {
-        "id": "205",
-        "created": "2026-09-13",
-        "title": "Push to page 1 \u2014 extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c",
-        "url": "/products/extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 1.6",
-          "current_value": 161.8,
-          "current_display": "~161.8/wk now",
-          "target_value": 1,
-          "target_display": "+0/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "CTR 1.8% vs 28.0% benchmark \u2014 184 clicks/period uncaptured"
-        },
-        "rationale": "CTR 3.3% vs 15.0% benchmark \u2014 35 clicks/period uncaptured\n\nEvidence: impressions=303 | CTR=3.3% | expected=15.0% | pos=1.6\nEngine priority: 5.33  \u2022  Dashboard impact: 19.95",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0496",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-21T10:10:09.885761+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1732.46,
-          "stale_since": "2026-09-22T10:10:25Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 21728,
-            "ctr": 0.0319,
-            "sessions_30d": 693,
-            "conversion_rate": 0.01775,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
-        "execution_brief": {
-          "action": "Rewrite SEO title and meta description for /products/extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c",
-          "summary": "Page at /products/extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c is ranking but underperforming on CTR. The current title and meta description don't lead with the primary keyword or communicate a clear benefit. A rewrite should lift CTR meaningfully.",
-          "steps": [
-            {
-              "title": "Update SEO title and meta description",
-              "location": "Shopify \u2192 Products \u2192 extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c \u2192 Edit SEO (bottom of page)",
-              "before": "Title: (title not available \u2014 check Shopify)\nDescription: (meta description not set)",
-              "after": "Title: Houdini Cat Harness and Leash: Escape-Proof, Tested 2025\nDescription: Houdini cat harness and leash: escape-proof, light and safe for cats 8-18 lb. See our 2025 stress-test results before you buy with confidence.",
-              "note": "Max 60 chars for title, max 155 for description. Lead with primary keyword."
-            }
-          ],
-          "out_of_scope": [
-            "Do not change the page body copy in this sprint.",
-            "Do not change product images.",
-            "Reply DONE - #205 in the dashboard when both fields are saved."
-          ],
-          "definition_of_done": "The updated title and description are live at https://www.outdoorbengal.com/products/extra-safe-cat-harness?com_cvv=8fb3d522dc163aeadb66e08cd7450cbbdddc64c6cf2e8891f6d48747c6d56d2c and visible in Google Search Console URL Inspection. Reply DONE - #205."
-        }
-      },
-      {
         "id": "271",
         "created": "2026-09-25",
         "title": "Refresh declining content \u2014 extra-safe-cat-harness (-32% clicks)",
@@ -2218,20 +1085,6 @@
           "dashboard_impact": 1300.0,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "detailed",
         "recommendation": {
           "objective": "Lift Guardrail: page CR \u00b7 primary metric = ATC in A/B app from 0.79% to ATC +20% on /products/zeppelin-cat-carrier",
@@ -2286,20 +1139,6 @@
           "dashboard_impact": 950.0,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "detailed",
         "recommendation": {
           "objective": "Lift Guardrail: page CR \u00b7 primary metric = ATC in A/B app from 3.72% to ATC +15% on /products/extra-safe-cat-harness",
@@ -2318,53 +1157,6 @@
           "measurement_window_days": 28,
           "evidence": "current=3.72% now",
           "risk_note": "Re-measure before/after; roll back if the metric regresses beyond the neutral threshold."
-        }
-      },
-      {
-        "id": "274",
-        "created": "2026-11-18",
-        "title": "Scale traffic to proven converter \u2014 (not set) ($4.76/session)",
-        "url": "(not set)",
-        "sprint_type": "ADS",
-        "kpi": {
-          "metric": "sessions_28d",
-          "display_label": "Sessions/28d \u00b7 $4.76 per session",
-          "current_value": 1046.0,
-          "current_display": "1046 now",
-          "target_value": 2092.0,
-          "target_display": "2092",
-          "unit": "count"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Paid campaign + internal links to a proven page",
-          "estimated_minutes": 90
-        },
-        "rationale": "This page converts exceptionally: $4.76/session revenue (8.6% CR, 90 purchases / 1046 sessions in 28d) vs $1.82/session for its page class \u2014 but traffic is narrow (1120 sessions/mo). Every added session is worth ~$1.43 in gross margin (at 30% margin), so any channel delivering clicks under $1.43 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.71 CPC for healthy ROAS.\n\nDashboard impact: $800.15/mo estimated",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 40,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "opportunity_type": "TRAFFIC_ACQUISITION",
-          "detected_at": "2026-11-18T18:43:28Z",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 800.15
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 0,
-            "ctr": 0.0,
-            "sessions_30d": 1120,
-            "conversion_rate": 0.00606,
-            "aov": 117.9
-          },
-          "projected": {
-            "impressions_multiplier": 2.0
-          },
-          "confidence": "medium"
         }
       },
       {
@@ -2603,59 +1395,6 @@
         }
       },
       {
-        "id": "233",
-        "created": "2026-09-16",
-        "title": "Fix funnel stage: add-to-cart \u2192 checkout (34.3% vs ~35% benchmark)",
-        "url": "/",
-        "sprint_type": "FUN",
-        "kpi": {
-          "metric": "checkout_rate",
-          "display_label": "add-to-cart \u2192 checkout \u00b7 3028 add_to_cart/28d",
-          "current_value": 28.9,
-          "current_display": "28.9% now",
-          "target_value": 35.0,
-          "target_display": "35%",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Diagnose stage drop-off, fix top friction",
-          "estimated_minutes": 120
-        },
-        "rationale": "add-to-cart \u2192 checkout converts at 34.3% (1040/3028 over 28d) vs a ~35% benchmark \u2014 the weakest stage of the funnel. Investigate with device split, error logs and session recordings before changing UI.\n\nDashboard impact: $476.03/mo estimated",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "opportunity_type": "FUNNEL_OPTIMIZATION",
-          "detected_at": "2026-09-16T14:42:27Z",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 476.03,
-          "stale_since": "2026-09-18T10:10:27Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8674,
-            "ctr": 0.3198,
-            "sessions_30d": 2850,
-            "conversion_rate": 0.0389,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "add-to-cart \u2192 checkout converts at 34.3% (1040/3028 over 28d) vs a ~35% benchmark \u2014 the weakest stage of the funnel. Investigate with device split, error logs and session recordings before changing UI."
-        }
-      },
-      {
         "id": "200",
         "created": "2026-09-10",
         "title": "Scale traffic to proven converter \u2014 free-ebook ($1.68/session)",
@@ -2688,20 +1427,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 453.62,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -2884,20 +1609,6 @@
           "dashboard_impact": 319.0,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "objective": "Move /products/extra-safe-cat-harness up from position ? \u2014 ? impressions, ? clicks (? CTR) \u2014 into the top 5",
@@ -3005,20 +1716,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 215.55,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -3288,20 +1985,6 @@
           "dashboard_impact": 170.85,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "This page converts exceptionally: $3.18/session revenue (1.5% CR, 5 purchases / 333 sessions in 28d) vs $1.46/session for its page class \u2014 but traffic is narrow (357 sessions/mo). Every added session is worth ~$0.96 in gross margin (at 30% margin), so any channel delivering clicks under $0.96 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.48 CPC for healthy ROAS."
@@ -3501,19 +2184,6 @@
           "dashboard_impact": 150.0,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 560,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.012,
-            "aov": 122.68
-          },
-          "projected": {
-            "ctr": 0.035
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "True content gap: ~1,700 impressions/90d rank deeper than pos 15 on calming/anxiety queries ('cat stress relief' 511 imp @19, 'best calming treats for cats' 172 imp @37) and you SELL Cat Calming Sticks with zero supporting content. Travel anxiety is the natural angle for the brand and internally links Zeppelin + Calming Sticks + harness desensitization. Long-tail compounds over months."
@@ -3682,7 +2352,7 @@
         }
       },
       {
-        "id": "178",
+        "id": "276",
         "created": "2026-07-19",
         "title": "Scale traffic to proven converter \u2014 kushma-bungee-leash ($3.08/session)",
         "url": "/products/kushma-bungee-leash",
@@ -3714,20 +2384,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 119.57,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         }
       },
       {
@@ -3817,20 +2473,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 109.03,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -4196,20 +2838,6 @@
           "dashboard_impact": 82.74,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "This page converts exceptionally: $2.35/session revenue (1.2% CR, 2 purchases / 219 sessions in 28d) vs $1.04/session for its page class \u2014 but traffic is narrow (234 sessions/mo). Every added session is worth ~$0.71 in gross margin (at 30% margin), so any channel delivering clicks under $0.71 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.35 CPC for healthy ROAS."
@@ -4357,20 +2985,6 @@
           "dashboard_impact": 80.37,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "This page converts exceptionally: $5.81/session revenue (5.9% CR, 5 purchases / 86 sessions in 28d) vs $1.63/session for its page class \u2014 but traffic is narrow (92 sessions/mo). Every added session is worth ~$1.74 in gross margin (at 30% margin), so any channel delivering clicks under $1.74 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.87 CPC for healthy ROAS."
@@ -4429,7 +3043,7 @@
         }
       },
       {
-        "id": "078",
+        "id": "277",
         "created": "2026-04-20",
         "title": "Fix title tag \u2014 teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
         "url": "/blogs/correcting-cat-behavior/teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
@@ -4690,20 +3304,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 61.6,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -5780,19 +4380,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 33.41
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 3398,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00119,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "CTR 0.2% vs 1.0% benchmark \u2014 5 clicks/period uncaptured"
@@ -6233,24 +4820,10 @@
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "Ranking pos 9.8 for 'airline approved cat carrier with litter box' \u2014 165 impressions but page 2"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8860,
-            "ctr": 0.3207,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
         }
       },
       {
-        "id": "078",
+        "id": "278",
         "created": "2026-04-20",
         "title": "Fix title tag \u2014 teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
         "url": "/blogs/correcting-cat-behavior/teaching-no-to-your-cat-to-stopping-unwanted-behaviors",
@@ -6355,59 +4928,6 @@
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "899 organic sessions with ZERO internal product links \u2014 conversion opportunity wasted"
-        }
-      },
-      {
-        "id": "044",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 cats-can-eat-these-foods",
-        "url": "/blogs/cat-health/cats-can-eat-these-foods",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 11.7",
-          "current_value": 0.2,
-          "current_display": "~0.2/wk now",
-          "target_value": 14,
-          "target_display": "+11/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "CTR 0.0% vs 1.0% benchmark \u2014 37 clicks/period uncaptured\n\nEvidence: impressions=3882 | CTR=0.0% | expected=1.0% | pos=11.7\nEngine priority: 5.33  \u2022  Dashboard impact: 19.14",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0408",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "detected_at": "2026-06-06T10:10:09.943219+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 25.71,
-          "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 3431,
-            "ctr": 0.0003,
-            "sessions_30d": 1,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.05
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "CTR 0.0% vs 1.0% benchmark \u2014 37 clicks/period uncaptured"
         }
       },
       {
@@ -7199,20 +5719,6 @@
           "dashboard_impact": 17.67,
           "stale_since": "2026-06-03T10:10:19Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 8772,
-            "ctr": 0.2808,
-            "sessions_30d": 16,
-            "conversion_rate": 0.0,
-            "aov": 87.5
-          },
-          "projected": {
-            "impressions_multiplier": 3.0,
-            "ctr": 0.06
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "204 organic sessions but only 0.98% conversion \u2014 revenue leak"
@@ -7435,60 +5941,6 @@
         }
       },
       {
-        "id": "095",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 savannah-cat-101",
-        "url": "/blogs/cat-breeds/savannah-cat-101",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 7.0",
-          "current_value": 4.8,
-          "current_display": "~4.8/wk now",
-          "target_value": 3,
-          "target_display": "+2/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Ranking pos 7.0 for 'savannah cat personality' \u2014 788 impressions but page 2\n\nEvidence: pos=7.0 | impressions=788 | clicks=6 | CTR=0.8%\nEngine priority: 4.8  \u2022  Dashboard impact: 18.11",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0124",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.127880+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 16.66
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 5842,
-            "ctr": 0.0035,
-            "sessions_30d": 20,
-            "conversion_rate": 0.00112,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.025
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 7.0 for 'savannah cat personality' \u2014 833 impressions but page 2"
-        }
-      },
-      {
         "id": "214",
         "created": "2026-09-13",
         "title": "Push to page 1 \u2014 famous-tiktok-cats",
@@ -7594,60 +6046,6 @@
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "CTR 0.8% vs 2.8% benchmark \u2014 51 clicks/period uncaptured"
-        }
-      },
-      {
-        "id": "071",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 put-a-harness-on-a-cat",
-        "url": "/blogs/adventure-cat-training/put-a-harness-on-a-cat",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 10.3",
-          "current_value": 5.5,
-          "current_display": "~5.5/wk now",
-          "target_value": 9,
-          "target_display": "+7/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "CTR 0.7% vs 2.8% benchmark \u2014 50 clicks/period uncaptured\n\nEvidence: impressions=2410 | CTR=0.7% | expected=2.8% | pos=10.3\nEngine priority: 5.33  \u2022  Dashboard impact: 18.04",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0481",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.135528+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 15.12
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 2120,
-            "ctr": 0.0111,
-            "sessions_30d": 23,
-            "conversion_rate": 0.00103,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 8.5 for 'cat gender' but CTR is 0.2% vs ~2% expected \u2014 title/meta underselling the click"
         }
       },
       {
@@ -7920,61 +6318,7 @@
         }
       },
       {
-        "id": "025",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 best-cat-names",
-        "url": "/blogs/fun-stuff/best-cat-names",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 8.8",
-          "current_value": 7.5,
-          "current_display": "~7.5/wk now",
-          "target_value": 6,
-          "target_display": "+5/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Ranking pos 8.8 for 'bengal cat names' \u2014 1726 impressions but page 2\n\nEvidence: pos=8.8 | impressions=1726 | clicks=17 | CTR=1.0%\nEngine priority: 4.8  \u2022  Dashboard impact: 20.21",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0049",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.126922+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 13.45
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 7713,
-            "ctr": 0.0042,
-            "sessions_30d": 32,
-            "conversion_rate": 0.00107,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.018
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 8.9 for 'bengal cat names' \u2014 1763 impressions but page 2"
-        }
-      },
-      {
-        "id": "168",
+        "id": "279",
         "created": "2026-07-17",
         "title": "Scale traffic to proven converter \u2014 cat-car-seat ($4.08/session)",
         "url": "/products/cat-car-seat",
@@ -8082,7 +6426,7 @@
         }
       },
       {
-        "id": "049",
+        "id": "280",
         "created": "2026-04-20",
         "title": "Conversion fix \u2014 what-to-do-if-my-cat-wont-let-me-sleep",
         "url": "/blogs/correcting-cat-behavior/what-to-do-if-my-cat-wont-let-me-sleep",
@@ -8224,19 +6568,6 @@
           "detected_at": "2026-09-25T10:10:10.584577+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 11.93
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 3398,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00119,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.025
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -8997,60 +7328,6 @@
         }
       },
       {
-        "id": "108",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 help-your-cat-enjoy-car-rides",
-        "url": "/blogs/adventure-cat-training/help-your-cat-enjoy-car-rides",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 12.0",
-          "current_value": 0.8,
-          "current_display": "~0.8/wk now",
-          "target_value": 1,
-          "target_display": "+1/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "CTR 0.0% vs 1.0% benchmark \u2014 4 clicks/period uncaptured\n\nEvidence: impressions=423 | CTR=0.0% | expected=1.0% | pos=12.0\nEngine priority: 5.33  \u2022  Dashboard impact: 14.05",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0497",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-25T10:10:10.584188+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 7.65
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 810,
-            "ctr": 0.004,
-            "sessions_30d": 3,
-            "conversion_rate": 0.00121,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 13.1 for 'kitty car rides' \u2014 158 impressions but page 2"
-        }
-      },
-      {
         "id": "107",
         "created": "2026-04-20",
         "title": "Push to page 1 \u2014 help-your-cat-enjoy-car-rides",
@@ -9117,55 +7394,6 @@
           "current_display": "0.42% now",
           "target_value": 0.0,
           "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "LOW",
-          "description": "Title tag rewrite",
-          "estimated_minutes": 10
-        },
-        "rationale": "Article has 114K impressions at average position 12.6 but CTR of 0.27%\nis well below the positional benchmark of ~2%. Current title is\ngeneric. Testing a more specific, benefit-driven title.\n",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 50,
-          "neutral_threshold_pct": 0
-        },
-        "_source": {
-          "stale_since": "2026-04-20T13:43:43Z",
-          "dashboard_impact": 7.61,
-          "last_refreshed": "2026-11-18T18:43:28Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 7713,
-            "ctr": 0.0042,
-            "sessions_30d": 32,
-            "conversion_rate": 0.00107,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Article has 114K impressions at average position 12.6 but CTR of 0.27%"
-        }
-      },
-      {
-        "id": "003",
-        "created": "2026-04-19",
-        "title": "Fix title tag \u2014 best cat names article",
-        "url": "/blogs/fun-stuff/best-cat-names",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 114K impressions \u00b7 pos 12.6",
-          "current_value": 0.42,
-          "current_display": "0.42% now",
-          "target_value": 1.0,
-          "target_display": "1%+",
           "unit": "percent"
         },
         "effort": {
@@ -9342,60 +7570,6 @@
           "structural_kind": null,
           "priority_class": "page",
           "detected_at": "2026-09-25T10:10:10.584792+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 6.59
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 5842,
-            "ctr": 0.0035,
-            "sessions_30d": 20,
-            "conversion_rate": 0.00112,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 3090 impressions using default title"
-        }
-      },
-      {
-        "id": "068",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 savannah-cat-101",
-        "url": "/blogs/cat-breeds/savannah-cat-101",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 2919 impressions \u00b7 pos ?",
-          "current_value": 0.35,
-          "current_display": "0.35% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 2919 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=2919 | current_title='Savannah Cat 101 - Personality, Traits, Price & Si'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.46",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0535",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136573+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 6.59
         },
@@ -9612,60 +7786,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 6.07,
           "stale_since": "2026-09-25T10:10:26Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 733,
-            "ctr": 0.0117,
-            "sessions_30d": 8,
-            "conversion_rate": 0.0012,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 11.3 for 'cat training books' \u2014 164 impressions but page 2"
-        }
-      },
-      {
-        "id": "110",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 cat-training-books",
-        "url": "/blogs/clicker-training-cats/cat-training-books",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 7.9",
-          "current_value": 2.0,
-          "current_display": "~2/wk now",
-          "target_value": 0,
-          "target_display": "+0/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Ranking pos 7.9 for 'cat training books' \u2014 150 impressions but page 2\n\nEvidence: pos=7.9 | impressions=150 | clicks=4 | CTR=2.7%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.75",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0176",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.128524+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 6.07
         },
         "revenue_model": {
           "current": {
@@ -9989,74 +8109,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 4.11
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 405,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00123,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 8.9 for 'how to train a bengal cat' \u2014 293 impressions but page 2"
-        }
-      },
-      {
-        "id": "143",
-        "created": "2026-05-07",
-        "title": "Push to page 1 \u2014 cat-harness-vs-collar",
-        "url": "/blogs/adventure-cat-training/cat-harness-vs-collar",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 9.1",
-          "current_value": 0.0,
-          "current_display": "~0/wk now",
-          "target_value": 1,
-          "target_display": "+0/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Ranking pos 9.1 for 'how to train a bengal cat' \u2014 277 impressions but page 2\n\nEvidence: pos=9.1 | impressions=279 | clicks=6 | CTR=2.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 15.36",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0123",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-23T10:10:10.093672+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 4.11,
-          "stale_since": "2026-09-25T10:10:26Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 405,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00123,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "Ranking pos 8.9 for 'how to train a bengal cat' \u2014 293 impressions but page 2"
@@ -10368,19 +8420,6 @@
           "dashboard_impact": 3.02,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1097,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.018
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "CTR 0.1% vs 1.0% benchmark \u2014 24 clicks/period uncaptured"
@@ -10441,60 +8480,6 @@
         }
       },
       {
-        "id": "129",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 persian-cat-101",
-        "url": "/blogs/cat-breeds/persian-cat-101",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 266 impressions \u00b7 pos ?",
-          "current_value": 0.42,
-          "current_display": "0.42% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 266 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=266 | current_title='Persian Cat 101 - History, Personality and Traits'\nEngine priority: 4.17  \u2022  Dashboard impact: 10.18",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0536",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136581+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 2.94
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1535,
-            "ctr": 0.0042,
-            "sessions_30d": 6,
-            "conversion_rate": 0.00117,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.018
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 258 impressions using default title"
-        }
-      },
-      {
         "id": "099",
         "created": "2026-04-20",
         "title": "Fix title tag \u2014 zeppelin-cat-carrier",
@@ -10527,114 +8512,6 @@
           "structural_kind": null,
           "priority_class": "page",
           "detected_at": "2026-09-23T10:10:10.101003+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 2.9
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1516,
-            "ctr": 0.0163,
-            "sessions_30d": 24,
-            "conversion_rate": 0.00118,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.03
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 3303 impressions using default title"
-        }
-      },
-      {
-        "id": "099",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 zeppelin-cat-carrier",
-        "url": "/blogs/product-reviews/zeppelin-cat-carrier",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 3394 impressions \u00b7 pos ?",
-          "current_value": 1.63,
-          "current_display": "1.63% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 3394 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=3394 | current_title='Zeppelin Cat Carrier Review - Deep Dive'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.73",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0531",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136532+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 2.9
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1516,
-            "ctr": 0.0163,
-            "sessions_30d": 24,
-            "conversion_rate": 0.00118,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.03
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 3303 impressions using default title"
-        }
-      },
-      {
-        "id": "099",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 zeppelin-cat-carrier",
-        "url": "/blogs/product-reviews/zeppelin-cat-carrier",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 3398 impressions \u00b7 pos ?",
-          "current_value": 1.63,
-          "current_display": "1.63% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 3398 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=3398 | current_title='Zeppelin Cat Carrier Review - Deep Dive'\nEngine priority: 4.17  \u2022  Dashboard impact: 14.73",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0527",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-25T10:10:10.584750+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 2.9
         },
@@ -10746,19 +8623,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 1.95
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 429,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.03
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "CTR 0.0% vs 1.0% benchmark \u2014 8 clicks/period uncaptured"
@@ -10819,60 +8683,6 @@
         }
       },
       {
-        "id": "130",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 help-your-cat-enjoy-car-rides",
-        "url": "/blogs/adventure-cat-training/help-your-cat-enjoy-car-rides",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 429 impressions \u00b7 pos ?",
-          "current_value": 0.4,
-          "current_display": "0.4% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Missing custom SEO title \u2014 429 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=429 | current_title='Help Your Cat Enjoy Car Rides - Tips to Train Cats'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.02",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0512",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136362+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.86
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 16.2 for 'is cat grass good for cats' \u2014 223 impressions but page 2"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 810,
-            "ctr": 0.004,
-            "sessions_30d": 3,
-            "conversion_rate": 0.00121,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.02
-          },
-          "confidence": "medium"
-        }
-      },
-      {
         "id": "104",
         "created": "2026-04-20",
         "title": "Push to page 1 \u2014 lindsey-aries-camping-tips",
@@ -10907,19 +8717,6 @@
           "detected_at": "2026-09-25T10:10:10.583889+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 1.46
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 481,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.02
-          },
-          "confidence": "low"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -10961,19 +8758,6 @@
           "detected_at": "2026-09-25T10:10:10.584162+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 1.41
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 309,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.03
-          },
-          "confidence": "low"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -11035,60 +8819,6 @@
         }
       },
       {
-        "id": "215",
-        "created": "2026-09-13",
-        "title": "Push to page 1 \u2014 best-talking-buttons-for-cats",
-        "url": "/blogs/talking-buttons-for-cats/best-talking-buttons-for-cats",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 10.9",
-          "current_value": 0.8,
-          "current_display": "~0.8/wk now",
-          "target_value": 0,
-          "target_display": "+0/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 11.0 for 'best talking buttons for cats' \u2014 208 impressions but page 2"
-        },
-        "rationale": "Ranking pos 10.9 for 'best talking buttons for cats' \u2014 224 impressions but page 2\n\nEvidence: pos=10.9 | impressions=224 | clicks=5 | CTR=2.2%\nEngine priority: 4.8  \u2022  Dashboard impact: 14.78",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0163",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.128362+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.37
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 495,
-            "ctr": 0.0065,
-            "sessions_30d": 3,
-            "conversion_rate": 0.00127,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.025
-          },
-          "confidence": "low"
-        }
-      },
-      {
         "id": "126",
         "created": "2026-04-20",
         "title": "Push to page 1 \u2014 best-cat-harness",
@@ -11121,60 +8851,6 @@
           "structural_kind": null,
           "priority_class": "page",
           "detected_at": "2026-09-25T10:10:10.583638+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.3
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 943,
-            "ctr": 0.0011,
-            "sessions_30d": 1,
-            "conversion_rate": 0.00108,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 9.9 for 'cat breed identifier chart' \u2014 150 impressions but page 2"
-        }
-      },
-      {
-        "id": "126",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 best-cat-harness",
-        "url": "/blogs/adventure-cat-training/best-cat-harness",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 20.0",
-          "current_value": 0.2,
-          "current_display": "~0.2/wk now",
-          "target_value": 12,
-          "target_display": "+10/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "CTR 0.3% vs 0.5% benchmark \u2014 7 clicks/period uncaptured\n\nEvidence: impressions=3286 | CTR=0.3% | expected=0.5% | pos=20.0\nEngine priority: 5.33  \u2022  Dashboard impact: 18.75",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0480",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.135515+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 1.3
         },
@@ -11305,60 +8981,6 @@
         }
       },
       {
-        "id": "091",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
-        "url": "/blogs/enriching-indoors/leaving-your-cat-alone-tips-to-prevent-separation-anxiety",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 1113 impressions \u00b7 pos ?",
-          "current_value": 0.82,
-          "current_display": "0.82% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "Missing custom SEO title \u2014 1113 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=1113 | current_title='Leaving Your Cat Alone - A Complete Guide to Preve'\nEngine priority: 4.17  \u2022  Dashboard impact: 12.72",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0526",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136481+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.13
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 2090,
-            "ctr": 0.0082,
-            "sessions_30d": 17,
-            "conversion_rate": 0.0012,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 18.9 for 'siberian cat personality' \u2014 194 impressions but page 2"
-        }
-      },
-      {
         "id": "122",
         "created": "2026-04-20",
         "title": "Fix title tag \u2014 how-to-stop-your-cat-from-munching-on-your-plants",
@@ -11391,114 +9013,6 @@
           "structural_kind": null,
           "priority_class": "page",
           "detected_at": "2026-09-25T10:10:10.584731+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.13
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1083,
-            "ctr": 0.0049,
-            "sessions_30d": 5,
-            "conversion_rate": 0.00125,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 174 impressions using default title"
-        }
-      },
-      {
-        "id": "122",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 how-to-stop-your-cat-from-munching-on-your-plants",
-        "url": "/blogs/correcting-cat-behavior/how-to-stop-your-cat-from-munching-on-your-plants",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 115 impressions \u00b7 pos ?",
-          "current_value": 0.49,
-          "current_display": "0.49% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 115 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=115 | current_title='How to STOP Your Cat from Eating Your Plants (Prov'\nEngine priority: 4.17  \u2022  Dashboard impact: 8.74",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0529",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136516+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 1.13
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 1083,
-            "ctr": 0.0049,
-            "sessions_30d": 5,
-            "conversion_rate": 0.00125,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 174 impressions using default title"
-        }
-      },
-      {
-        "id": "122",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 how-to-stop-your-cat-from-munching-on-your-plants",
-        "url": "/blogs/correcting-cat-behavior/how-to-stop-your-cat-from-munching-on-your-plants",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 154 impressions \u00b7 pos ?",
-          "current_value": 0.49,
-          "current_display": "0.49% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 154 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=154 | current_title='How to STOP Your Cat from Eating Your Plants (Prov'\nEngine priority: 4.17  \u2022  Dashboard impact: 9.24",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0524",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-23T10:10:10.100986+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 1.13
         },
@@ -11608,19 +9122,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.87,
           "stale_since": "2026-04-27T10:00:15Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 469,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -11736,60 +9237,6 @@
         }
       },
       {
-        "id": "084",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 20-beginner-tips",
-        "url": "/blogs/adventure-cat-training/20-beginner-tips",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 12.2",
-          "current_value": 1.0,
-          "current_display": "~1/wk now",
-          "target_value": 2,
-          "target_display": "+1/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "rationale": "CTR 0.5% vs 1.0% benchmark \u2014 3 clicks/period uncaptured\n\nEvidence: impressions=626 | CTR=0.5% | expected=1.0% | pos=12.2\nEngine priority: 5.33  \u2022  Dashboard impact: 14.94",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0487",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.135651+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.78
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 626,
-            "ctr": 0.0068,
-            "sessions_30d": 4,
-            "conversion_rate": 0.00046,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.03
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "CTR 0.4% vs 1.0% benchmark \u2014 3 clicks/period uncaptured"
-        }
-      },
-      {
         "id": "073",
         "created": "2026-04-20",
         "title": "Push to page 1 \u2014 adventure-cat-training",
@@ -11823,19 +9270,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.67,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 63,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.07
-          },
-          "confidence": "low"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -11935,73 +9369,6 @@
           "detected_at": "2026-09-25T10:10:10.579993+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.59
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 320,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
-        }
-      },
-      {
-        "id": "217",
-        "created": "2026-09-13",
-        "title": "Push to page 1 \u2014 catnip",
-        "url": "/blogs/cat-health/catnip",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 7.5",
-          "current_value": 0.0,
-          "current_display": "~0/wk now",
-          "target_value": 0,
-          "target_display": "+0/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Ranking pos 7.6 for 'can nursing cats have catnip' \u2014 179 impressions but page 2"
-        },
-        "rationale": "Ranking pos 7.5 for 'can nursing cats have catnip' \u2014 162 impressions but page 2\n\nEvidence: pos=7.5 | impressions=162 | clicks=1 | CTR=0.6%\nEngine priority: 4.8  \u2022  Dashboard impact: 13.95",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0391",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.131749+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.59
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 320,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
         }
       },
       {
@@ -12039,73 +9406,6 @@
           "detected_at": "2026-09-25T10:10:10.584585+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.56
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 309,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 1115 impressions using default title"
-        }
-      },
-      {
-        "id": "147",
-        "created": "2026-05-30",
-        "title": "Fix title tag \u2014 cat-on-a-boat",
-        "url": "/blogs/adventure-cat-training/cat-on-a-boat",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 980 impressions \u00b7 pos ?",
-          "current_value": 0.0,
-          "current_display": "0% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 980 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=980 | current_title='Cat on a Boat - Training, Gear and Tips to Sailing'\nEngine priority: 4.17  \u2022  Dashboard impact: 12.49",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0514",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136380+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.56
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 309,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -12221,114 +9521,6 @@
         }
       },
       {
-        "id": "139",
-        "created": "2026-04-30",
-        "title": "Push to page 1 \u2014 camp-with-a-cat",
-        "url": "/blogs/adventure-cat-training/camp-with-a-cat",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 29.3",
-          "current_value": 0.2,
-          "current_display": "~0.2/wk now",
-          "target_value": 2,
-          "target_display": "+1/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured\n\nEvidence: impressions=582 | CTR=0.0% | expected=0.5% | pos=29.3\nEngine priority: 5.33  \u2022  Dashboard impact: 14.78",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0499",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.135958+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.34
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 277,
-            "ctr": 0.0039,
-            "sessions_30d": 1,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured"
-        }
-      },
-      {
-        "id": "140",
-        "created": "2026-04-30",
-        "title": "Fix title tag \u2014 camp-with-a-cat",
-        "url": "/blogs/adventure-cat-training/camp-with-a-cat",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 582 impressions \u00b7 pos ?",
-          "current_value": 0.39,
-          "current_display": "0.39% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 582 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=582 | current_title='Camping with Cats - Training, Gear and Tips to Cam'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.56",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0515",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136386+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.34
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 277,
-            "ctr": 0.0039,
-            "sessions_30d": 1,
-            "conversion_rate": 0.00128,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 268 impressions using default title"
-        }
-      },
-      {
         "id": "220",
         "created": "2026-09-13",
         "title": "Fix title tag \u2014 homemade-cat-treats",
@@ -12416,19 +9608,6 @@
           "dashboard_impact": 0.21,
           "stale_since": "2026-09-13T18:44:04Z"
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 278,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "Missing custom SEO title \u2014 110 impressions using default title"
@@ -12470,19 +9649,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.2
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 259,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "low"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured"
@@ -12523,127 +9689,6 @@
           "detected_at": "2026-09-25T10:10:10.584626+00:00",
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.2
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 259,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 446 impressions using default title"
-        }
-      },
-      {
-        "id": "127",
-        "created": "2026-04-20",
-        "title": "Push to page 1 \u2014 best-escape-proof-harness",
-        "url": "/blogs/adventure-cat-training/best-escape-proof-harness",
-        "sprint_type": "RNK",
-        "kpi": {
-          "metric": "organic_clicks_weekly",
-          "display_label": "Weekly clicks \u00b7 pos 32.4",
-          "current_value": 0.0,
-          "current_display": "~0/wk now",
-          "target_value": 1,
-          "target_display": "+1/wk",
-          "unit": "sessions/week"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured\n\nEvidence: impressions=439 | CTR=0.0% | expected=0.5% | pos=32.4\nEngine priority: 5.33  \u2022  Dashboard impact: 14.14",
-        "evaluation": {
-          "window_days": 42,
-          "success_threshold_pct": 15,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0498",
-          "opportunity_type": "TRAFFIC_GROWTH",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.135938+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.2
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 259,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "low"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "CTR 0.0% vs 0.5% benchmark \u2014 2 clicks/period uncaptured"
-        }
-      },
-      {
-        "id": "070",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 best-escape-proof-harness",
-        "url": "/blogs/adventure-cat-training/best-escape-proof-harness",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 439 impressions \u00b7 pos ?",
-          "current_value": 0.0,
-          "current_display": "0% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 439 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=439 | current_title='How to Find the Best Escape Proof Cat Harness'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.06",
-        "evaluation": {
-          "window_days": 28,
-          "success_threshold_pct": 25,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0519",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136417+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.2
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 259,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "medium"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -12705,60 +9750,6 @@
         }
       },
       {
-        "id": "093",
-        "created": "2026-04-20",
-        "title": "Fix title tag \u2014 20-beginner-tips",
-        "url": "/blogs/adventure-cat-training/20-beginner-tips",
-        "sprint_type": "CTR",
-        "kpi": {
-          "metric": "ctr",
-          "display_label": "CTR \u00b7 626 impressions \u00b7 pos ?",
-          "current_value": 0.68,
-          "current_display": "0.68% now",
-          "target_value": 0.0,
-          "target_display": "0.0%+",
-          "unit": "percent"
-        },
-        "effort": {
-          "level": "HIGH",
-          "description": "Full rewrite / restructure",
-          "estimated_minutes": 120
-        },
-        "rationale": "Missing custom SEO title \u2014 626 impressions using default title\n\nEvidence: seo_title=NOT_SET | impressions=626 | current_title='20 Cat Harness Training Tips NOBODY Tells You (but'\nEngine priority: 4.17  \u2022  Dashboard impact: 11.69",
-        "evaluation": {
-          "window_days": 21,
-          "success_threshold_pct": 30,
-          "neutral_threshold_pct": 0
-        },
-        "evidence_urls": [],
-        "_source": {
-          "engine_opportunity_id": "OP0518",
-          "opportunity_type": "SEARCH_VISIBILITY",
-          "structural_kind": null,
-          "priority_class": "page",
-          "detected_at": "2026-09-24T10:10:10.136410+00:00",
-          "last_refreshed": "2026-11-18T18:43:28Z",
-          "dashboard_impact": 0.17
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 626,
-            "ctr": 0.0068,
-            "sessions_30d": 4,
-            "conversion_rate": 0.00046,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "medium"
-        },
-        "recommendation_level": "standard",
-        "recommendation": {
-          "guidance": "Missing custom SEO title \u2014 680 impressions using default title"
-        }
-      },
-      {
         "id": "094",
         "created": "2026-04-20",
         "title": "Push to page 1 \u2014 benefits-of-cat-harnesses",
@@ -12792,19 +9783,6 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.08,
           "stale_since": "2026-09-13T18:44:04Z"
-        },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 42,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.012
-          },
-          "confidence": "low"
         },
         "recommendation_level": "standard",
         "recommendation": {
@@ -12865,7 +9843,7 @@
         }
       },
       {
-        "id": "120",
+        "id": "281",
         "created": "2026-04-20",
         "title": "Fix title tag \u2014 benefits-of-cat-harnesses",
         "url": "/blogs/adventure-cat-training/benefits-of-cat-harnesses",
@@ -12900,49 +9878,32 @@
           "last_refreshed": "2026-11-18T18:43:28Z",
           "dashboard_impact": 0.03
         },
-        "revenue_model": {
-          "current": {
-            "impressions_30d": 42,
-            "ctr": 0.0,
-            "sessions_30d": 0,
-            "conversion_rate": 0.0013,
-            "aov": 117.9
-          },
-          "projected": {
-            "ctr": 0.005
-          },
-          "confidence": "medium"
-        },
         "recommendation_level": "standard",
         "recommendation": {
           "guidance": "Missing custom SEO title \u2014 138 impressions using default title"
         }
       },
       {
-        "id": "270",
-        "created": "2026-09-25",
-        "title": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand",
-        "url": "https://www.outdoorbengal.com/products/feastfuls-cat-treats",
-        "sprint_type": "CR",
+        "id": "222",
+        "created": "2026-09-15",
+        "title": "Fix funnel stage: product view \u2192 add-to-cart",
+        "url": "/",
+        "sprint_type": "FUN",
         "kpi": {
-          "metric": "unspecified",
-          "display_label": "TBD",
+          "metric": "atc_rate",
+          "display_label": "product view \u2192 add-to-cart",
           "current_value": 0,
-          "current_display": "baseline pending",
-          "target_value": 1,
-          "target_display": "improvement",
-          "unit": "count"
+          "current_display": "pending scan",
+          "target_value": 0,
+          "target_display": "",
+          "unit": "percent"
         },
         "effort": {
-          "level": "MEDIUM",
-          "description": "Copy + internal links",
-          "estimated_minutes": 45
+          "level": "HIGH",
+          "description": "Diagnose stage drop-off, fix top friction",
+          "estimated_minutes": 120
         },
-        "recommendation_level": "detailed",
-        "recommendation": {
-          "guidance": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand"
-        },
-        "rationale": "OUT OF STOCK everywhere but earning 2,045 impressions/28d \u2014 restock to unlock organic demand\n\nEvidence: impressions=2045 | clicks=38 | stock=0 at every location | est. lost revenue $28/mo\nEngine priority: 72.06  \u2022  Dashboard impact: 13.8",
+        "rationale": "Product pages convert to cart at 10.3% vs 14% benchmark\n\nEvidence: 13,249 PDP sessions \u2192 1,362 ATC = 10.3% (benchmark 14%) | downstream ATC\u2192purchase 27.4% | AOV=$101.46\nEngine priority: 8299.87  \u2022  Dashboard impact: 10789.83",
         "evaluation": {
           "window_days": 28,
           "success_threshold_pct": 25,
@@ -12950,13 +9911,49 @@
         },
         "evidence_urls": [],
         "_source": {
-          "engine_opportunity_id": "OP0901",
-          "opportunity_type": "STRUCTURAL",
-          "structural_kind": "ATC_TO_CHECKOUT",
+          "engine_opportunity_id": "OP0903",
+          "opportunity_type": "FUNNEL_OPTIMIZATION",
+          "structural_kind": "PDP_TO_ATC",
           "priority_class": "structural",
-          "detected_at": "2026-09-25T10:10:18.567988+00:00",
+          "detected_at": "2026-09-15T21:09:05.890125+00:00",
           "dashboard_impact": 0.0,
+          "watchlist_restored": "2026-09-24T10:10:25Z",
+          "stale_since": "2026-09-15T21:58:31Z",
           "last_refreshed": "2026-11-18T18:43:28Z"
+        }
+      },
+      {
+        "id": "274",
+        "created": "2026-11-18",
+        "title": "Scale traffic to proven converter \u2014 (not set) ($4.76/session)",
+        "url": "(not set)",
+        "sprint_type": "ADS",
+        "kpi": {
+          "metric": "sessions_28d",
+          "display_label": "Sessions/28d \u00b7 $4.76 per session",
+          "current_value": 1046.0,
+          "current_display": "1046 now",
+          "target_value": 2092.0,
+          "target_display": "2092",
+          "unit": "count"
+        },
+        "effort": {
+          "level": "MEDIUM",
+          "description": "Paid campaign + internal links to a proven page",
+          "estimated_minutes": 90
+        },
+        "rationale": "This page converts exceptionally: $4.76/session revenue (8.6% CR, 90 purchases / 1046 sessions in 28d) vs $1.82/session for its page class \u2014 but traffic is narrow (1120 sessions/mo). Every added session is worth ~$1.43 in gross margin (at 30% margin), so any channel delivering clicks under $1.43 CPC is profitable. Cheapest first: internal links from high-traffic blogs; then Google Shopping / PMax and Meta catalog capped near $0.71 CPC for healthy ROAS.\n\nDashboard impact: $800.15/mo estimated",
+        "evaluation": {
+          "window_days": 28,
+          "success_threshold_pct": 40,
+          "neutral_threshold_pct": 0
+        },
+        "evidence_urls": [],
+        "_source": {
+          "opportunity_type": "TRAFFIC_ACQUISITION",
+          "detected_at": "2026-11-18T18:43:28Z",
+          "last_refreshed": "2026-11-18T18:43:28Z",
+          "dashboard_impact": 0.0
         }
       },
       {
