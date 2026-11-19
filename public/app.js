@@ -552,6 +552,25 @@ function buildRevenueSection(rev, headline) {
                 : "rev-small";
   const confLabel = { low: "low confidence", medium: "medium confidence", high: "high confidence" }[rev.confidence] || "";
 
+  // Sprint types the page-level math can't express (ad scaling, A/B tests,
+  // bundles) carry the engine's own estimate and have no breakdown to show.
+  if (rev.estimate_only) {
+    return `
+    <div class="detail-section rev-section">
+      <div class="rev-headline-row">
+        <div>
+          <div class="rev-label">Expected revenue lift</div>
+          <div class="rev-amount-big ${sizeCls}">${escapeHtml(headline || "")}</div>
+          <div class="rev-sub-detail">
+            <span class="conf-dot conf-${rev.confidence}"></span>
+            ${escapeHtml(confLabel)} · showing ${rev.haircut_pct}% of raw estimate
+          </div>
+          <div class="rev-math-note">Engine estimate — this sprint type has no page-level revenue math to show.</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
   // Math breakdown rows — only show lines that actually change to reduce noise.
   const rows = (rev.breakdown || []).filter((r) => r.changed);
   // Always show at least one row even if nothing marked "changed" — keeps the

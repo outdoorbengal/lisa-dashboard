@@ -362,6 +362,37 @@ def compute_revenue_model(rm: dict | None) -> dict:
     }
 
 
+def sprint_prize(sp: dict) -> dict:
+    """The prize shown and ranked for a sprint.
+
+    Prefer the auditable revenue model. When a sprint has no model that
+    yields a positive lift (ad-scaling, A/B tests, bundles — types the math
+    model can't express), fall back to the engine's own dashboard_impact
+    estimate at the default (medium) haircut, flagged `estimate_only`, so it
+    is ranked on the same scale instead of sinking below every modeled
+    sprint or showing a misleading $0.
+    """
+    model = compute_revenue_model(sp.get("revenue_model"))
+    if model["available"] and model["monthly_lift_usd"] > 0:
+        return model
+    impact = float((sp.get("_source") or {}).get("dashboard_impact") or 0)
+    if impact <= 0:
+        return compute_revenue_model(None)
+    haircut = _HAIRCUTS["medium"]
+    return {
+        "available": True,
+        "estimate_only": True,
+        "monthly_current_usd": 0.0,
+        "monthly_projected_usd": round(impact, 2),
+        "monthly_lift_usd": round(impact, 2),
+        "monthly_lift_usd_adjusted": round(impact * haircut, 2),
+        "annual_lift_usd_adjusted": round(impact * haircut * 12, 2),
+        "confidence": "medium",
+        "haircut_pct": int(haircut * 100),
+        "breakdown": [],
+    }
+
+
 def fmt_usd_short(amount: float) -> str:
     """Compact USD for headlines: $1,234 · $12.4K · $1.2M."""
     a = abs(amount)
@@ -592,12 +623,10 @@ def build_sprint_rows(queue: dict) -> list[dict]:
     """Build the dashboard's sprint rows, ranked by adjusted monthly revenue lift.
 
     Ranking rules:
-      1. Sprints with a usable `revenue_model` first, sorted by
+      1. Sprints with a prize (see `sprint_prize`) first, sorted by
          `monthly_lift_usd_adjusted` DESC (haircut-applied, so ranking is
          conservative).
-      2. Sprints without a revenue model (legacy / insufficient data) fall
-         to the bottom in `dashboard_impact` order — they still get a slot
-         but Albert sees the real opportunities first.
+      2. Sprints with no prize at all fall to the bottom.
 
     Secondary sort: lower effort wins at ties (LOW > MEDIUM > HIGH).
     """
@@ -606,7 +635,7 @@ def build_sprint_rows(queue: dict) -> list[dict]:
     effort_rank = {"LOW": 0, "MEDIUM": 1, "HIGH": 2}
 
     def sort_key(sp: dict):
-        model = compute_revenue_model(sp.get("revenue_model"))
+        model = sprint_prize(sp)
         # Primary: revenue lift (DESC, so negate). Secondary: effort (ASC).
         primary = -model["monthly_lift_usd_adjusted"] if model["available"] else 0.0
         secondary = effort_rank.get((sp.get("effort") or {}).get("level", "HIGH"), 2)
@@ -630,7 +659,7 @@ def build_sprint_rows(queue: dict) -> list[dict]:
 
         days_waiting = days_since(sp["created"]) if sp.get("created") else 0
 
-        rev = compute_revenue_model(sp.get("revenue_model"))
+        rev = sprint_prize(sp)
 
         # Execution brief (agent writes this for top N; missing for the rest).
         brief = sp.get("execution_brief") or {}

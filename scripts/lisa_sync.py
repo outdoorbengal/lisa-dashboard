@@ -34,6 +34,8 @@ from urllib.parse import quote, urlparse
 import requests
 import yaml
 
+from build_data import compute_revenue_model
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 QUEUE = REPO_ROOT / "sprints" / "queue.yml"
 ACTIVE = REPO_ROOT / "sprints" / "active.yml"
@@ -87,7 +89,9 @@ def norm_path(url_or_path: str) -> str:
 
 
 def is_scannable(path: str) -> bool:
-    return path != "/" and not any(path.startswith(x) for x in EXCLUDED_PREFIXES)
+    # GA4 pseudo-rows such as "(not set)" are not pages — never build a sprint on them.
+    return (path.startswith("/") and path != "/"
+            and not any(path.startswith(x) for x in EXCLUDED_PREFIXES))
 
 
 # ── data sources ─────────────────────────────────────────────────────
@@ -488,6 +492,89 @@ FUNNEL_BENCHMARKS = {  # conservative DTC medians: (numerator, denominator, benc
     "purchase_completion_rate": ("purchase", "begin_checkout", 0.45),
 }
 BRAND_TOKENS = ("outdoorbengal", "outdoor bengal")
+STAGE_NAMES = {"atc_rate": "product view → add-to-cart",
+               "checkout_rate": "add-to-cart → checkout",
+               "purchase_completion_rate": "checkout → purchase"}
+# Mobile converting at roughly half to 60% of desktop is normal for DTC, so
+# the attainable prize is closing the gap to 60% of desktop — not parity.
+MOBILE_TARGET_RATIO = 0.60
+
+
+def funnel_stage_model(metric: str, ctx: dict) -> dict | None:
+    """Size ONE site-wide funnel stage against its benchmark, from today's
+    data. Returns None when the stage isn't measurable or is already at or
+    above benchmark (no prize). Used both to raise a finding and to
+    re-score a queued funnel sprint, so the two can never disagree."""
+    num, den, bench = FUNNEL_BENCHMARKS[metric]
+    ev = ctx["events"]
+    if not ev.get(den) or ev.get("purchase", 0) < 20:
+        return None
+    rate = ev.get(num, 0) / ev[den]
+    if rate >= bench:
+        return None
+    month = 30 / WINDOW_DAYS
+    site = ctx["ga4_totals"]
+    site_cr = site["purchases"] / site["sessions"] if site["sessions"] else 0.01
+    lift = min(bench / rate - 1, 0.5) if rate > 0 else 0.5  # cap claimed upside at +50%
+    impact = round(site["revenue"] * month * lift * 0.5, 2)  # 50% attainability haircut
+    stage = STAGE_NAMES[metric]
+    return {
+        "impact": impact, "ratio": rate / bench,
+        "title": f"Fix funnel stage: {stage} ({rate * 100:.1f}% vs ~{bench * 100:.0f}% benchmark)",
+        "kpi": {"metric": metric, "display_label": f"{stage} · {ev[den]} {den}/{WINDOW_DAYS}d",
+                "current_value": round(rate * 100, 1), "current_display": f"{rate * 100:.1f}% now",
+                "target_value": round(bench * 100, 1), "target_display": f"{bench * 100:.0f}%", "unit": "percent"},
+        "rationale": (f"{stage} converts at {rate * 100:.1f}% ({ev.get(num, 0)}/{ev[den]} over {WINDOW_DAYS}d) "
+                      f"vs a ~{bench * 100:.0f}% benchmark. "
+                      f"Investigate with device split, error logs and session recordings before changing UI."),
+        "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
+                                      "sessions_30d": int(site["sessions"] * month),
+                                      "conversion_rate": round(site_cr, 4), "aov": round(ctx["aov"], 2)},
+                          "projected": {"conversion_rate": round(site_cr * (1 + lift * 0.5), 4)}, "confidence": "low"},
+    }
+
+
+def mobile_gap_model(ctx: dict) -> dict | None:
+    """Size the mobile-vs-desktop conversion gap. None when there is not
+    enough data or mobile already converts at MOBILE_TARGET_RATIO of desktop."""
+    d = ctx["devices"]
+    mob, desk = d.get("mobile"), d.get("desktop")
+    if not mob or not desk or mob["sessions"] < 1000 or desk["purchases"] < 10 or not desk["sessions"]:
+        return None
+    mob_cr, desk_cr = mob["purchases"] / mob["sessions"], desk["purchases"] / desk["sessions"]
+    target = MOBILE_TARGET_RATIO * desk_cr
+    if desk_cr <= 0 or mob_cr >= target:
+        return None
+    month = 30 / WINDOW_DAYS
+    impact = round(mob["sessions"] * month * (target - mob_cr) * ctx["aov"], 2)
+    return {
+        "impact": impact,
+        "title": f"Close the mobile conversion gap ({mob_cr * 100:.2f}% vs {desk_cr * 100:.2f}% desktop)",
+        "kpi": {"metric": "mobile_conversion_rate", "display_label": f"Mobile CR · {int(mob['sessions'])} sessions",
+                "current_value": round(mob_cr * 100, 2), "current_display": f"{mob_cr * 100:.2f}% now",
+                "target_value": round(target * 100, 2), "target_display": f"{target * 100:.2f}%", "unit": "percent"},
+        "rationale": (f"Mobile converts at {mob_cr * 100:.2f}% vs {desk_cr * 100:.2f}% on desktop "
+                      f"({int(mob['sessions'])} vs {int(desk['sessions'])} sessions/{WINDOW_DAYS}d). "
+                      f"Prize assumes mobile reaches {MOBILE_TARGET_RATIO * 100:.0f}% of desktop conversion, not parity. "
+                      f"Audit mobile PDP hierarchy, sticky add-to-cart, tap targets, pop-up interference, checkout usability."),
+        # Low confidence: a benchmark-style gap, and the mobile/desktop ratio
+        # has swung widely between scans.
+        "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
+                                      "sessions_30d": int(mob["sessions"] * month),
+                                      "conversion_rate": round(mob_cr, 4), "aov": round(ctx["aov"], 2)},
+                          "projected": {"conversion_rate": round(target, 4)}, "confidence": "low"},
+    }
+
+
+def is_site_funnel_sprint(sp: dict) -> bool:
+    metric = (sp.get("kpi") or {}).get("metric")
+    return (sp.get("sprint_type") == "FUN" and norm_path(sp.get("url", "")) == "/"
+            and (metric in FUNNEL_BENCHMARKS or metric == "mobile_conversion_rate"))
+
+
+def site_funnel_model(sp: dict, ctx: dict) -> dict | None:
+    metric = sp["kpi"]["metric"]
+    return mobile_gap_model(ctx) if metric == "mobile_conversion_rate" else funnel_stage_model(metric, ctx)
 
 
 def _slug(path: str) -> str:
@@ -696,81 +783,32 @@ def check_cannibalization(ctx) -> list:
     return out[:2]  # at most two cannibalization findings per run
 
 
+def _funnel_finding(m: dict, effort_desc: str) -> dict:
+    return {"type": "FUN", "url": "/", "impact": m["impact"], "title": m["title"], "kpi": m["kpi"],
+            "effort": {"level": "HIGH", "description": effort_desc, "estimated_minutes": 120},
+            "rationale": m["rationale"],
+            "evaluation": {"window_days": 28, "success_threshold_pct": 15, "neutral_threshold_pct": 0},
+            "revenue_model": m["revenue_model"]}
+
+
 def check_mobile_gap(ctx) -> list:
-    d = ctx["devices"]
-    mob, desk = d.get("mobile"), d.get("desktop")
-    if not mob or not desk or mob["sessions"] < 1000 or desk["purchases"] < 10:
+    m = mobile_gap_model(ctx)
+    if not m or m["impact"] < MIN_IMPACT_USD:
         return []
-    mob_cr, desk_cr = mob["purchases"] / mob["sessions"], desk["purchases"] / desk["sessions"]
-    if desk_cr <= 0 or mob_cr >= 0.6 * desk_cr:
-        return []
-    month = 30 / WINDOW_DAYS
-    target = 0.75 * desk_cr
-    impact = round(mob["sessions"] * month * (target - mob_cr) * ctx["aov"], 2)
-    if impact < MIN_IMPACT_USD:
-        return []
-    return [{
-        "type": "FUN", "url": "/", "impact": impact,
-        "title": f"Close the mobile conversion gap ({mob_cr * 100:.2f}% vs {desk_cr * 100:.2f}% desktop)",
-        "kpi": {"metric": "mobile_conversion_rate", "display_label": f"Mobile CR · {int(mob['sessions'])} sessions",
-                "current_value": round(mob_cr * 100, 2), "current_display": f"{mob_cr * 100:.2f}% now",
-                "target_value": round(target * 100, 2), "target_display": f"{target * 100:.2f}%", "unit": "percent"},
-        "effort": {"level": "HIGH", "description": "Mobile PDP/cart/checkout UX audit + fixes", "estimated_minutes": 120},
-        "rationale": (f"Mobile converts at {mob_cr * 100:.2f}% vs {desk_cr * 100:.2f}% on desktop "
-                      f"({int(mob['sessions'])} vs {int(desk['sessions'])} sessions/{WINDOW_DAYS}d). "
-                      f"Audit mobile PDP hierarchy, sticky add-to-cart, tap targets, pop-up interference, checkout usability."),
-        "evaluation": {"window_days": 28, "success_threshold_pct": 15, "neutral_threshold_pct": 0},
-        "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
-                                      "sessions_30d": int(mob["sessions"] * month),
-                                      "conversion_rate": round(mob_cr, 4), "aov": round(ctx["aov"], 2)},
-                          "projected": {"conversion_rate": round(target, 4)}, "confidence": "medium"},
-    }]
+    return [_funnel_finding(m, "Mobile PDP/cart/checkout UX audit + fixes")]
 
 
 def check_funnel_stage(ctx) -> list:
-    """Flag the single worst funnel stage vs benchmark."""
-    ev = ctx["events"]
-    if ev.get("purchase", 0) < 20:
+    """Flag the single worst funnel stage vs benchmark. Below benchmark at
+    all is an opportunity — "good to great" gaps are where the money is,
+    not just broken stages."""
+    models = [m for m in (funnel_stage_model(metric, ctx) for metric in FUNNEL_BENCHMARKS) if m]
+    if not models:
         return []
-    worst = None
-    for metric, (num, den, bench) in FUNNEL_BENCHMARKS.items():
-        if not ev.get(den):
-            continue
-        rate = ev[num] / ev[den]
-        ratio = rate / bench
-        # Below benchmark at all is an opportunity — "good to great" gaps
-        # are where the money is, not just broken stages.
-        if ratio < 1.0 and (worst is None or ratio < worst[3]):
-            worst = (metric, num, den, ratio, rate, bench)
-    if not worst:
+    worst = min(models, key=lambda m: m["ratio"])
+    if worst["impact"] < MIN_IMPACT_USD:
         return []
-    metric, num, den, ratio, rate, bench = worst
-    month = 30 / WINDOW_DAYS
-    site = ctx["ga4_totals"]
-    site_cr = site["purchases"] / site["sessions"] if site["sessions"] else 0.01
-    lift = min(bench / rate - 1, 0.5)  # cap claimed upside at +50%
-    impact = round(site["revenue"] * month * lift * 0.5, 2)  # 50% attainability haircut
-    if impact < MIN_IMPACT_USD:
-        return []
-    stage_names = {"atc_rate": "product view → add-to-cart",
-                   "checkout_rate": "add-to-cart → checkout",
-                   "purchase_completion_rate": "checkout → purchase"}
-    return [{
-        "type": "FUN", "url": "/", "impact": impact,
-        "title": f"Fix funnel stage: {stage_names[metric]} ({rate * 100:.1f}% vs ~{bench * 100:.0f}% benchmark)",
-        "kpi": {"metric": metric, "display_label": f"{stage_names[metric]} · {ev[den]} {den}/{WINDOW_DAYS}d",
-                "current_value": round(rate * 100, 1), "current_display": f"{rate * 100:.1f}% now",
-                "target_value": round(bench * 100, 1), "target_display": f"{bench * 100:.0f}%", "unit": "percent"},
-        "effort": {"level": "HIGH", "description": "Diagnose stage drop-off, fix top friction", "estimated_minutes": 120},
-        "rationale": (f"{stage_names[metric]} converts at {rate * 100:.1f}% ({ev[num]}/{ev[den]} over {WINDOW_DAYS}d) "
-                      f"vs a ~{bench * 100:.0f}% benchmark — the weakest stage of the funnel. "
-                      f"Investigate with device split, error logs and session recordings before changing UI."),
-        "evaluation": {"window_days": 28, "success_threshold_pct": 15, "neutral_threshold_pct": 0},
-        "revenue_model": {"current": {"impressions_30d": 0, "ctr": 0.0,
-                                      "sessions_30d": int(site["sessions"] * month),
-                                      "conversion_rate": round(site_cr, 4), "aov": round(ctx["aov"], 2)},
-                          "projected": {"conversion_rate": round(site_cr * (1 + lift * 0.5), 4)}, "confidence": "low"},
-    }]
+    return [_funnel_finding(worst, "Diagnose stage drop-off, fix top friction")]
 
 
 def check_traffic_starved(ctx) -> list:
@@ -962,6 +1000,83 @@ def all_ids(*docs) -> list[int]:
     return ids
 
 
+# ── queue hygiene ────────────────────────────────────────────────────
+# The pre-2026-07 engine (and a stray copy of it that kept pushing until
+# 2026-11) left three kinds of damage that made prize sizes meaningless:
+#   · site-wide funnel findings filed as a CR sprint on "/" — every one
+#     was then priced as the same homepage conversion play;
+#   · the same finding re-added on several days, and id collisions;
+#   · a placeholder revenue_model that computes to $0 or a negative lift.
+# This pass repairs all three on every run, so a bad write can't stick.
+STRUCTURAL_METRIC = {"PDP_TO_ATC": "atc_rate", "ATC_TO_CHECKOUT": "checkout_rate",
+                     "CHECKOUT_TO_PURCHASE": "purchase_completion_rate"}
+_NO_METRIC = (None, "", "unspecified")
+
+
+def clean_queue(queue: dict, active: dict, archive: dict) -> dict:
+    sprints = queue.get("sprints", [])
+    stats = {"reclassified": 0, "duplicates_removed": 0, "ids_reassigned": 0, "models_dropped": 0}
+
+    # 1. Structural funnel findings → site-funnel sprints with a real metric.
+    for sp in sprints:
+        src = sp.get("_source") or {}
+        metric = STRUCTURAL_METRIC.get(src.get("structural_kind"))
+        if metric and (sp.get("kpi") or {}).get("metric") in _NO_METRIC:
+            sp["sprint_type"], sp["url"] = "FUN", "/"
+            sp["kpi"] = {"metric": metric, "display_label": STAGE_NAMES[metric], "current_value": 0,
+                         "current_display": "pending scan", "target_value": 0, "target_display": "", "unit": "percent"}
+            sp["effort"] = {"level": "HIGH", "description": "Diagnose stage drop-off, fix top friction",
+                            "estimated_minutes": 120}
+            sp["title"] = f"Fix funnel stage: {STAGE_NAMES[metric]}"
+            src["opportunity_type"] = "FUNNEL_OPTIMIZATION"
+            src["dashboard_impact"] = 0.0  # priced by the refresh below, from today's data
+            sp["_source"] = src
+            for stale in ("revenue_model", "recommendation", "recommendation_level"):
+                sp.pop(stale, None)
+            stats["reclassified"] += 1
+
+    # 2. One sprint per (page, type, metric) — the same key new findings are
+    #    deduped on. Keep the engine-native / oldest one.
+    def key_of(sp):
+        return (norm_path(sp.get("url", "")), sp.get("sprint_type"), (sp.get("kpi") or {}).get("metric"))
+
+    def rank(sp):
+        return (bool((sp.get("_source") or {}).get("structural_kind")), str(sp.get("created") or ""), str(sp.get("id")))
+
+    best = {}
+    for sp in sprints:
+        k = key_of(sp)
+        if k[2] in _NO_METRIC:
+            continue
+        if k not in best or rank(sp) < rank(best[k]):
+            best[k] = sp
+    kept = [sp for sp in sprints
+            if key_of(sp)[2] in _NO_METRIC or best[key_of(sp)] is sp]
+    stats["duplicates_removed"] = len(sprints) - len(kept)
+
+    # 3. Ids must be unique — DONE/SKIP act on the first match.
+    next_id = max(all_ids((queue, "sprints"), (active, "experiments"), (archive, "experiments")), default=0) + 1
+    seen = set()
+    for sp in kept:
+        sid = str(sp.get("id"))
+        if sid in seen:
+            sp["id"] = f"{next_id:03d}"
+            next_id += 1
+            stats["ids_reassigned"] += 1
+        seen.add(str(sp["id"]))
+
+    # 4. A model that yields no positive lift is a placeholder, not a prize.
+    for sp in kept:
+        if sp.get("revenue_model"):
+            m = compute_revenue_model(sp["revenue_model"])
+            if not m["available"] or m["monthly_lift_usd"] <= 0:
+                sp.pop("revenue_model")
+                stats["models_dropped"] += 1
+
+    queue["sprints"] = kept
+    return stats
+
+
 # ── main ─────────────────────────────────────────────────────────────
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -1048,10 +1163,33 @@ def main() -> int:
     archive = load_yaml(ARCHIVE)
     scans = load_yaml(SCANS)
 
+    # 0b. Repair the queue before scoring it
+    hygiene = clean_queue(queue, active, archive)
+    if any(hygiene.values()):
+        print("  · queue hygiene: " + ", ".join(f"{v} {k.replace('_', ' ')}" for k, v in hygiene.items() if v))
+
     # 1. Refresh queue KPIs + scores
     reranked = 0
     for sp in queue.get("sprints", []):
         path = norm_path(sp.get("url", ""))
+        # Site-wide funnel sprints: title, KPI, prize and model all come from
+        # today's data via the same function that raises the finding.
+        if is_site_funnel_sprint(sp):
+            fm = site_funnel_model(sp, ctx)
+            src = sp.setdefault("_source", {})
+            src["last_refreshed"] = now_iso
+            if fm:
+                sp["title"], sp["kpi"], sp["revenue_model"] = fm["title"], fm["kpi"], fm["revenue_model"]
+                sp["rationale"] = f"{fm['rationale']}\n\nDashboard impact: ${fm['impact']:g}/mo estimated"
+                src["dashboard_impact"] = fm["impact"]
+            else:  # stage at/above benchmark, or not measurable — no prize
+                m = measure(sp["kpi"]["metric"], path, gsc, ga4, ga4_totals, extra)
+                if m:
+                    sp["kpi"]["current_value"], sp["kpi"]["current_display"], _ = m
+                src["dashboard_impact"] = 0.0
+                sp.pop("revenue_model", None)
+            reranked += 1
+            continue
         # A page absent from BOTH sources for the whole window is dead or
         # junk ("(not set)") — sink it instead of keeping a stale score.
         is_new_content = (sp.get("_source") or {}).get("opportunity_type") == "NEW_CONTENT"
