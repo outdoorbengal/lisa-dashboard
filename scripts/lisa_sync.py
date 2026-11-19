@@ -1021,7 +1021,11 @@ def clean_queue(queue: dict, active: dict, archive: dict) -> dict:
     for sp in sprints:
         src = sp.get("_source") or {}
         metric = STRUCTURAL_METRIC.get(src.get("structural_kind"))
-        if metric and (sp.get("kpi") or {}).get("metric") in _NO_METRIC:
+        # Only genuine site-wide findings (filed on "/"). The old engine also
+        # stamped a funnel kind on unrelated page sprints (e.g. an
+        # out-of-stock flag on a product URL) — those must be left alone.
+        if (metric and norm_path(sp.get("url", "")) == "/"
+                and (sp.get("kpi") or {}).get("metric") in _NO_METRIC):
             sp["sprint_type"], sp["url"] = "FUN", "/"
             sp["kpi"] = {"metric": metric, "display_label": STAGE_NAMES[metric], "current_value": 0,
                          "current_display": "pending scan", "target_value": 0, "target_display": "", "unit": "percent"}
